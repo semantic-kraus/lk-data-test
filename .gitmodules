@@ -1,0 +1,3 @@
+[submodule "legalkraus-archiv"]
+	path = legalkraus-archiv
+	url = https://github.com/karl-kraus/legalkraus-archiv.git
