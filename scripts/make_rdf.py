@@ -16,11 +16,27 @@ domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 g = Graph()
 
-doc = TeiReader("./legalkraus-archiv/data/indices/listplace.xml")
+entity_type = "person"
+index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
+doc = TeiReader(index_file)
 nsmap = doc.nsmap
-items = doc.any_xpath(".//tei:place")
+items = doc.any_xpath(f".//tei:{entity_type}")
+print(f"converting {entity_type}s")
+for x in tqdm(items, total=len(items)):
+    xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"].lower()
+    item_id = f"{SK}{xml_id}"
+    subj = URIRef(item_id)
+    g.add((subj, RDF.type, CIDOC["E21_Person"]))
+    g += make_ed42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
+    g += make_appelations(subj, x, type_domain=f"{SK}types", default_lang="und")
 
-print("converting places")
+# PLACES
+entity_type = "place"
+index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
+doc = TeiReader(index_file)
+nsmap = doc.nsmap
+items = doc.any_xpath(f".//tei:{entity_type}")
+print(f"converting {entity_type}s derived from {index_file}")
 for x in tqdm(items, total=len(items)):
     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"].lower()
     item_id = f"{SK}{xml_id}"

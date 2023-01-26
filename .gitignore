@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 play.ttl
 /rdf
+/html
