@@ -1,16 +1,14 @@
 import os
 from tqdm import tqdm
 from acdh_cidoc_pyutils import (
-    create_e52,
-    normalize_string,
-    extract_begin_end,
     make_appelations,
-    make_ed42_identifiers
+    make_ed42_identifiers,
+    coordinates_to_p168
 )
-from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
+from acdh_cidoc_pyutils.namespaces import CIDOC
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, RDFS, OWL
+from rdflib import Graph, Namespace, URIRef
+from rdflib.namespace import RDF, OWL
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
@@ -28,6 +26,7 @@ for x in tqdm(items, total=len(items)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     g.add((subj, RDF.type, CIDOC["E53_Place"]))
+    g += coordinates_to_p168(subj, x)
     g += make_appelations(subj, x, type_domain=f"{SK}types/", default_lang="und")
     g += make_ed42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
     try:
