@@ -4,56 +4,20 @@ from tqdm import tqdm
 from acdh_cidoc_pyutils import (
     make_appelations,
     make_ed42_identifiers,
-    coordinates_to_p168
+    coordinates_to_p168,
+    make_birth_death_entities
 )
-from acdh_cidoc_pyutils.namespaces import CIDOC, NSMAP
+from acdh_cidoc_pyutils.namespaces import CIDOC
 from acdh_tei_pyutils.tei import TeiReader
-from acdh_tei_pyutils.utils import make_entity_label
-from rdflib import Graph, Namespace, URIRef, Literal, RDFS
+from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDF, OWL
-
-
-def make_birth_death_entities(subj: URIRef, node: Element, event_type="birth", verbose=False, default_prefix="Geburt von", default_lang="de"):
-    g = Graph()
-    name_node = node.xpath('.//tei:persName[1]', namespaces=NSMAP)[0]
-    label, label_lang = make_entity_label(name_node, default_lang=default_lang)
-    if event_type not in ["birth", "death"]:
-        return (g, None, None)
-    if event_type == "birth":
-        cidoc_property = CIDOC["P98_brought_into_life"]
-        cidoc_class = CIDOC[f"E67_Birth"]
-    else:
-        cidoc_property = CIDOC["P100_was_death_of"]
-        cidoc_class = CIDOC[f"E69_Death"]
-    xpath_expr = f".//tei:{event_type}[1]"
-    try:
-        event_node = node.xpath(xpath_expr, namespaces=NSMAP)[0]
-    except IndexError as e:
-        if verbose:
-            print(subj, e)
-            return (g, None, None)
-    event_uri = URIRef(f"{subj}/{event_type}")
-    time_stamp_uri = URIRef(f"{event_uri}/timestamp")
-    g.set((
-        event_uri, cidoc_property, subj
-    ))
-    g.set((
-        event_uri, RDF.type, cidoc_class
-    ))
-    g.add((
-        event_uri, RDFS.label, Literal(f"{default_prefix} {label}", lang=default_lang)
-    ))
-    g.set((
-        event_uri, CIDOC["P4_has_time-span"], time_stamp_uri
-    ))
-    return (g, event_uri, time_stamp_uri)
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 g = Graph()
-LIMIT = 250
+LIMIT = False
 entity_type = "person"
 index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
