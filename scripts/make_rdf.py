@@ -1,5 +1,4 @@
 import os
-from lxml.etree import Element
 from tqdm import tqdm
 from acdh_cidoc_pyutils import (
     make_appelations,
@@ -33,11 +32,10 @@ for x in tqdm(items, total=len(items)):
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
     g += make_ed42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
     g += make_appelations(subj, x, type_domain=f"{SK}types", default_lang="und")
-    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(subj, x, event_type="birth", verbose=True)
+    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(subj, x, event_type="birth", verbose=False, date_node_xpath="/tei:date[1]")
     g += birth_g
-    death_g, death_uri, death_timestamp = make_birth_death_entities(subj, x, event_type="death", default_prefix="Tod von", verbose=True)
+    death_g, death_uri, death_timestamp = make_birth_death_entities(subj, x, event_type="death", default_prefix="Tod von", verbose=False, date_node_xpath="/tei:date[1]")
     g += death_g
-
 
 # ORGS
 entity_type = "org"
