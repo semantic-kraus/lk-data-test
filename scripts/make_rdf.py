@@ -32,9 +32,9 @@ for x in tqdm(items, total=len(items)):
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
     g += make_ed42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
     g += make_appelations(subj, x, type_domain=f"{SK}types", default_lang="und")
-    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(subj, x, event_type="birth", verbose=False, date_node_xpath="/tei:date[1]")
+    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(subj, x, domain=SK, event_type="birth", verbose=False, date_node_xpath="/tei:date[1]", place_id_xpath="//tei:settlement[1]/@key")
     g += birth_g
-    death_g, death_uri, death_timestamp = make_birth_death_entities(subj, x, event_type="death", default_prefix="Tod von", verbose=False, date_node_xpath="/tei:date[1]")
+    death_g, death_uri, death_timestamp = make_birth_death_entities(subj, x, domain=SK, event_type="death", default_prefix="Tod von", verbose=False, date_node_xpath="/tei:date[1]", place_id_xpath="//tei:settlement[1]/@key")
     g += death_g
 
 # ORGS
