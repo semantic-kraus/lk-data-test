@@ -20549,7 +20549,9 @@
 <bibl xml:id="pmb56239">
   
 <title type="main">Eine Krone für Zion</title>
-<bibl type="sk">Eine Krone für Zion</bibl>
+<bibl type="sk">
+	<title level="m">Eine Krone für Zion</title>
+</bibl>
   <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
 <date notBefore-iso="1898-01-01" when-iso="1898-07-02">1898</date>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56239/</idno>
