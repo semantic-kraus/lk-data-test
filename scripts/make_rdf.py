@@ -5,7 +5,9 @@ from acdh_cidoc_pyutils import (
     make_ed42_identifiers,
     coordinates_to_p168,
     make_birth_death_entities,
-    make_occupations
+    make_occupations,
+    make_affiliations,
+    make_entity_label,
 )
 from acdh_cidoc_pyutils.namespaces import CIDOC
 from acdh_tei_pyutils.tei import TeiReader
@@ -30,13 +32,40 @@ for x in tqdm(items, total=len(items)):
     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
+    name_node = x.xpath(".//tei:persName", namespaces=nsmap)[0]
+    item_label = make_entity_label(name_node)[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
     g += make_ed42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
     g += make_appelations(subj, x, type_domain=f"{SK}types", default_lang="und")
-    g += make_occupations(subj, x, f"{SK}", default_lang="de")[0]
-    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(subj, x, domain=SK, event_type="birth", verbose=False, date_node_xpath="/tei:date[1]", place_id_xpath="//tei:settlement[1]/@key")
+    g += make_occupations(subj, x, default_lang="de")[0]
+    g += make_affiliations(
+        subj,
+        x,
+        domain,
+        person_label=item_label,
+        org_id_xpath="./tei:orgName[1]/@key",
+        org_label_xpath="./tei:orgName[1]//text()",
+    )
+    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(
+        subj,
+        x,
+        domain=SK,
+        event_type="birth",
+        verbose=False,
+        date_node_xpath="/tei:date[1]",
+        place_id_xpath="//tei:settlement[1]/@key",
+    )
     g += birth_g
-    death_g, death_uri, death_timestamp = make_birth_death_entities(subj, x, domain=SK, event_type="death", default_prefix="Tod von", verbose=False, date_node_xpath="/tei:date[1]", place_id_xpath="//tei:settlement[1]/@key")
+    death_g, death_uri, death_timestamp = make_birth_death_entities(
+        subj,
+        x,
+        domain=SK,
+        event_type="death",
+        default_prefix="Tod von",
+        verbose=False,
+        date_node_xpath="/tei:date[1]",
+        place_id_xpath="//tei:settlement[1]/@key",
+    )
     g += death_g
 
 # ORGS
