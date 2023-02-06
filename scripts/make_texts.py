@@ -72,7 +72,10 @@ for x in tqdm(to_process, total=len(to_process)):
 
     # fun with mentions
     for i, mention in enumerate(doc.any_xpath('.//tei:body//tei:rs[@ref and @type="person"]')):
-        pb_start = mention.xpath('.//preceding::tei:pb/@n', namespaces=NSMAP)[-1]
+        try:
+            pb_start = mention.xpath('.//preceding::tei:pb/@n', namespaces=NSMAP)[-1]
+        except IndexError:
+            pb_start = 1
         try:
             pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
         except IndexError:
