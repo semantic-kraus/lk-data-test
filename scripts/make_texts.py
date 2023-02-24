@@ -7,7 +7,7 @@ from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 from rdflib.namespace import RDF, RDFS
 
-INT = Namespace("https://w3id.org/lso/intro/beta202001#")
+INT = Namespace("https://w3id.org/lso/intro/Vx/#")
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
@@ -16,7 +16,7 @@ SK = Namespace(domain)
 title_type = URIRef(f"{SK}types/title/prov")
 
 g = Graph()
-LIMIT = 100
+LIMIT = False
 entity_type = "documents"
 if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))[:LIMIT]
@@ -116,43 +116,80 @@ for x in tqdm(to_process, total=len(to_process)):
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
 
     # # fun with mentions
-    # for i, mention in enumerate(doc.any_xpath('.//tei:body//tei:rs[@ref and @type="person"]')):
-    #     try:
-    #         pb_start = mention.xpath('.//preceding::tei:pb/@n', namespaces=NSMAP)[-1]
-    #     except IndexError:
-    #         pb_start = 1
-    #     try:
-    #         pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
-    #     except IndexError:
-    #         pb_end = pb_start
-    #     person_id = mention.attrib["ref"][1:]
-    #     person_uri = URIRef(f"{SK}{person_id}")
-    #     mention_string = normalize_string(" ".join(mention.xpath(".//text()")))
-    #     mention_event_uri = URIRef(f"{subj}/mention-event/{person_id}/{i}")
-    #     mention_singleton_uri = URIRef(f"{subj}/mention-event/{person_id}/{i}/f4")
-    #     mention_segment = URIRef(f"{mention_event_uri}/int16")
-    #     g.add((mention_event_uri, RDF.type, CIDOC["E5_Event"]))
-    #     g.add(
-    #         (
-    #             mention_event_uri,
-    #             RDFS.label,
-    #             Literal(f"Event: {item_label} erwähnt {mention_string}", lang="de"),
-    #         )
-    #     )
-    #     g.add((mention_event_uri, CIDOC["P11_had_participant"], person_uri))
-    #     g.add(
-    #         (
-    #             mention_event_uri,
-    #             CIDOC["P12_occurred_in_the_presence_of"],
-    #             mention_singleton_uri,
-    #         )
-    #     )
-    #     g.add((mention_singleton_uri, RDF.type, FRBROO["F4"]))
-    #     g.add((mention_singleton_uri, CIDOC["P128_carries"], mention_segment))
-    #     g.add((mention_segment, RDF.type, INT["INT16_PublicationExpressionSection"]))
-    #     g.add((mention_segment, INT["pageEnd"], Literal(pb_end)))
-    #     g.add((mention_segment, INT["pageStart"], Literal(pb_start)))
-    #     g.add((mention_segment, CIDOC["P165_incorporates"],subj ))
+    for i, mention in enumerate(doc.any_xpath('.//tei:body//tei:rs[@ref and @type="person"]')):
+        if mention.get("type") == "person":
+            person_id = mention.attrib["ref"][1:]
+            person_uri = URIRef(f"{SK}{person_id}")
+            mention_string = normalize_string(" ".join(mention.xpath(".//text()")))
+            text_passage = URIRef(f"{subj}/passage/{i}")
+            mention_wording = Literal(normalize_string(" ".join(mention.xpath('.//text()'))), lang="und")
+            text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
+            g.add((
+                text_passage, RDF.type, INT["INT1_TextPassage"]
+            ))
+            g.add((
+                text_passage, RDFS.label, text_passage_label
+            ))
+            g.add((
+                text_passage, INT["R44_has_wording"], mention_wording
+            ))
+
+            text_segment = URIRef(f"{subj}/segment/{i}")
+            text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+            g.add((
+                text_segment, RDF.type, INT["INT16_Segment"]
+            ))
+            g.add((
+                text_segment, RDFS.label, text_segment_label
+            ))
+            g.add((
+                text_segment, INT["R16_incorporates"], text_passage
+            ))
+            g.add((
+                text_segment, INT["R44_has_wording"], mention_wording
+            ))
+            try:
+                pb_start = mention.xpath('.//preceding::tei:pb/@n', namespaces=NSMAP)[-1]
+            except IndexError:
+                pb_start = 1
+            g.add((
+                text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")
+            ))
+            g.add((
+                text_segment, INT["R41_has_location"], Literal(arche_id_value) 
+            ))
+            # try:
+            #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
+            # except IndexError:
+            #     pb_end = pb_start
+        else:
+            continue
+        
+            
+        # mention_singleton_uri = URIRef(f"{subj}/text-passage/{person_id}/{i}/f4")
+        # mention_segment = URIRef(f"{text_passage}/int16")
+        # g.add((text_passage, RDF.type, CIDOC["E5_Event"]))
+        # g.add(
+        #     (
+        #         text_passage,
+        #         RDFS.label,
+        #         Literal(f"Event: {item_label} erwähnt {mention_string}", lang="de"),
+        #     )
+        # )
+        # g.add((text_passage, CIDOC["P11_had_participant"], person_uri))
+        # g.add(
+        #     (
+        #         text_passage,
+        #         CIDOC["P12_occurred_in_the_presence_of"],
+        #         mention_singleton_uri,
+        #     )
+        # )
+        # g.add((mention_singleton_uri, RDF.type, FRBROO["F4"]))
+        # g.add((mention_singleton_uri, CIDOC["P128_carries"], mention_segment))
+        # g.add((mention_segment, RDF.type, INT["INT16_PublicationExpressionSection"]))
+        # g.add((mention_segment, INT["pageEnd"], Literal(pb_end)))
+        # g.add((mention_segment, INT["pageStart"], Literal(pb_start)))
+        # g.add((mention_segment, CIDOC["P165_incorporates"],subj ))
 
 
 # cases
