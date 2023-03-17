@@ -816,7 +816,8 @@
   
 <title type="werk_bibliografische-angabe">Anton Kuh: Der Affe Zarathustras (Karl Kraus). Eine Stegreifrede. Gehalten am 25. Oktober 1925 im Wiener Konzerthaussaal (Stenographisches Protokoll), Wien 1925.</title>
 <bibl type="sk">
-<title level="m">Anton Kuh: Der Affe Zarathustras (Karl Kraus)</title>
+  <author key="person__8363">Anton Kuh</author>
+  <title level="m">Der Affe Zarathustras (Karl Kraus)</title>
 <title level="m" type="subtitle">Eine Stegreifrede. Gehalten am 25. Oktober 1925 im Wiener Konzerthaussaal (Stenographisches Protokoll), Wien 1925.</title>
 </bibl>
   <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
@@ -16886,7 +16887,7 @@
 <title type="main">Der geistige Arbeiter. Deutsche Urheber-Zeitung</title>
 <bibl type="sk">
 	<title level="j" key="#sk_lk00126">Der geistige Arbeiter</title>
-<title level="m" type="subtitle">Deutsche Urheber-Zeitung</title>
+<title level="j" type="subtitle">Deutsche Urheber-Zeitung</title>
 </bibl>
   <author key="person__63199" role="hat-herausgegeben">Hirschberg, Herbert</author>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63201/</idno>
@@ -23531,7 +23532,7 @@
 <title type="main">Österreichische Rechtsprechung in Strafsachen, Bd. 6</title>
   <bibl type="sk">
 <title level="m">Österreichische Rechtsprechung in Strafsachen</title>
-<title level="m" type="subtitle">, Bd. 6</title>
+<num type="volume">Bd. 6</num>
 </bibl>
   <author key="person__55108" role="hat-geschaffen">Löffler, Alexander</author>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55178/</idno>
