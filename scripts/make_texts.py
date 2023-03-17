@@ -251,7 +251,10 @@ for x in tqdm(files, total=len(files)):
         doc_xml_id = y.replace('.xml', '')
         doc_uri = URIRef(f"{SK}{doc_xml_id}")
         g.add((
-            doc_uri, CIDOC["P12_occurred_in_the_presence_of"], subj
+            doc_uri, CIDOC["P12i_was_present_at"], subj
+        ))
+        g.add((
+            subj, CIDOC["P12_occurred_in_the_presence_of"], doc_uri
         ))
 
 
