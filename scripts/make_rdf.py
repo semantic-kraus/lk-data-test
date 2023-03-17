@@ -19,7 +19,7 @@ os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 g = Graph()
-LIMIT = 100
+LIMIT = False
 entity_type = "person"
 index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
@@ -35,7 +35,9 @@ for x in tqdm(items, total=len(items)):
     name_node = x.xpath(".//tei:persName", namespaces=nsmap)[0]
     item_label = make_entity_label(name_node)[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
+    g += make_e42_identifiers(
+        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+    )
     g += make_appellations(subj, x, type_domain=f"{SK}types", default_lang="und")
     g += make_occupations(subj, x, default_lang="de")[0]
     g += make_affiliations(
