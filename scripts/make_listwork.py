@@ -74,6 +74,9 @@ for x in tqdm(items, total=len(items)):
         g.add((
             expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri
         ))
+        g.add((
+            author_uri, CIDOC["P14i_performed"], expre_creation_uri
+        ))
     # title
     title_uri = URIRef(f"{subj}/title/0")
     g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
@@ -82,6 +85,10 @@ for x in tqdm(items, total=len(items)):
     )
     g.add((title_uri, CIDOC["P2_has_type"], main_title_type_uri))
     g.add((subj, CIDOC["P102_has_title"], title_uri))
+
+    #F24 Publication Expression
+    if len(x.xpath('.//tei:date', namespaces=nsmap)) > 0:
+        publ_expr_uri = URIRef(f"{subj}/publication")
 
     # subtitle
     for i, sub in enumerate(
