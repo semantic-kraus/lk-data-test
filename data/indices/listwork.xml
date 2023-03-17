@@ -237,7 +237,7 @@
             <title level="m">Das österreichische Strafgesetz über Verbrechen, Vergehen und
               Uebertretungen und die Preßordnung vom 27. Mai 1852</title>
           </bibl>
-          <author key="person__51851" role="hat-geschaffen">Hye von Glunek, Anton</author>
+          <author key="pmb51851" role="hat-geschaffen">Hye von Glunek, Anton</author>
           <date notBefore-iso="1855-01-01" when-iso="1855-07-02">1855</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51852/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -262,7 +262,7 @@
           <bibl type="sk">
             <title level="m">Das österreichische Strafrecht</title>
           </bibl>
-          <author key="person__51854" role="hat-geschaffen">Finger, August</author>
+          <author key="pmb51854" role="hat-geschaffen">Finger, August</author>
           <date from-iso="1891-01-01" to-iso="1891-12-31">1891 – 1910</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51855/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -287,7 +287,7 @@
           <bibl type="sk">
             <title level="m">Lehrbuch des Österreichischen Strafrechts</title>
           </bibl>
-          <author key="person__51801" role="hat-geschaffen">Stooß, Karl</author>
+          <author key="pmb51801" role="hat-geschaffen">Stooß, Karl</author>
           <date notBefore-iso="1913-01-01" when-iso="1913-07-02">1913</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51857/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -345,7 +345,7 @@
           <bibl type="sk">
             <title level="m">Österreichisches Strafprozeßrecht in systematischer Darstellung</title>
           </bibl>
-          <author key="person__52231" role="hat-geschaffen">Lohsing, Ernst</author>
+          <author key="pmb52231" role="hat-geschaffen">Lohsing, Ernst</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52232/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb52232</idno>
@@ -383,7 +383,7 @@
 
           <title type="legacy-name-merge">Das Österreichische Strafverfahren. Eine systematische
             Darstellung.</title>
-          <author key="person__52422" role="hat-geschaffen">von Gleispach, Wenzeslaus</author>
+          <author key="pmb52422" role="hat-geschaffen">von Gleispach, Wenzeslaus</author>
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52423/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52424/</idno>
@@ -552,7 +552,7 @@
           <bibl type="sk">
             <title level="m">Das Reichsgesetz über die Presse vom 7. Mai 1874</title>
           </bibl>
-          <author key="person__53237" role="hat-geschaffen">Kitzinger, Friedrich</author>
+          <author key="pmb53237" role="hat-geschaffen">Kitzinger, Friedrich</author>
           <date notBefore-iso="1920-01-01" when-iso="1920-07-01">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53238/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -937,7 +937,7 @@
             <title level="m">Berichtigung des Protokolles über die Hauptverhandlung, Archiv der
               Rechts- und Staatswissenschaften</title>
           </bibl>
-          <author key="person__57694" role="hat-geschaffen">Miřička, August</author>
+          <author key="pmb57694" role="hat-geschaffen">Miřička, August</author>
           <date notBefore-iso="1903-01-01" when-iso="1903-07-02">1903</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57695/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -963,7 +963,7 @@
           <bibl type="sk">
             <title level="m">Peter Altenberg (Grabrede)</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1919-01-01" when-iso="1919-07-02">1919</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59713/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1012,7 +1012,7 @@
           <bibl type="sk">
             <title level="m">Die Wiener Julitage 1927</title>
           </bibl>
-          <author key="person__37942" role="hat-geschaffen">Braunthal, Julius</author>
+          <author key="pmb37942" role="hat-geschaffen">Braunthal, Julius</author>
           <date from-iso="1927-01-01" to-iso="1927-12-31">1927 – 1927</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59972/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1038,7 +1038,7 @@
           <bibl type="sk">
             <title level="m">Karl Kraus und die Jugend</title>
           </bibl>
-          <author key="person__38133" role="hat-geschaffen">Fischer, Heinrich</author>
+          <author key="pmb38133" role="hat-geschaffen">Fischer, Heinrich</author>
           <date from-iso="1934-01-01" to-iso="1934-12-31">1934 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60398/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1070,7 +1070,7 @@
           <bibl type="sk">
             <title level="m">Die Legende vom weltverkommenen Sonka</title>
           </bibl>
-          <author key="person__25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
+          <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
           <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61264/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1096,7 +1096,7 @@
           <bibl type="sk">
             <title level="m">Die Welt im Drama (Gesammelte Schriften)</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date from-iso="1917-01-01" to-iso="1917-12-31">1917 – 1917</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62256/</idno>
           <idno type="URL" subtype="schnitzler-lektueren"
@@ -1151,7 +1151,7 @@
           <bibl type="sk">
             <title level="m">Mein Leopold</title>
           </bibl>
-          <author key="person__2823" role="hat-geschaffen">L’Arronge, Adolph</author>
+          <author key="pmb2823" role="hat-geschaffen">L’Arronge, Adolph</author>
           <date notBefore-iso="1876-01-01" when-iso="1876-07-01">1876</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62775/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -1207,7 +1207,7 @@
             <title level="m" type="subtitle">Vorlesungen gehalten in der Deutschen Vereinigung für
               staatswissenschaftliche Fortbildung</title>
           </bibl>
-          <author key="person__63677" role="hat-herausgegeben">Harms, Bernhard</author>
+          <author key="pmb63677" role="hat-herausgegeben">Harms, Bernhard</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63676/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb63676</idno>
@@ -1231,7 +1231,7 @@
           <bibl type="sk">
             <title level="m">Die permanente Revolution</title>
           </bibl>
-          <author key="person__26198" role="hat-geschaffen">Trotzki, Leo D.</author>
+          <author key="pmb26198" role="hat-geschaffen">Trotzki, Leo D.</author>
           <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63966/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1293,7 +1293,7 @@
           <bibl type="sk">
             <title level="m">Die Journalisten</title>
           </bibl>
-          <author key="person__11377" role="hat-geschaffen">Freytag, Gustav</author>
+          <author key="pmb11377" role="hat-geschaffen">Freytag, Gustav</author>
           <date notBefore-iso="1852-01-01" when-iso="1852-07-01">1852</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31729.html</idno>
@@ -1332,7 +1332,7 @@
           <bibl type="sk">
             <title level="m">Der böse Geist Lumpazivagabundus oder Das liederliche Kleeblatt</title>
           </bibl>
-          <author key="person__12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
+          <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
           <date notBefore-iso="1833-01-01" when-iso="1833-07-02">1833</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32850.html</idno>
@@ -1363,7 +1363,7 @@
           <bibl type="sk">
             <title level="m">Die Himmelfahrt der Galgentoni</title>
           </bibl>
-          <author key="person__8211" role="hat-geschaffen">Kisch, Egon Erwin</author>
+          <author key="pmb8211" role="hat-geschaffen">Kisch, Egon Erwin</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50460/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb50460</idno>
@@ -1381,7 +1381,7 @@
           <bibl type="sk">
             <title level="m">Sonnenspektrum</title>
           </bibl>
-          <author key="person__13068" role="hat-geschaffen">Wedekind, Frank</author>
+          <author key="pmb13068" role="hat-geschaffen">Wedekind, Frank</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50463/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb50463</idno>
@@ -1403,7 +1403,7 @@
             <title level="m" type="subtitle">Eine Stegreifrede. Gehalten am 25. Oktober 1925 im
               Wiener Konzerthaussaal (Stenographisches Protokoll), Wien 1925.</title>
           </bibl>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52663/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1476,7 +1476,7 @@
             <date when="1927-02-15" key="#sk_lk00138">15.2.1927</date>
             <biblScope>S. 129-133</biblScope>
           </bibl>
-          <author key="person__38346" role="hat-geschaffen">Hannak, Jacques</author>
+          <author key="pmb38346" role="hat-geschaffen">Hannak, Jacques</author>
           <date>1927-02-15 – 1927-02-15</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52678/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1534,7 +1534,7 @@
           <bibl type="sk">
             <title level="m">Heine und die Folgen, München 1910</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1910-01-01" when-iso="1910-07-02">1910</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52745/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -1588,14 +1588,14 @@
           <title type="werk_bibliografische-angabe">Alfred Kerr: Aus dem Kriegsbuch eines Hirnwesen,
             in: Die neue Rundschau 25, Heft 9 (1914)</title>
           <bibl type="sk">
-            <author key="person__11910">Kerr, Alfred</author>
+            <author key="pmb11910">Kerr, Alfred</author>
             <title level="a">Aus dem Kriegsbuch eines Hirnwesen</title>
             <title level="j" key="#sk_lk00007">Die neue Rundschau</title>
             <num type="volume">25</num>
             <num type="issue">Heft 9</num>
             <date when="1914" key="#sk_lk00139">1914</date>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53193/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1755,7 +1755,7 @@
             <date when="1927-01-29" key="#sk_lk00141">29.1.1927</date>
             <biblScope>S. 6</biblScope>
           </bibl>
-          <author key="person__53495" role="hat-anonym-veroffentlicht">N., N.</author>
+          <author key="pmb53495" role="hat-anonym-veroffentlicht">N., N.</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53446/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53446</idno>
@@ -1844,7 +1844,7 @@
           <bibl type="sk">
             <title level="m">Antwort an Karl Kraus</title>
           </bibl>
-          <author key="person__38008" role="hat-geschaffen">Brügel, Johann Wolfgang</author>
+          <author key="pmb38008" role="hat-geschaffen">Brügel, Johann Wolfgang</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59804/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb59804</idno>
@@ -1869,7 +1869,7 @@
           <bibl type="sk">
             <title level="m">Bekessy’s Revolver</title>
           </bibl>
-          <author key="person__38716" role="hat-geschaffen">Spitz, Ernst</author>
+          <author key="pmb38716" role="hat-geschaffen">Spitz, Ernst</author>
           <date notBefore-iso="1926-01-01" when-iso="1926-07-02">1926</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60582/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1902,7 +1902,7 @@
             <num type="issue">Nr. 4</num>
             <date when="1912-10-25" key="#sk_lk00142">25.10.1912</date>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1912-10-25 – 1912-10-25</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62713/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -1940,7 +1940,7 @@
 
           <title type="werk_link"
             >https://archive.org/details/zeitechomunichge1419haas/page/n1/mode/1up?view=theater</title>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62810/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2012,7 +2012,7 @@
           <bibl type="sk">
             <title level="m">Der Triumph des Thersites</title>
           </bibl>
-          <author key="person__62852" role="hat-geschaffen">Hader, Franz</author>
+          <author key="pmb62852" role="hat-geschaffen">Hader, Franz</author>
           <date when-iso="1927-08-21">1927-08-21</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62854/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2046,7 +2046,7 @@
           <bibl type="sk">
             <title level="m">Die Abenteuer des braven Soldaten Schwejk</title>
           </bibl>
-          <author key="person__62858" role="hat-geschaffen">Hašek, Jaroslav</author>
+          <author key="pmb62858" role="hat-geschaffen">Hašek, Jaroslav</author>
           <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62857/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2074,7 +2074,7 @@
           <bibl type="sk">
             <title level="m">Reisebücher deutscher Schriftsteller</title>
           </bibl>
-          <author key="person__62865" role="hat-geschaffen">Reifferscheidt, Friedrich M.</author>
+          <author key="pmb62865" role="hat-geschaffen">Reifferscheidt, Friedrich M.</author>
           <date from-iso="1927-09-01" to-iso="1927-09-30">1927-09 – 1927-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62863/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2112,7 +2112,7 @@
             <date when="1927-08-14" key="#sk_lk00145">14.08.1927</date>
             <biblScope>S. 2</biblScope>
           </bibl>
-          <author key="person__37800" role="hat-geschaffen">Auburtin, Victor</author>
+          <author key="pmb37800" role="hat-geschaffen">Auburtin, Victor</author>
           <date>1927-08-14 – 1927-08-14</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62873/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2144,7 +2144,7 @@
             <num type="issue">Nr. 676</num>
             <date when="1897-09-26" key="#sk_lk00146">26.09.1897</date>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1897-09-26 – 1897-09-26</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62878/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2251,7 +2251,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=std&amp;datum=19231010&amp;seite=5&amp;zoom=33</title>
-          <author key="person__2771" role="hat-geschaffen">Friedell, Egon</author>
+          <author key="pmb2771" role="hat-geschaffen">Friedell, Egon</author>
           <date>10.10.1923 – 10.10.1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65692/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -2292,7 +2292,7 @@
           <bibl type="sk">
             <title level="m">Kaiser Josef und die Prostituierte</title>
           </bibl>
-          <author key="person__2771" role="hat-geschaffen">Friedell, Egon</author>
+          <author key="pmb2771" role="hat-geschaffen">Friedell, Egon</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65695/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb65695</idno>
@@ -2318,7 +2318,7 @@
             <title level="m">Die Weber</title>
             <title level="m" type="subtitle">Schauspiel aus den vierziger Jahren</title>
           </bibl>
-          <author key="person__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+          <author key="pmb11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
           <date notBefore-iso="1892-01-01" when-iso="1892-07-01">1892</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29827.html</idno>
@@ -2366,7 +2366,7 @@
           <bibl type="sk">
             <title level="m">Das Tschaperl</title>
           </bibl>
-          <author key="person__10815" role="hat-geschaffen">Bahr, Hermann</author>
+          <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
           <date notBefore-iso="1896-01-01" when-iso="1896-07-01">1896</date>
           <idno type="URL" subtype="exemplar"
             >http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=50</idno>
@@ -2411,7 +2411,7 @@
           <bibl type="sk">
             <title level="m">Hamlet</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1600-01-01" when-iso="1600-07-01">1600</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30009.html</idno>
@@ -2446,7 +2446,7 @@
           <bibl type="sk">
             <title level="m">Maß für Maß</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1604-01-01" when-iso="1604-07-01">1604</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30595.html</idno>
@@ -2489,7 +2489,7 @@
           </bibl>
 
           <title type="person_namensvariante_nachname-komma-vorname">Heinrich IV., Teil 1</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1597-01-01" when-iso="1597-07-02">1597</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30867.html</idno>
@@ -2526,7 +2526,7 @@
           </bibl>
 
           <title type="legacy-name-merge">Die Verschwörung des Fiesco zu Genua</title>
-          <author key="person__12654" role="hat-geschaffen">Schiller, Friedrich von</author>
+          <author key="pmb12654" role="hat-geschaffen">Schiller, Friedrich von</author>
           <date notBefore-iso="1783-01-01" when-iso="1783-07-02">1783</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31181.html</idno>
@@ -2551,7 +2551,7 @@
             <title level="m">Die Büchse der Pandora</title>
             <title level="m" type="subtitle">Tragödie in drei Aufzügen</title>
           </bibl>
-          <author key="person__13068" role="hat-geschaffen">Wedekind, Frank</author>
+          <author key="pmb13068" role="hat-geschaffen">Wedekind, Frank</author>
           <date notBefore-iso="1902-01-01" when-iso="1902-07-02">1902</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31393.html</idno>
@@ -2586,7 +2586,7 @@
             <title level="m">Hanneles Himmelfahrt</title>
             <title level="m" type="subtitle">Traumdichtung in zwei Teilen</title>
           </bibl>
-          <author key="person__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+          <author key="pmb11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
           <date when-iso="1893-11-14">1893-11-14</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31511.html</idno>
@@ -2628,7 +2628,7 @@
           <bibl type="sk">
             <title level="m">König Lear</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date when-iso="1606-01-01">1606</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31623.html</idno>
@@ -2662,7 +2662,7 @@
           <bibl type="sk">
             <title level="m">Othello</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1604-01-01" when-iso="1604-07-01">1604</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31671.html</idno>
@@ -2694,7 +2694,7 @@
           <bibl type="sk">
             <title level="m">Minna von Barnhelm oder das Soldatenglück</title>
           </bibl>
-          <author key="person__12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
+          <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
           <date notBefore-iso="1767-01-01" when-iso="1767-07-02">1767</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31929.html</idno>
@@ -2726,7 +2726,7 @@
           <bibl type="sk">
             <title level="m">Der Querulant</title>
           </bibl>
-          <author key="person__10815" role="hat-geschaffen">Bahr, Hermann</author>
+          <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
           <date notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32043.html</idno>
@@ -2764,7 +2764,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Shylock, il mercante di
             Venezia</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1596-01-01" when-iso="1596-07-01">1596</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32047.html</idno>
@@ -2796,8 +2796,8 @@
           <bibl type="sk">
             <title level="m">Die letzten Tage der Menschheit</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
-          <author key="person__51630" role="hat-ubersetzt">Münzer, Jan</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb51630" role="hat-ubersetzt">Münzer, Jan</author>
           <date from-iso="1919-01-01" to-iso="1919-12-31">1919 – 1926</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32544.html</idno>
@@ -3252,7 +3252,7 @@
           <bibl type="sk">
             <title level="m">Iphigenie auf Tauris</title>
           </bibl>
-          <author key="person__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+          <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
           <date when-iso="1787-01-01">1787</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32951</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -3286,7 +3286,7 @@
             <title level="m">Florian Geyer</title>
             <title level="m" type="subtitle">Die Tragödie des Bauernkrieges</title>
           </bibl>
-          <author key="person__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+          <author key="pmb11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
           <date from-iso="1896-01-01" to-iso="1896-12-31">1896 – 1896</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33273</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -3320,7 +3320,7 @@
           <bibl type="sk">
             <title level="m">Macbeth</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1606-01-01" when-iso="1606-07-02">1606</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33366</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -3374,7 +3374,7 @@
             <title level="m">Frühlings Erwachen</title>
             <title level="m" type="subtitle">Eine Kindertragödie</title>
           </bibl>
-          <author key="person__13068" role="hat-geschaffen">Wedekind, Frank</author>
+          <author key="pmb13068" role="hat-geschaffen">Wedekind, Frank</author>
           <date notBefore-iso="1891-01-01" when-iso="1891-07-02">1891</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42416/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42416</idno>
@@ -3408,7 +3408,7 @@
             <title level="m">Die Unüberwindlichen</title>
             <title level="m" type="subtitle">Nachkriegsdrama in vier Akten</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53397/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -4553,7 +4553,7 @@
             <title level="m" type="subtitle">Phantastisches Versspiel in drei Akten auf Grund der
               „Vögel“ von Aristophanes</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1923-01-01" when-iso="1923-07-02">1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53500/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -4581,7 +4581,7 @@
             <title level="m">Emilia Galotti</title>
             <title level="m" type="subtitle">Ein Trauerspiel in fünf Aufzügen</title>
           </bibl>
-          <author key="person__12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
+          <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
           <date notBefore-iso="1772-01-01" when-iso="1772-07-01">1772</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61461/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -4605,8 +4605,8 @@
           </bibl>
 
           <title type="legacy-name-merge">Die Affäre Dreyfus</title>
-          <author key="person__11676" role="hat-geschaffen">Herzog, Wilhelm</author>
-          <author key="person__9441" role="hat-geschaffen">Rehfisch, Hans José</author>
+          <author key="pmb11676" role="hat-geschaffen">Herzog, Wilhelm</author>
+          <author key="pmb9441" role="hat-geschaffen">Rehfisch, Hans José</author>
           <date notBefore-iso="1929-01-01" when-iso="1929-07-02">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54282/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/77693/</idno>
@@ -4636,7 +4636,7 @@
           <bibl type="sk">
             <title level="m">Die Reise zum Mond</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1875-01-01" when-iso="1875-07-02">1875</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60654/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -4664,7 +4664,7 @@
           </bibl>
 
           <title type="legacy-name-merge">Simone Boccanegra</title>
-          <author key="person__13007" role="hat-geschaffen">Verdi, Giuseppe</author>
+          <author key="pmb13007" role="hat-geschaffen">Verdi, Giuseppe</author>
           <date from-iso="1857-01-01" to-iso="1857-12-31">1857 – 1857</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63885/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76699/</idno>
@@ -4694,7 +4694,7 @@
           <bibl type="sk">
             <title level="m">Buddenbrooks</title>
           </bibl>
-          <author key="person__12176" role="hat-geschaffen">Mann, Thomas</author>
+          <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
           <date notBefore-iso="1901-01-01" when-iso="1901-07-02">1901</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33187</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -4729,7 +4729,7 @@
           <bibl type="sk">
             <title level="m">Der Zauberberg. Roman</title>
           </bibl>
-          <author key="person__12176" role="hat-geschaffen">Mann, Thomas</author>
+          <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
           <date notBefore-iso="1924-01-01" when-iso="1924-07-01">1924</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33247</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -4831,7 +4831,7 @@
           <bibl type="sk">
             <title level="m">Geschenke des Lebens</title>
           </bibl>
-          <author key="person__12126" role="hat-geschaffen">Ludwig, Emil</author>
+          <author key="pmb12126" role="hat-geschaffen">Ludwig, Emil</author>
           <date notBefore-iso="1931-01-01" when-iso="1931-01-16">01-1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54829/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -4920,7 +4920,7 @@
           <bibl type="sk">
             <title level="m">Sprüche und Widersprüche</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1909-01-01" when-iso="1909-07-02">1909</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52942/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -4960,7 +4960,7 @@
             >https://archive.org/details/nachtskra00krauuoft/page/2/mode/2up</title>
 
           <title type="legacy-name-merge">Nachts</title>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1918-01-01" when-iso="1918-07-02">1918</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52761/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56746/</idno>
@@ -4996,7 +4996,7 @@
           <bibl type="sk">
             <title level="m">Das Land ohne Frauen</title>
           </bibl>
-          <author key="person__7334" role="hat-geschaffen">Gallone, Carmine</author>
+          <author key="pmb7334" role="hat-geschaffen">Gallone, Carmine</author>
           <date notBefore-iso="1929-01-01" when-iso="1929-07-02">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55661/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5031,7 +5031,7 @@
           </bibl>
 
           <title type="person_namensvariante_nachname-komma-vorname">Die lustige Witwe</title>
-          <author key="person__10117" role="hat-geschaffen">Stroheim, Erich von</author>
+          <author key="pmb10117" role="hat-geschaffen">Stroheim, Erich von</author>
           <date notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60417/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5112,7 +5112,7 @@
 
           <title type="werk_link"
             >https://internetshakespeare.uvic.ca/Library/facsimile/book/UC_Q1_Son/34/?work=&amp;zoom=500</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1609-01-01" when-iso="1609-07-02">1609</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53291/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5155,7 +5155,7 @@
 
           <title type="werk_link"
             >https://internetshakespeare.uvic.ca/Library/facsimile/book/UC_Q1_Son/49/?work=&amp;zoom=500</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1609-01-01" when-iso="1609-07-02">1609</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53294/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5198,7 +5198,7 @@
 
           <title type="werk_link"
             >https://internetshakespeare.uvic.ca/Library/facsimile/book/UC_Q1_Son/54/?work=&amp;zoom=500</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1609-01-01" when-iso="1609-07-02">1609</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53297/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5245,7 +5245,7 @@
           <bibl type="sk">
             <title level="m">Alle Vögel sind schon da</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date from-iso="1916-01-01" to-iso="1916-12-31">1916 – 1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53644/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5282,7 +5282,7 @@
           </bibl>
 
           <title type="werk_link">https://fackel.oeaw.ac.at/f/508,049</title>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1915-01-01" when-iso="1915-07-02">1915</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56828/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5310,7 +5310,7 @@
           <bibl type="sk">
             <title level="m">Junge Tänzerin</title>
           </bibl>
-          <author key="person__7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
+          <author key="pmb7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56921/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb56921</idno>
@@ -5374,7 +5374,7 @@
           <bibl type="sk">
             <title level="m">Glockentänzerin</title>
           </bibl>
-          <author key="person__37820" role="hat-geschaffen">Zech, Paul</author>
+          <author key="pmb37820" role="hat-geschaffen">Zech, Paul</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56928/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb56928</idno>
@@ -5448,7 +5448,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19340915&amp;seite=7&amp;zoom=33</title>
-          <author key="person__25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
+          <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
           <date>1934-09-15 – 1934-09-15</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58916/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5584,7 +5584,7 @@
           <bibl type="sk">
             <title level="m">Bekenntnis</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1917-01-01" when-iso="1917-07-02">1917</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59331/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5611,7 +5611,7 @@
           <bibl type="sk">
             <title level="m">Peter Altenberg</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1920-01-01" when-iso="1920-07-01">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59710/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5675,7 +5675,7 @@
           <bibl type="sk">
             <title level="m">Joffre an Kluck</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-10-15 – 1914-10-15</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61851/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5701,7 +5701,7 @@
           <bibl type="sk">
             <title level="m">Greys Lied</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-12-30 – 1914-12-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61856/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5727,7 +5727,7 @@
           <bibl type="sk">
             <title level="m">Rückzug</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-12-19 – 1914-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61861/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5753,7 +5753,7 @@
           <bibl type="sk">
             <title level="m">Sechste Ode von d’Annunzio</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-05-21 – 1916-05-21</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61880/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5779,7 +5779,7 @@
           <bibl type="sk">
             <title level="m">Rumänisch</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-10-08 – 1916-10-08</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61885/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5805,7 +5805,7 @@
           <bibl type="sk">
             <title level="m">Krisen ringsum</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-12-13 – 1916-12-13</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61891/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5831,7 +5831,7 @@
           <bibl type="sk">
             <title level="m">Die Sechste</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1917-03-07 – 1917-03-07</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61896/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5857,7 +5857,7 @@
           <bibl type="sk">
             <title level="m">Chronik.</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-01-16 – 1916-01-16</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61901/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5883,7 +5883,7 @@
           <bibl type="sk">
             <title level="m">Montenegro</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-01-19 – 1916-01-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61906/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5909,7 +5909,7 @@
           <bibl type="sk">
             <title level="m">D'Annunzios vierte Ode</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-01-22 – 1916-01-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61913/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5935,7 +5935,7 @@
           <bibl type="sk">
             <title level="m">Lloyd – George</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-01-28 – 1916-01-28</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61918/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5961,7 +5961,7 @@
           <bibl type="sk">
             <title level="m">Salandra – Dämmerung</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-02-09 – 1916-02-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61932/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -5987,7 +5987,7 @@
           <bibl type="sk">
             <title level="m">Die Niederlage (D’Annunzios fünfte Ode)</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-02-26 – 1916-02-26</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61937/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6013,7 +6013,7 @@
           <bibl type="sk">
             <title level="m">Portugal</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-03-11 – 1916-03-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61942/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6039,7 +6039,7 @@
           <bibl type="sk">
             <title level="m">Rumänien</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-03-24 – 1916-03-24</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61961/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6065,7 +6065,7 @@
           <bibl type="sk">
             <title level="m">Pariser Konferenz</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-03-30 – 1916-03-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61966/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6091,7 +6091,7 @@
           <bibl type="sk">
             <title level="m">Bukarest</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-04-12 – 1916-04-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61976/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6117,7 +6117,7 @@
           <bibl type="sk">
             <title level="m">Briand</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1916-05-24 – 1916-05-24</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61979/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6143,7 +6143,7 @@
           <bibl type="sk">
             <title level="m">Begegnung</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-12-16 – 1914-12-16</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62269/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6202,7 +6202,7 @@
           <bibl type="sk">
             <title level="m">Mobilmachung</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-08-02 – 1914-08-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62351/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6261,7 +6261,7 @@
           <bibl type="sk">
             <title level="m">Es geht eine Schlacht ...</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-09-12 – 1914-09-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62353/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6312,7 +6312,7 @@
           <bibl type="sk">
             <title level="m">Er schleppte sich ...</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1914-10-23 – 1914-10-23</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62355/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6355,7 +6355,7 @@
           <bibl type="sk">
             <title level="m">1918</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62357/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb62357</idno>
@@ -6405,7 +6405,7 @@
           <bibl type="sk">
             <title level="m">Einen Trunk der Liebe</title>
           </bibl>
-          <author key="person__37820" role="hat-geschaffen">Zech, Paul</author>
+          <author key="pmb37820" role="hat-geschaffen">Zech, Paul</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87830/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb87830</idno>
@@ -6439,7 +6439,7 @@
           <bibl type="sk">
             <title level="m">Die Raben</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1920-01-01" when-iso="1920-07-01">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88146/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6465,7 +6465,7 @@
           <bibl type="sk">
             <title level="m">Die Fledermaus</title>
           </bibl>
-          <author key="person__12867" role="hat-geschaffen">Strauss, Johann</author>
+          <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
           <date when-iso="1874-01-01">1874</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30421.html</idno>
@@ -6513,7 +6513,7 @@
           <bibl type="sk">
             <title level="m">Der Zigeunerbaron</title>
           </bibl>
-          <author key="person__12867" role="hat-geschaffen">Strauss, Johann</author>
+          <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
           <date notBefore-iso="1885-01-01" when-iso="1885-07-02">1885</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52902/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -6550,7 +6550,7 @@
             <title level="m">Das Spitzentuch der Königin</title>
             <title level="m" type="subtitle">Operette in drei Akten</title>
           </bibl>
-          <author key="person__12867" role="hat-geschaffen">Strauss, Johann</author>
+          <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
           <date notBefore-iso="1880-01-01" when-iso="1880-07-01">1880</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52904/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -6586,8 +6586,8 @@
           <bibl type="sk">
             <title level="m">Pariser Leben</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <author key="person__38307" role="hat-ubersetzt">Treumann, Karl</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb38307" role="hat-ubersetzt">Treumann, Karl</author>
           <date notBefore-iso="1866-01-01" when-iso="1866-07-02">1866</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53311/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6733,9 +6733,9 @@
           <title type="person_namensvariante_nachname-komma-vorname">Les Brigands</title>
 
           <title type="person_namensvariante_nachname-komma-vorname">Die Banditen</title>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <author key="person__4197" role="hat-geschaffen">Halévy, Ludovic</author>
-          <author key="person__12222" role="hat-geschaffen">Meilhac, Henri</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb4197" role="hat-geschaffen">Halévy, Ludovic</author>
+          <author key="pmb12222" role="hat-geschaffen">Meilhac, Henri</author>
           <date notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53658/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -6793,7 +6793,7 @@
           <bibl type="sk">
             <title level="m">Blaubart</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date when-iso="1866-02-05">1866-02-05</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54326/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -6917,8 +6917,8 @@
           <bibl type="sk">
             <title level="m">Madame l’archiduc</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <author key="person__11988" role="hat-ubersetzt">Kraus, Karl</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
           <date notBefore-iso="1874-01-01" when-iso="1874-07-02">1874</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55390/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7336,7 +7336,7 @@
           <bibl type="sk">
             <title level="m">Madame Favart</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date when-iso="1878-12-28">1878-12-28</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55407/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7363,8 +7363,8 @@
           <bibl type="sk">
             <title level="m">La Périchole</title>
           </bibl>
-          <author key="person__11988" role="hat-ubersetzt">Kraus, Karl</author>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56707/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7589,7 +7589,7 @@
           <bibl type="sk">
             <title level="m">Die Schwätzerin von Saragossa</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56821/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
             >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb56821.html</idno>
@@ -7618,7 +7618,7 @@
           </bibl>
 
           <title type="person_namensvariante_nachname-komma-vorname">Le pont des soupirs</title>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56823/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7645,8 +7645,8 @@
           <bibl type="sk">
             <title level="m">Die Großherzogin von Gerolstein</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <author key="person__11988" role="hat-ubersetzt">Kraus, Karl</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
           <date notBefore-iso="1867-01-01" when-iso="1867-07-02">1867</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56987/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -7697,7 +7697,7 @@
           <bibl type="sk">
             <title level="m">Fortunios Lied</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57726/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7724,7 +7724,7 @@
           <bibl type="sk">
             <title level="m">Die Insel Tulipatan</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57728/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7758,7 +7758,7 @@
           <bibl type="sk">
             <title level="m">Prinzessin von Trapezunt</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60656/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7841,7 +7841,7 @@
           <bibl type="sk">
             <title level="m">Vert-Vert</title>
           </bibl>
-          <author key="person__9131" role="hat-geschaffen">Offenbach, Jacques</author>
+          <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <date notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62199/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -7924,7 +7924,7 @@
           <bibl type="sk">
             <title level="m">Auf den Straßen zu singen</title>
           </bibl>
-          <author key="person__38100" role="hat-geschaffen">Eisler, Hanns</author>
+          <author key="pmb38100" role="hat-geschaffen">Eisler, Hanns</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64528/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb64528</idno>
@@ -7977,7 +7977,7 @@
           <bibl type="sk">
             <title level="m">Naturbetrachtung</title>
           </bibl>
-          <author key="person__38100" role="hat-geschaffen">Eisler, Hanns</author>
+          <author key="pmb38100" role="hat-geschaffen">Eisler, Hanns</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65229/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb65229</idno>
@@ -8026,7 +8026,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=bue&amp;datum=1931&amp;page=776&amp;size=45</title>
-          <author key="person__23807" role="hat-geschaffen">Rübelt, Lothar</author>
+          <author key="pmb23807" role="hat-geschaffen">Rübelt, Lothar</author>
           <date from-iso="1931-06-01" to-iso="1931-06-30">1931-06 – 1931-06</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55073/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8069,7 +8069,7 @@
           <bibl type="sk">
             <title level="m">Unzeitgemäße Betrachtungen</title>
           </bibl>
-          <author key="person__12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
+          <author key="pmb12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
           <date from-iso="1873-01-01" to-iso="1873-12-31">1873 – 1876</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52755/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8123,7 +8123,7 @@
 
           <title type="werk_link"
             >https://www.mediathek.at/katalogsuche/suche/detail/?pool=BWEB&amp;uid=1B661E9E-3B9-000C6-00000A10-1B652C46&amp;cHash=b8a195cc2a6a11c82fda97ff44854ac3</title>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53092/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8193,7 +8193,7 @@
           <bibl type="sk">
             <title level="m">Heiraten</title>
           </bibl>
-          <author key="person__12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
+          <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56116/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb56116</idno>
@@ -8238,8 +8238,8 @@
             <title level="m">Shakespeare Sonnette</title>
             <title level="m" type="subtitle">Umdichtung von Stefan George</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
-          <author key="person__2437" role="hat-ubersetzt">George, Stefan</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2437" role="hat-ubersetzt">George, Stefan</author>
           <date notBefore-iso="1909-01-01" when-iso="1909-07-02">1909</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53315/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8266,8 +8266,8 @@
             <title level="m">Shakespeares Sonette</title>
             <title level="m" type="subtitle">Nachdichtung von Karl Kraus</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
-          <author key="person__11988" role="hat-ubersetzt">Kraus, Karl</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
           <date notBefore-iso="1933-01-01" when-iso="1933-07-02">1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53326/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8300,7 +8300,7 @@
           <bibl type="sk">
             <title level="m">Worte in Versen</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1916-01-01" when-iso="1916-07-01">1916</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53642/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8327,7 +8327,7 @@
           <bibl type="sk">
             <title level="m">Die Weisheit des Brahmanen</title>
           </bibl>
-          <author key="person__39101" role="hat-geschaffen">Rückert, Friedrich</author>
+          <author key="pmb39101" role="hat-geschaffen">Rückert, Friedrich</author>
           <date notBefore-iso="1836-01-01" when-iso="1836-07-01">1836</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62911/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8367,7 +8367,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Die demolirte
             Litteratur</title>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date>15.11.1896 – 1.12.1896</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32606.html</idno>
@@ -8443,7 +8443,7 @@
           <bibl type="sk">
             <title level="m">Karl Kraus als Nachdichter Shakespeares</title>
           </bibl>
-          <author key="person__53330" role="hat-geschaffen">Flatter, Richard</author>
+          <author key="pmb53330" role="hat-geschaffen">Flatter, Richard</author>
           <date notBefore-iso="1933-01-01" when-iso="1933-07-02">1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53329/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8476,7 +8476,7 @@
           <bibl type="sk">
             <title level="m">Hamburgische Dramaturgie</title>
           </bibl>
-          <author key="person__12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
+          <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
           <date notBefore-iso="1767-01-01" when-iso="1767-07-02">1767</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53335/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -8504,7 +8504,7 @@
           <bibl type="sk">
             <title level="m">Die letzte Nacht</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50465/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb50465</idno>
@@ -8555,7 +8555,7 @@
           <bibl type="sk">
             <title level="m">Traumtheater</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1924-01-01" when-iso="1924-07-01">1924</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50709/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8658,7 +8658,7 @@
           <bibl type="sk">
             <title level="m">Traumstück</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1923-01-01" when-iso="1923-07-02">1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50712/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8935,7 +8935,7 @@
           <bibl type="sk">
             <title level="m">Literatur oder Man wird doch da sehn</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1921-01-01" when-iso="1921-07-02">1921</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52757/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -8972,7 +8972,7 @@
           <bibl type="sk">
             <title level="m">Die Vögel</title>
           </bibl>
-          <author key="person__13473" role="hat-geschaffen">Aristophanes</author>
+          <author key="pmb13473" role="hat-geschaffen">Aristophanes</author>
           <date>414 v. Chr.</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53503/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -8999,8 +8999,8 @@
           <bibl type="sk">
             <title level="m">Die Dreigroschenoper</title>
           </bibl>
-          <author key="person__11008" role="hat-geschaffen">Brecht, Bertolt</author>
-          <author key="person__10472" role="hat-geschaffen">Weill, Kurt</author>
+          <author key="pmb11008" role="hat-geschaffen">Brecht, Bertolt</author>
+          <author key="pmb10472" role="hat-geschaffen">Weill, Kurt</author>
           <date when-iso="1928-08-31">1928-08-31</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53718/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -9030,8 +9030,8 @@
             <title level="m">Shakespeares Dramen</title>
             <title level="m" type="subtitle">Bearbeitet von Karl Kraus. Band I</title>
           </bibl>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
-          <author key="person__11988" role="hat-ubersetzt">Kraus, Karl</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
           <date notBefore-iso="1934-01-01" when-iso="1934-07-02">1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61580/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9057,7 +9057,7 @@
           <bibl type="sk">
             <title level="m">Die Hermannsschlacht</title>
           </bibl>
-          <author key="person__11933" role="hat-geschaffen">Kleist, Heinrich von</author>
+          <author key="pmb11933" role="hat-geschaffen">Kleist, Heinrich von</author>
           <date notBefore-iso="1808-01-01" when-iso="1808-07-01">1808</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62349/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -9077,7 +9077,7 @@
           <bibl type="sk">
             <title level="m">Die Wupper</title>
           </bibl>
-          <author key="person__38973" role="hat-geschaffen">Lasker-Schüler, Else</author>
+          <author key="pmb38973" role="hat-geschaffen">Lasker-Schüler, Else</author>
           <date notBefore-iso="1909-01-01" when-iso="1909-07-02">1909</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63515/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9147,7 +9147,7 @@
           <bibl type="sk">
             <title level="m">Die beiden Adler</title>
           </bibl>
-          <author key="person__11527" role="hat-geschaffen">Großmann, Stefan</author>
+          <author key="pmb11527" role="hat-geschaffen">Großmann, Stefan</author>
           <date notBefore-iso="1931-01-01" when-iso="1931-07-02">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63864/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9175,7 +9175,7 @@
           <bibl type="sk">
             <title level="m">Amnestie</title>
           </bibl>
-          <author key="person__87930" role="hat-geschaffen">Finkelnburg, Karl Maria</author>
+          <author key="pmb87930" role="hat-geschaffen">Finkelnburg, Karl Maria</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87931/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb87931</idno>
@@ -9201,7 +9201,7 @@
           <bibl type="sk">
             <title level="m">Des deutschen Spießers Wunderhorn</title>
           </bibl>
-          <author key="person__12248" role="hat-geschaffen">Meyrink, Gustav</author>
+          <author key="pmb12248" role="hat-geschaffen">Meyrink, Gustav</author>
           <date notBefore-iso="1909-01-01" when-iso="1909-07-02">1909</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55822/</idno>
           <idno type="URL" subtype="schnitzler-lektueren"
@@ -9265,7 +9265,7 @@
 
           <title type="werk_link"
             >https://internetshakespeare.uvic.ca/Library/facsimile/book/UC_Q1_Son/1/</title>
-          <author key="person__2412" role="hat-geschaffen">Shakespeare, William</author>
+          <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1609-01-01" when-iso="1609-07-02">1609</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53289/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9333,7 +9333,7 @@
           <bibl type="sk">
             <title level="m">Zeitstrophen</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1931-01-01" when-iso="1931-07-02">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57434/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9375,7 +9375,7 @@
           <bibl type="sk">
             <title level="m">Worte in Versen II</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1917-01-01" when-iso="1917-07-02">1917</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59325/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9402,7 +9402,7 @@
           <bibl type="sk">
             <title level="m">Worte in Versen V</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1920-01-01" when-iso="1920-07-01">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59708/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9429,7 +9429,7 @@
           <bibl type="sk">
             <title level="m">Der Weltfreund</title>
           </bibl>
-          <author key="person__13094" role="hat-geschaffen">Werfel, Franz</author>
+          <author key="pmb13094" role="hat-geschaffen">Werfel, Franz</author>
           <date notBefore-iso="1911-01-01" when-iso="1911-07-02">1911</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60048/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9456,7 +9456,7 @@
           <bibl type="sk">
             <title level="m">Nichts als Brot und Freiheit</title>
           </bibl>
-          <author key="person__25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
+          <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
           <date notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64023/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9483,7 +9483,7 @@
           <bibl type="sk">
             <title level="m">Ausgewählte Gedichte</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1920-01-01" when-iso="1920-07-01">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87713/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9595,7 +9595,7 @@
           <bibl type="sk">
             <title level="m">[Kritik der „Unüberwindlichen“, Frankfurter Nachrichten]</title>
           </bibl>
-          <author key="person__37985" role="hat-geschaffen">Bringezu, Otto</author>
+          <author key="pmb37985" role="hat-geschaffen">Bringezu, Otto</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61382/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb61382</idno>
@@ -9677,7 +9677,7 @@
 
           <title type="werk_link-anno"
             >http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ14414080X</title>
-          <author key="person__54056" role="hat-geschaffen">von Liszt, Franz</author>
+          <author key="pmb54056" role="hat-geschaffen">von Liszt, Franz</author>
           <date notBefore-iso="1878-01-01" when-iso="1878-07-02">1878</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54049/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9703,7 +9703,7 @@
           <bibl type="sk">
             <title level="m">Lehrbuch des deutschen Preßrechtes</title>
           </bibl>
-          <author key="person__54070" role="hat-geschaffen">Berner, Albert Friedrich</author>
+          <author key="pmb54070" role="hat-geschaffen">Berner, Albert Friedrich</author>
           <date notBefore-iso="1876-01-01" when-iso="1876-07-01">1876</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54079/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9734,7 +9734,7 @@
               Rechtsprechung insbesondern des Berliner Obertribunals und des Reichsgerichtes
               systematisch dargestellt.</title>
           </bibl>
-          <author key="person__54056" role="hat-geschaffen">von Liszt, Franz</author>
+          <author key="pmb54056" role="hat-geschaffen">von Liszt, Franz</author>
           <date notBefore-iso="1880-01-01" when-iso="1880-07-01">1880</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54791/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9765,7 +9765,7 @@
             <title level="j" key="#sk_lk00019">Programmheft</title>
             <num type="issue">Nr. 8</num>
           </bibl>
-          <author key="person__54278" role="hat-geschaffen">N., S.</author>
+          <author key="pmb54278" role="hat-geschaffen">N., S.</author>
           <date from-iso="1930-01-01" to-iso="1930-12-31">1930 – 1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54279/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9832,7 +9832,7 @@
             <date when="1934-10" key="#sk_lk00154">Mitte Oktober 1934</date>
             <biblScope>S. 15–17</biblScope>
           </bibl>
-          <author key="person__59525" role="hat-geschaffen">Anton, H.</author>
+          <author key="pmb59525" role="hat-geschaffen">Anton, H.</author>
           <date from-iso="1934-10-01" to-iso="1934-10-31">1934-10 – 1934-10</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59521/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9860,7 +9860,7 @@
             <title level="m">Yankee-Land</title>
             <title level="m" type="subtitle">Eine Reise</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date from-iso="1925-01-01" to-iso="1925-12-31">1925 – 1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62868/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9889,8 +9889,8 @@
           </bibl>
 
           <title type="person_namensvariante_nachname-komma-vorname">Wohnbaukantate</title>
-          <author key="person__39325" role="hat-vertont">Pisk, Paul Amadeus</author>
-          <author key="person__65142" role="hat-geschaffen">Stern, Josef Luitpold</author>
+          <author key="pmb39325" role="hat-vertont">Pisk, Paul Amadeus</author>
+          <author key="pmb65142" role="hat-geschaffen">Stern, Josef Luitpold</author>
           <date from-iso="1926-01-01" to-iso="1926-12-31">1926 – 1926</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63838/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -9940,7 +9940,7 @@
           <bibl type="sk">
             <title level="m">Zahme Xenien</title>
           </bibl>
-          <author key="person__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+          <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
           <date>1820/1842</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31571.html</idno>
@@ -9961,9 +9961,9 @@
             <title level="m">Sammlung strafrechtlicher Entscheidungen des k.k. obersten Gerichts-
               und Cassationshofes</title>
           </bibl>
-          <author key="person__51806" role="hat-herausgegeben">Adler, L.</author>
-          <author key="person__51809" role="hat-herausgegeben">Krall, K.</author>
-          <author key="person__51812" role="hat-herausgegeben">Walther, Josef von</author>
+          <author key="pmb51806" role="hat-herausgegeben">Adler, L.</author>
+          <author key="pmb51809" role="hat-herausgegeben">Krall, K.</author>
+          <author key="pmb51812" role="hat-herausgegeben">Walther, Josef von</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51802/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb51802</idno>
@@ -9990,9 +9990,9 @@
             <title level="m">Plenarbeschlüsse und Entscheidungen des obersten Gerichts- als
               Kassationshofes</title>
           </bibl>
-          <author key="person__51817" role="hat-herausgegeben">Nowak, Rudolf</author>
-          <author key="person__51820" role="hat-herausgegeben">Gaumont, Eduard</author>
-          <author key="person__51823" role="hat-herausgegeben">Schreiber, Karl</author>
+          <author key="pmb51817" role="hat-herausgegeben">Nowak, Rudolf</author>
+          <author key="pmb51820" role="hat-herausgegeben">Gaumont, Eduard</author>
+          <author key="pmb51823" role="hat-herausgegeben">Schreiber, Karl</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51815/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb51815</idno>
@@ -10049,7 +10049,7 @@
           <bibl type="sk">
             <title level="m">Shakespeare in deutscher Sprache</title>
           </bibl>
-          <author key="person__3824" role="hat-herausgegeben">Gundolf, Friedrich</author>
+          <author key="pmb3824" role="hat-herausgegeben">Gundolf, Friedrich</author>
           <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53300/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10075,7 +10075,7 @@
           <bibl type="sk">
             <title level="m">Bilderbögen des kleinen Lebens</title>
           </bibl>
-          <author key="person__2147" role="hat-geschaffen">Altenberg, Peter</author>
+          <author key="pmb2147" role="hat-geschaffen">Altenberg, Peter</author>
           <date notBefore-iso="1909-01-01" when-iso="1909-07-02">1909</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59796/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10134,7 +10134,7 @@
             <title level="m">Peter Altenberg</title>
             <title level="m" type="subtitle">Auswahl aus seinen Büchern von Karl Kraus</title>
           </bibl>
-          <author key="person__11988" role="hat-herausgegeben">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-herausgegeben">Kraus, Karl</author>
           <date notBefore-iso="1932-01-01" when-iso="1932-07-01">1932</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60281/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10606,7 +10606,7 @@
           <bibl type="sk">
             <title level="m">Literatur und Lüge</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63240/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10632,7 +10632,7 @@
           <bibl type="sk">
             <title level="m">Ludwig Börne oder: die Überwindung des Judentums</title>
           </bibl>
-          <author key="person__38969" role="hat-geschaffen">Laserstein, Botho</author>
+          <author key="pmb38969" role="hat-geschaffen">Laserstein, Botho</author>
           <date from-iso="1931-01-01" to-iso="1931-12-31">1931 – 1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63251/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10658,7 +10658,7 @@
           <bibl type="sk">
             <title level="m">Die chinesische Mauer</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53915/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10747,7 +10747,7 @@
           <bibl type="sk">
             <title level="m">Die österreichische Revolution</title>
           </bibl>
-          <author key="person__10851" role="hat-geschaffen">Bauer, Otto</author>
+          <author key="pmb10851" role="hat-geschaffen">Bauer, Otto</author>
           <date notBefore-iso="1923-01-01" when-iso="1923-07-02">1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57776/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10782,7 +10782,7 @@
           <bibl type="sk">
             <title level="m">Mein Lebensabend</title>
           </bibl>
-          <author key="person__2147" role="bekommt-zugeschrieben">Altenberg, Peter</author>
+          <author key="pmb2147" role="bekommt-zugeschrieben">Altenberg, Peter</author>
           <date notBefore-iso="1919-01-01" when-iso="1919-07-02">1919</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59042/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -10818,7 +10818,7 @@
           <bibl type="sk">
             <title level="m">Geschlecht und Charakter</title>
           </bibl>
-          <author key="person__2630" role="hat-geschaffen">Weininger, Otto</author>
+          <author key="pmb2630" role="hat-geschaffen">Weininger, Otto</author>
           <date notBefore-iso="1903-01-01" when-iso="1903-07-02">1903</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65468/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -10977,7 +10977,7 @@
           </bibl>
 
           <title type="werk_link">https://digi.ub.uni-heidelberg.de/diglit/pan</title>
-          <author key="person__11910" role="hat-herausgegeben">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-herausgegeben">Kerr, Alfred</author>
           <date from-iso="1895-01-01" to-iso="1895-12-31">1895 – 1915</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36133/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36133</idno>
@@ -11033,8 +11033,8 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00022">Neue Deutsche Rundschau</title>
           </bibl>
-          <author key="person__10928" role="hat-herausgegeben">Bierbaum, Otto Julius</author>
-          <author key="person__2914" role="hat-herausgegeben">Bie, Oskar</author>
+          <author key="pmb10928" role="hat-herausgegeben">Bierbaum, Otto Julius</author>
+          <author key="pmb2914" role="hat-herausgegeben">Bie, Oskar</author>
           <date>1894-01-01 – 1903-12-31</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36152/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36152</idno>
@@ -11163,7 +11163,7 @@
           </bibl>
 
           <title type="werk_link">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</title>
-          <author key="person__11581" role="hat-einen-beitrag-geschaffen-zu">Harden,
+          <author key="pmb11581" role="hat-einen-beitrag-geschaffen-zu">Harden,
             Maximilian</author>
           <date>1892 – 1922</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
@@ -11197,13 +11197,13 @@
           </bibl>
 
           <title type="werk_link">https://fackel.oeaw.ac.at</title>
-          <author key="person__11988" role="hat-herausgegeben">Kraus, Karl</author>
-          <author key="person__10364" role="hat-einen-beitrag-geschaffen-zu">Viertel,
+          <author key="pmb11988" role="hat-herausgegeben">Kraus, Karl</author>
+          <author key="pmb10364" role="hat-einen-beitrag-geschaffen-zu">Viertel,
             Berthold</author>
-          <author key="person__11230" role="hat-einen-beitrag-geschaffen-zu">Ehrenstein,
+          <author key="pmb11230" role="hat-einen-beitrag-geschaffen-zu">Ehrenstein,
             Albert</author>
-          <author key="person__12438" role="hat-einen-beitrag-geschaffen-zu">Adam, Robert</author>
-          <author key="person__10574" role="hat-einen-beitrag-geschaffen-zu">Wittels, Fritz</author>
+          <author key="pmb12438" role="hat-einen-beitrag-geschaffen-zu">Adam, Robert</author>
+          <author key="pmb10574" role="hat-einen-beitrag-geschaffen-zu">Wittels, Fritz</author>
           <date from-iso="1899-01-01" to-iso="1899-12-31">1899 – 1936</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41244/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41244</idno>
@@ -13697,8 +13697,8 @@
           <title type="person_namensvariante_nachname-komma-vorname">Die Weltbühne</title>
 
           <title type="person_namensvariante_nachname-komma-vorname">Die neue Weltbühne</title>
-          <author key="person__11813" role="hat-herausgegeben">Jacobsohn, Siegfried</author>
-          <author key="person__43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
+          <author key="pmb11813" role="hat-herausgegeben">Jacobsohn, Siegfried</author>
+          <author key="pmb43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
           <date>7.9.1905 – 1993</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41564/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41564</idno>
@@ -13743,8 +13743,8 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00026">Die Moderne</title>
           </bibl>
-          <author key="person__14049" role="hat-herausgegeben">Berg, Leo</author>
-          <author key="person__2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
+          <author key="pmb14049" role="hat-herausgegeben">Berg, Leo</author>
+          <author key="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
           <date from-iso="1891-01-01" to-iso="1891-12-31">1891 – 1891</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42987/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42987</idno>
@@ -13784,7 +13784,7 @@
           </bibl>
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-plus?aid=dtb</title>
-          <author key="person__11527" role="hat-herausgegeben">Großmann, Stefan</author>
+          <author key="pmb11527" role="hat-herausgegeben">Großmann, Stefan</author>
           <date>1920-01-01 – 1933-01-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46493/</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -13934,7 +13934,7 @@
             <date when="1925" key="#sk_lk00131">1925</date>
             <biblScope>S. 349</biblScope>
           </bibl>
-          <author key="person__52096" role="hat-geschaffen">Bagier, Guido</author>
+          <author key="pmb52096" role="hat-geschaffen">Bagier, Guido</author>
           <date notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52123/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -13976,7 +13976,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00029">Der Querulant</title>
           </bibl>
-          <author key="person__36740" role="hat-herausgegeben">Adler, Karl</author>
+          <author key="pmb36740" role="hat-herausgegeben">Adler, Karl</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52466/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb52466</idno>
@@ -14002,7 +14002,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00006">Arbeit und Wirtschaft</title>
           </bibl>
-          <author key="person__38346" role="hat-einen-beitrag-geschaffen-zu">Hannak,
+          <author key="pmb38346" role="hat-einen-beitrag-geschaffen-zu">Hannak,
             Jacques</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52676/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -14406,7 +14406,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00031">Der Kunstwart</title>
           </bibl>
-          <author key="person__53068" role="hat-herausgegeben">Rinn, Hermann</author>
+          <author key="pmb53068" role="hat-herausgegeben">Rinn, Hermann</author>
           <date from-iso="1887-01-01" to-iso="1887-12-31">1887 – 1937</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53069/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -14433,7 +14433,7 @@
             <title level="j" key="#sk_lk00032">Sonderausgabe der Fackel</title>
             <num type="issue">Nr. 1 (= Schoberlied)</num>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53123/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -14837,7 +14837,7 @@
           </bibl>
 
           <title type="werk_link">https://brenner.oeaw.ac.at/</title>
-          <author key="person__38500" role="hat-herausgegeben">Ficker, Ludwig von</author>
+          <author key="pmb38500" role="hat-herausgegeben">Ficker, Ludwig von</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53223/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53223</idno>
@@ -14870,7 +14870,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00009">Volkskampf</title>
           </bibl>
-          <author key="person__53459" role="hat-herausgegeben">Müller, Josef</author>
+          <author key="pmb53459" role="hat-herausgegeben">Müller, Josef</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53441/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53441</idno>
@@ -16563,7 +16563,7 @@
           </bibl>
 
           <title type="person_namensvariante_nachname-komma-vorname">Neuer Vorwärts</title>
-          <author key="person__51864" role="hat-einen-beitrag-geschaffen-zu">Liebknecht,
+          <author key="pmb51864" role="hat-einen-beitrag-geschaffen-zu">Liebknecht,
             Wilhelm</author>
           <date notBefore-iso="1876-01-01" when-iso="1876-07-01">1876</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58129/</idno>
@@ -16868,7 +16868,7 @@
               Stadttheaters</title>
             <date when="1932-03" key="#sk_lk00188">März 1932</date>
           </bibl>
-          <author key="person__62233" role="hat-einen-beitrag-geschaffen-zu">Költzsch, Hans</author>
+          <author key="pmb62233" role="hat-einen-beitrag-geschaffen-zu">Költzsch, Hans</author>
           <date from-iso="1932-03-01" to-iso="1932-03-31">1932-03 – 1932-03</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62237/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -17071,7 +17071,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00053">Filmhölle</title>
           </bibl>
-          <author key="person__63225" role="hat-herausgegeben">Jameson, Egon</author>
+          <author key="pmb63225" role="hat-herausgegeben">Jameson, Egon</author>
           <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1923</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63231/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -17213,7 +17213,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00057">Der Querschnitt</title>
           </bibl>
-          <author key="person__26738" role="hat-herausgegeben">Wedderkop, Harro von</author>
+          <author key="pmb26738" role="hat-herausgegeben">Wedderkop, Harro von</author>
           <date from-iso="1921-01-01" to-iso="1921-12-31">1921 – 1936</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65697/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -17441,7 +17441,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00059">Der Abend</title>
           </bibl>
-          <author key="person__4023" role="hat-herausgegeben">Colbert, Carl</author>
+          <author key="pmb4023" role="hat-herausgegeben">Colbert, Carl</author>
           <date from-iso="1915-01-01" to-iso="1915-12-31">1915 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36364/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36364</idno>
@@ -17473,9 +17473,9 @@
           </bibl>
 
           <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
-          <author key="person__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
-          <author key="person__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
-          <author key="person__10809" role="hat-herausgegeben">Bacher, Eduard</author>
+          <author key="pmb10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+          <author key="pmb10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+          <author key="pmb10809" role="hat-herausgegeben">Bacher, Eduard</author>
           <date from-iso="1864-01-01" to-iso="1864-12-31">1864 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
@@ -17609,9 +17609,9 @@
           </bibl>
 
           <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</title>
-          <author key="person__36371" role="hat-einen-beitrag-geschaffen-zu">Papp,
+          <author key="pmb36371" role="hat-einen-beitrag-geschaffen-zu">Papp,
             Desiderius</author>
-          <author key="person__10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
+          <author key="pmb10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
           <date>1893 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36376/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36376</idno>
@@ -17824,7 +17824,7 @@
           </bibl>
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?apm=0&amp;aid=aze</title>
-          <author key="person__59249" role="hat-herausgegeben">Kovanda, Václav</author>
+          <author key="pmb59249" role="hat-herausgegeben">Kovanda, Václav</author>
           <date>12.7.1881 – 31.10.1991</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41202/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41202</idno>
@@ -18356,8 +18356,8 @@
           </bibl>
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=iwe</title>
-          <author key="person__13791" role="hat-einen-beitrag-geschaffen-zu">Basch, Ludwig</author>
-          <author key="person__2150" role="hat-einen-beitrag-geschaffen-zu">Bauer, Julius</author>
+          <author key="pmb13791" role="hat-einen-beitrag-geschaffen-zu">Basch, Ludwig</author>
+          <author key="pmb2150" role="hat-einen-beitrag-geschaffen-zu">Bauer, Julius</author>
           <date from-iso="1872-01-01" to-iso="1872-12-31">1872 – 1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41484/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41484</idno>
@@ -19189,7 +19189,7 @@
           </bibl>
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=rpt</title>
-          <author key="person__53731" role="hat-herausgegeben">Funder, Friedrich</author>
+          <author key="pmb53731" role="hat-herausgegeben">Funder, Friedrich</author>
           <date from-iso="1893-01-01" to-iso="1893-12-31">1893 – 1938</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42850/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42850</idno>
@@ -19264,7 +19264,7 @@
 
           <title type="werk_link-anno"
             >http://anno.onb.ac.at/cgi-content/anno?apm=0&amp;aid=vob</title>
-          <author key="person__11715" role="hat-herausgegeben">Hitler, Adolf</author>
+          <author key="pmb11715" role="hat-herausgegeben">Hitler, Adolf</author>
           <date>1920-12-17 – 1945-04-29</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/47189/</idno>
           <idno type="URL" subtype="schnitzler-briefe"
@@ -19447,7 +19447,7 @@
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=std</title>
-          <author key="person__37843" role="hat-herausgegeben">Békessy, Imre</author>
+          <author key="pmb37843" role="hat-herausgegeben">Békessy, Imre</author>
           <date>1923-02-02 – 1938-03-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50611/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -20167,7 +20167,7 @@
 
           <title type="werk_link-anno"
             >http://anno.onb.ac.at/cgi-content/anno?aid=tag&amp;datum=19230118&amp;zoom=33</title>
-          <author key="person__6294" role="hat-herausgegeben">Bettauer, Hugo</author>
+          <author key="pmb6294" role="hat-herausgegeben">Bettauer, Hugo</author>
           <date>1923-01-18 – 1923-01-18</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50647/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -20201,7 +20201,7 @@
 
           <title type="werk_link-anno"
             >http://anno.onb.ac.at/cgi-content/anno?aid=rpt&amp;datum=19230209&amp;zoom=33</title>
-          <author key="person__40703" role="hat-herausgegeben">Schiffleitner, Karl</author>
+          <author key="pmb40703" role="hat-herausgegeben">Schiffleitner, Karl</author>
           <date>1923-02-09 – 1923-02-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50657/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -24919,7 +24919,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00094">Pestrého Týdne</title>
           </bibl>
-          <author key="person__39047" role="hat-herausgegeben">Markalous, Bohumil</author>
+          <author key="pmb39047" role="hat-herausgegeben">Markalous, Bohumil</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55461/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb55461</idno>
@@ -25372,7 +25372,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00038">Der Aufruf</title>
           </bibl>
-          <author key="person__37889" role="hat-einen-beitrag-geschaffen-zu">Bill,
+          <author key="pmb37889" role="hat-einen-beitrag-geschaffen-zu">Bill,
             Friedrich</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55906/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -28069,7 +28069,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00105">Europäische Hefte vereinigt mit dem Aufruf</title>
           </bibl>
-          <author key="person__43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
+          <author key="pmb43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
           <date notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59117/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -31613,7 +31613,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00118">Die Börse</title>
           </bibl>
-          <author key="person__37843" role="hat-herausgegeben">Békessy, Imre</author>
+          <author key="pmb37843" role="hat-herausgegeben">Békessy, Imre</author>
           <date notBefore-iso="1920-11-01" when-iso="1920-11-15">1920-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52132/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -31666,7 +31666,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00016">Die Bühne</title>
           </bibl>
-          <author key="person__37843" role="hat-herausgegeben">Békessy, Imre</author>
+          <author key="pmb37843" role="hat-herausgegeben">Békessy, Imre</author>
           <date notBefore-iso="1924-01-01" when-iso="1924-07-01">1924</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52154/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -31717,7 +31717,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00021">Kölner Woche</title>
           </bibl>
-          <author key="person__39304" role="hat-herausgegeben">Peltzer, Hans</author>
+          <author key="pmb39304" role="hat-herausgegeben">Peltzer, Hans</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52934/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb52934</idno>
@@ -31854,7 +31854,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00120">Juristische Wochenschrift</title>
           </bibl>
-          <author key="person__51612" role="hat-einen-beitrag-geschaffen-zu">Lion, E.</author>
+          <author key="pmb51612" role="hat-einen-beitrag-geschaffen-zu">Lion, E.</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55805/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb55805</idno>
@@ -32857,7 +32857,7 @@
             <title level="j" key="#sk_lk00123">Der Bücherwurm</title>
             <title level="m" type="subtitle">Eine Monatsschrift</title>
           </bibl>
-          <author key="person__43577" role="hat-herausgegeben">Weichardt, Walter</author>
+          <author key="pmb43577" role="hat-herausgegeben">Weichardt, Walter</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53675/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53675</idno>
@@ -32881,7 +32881,7 @@
             <num type="issue">H. ?</num>
             <date when="1927-09" key="#sk_lk00451">September 1927</date>
           </bibl>
-          <author key="person__43577" role="hat-herausgegeben">Weichardt, Walter</author>
+          <author key="pmb43577" role="hat-herausgegeben">Weichardt, Walter</author>
           <date from-iso="1927-01-01" to-iso="1927-12-31">1927 – 1927</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53687/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33053,7 +33053,7 @@
             <title level="j" key="#sk_lk00126">Der geistige Arbeiter</title>
             <title level="m" type="subtitle">Deutsche Urheber-Zeitung</title>
           </bibl>
-          <author key="person__63199" role="hat-herausgegeben">Hirschberg, Herbert</author>
+          <author key="pmb63199" role="hat-herausgegeben">Hirschberg, Herbert</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63201/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb63201</idno>
@@ -33079,7 +33079,7 @@
           <bibl type="sk">
             <title level="m">Der Affe Zarathustras</title>
           </bibl>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51907/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33148,7 +33148,7 @@
             <title level="m" type="subtitle">Vortrag gehalten im Niederösterreichischem
               Gewerbeverein von Polizeipräsident Schober</title>
           </bibl>
-          <author key="person__24444" role="hat-geschaffen">Schober, Johannes</author>
+          <author key="pmb24444" role="hat-geschaffen">Schober, Johannes</author>
           <date notBefore-iso="1928-02-01" when-iso="1928-02-15">1928-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55033/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33190,7 +33190,7 @@
           <bibl type="sk">
             <title level="m">Offenbach-Vorträge</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1929-01-01" when-iso="1929-07-02">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57036/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33207,7 +33207,7 @@
           <bibl type="sk">
             <title level="m">Die Juden von Wien</title>
           </bibl>
-          <author key="person__12958" role="hat-geschaffen">Tietze, Hans</author>
+          <author key="pmb12958" role="hat-geschaffen">Tietze, Hans</author>
           <date notBefore-iso="1934-01-01" when-iso="1934-07-02">1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56249/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33242,7 +33242,7 @@
             <title level="m">„Die Tragödie Deutschlands“</title>
             <title level="m" type="subtitle">Von einem Deutschen</title>
           </bibl>
-          <author key="person__62826" role="hat-geschaffen">Endres, Franz Carl</author>
+          <author key="pmb62826" role="hat-geschaffen">Endres, Franz Carl</author>
           <date notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62825/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33269,7 +33269,7 @@
           <bibl type="sk">
             <title level="m">Eine Wohnung ist zu vermiethen in der Stadt</title>
           </bibl>
-          <author key="person__12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
+          <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
           <date notBefore-iso="1837-01-01" when-iso="1837-07-02">1837</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53926/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33303,7 +33303,7 @@
           <bibl type="sk">
             <title level="m">Das Gut Waldegg</title>
           </bibl>
-          <author key="person__55048" role="hat-geschaffen">Hopp, Julius</author>
+          <author key="pmb55048" role="hat-geschaffen">Hopp, Julius</author>
           <date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63872/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33330,7 +33330,7 @@
           <bibl type="sk">
             <title level="m">Kampl</title>
           </bibl>
-          <author key="person__12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
+          <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
           <date notBefore-iso="1852-01-01" when-iso="1852-07-01">1852</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53924/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -33361,7 +33361,7 @@
             <title level="m">Demokritos oder hinterlassene Papiere eines lachenden
               Philosophen</title>
           </bibl>
-          <author key="person__37986" role="hat-geschaffen">Weber, Karl Julius</author>
+          <author key="pmb37986" role="hat-geschaffen">Weber, Karl Julius</author>
           <date notBefore-iso="1832-01-01" when-iso="1832-07-01">1832</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52654/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33396,7 +33396,7 @@
           <bibl type="sk">
             <title level="m">Also sprach Zarathustra</title>
           </bibl>
-          <author key="person__12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
+          <author key="pmb12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
           <date from-iso="1883-01-01" to-iso="1883-12-31">1883 – 1885</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30611.html</idno>
@@ -33447,7 +33447,7 @@
             <title level="m">Die beiden Grundprobleme der Ethik, behandelt in zwei akademischen
               Preisschriften</title>
           </bibl>
-          <author key="person__5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
+          <author key="pmb5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
           <date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62246/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33466,7 +33466,7 @@
             <title level="m">Preisschrift über die Grundlage der Moral, nicht gekrönt von der
               königlich dänischen Sozietät der Wissenschaften</title>
           </bibl>
-          <author key="person__5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
+          <author key="pmb5787" role="hat-geschaffen">Schopenhauer, Arthur</author>
           <date notBefore-iso="1841-01-01" when-iso="1841-07-02">1841</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62248/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33493,7 +33493,7 @@
           <bibl type="sk">
             <title level="m">Wörterbuch der deutschen Sprache</title>
           </bibl>
-          <author key="person__51846" role="hat-geschaffen">Sanders, Daniel</author>
+          <author key="pmb51846" role="hat-geschaffen">Sanders, Daniel</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51849/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb51849</idno>
@@ -33518,7 +33518,7 @@
           <bibl type="sk">
             <title level="m">Handwörterbuch der deutschen Sprache</title>
           </bibl>
-          <author key="person__55254" role="hat-geschaffen">Weber, Ferdinand Adolf</author>
+          <author key="pmb55254" role="hat-geschaffen">Weber, Ferdinand Adolf</author>
           <date notBefore-iso="1850-01-01" when-iso="1850-07-02">1850</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55240/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33552,7 +33552,7 @@
           <bibl type="sk">
             <title level="m">Wörterbuch des Wiener Dialektes</title>
           </bibl>
-          <author key="person__65395" role="hat-geschaffen">Jakob, Julius</author>
+          <author key="pmb65395" role="hat-geschaffen">Jakob, Julius</author>
           <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65396/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33579,7 +33579,7 @@
           <bibl type="sk">
             <title level="m">Pandora</title>
           </bibl>
-          <author key="person__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+          <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
           <date from-iso="1807-01-01" to-iso="1807-12-31">1807 – 1808</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60652/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -33720,7 +33720,7 @@
             <date when="1934-09-01" key="#sk_lk00174">1.9.1934</date>
             <biblScope>S. 583</biblScope>
           </bibl>
-          <author key="person__37889" role="hat-geschaffen">Bill, Friedrich</author>
+          <author key="pmb37889" role="hat-geschaffen">Bill, Friedrich</author>
           <date>1934-09-01 – 1934-09-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56424/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -34207,8 +34207,8 @@
             <date when="1937-02-26" key="#sk_lk00357">26.2.1937</date>
             <biblScope>S. 2</biblScope>
           </bibl>
-          <author key="person__43586" role="hat-geschaffen">Butschowitz, Egon</author>
-          <author key="person__37889" role="hat-geschaffen">Bill, Friedrich</author>
+          <author key="pmb43586" role="hat-geschaffen">Butschowitz, Egon</author>
+          <author key="pmb37889" role="hat-geschaffen">Bill, Friedrich</author>
           <date>1937-02-26 – 1937-02-26</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59488/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -34323,7 +34323,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19371120&amp;seite=4&amp;zoom=33</title>
-          <author key="person__25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
+          <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
           <date>1937-11-20 – 1937-11-20</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60982/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -34489,7 +34489,7 @@
 
           <title type="werk_link"
             >https://sammlungen.ub.uni-frankfurt.de/freimann/urn/urn:nbn:de:hebis:30:1-146009</title>
-          <author key="person__11673" role="hat-geschaffen">Herzl, Theodor</author>
+          <author key="pmb11673" role="hat-geschaffen">Herzl, Theodor</author>
           <date notBefore-iso="1922-01-01" when-iso="1922-07-02">1922</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58510/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch"
@@ -34545,7 +34545,7 @@
           </bibl>
 
           <title type="werk_link">https://www.kriegstagebuch.at/</title>
-          <author key="person__11381" role="hat-geschaffen">Fried, Alfred Hermann</author>
+          <author key="pmb11381" role="hat-geschaffen">Fried, Alfred Hermann</author>
           <date>1914-08-07 – 1919-06-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62830/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -34572,7 +34572,7 @@
           <bibl type="sk">
             <title level="m">Die Kulturgeschichte der Neuzeit</title>
           </bibl>
-          <author key="person__2771" role="hat-geschaffen">Friedell, Egon</author>
+          <author key="pmb2771" role="hat-geschaffen">Friedell, Egon</author>
           <date notBefore-iso="1927-01-01" when-iso="1927-07-02">1927</date>
           <idno type="URL" subtype="schnitzler-bahr"
             >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32624.html</idno>
@@ -35583,7 +35583,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=std&amp;datum=19251011&amp;seite=5&amp;zoom=33</title>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date>1925-10-11 – 1925-10-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51533/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -36178,7 +36178,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=std&amp;datum=19251210&amp;seite=3&amp;zoom=33</title>
-          <author key="person__50431" role="hat-geschaffen">Kaufmann, Fritz</author>
+          <author key="pmb50431" role="hat-geschaffen">Kaufmann, Fritz</author>
           <date>1925-12-10 – 1925-12-10</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52412/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -36530,7 +36530,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19261219&amp;seite=7&amp;zoom=33</title>
-          <author key="person__13088" role="hat-geschaffen">Wengraf, Edmund</author>
+          <author key="pmb13088" role="hat-geschaffen">Wengraf, Edmund</author>
           <date>1926-12-19 – 1926-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52639/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -36576,7 +36576,7 @@
           <title type="werk_bibliografische-angabe">Anton Kuh: „Mrr. Cheneys Ende“, in: Die Stunde,
             Nr. 972, 8.6.1926, S. 5</title>
           <bibl type="sk">
-            <author key="person__8363">Kuh, Anton</author>
+            <author key="pmb8363">Kuh, Anton</author>
             <title level="a">„Mrr. Cheneys Ende“</title>
             <title level="j" key="#sk_lk00015">Die Stunde</title>
             <num type="issue">Nr. 972</num>
@@ -36586,7 +36586,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=std&amp;datum=19260608&amp;seite=5&amp;zoom=33</title>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date when-iso="1926-06-08">1926-06-08</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52732/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -36614,7 +36614,7 @@
           <title type="werk_bibliografische-angabe">Anton Kuh: Sittlichkeit und Kriminalität, in:
             Die Stunde, Nr. 973, 9.6.1926, S. 4.</title>
           <bibl type="sk">
-            <author key="person__8363">Kuh, Anton</author>
+            <author key="pmb8363">Kuh, Anton</author>
             <title level="a">Sittlichkeit und Kriminalität</title>
             <title level="j" key="#sk_lk00015">Die Stunde</title>
             <num type="issue">Nr. 973</num>
@@ -36624,7 +36624,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=std&amp;datum=19260609&amp;query=%22anton%22+%22kuh%22&amp;ref=anno-search&amp;seite=4</title>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date when-iso="1926-06-09">1926-06-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52739/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -37076,7 +37076,7 @@
             <date when="1926-12-21" key="#sk_lk00246">21.12.1926<note>Morgenausgabe</note>
             </date>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53052/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53052</idno>
@@ -37596,7 +37596,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=dtb&amp;datum=1929&amp;page=817&amp;size=45</title>
-          <author key="person__38886" role="hat-geschaffen">Scher, Peter</author>
+          <author key="pmb38886" role="hat-geschaffen">Scher, Peter</author>
           <date>1929-05-11 – 1929-05-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53552/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -37970,8 +37970,8 @@
           <bibl type="sk">
             <title level="m">Opfer der Berühmtheit</title>
           </bibl>
-          <author key="person__39233" role="hat-geschaffen">Reese, Wilhelm Friedrich Karl</author>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb39233" role="hat-geschaffen">Reese, Wilhelm Friedrich Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date>1927-04-04 – 1927-04-05</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53868/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -38474,7 +38474,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19280527&amp;seite=8&amp;zoom=33</title>
-          <author key="person__8363" role="hat-geschaffen">Kuh, Anton</author>
+          <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
           <date>1928-05-27 – 1928-05-27</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55208/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -38534,7 +38534,7 @@
           <bibl type="sk">
             <title level="m">Verleumdungsparadies</title>
           </bibl>
-          <author key="person__13163" role="hat-geschaffen">Wolff, Theodor</author>
+          <author key="pmb13163" role="hat-geschaffen">Wolff, Theodor</author>
           <date>1928-09-06 – 1928-09-06</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55774/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -38689,7 +38689,7 @@
             <title level="j" key="#sk_lk00096">Hamburger Nachrichten</title>
             <date when="1929-05-08" key="#sk_lk00301">8.5.1929</date>
           </bibl>
-          <author key="person__55848" role="hat-geschaffen">Albrecht, Egon Erich</author>
+          <author key="pmb55848" role="hat-geschaffen">Albrecht, Egon Erich</author>
           <date>1929-05-08 – 1929-05-08</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55886/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -38806,7 +38806,7 @@
             <title level="j" key="#sk_lk00038">Der Aufruf</title>
             <date when="1933-11-01" key="#sk_lk00302">1.11.1933</date>
           </bibl>
-          <author key="person__43586" role="hat-geschaffen">Butschowitz, Egon</author>
+          <author key="pmb43586" role="hat-geschaffen">Butschowitz, Egon</author>
           <date>1933-11-01 – 1933-11-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55910/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -38933,7 +38933,7 @@
             <title level="j" key="#sk_lk00002">Der Gegen-Angriff</title>
             <date when="1933-11-19" key="#sk_lk00465">19.11.1933</date>
           </bibl>
-          <author key="person__37837" role="hat-geschaffen">Basil, Otto</author>
+          <author key="pmb37837" role="hat-geschaffen">Basil, Otto</author>
           <date>1933-11-19 – 1933-11-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55937/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -39173,7 +39173,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=ptb&amp;datum=19340114&amp;seite=3&amp;zoom=33</title>
-          <author key="person__12958" role="hat-geschaffen">Tietze, Hans</author>
+          <author key="pmb12958" role="hat-geschaffen">Tietze, Hans</author>
           <date>1934-01-14 – 1934-01-14</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56245/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -39205,7 +39205,7 @@
             <num type="issue">Nr. 22</num>
             <date when="1933-12-17" key="#sk_lk00162">17.12.1933</date>
           </bibl>
-          <author key="person__38969" role="hat-geschaffen">Laserstein, Botho</author>
+          <author key="pmb38969" role="hat-geschaffen">Laserstein, Botho</author>
           <date>1933-12-17 – 1933-12-17</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56256/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -39404,7 +39404,7 @@
             <title level="m" type="subtitle">Mit Maximilian Harden während der letzten Tage seines
               Lebens.</title>
           </bibl>
-          <author key="person__39313" role="hat-geschaffen">Pfemfert, Franz</author>
+          <author key="pmb39313" role="hat-geschaffen">Pfemfert, Franz</author>
           <date>1927-11-27 – 1927-11-27</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56338/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -39530,7 +39530,7 @@
             <date when="1934-07-22" key="#sk_lk00136">22.7.1934</date>
             <biblScope>S. 2</biblScope>
           </bibl>
-          <author key="person__56367" role="hat-geschaffen">Frank, Hans</author>
+          <author key="pmb56367" role="hat-geschaffen">Frank, Hans</author>
           <date>1934-07-22 – 1934-07-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56361/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -39960,7 +39960,7 @@
             <date when="1934-09-01" key="#sk_lk00174">1.9.1934</date>
             <biblScope>S. 559–567</biblScope>
           </bibl>
-          <author key="person__43586" role="hat-geschaffen">Butschowitz, Egon</author>
+          <author key="pmb43586" role="hat-geschaffen">Butschowitz, Egon</author>
           <date>1934-09-01 – 1934-09-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56412/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -40394,7 +40394,7 @@
           <bibl type="sk">
             <title level="m">Karl der Goste</title>
           </bibl>
-          <author key="person__7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
+          <author key="pmb7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
           <date>1929-03-01 – 1929-03-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56894/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -41047,7 +41047,7 @@
             <title level="j" key="#sk_lk00099">Der Sozialdemokrat</title>
             <date when="1934-04-28" key="#sk_lk00326">28.4.1934</date>
           </bibl>
-          <author key="person__38144" role="hat-geschaffen">Franzel, Emil</author>
+          <author key="pmb38144" role="hat-geschaffen">Franzel, Emil</author>
           <date>1934-04-28 – 1934-04-28</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57412/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -41403,7 +41403,7 @@
             <title level="m">[Artikel im Zusammenhang mit dem Pressprozess Kraus ca.
               Sozialdemokrat]</title>
           </bibl>
-          <author key="person__38144" role="hat-geschaffen">Franzel, Emil</author>
+          <author key="pmb38144" role="hat-geschaffen">Franzel, Emil</author>
           <date notBefore-iso="1936-02-01" when-iso="1936-02-15">1936-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57602/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -41444,7 +41444,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=dks&amp;datum=1936&amp;page=51&amp;size=45</title>
-          <author key="person__10851" role="hat-geschaffen">Bauer, Otto</author>
+          <author key="pmb10851" role="hat-geschaffen">Bauer, Otto</author>
           <date from-iso="1936-02-01" to-iso="1936-02-29">1936-02 – 1936-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57608/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -41953,7 +41953,7 @@
             <date when="1929-06-09" key="#sk_lk00323">9.6.1929</date>
             <biblScope>S. 13</biblScope>
           </bibl>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>1929-06-09 – 1929-06-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57723/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42073,7 +42073,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=dks&amp;datum=1936&amp;page=178&amp;size=45</title>
-          <author key="person__57774" role="hat-geschaffen">Marmorek, Schiller</author>
+          <author key="pmb57774" role="hat-geschaffen">Marmorek, Schiller</author>
           <date from-iso="1936-04-01" to-iso="1936-04-30">1936-04 – 1936-04</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57772/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42192,7 +42192,7 @@
           <title type="werk_bibliografische-angabe">Oskar Pollak: Kriegsbücher, in: Der Kampf Jg.
             22, Nr. 5 (Mai 1929), S. 239-241.</title>
           <bibl type="sk">
-            <author key="person__39331">Pollak, Oscar</author>
+            <author key="pmb39331">Pollak, Oscar</author>
             <title level="a">Kriegsbücher</title>
             <title level="j" key="#sk_lk00041">Der Kampf</title>
             <num type="volume">Jg. 22</num>
@@ -42200,7 +42200,7 @@
             <date when="1929-05" key="#sk_lk00183">Mai 1929</date>
             <biblScope>S. 239-241</biblScope>
           </bibl>
-          <author key="person__39331" role="hat-geschaffen">Pollak, Oscar</author>
+          <author key="pmb39331" role="hat-geschaffen">Pollak, Oscar</author>
           <date>1929-05-01 – 1929-05-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57889/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42243,7 +42243,7 @@
             <date when="1936-06-19" key="#sk_lk00184">19.6.1936</date>
             <biblScope>S. 3</biblScope>
           </bibl>
-          <author key="person__16236" role="hat-geschaffen">Finkelstein, Zeev F.</author>
+          <author key="pmb16236" role="hat-geschaffen">Finkelstein, Zeev F.</author>
           <date>1936-06-19 – 1936-06-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57897/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42401,7 +42401,7 @@
           <bibl type="sk">
             <title level="m">[Nachruf auf Karl Kraus]</title>
           </bibl>
-          <author key="person__57923" role="hat-geschaffen">Kodiček, Josef</author>
+          <author key="pmb57923" role="hat-geschaffen">Kodiček, Josef</author>
           <date notBefore-iso="1936-04-01" when-iso="1936-04-15">1936-04</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57921/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42437,7 +42437,7 @@
             <date when="1930-11-23" key="#sk_lk00347">23.11.1930</date>
             <biblScope>S. 17</biblScope>
           </bibl>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>1930-11-23 – 1930-11-23</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57931/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42474,7 +42474,7 @@
             <date when="1930-11-23" key="#sk_lk00347">23.11.1930</date>
             <biblScope>S. 17</biblScope>
           </bibl>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>1930-11-23 – 1930-11-23</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57936/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42704,7 +42704,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=dks&amp;datum=1934&amp;page=286&amp;size=45</title>
-          <author key="person__38005" role="hat-geschaffen">Brügel, Fritz</author>
+          <author key="pmb38005" role="hat-geschaffen">Brügel, Fritz</author>
           <date from-iso="1934-09-01" to-iso="1934-09-30">09-1934 – 09-1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58930/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -42735,7 +42735,7 @@
             <title level="j" key="#sk_lk00105">Europäische Hefte vereinigt mit dem Aufruf</title>
             <num type="issue">Nr. 5</num>
           </bibl>
-          <author key="person__43666" role="hat-geschaffen">Schlamm, William Siegmund</author>
+          <author key="pmb43666" role="hat-geschaffen">Schlamm, William Siegmund</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59120/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb59120</idno>
@@ -42924,7 +42924,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19200314&amp;seite=4&amp;zoom=33</title>
-          <author key="person__25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
+          <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
           <date>1920-03-14 – 1920-03-14</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59983/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43082,7 +43082,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno-plus?aid=dks&amp;datum=1936&amp;page=304&amp;size=45</title>
-          <author key="person__39331" role="hat-geschaffen">Pollak, Oscar</author>
+          <author key="pmb39331" role="hat-geschaffen">Pollak, Oscar</author>
           <date from-iso="1936-07-01" to-iso="1936-07-31">1936-07 – 1936-07</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60556/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43241,7 +43241,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP27646518-19260424-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=2&amp;cHash=2803aa1f4b52fd2ec3b1cabe39443978</title>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date when-iso="1926-04-24">1926-04-24</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62147/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43607,7 +43607,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19291112&amp;seite=11</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>1929-11-12 – 1929-11-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63650/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43714,7 +43714,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300909-1-0-0-0.xml&amp;tx_dlf%5Bpage%5D=3&amp;cHash=6bead897aa81282f2435f7e1f7bb7a1a</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>09.09.1930 – 09.09.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63880/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43755,7 +43755,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300113-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=3&amp;cHash=241ca4cfe03d17ae370ca19124a7119d</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>13.01.1930 – 13.01.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63889/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43793,7 +43793,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300219-1-0-0-0.xml&amp;tx_dlf%5Bpage%5D=3&amp;cHash=85391441cae9ec70e779cd09f36778c8</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>19.02.1930 – 19.02.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63894/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43831,7 +43831,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300320-1-0-0-0.xml&amp;tx_dlf%5Bpage%5D=3&amp;cHash=adcda939fd75baa760a6a8a2d9d970e4</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>20.03.1930 – 20.03.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63899/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43870,7 +43870,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300109-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=7020fa38aa6f1c88b047612e419cc360</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>09.01.1930 – 09.01.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63908/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43909,7 +43909,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300117-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=8&amp;cHash=2fc8913f02c9e9c5493068929b439a40</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>17.01.1930 – 17.01.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63913/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43948,7 +43948,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300129-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=8&amp;cHash=2c0faafa5007d328db2584887001c077</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>29.01.1930 – 29.01.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63918/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -43987,7 +43987,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300226-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=e8277dbe6fa2c5324913f7e21f108264</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>26.02.1930 – 26.02.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63927/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44026,7 +44026,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300315-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=6e9c2f3528048215fcb4dd22a163727c</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>15.03.1930 – 15.03.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63932/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44065,7 +44065,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300325-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=593b4978bbb90b78a402624f00aae980</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>25.03.1930 – 25.03.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63936/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44104,7 +44104,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300403-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=150adda480ae3a0b41949acdd762d867</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>03.04.1930 – 03.04.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63942/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44143,7 +44143,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300416-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=8&amp;cHash=250c388c7f1665bee109d6d7a832750f</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>16.04.1930 – 16.04.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63947/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44182,7 +44182,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300417-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=0371d8a96c7f29b42fadea9534161b2d</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>17.04.1930 – 17.04.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63952/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44215,7 +44215,7 @@
 
           <title type="werk_link"
             >https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300425-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=42cf85a71f11b0b8979b4cf9bf4e7907</title>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>25.04.1930 – 25.04.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63957/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44252,7 +44252,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19301117&amp;seite=5</title>
-          <author key="person__64028" role="hat-geschaffen">Frankl, Paul</author>
+          <author key="pmb64028" role="hat-geschaffen">Frankl, Paul</author>
           <date>17.11.1930 – 17.11.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64027/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44289,7 +44289,7 @@
 
           <title type="werk_link-anno"
             >https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19301117&amp;seite=5</title>
-          <author key="person__64028" role="bekommt-zugeschrieben">Frankl, Paul</author>
+          <author key="pmb64028" role="bekommt-zugeschrieben">Frankl, Paul</author>
           <date>17.11.1930 – 17.11.1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64032/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44362,7 +44362,7 @@
             <num type="issue">Nr. 535</num>
             <biblScope>S. 14</biblScope>
           </bibl>
-          <author key="person__39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
+          <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
           <date>15.11.1929 – 15.11.1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64525/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44564,7 +44564,7 @@
           <bibl type="sk">
             <title level="m">Eulenspiegel</title>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date from-iso="1928-01-01" to-iso="1928-01-31">1928-01 – 1928-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62920/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44596,7 +44596,7 @@
             <date when="1932-07-06" key="#sk_lk00294">6.7.1932<note>Abendausgabe</note>
             </date>
           </bibl>
-          <author key="person__11910" role="hat-geschaffen">Kerr, Alfred</author>
+          <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
           <date>1932-07-06 – 1932-07-06</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55433/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44691,7 +44691,7 @@
           <bibl type="sk">
             <title level="m">[Nachruf auf Karl Kraus]</title>
           </bibl>
-          <author key="person__38144" role="hat-geschaffen">Franzel, Emil</author>
+          <author key="pmb38144" role="hat-geschaffen">Franzel, Emil</author>
           <date notBefore-iso="1936-04-01" when-iso="1936-04-15">1936-04</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57954/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44747,7 +44747,7 @@
           <bibl type="sk">
             <title level="m">Satire und Polemik 1914–1920</title>
           </bibl>
-          <author key="person__38322" role="hat-geschaffen">Haecker, Theodor</author>
+          <author key="pmb38322" role="hat-geschaffen">Haecker, Theodor</author>
           <date notBefore-iso="1922-01-01" when-iso="1922-07-02">1922</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53218/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44799,7 +44799,7 @@
           <bibl type="sk">
             <title level="m">Leipziger Kommentar</title>
           </bibl>
-          <author key="person__53060" role="hat-geschaffen">Ebermayer, Ludwig</author>
+          <author key="pmb53060" role="hat-geschaffen">Ebermayer, Ludwig</author>
           <date notBefore-iso="1919-01-01" when-iso="1919-07-02">1919</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53063/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44825,7 +44825,7 @@
           <bibl type="sk">
             <title level="m">Symphoniae Sacrae III</title>
           </bibl>
-          <author key="person__53302" role="hat-geschaffen">Schütz, Heinrich</author>
+          <author key="pmb53302" role="hat-geschaffen">Schütz, Heinrich</author>
           <date notBefore-iso="1650-01-01" when-iso="1650-07-02">1650</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53303/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44844,7 +44844,7 @@
             <title level="m">Das Strafgesetzbuch für das Deutsche Reich nebst dem
               Einführungsgesetz</title>
           </bibl>
-          <author key="person__53360" role="hat-geschaffen">Frank, Reinhard</author>
+          <author key="pmb53360" role="hat-geschaffen">Frank, Reinhard</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53361/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb53361</idno>
@@ -44870,7 +44870,7 @@
           <bibl type="sk">
             <title level="m">Kommentar zum Preßgesetz und zur Strafgesetznovelle 1929.</title>
           </bibl>
-          <author key="person__54793" role="hat-geschaffen">Swoboda, Ernst</author>
+          <author key="pmb54793" role="hat-geschaffen">Swoboda, Ernst</author>
           <date notBefore-iso="1930-01-01" when-iso="1930-07-02">1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54794/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44898,9 +44898,9 @@
           </bibl>
 
           <title type="werk_link">http://data.onb.ac.at/rec/AC00505888</title>
-          <author key="person__13356" role="hat-herausgegeben">Altmann, Ludwig</author>
-          <author key="person__54796" role="hat-herausgegeben">Jacob, Siegfried</author>
-          <author key="person__53514" role="hat-einen-beitrag-geschaffen-zu">Mager, Karl</author>
+          <author key="pmb13356" role="hat-herausgegeben">Altmann, Ludwig</author>
+          <author key="pmb54796" role="hat-herausgegeben">Jacob, Siegfried</author>
+          <author key="pmb53514" role="hat-einen-beitrag-geschaffen-zu">Mager, Karl</author>
           <date from-iso="1928-01-01" to-iso="1928-12-31">1928 – 1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54798/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -44954,7 +44954,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Österreichisches
             Urheberrecht</title>
-          <author key="person__43636" role="hat-geschaffen">Seiller, Alfred</author>
+          <author key="pmb43636" role="hat-geschaffen">Seiller, Alfred</author>
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55109/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45017,7 +45017,7 @@
               Photographie</title>
             <title level="m" type="subtitle">Historisch und dogmatisch erläutert</title>
           </bibl>
-          <author key="person__55111" role="hat-geschaffen">Schmidl, Josef</author>
+          <author key="pmb55111" role="hat-geschaffen">Schmidl, Josef</author>
           <date notBefore-iso="1906-01-01" when-iso="1906-07-02">1906</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55112/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45054,7 +45054,7 @@
             <title level="m">Gesetz über das Urheberrecht an Werken der bildenden Künste und der
               Photographie vom 9. Januar 1907</title>
           </bibl>
-          <author key="person__55175" role="hat-geschaffen">Allfeld, Philipp</author>
+          <author key="pmb55175" role="hat-geschaffen">Allfeld, Philipp</author>
           <date notBefore-iso="1907-01-01" when-iso="1907-07-02">1907</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55176/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45097,7 +45097,7 @@
             <title level="m">Österreichische Rechtsprechung in Strafsachen</title>
             <title level="m" type="subtitle">, Bd. 6</title>
           </bibl>
-          <author key="person__55108" role="hat-geschaffen">Löffler, Alexander</author>
+          <author key="pmb55108" role="hat-geschaffen">Löffler, Alexander</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55178/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb55178</idno>
@@ -45123,7 +45123,7 @@
           <bibl type="sk">
             <title level="m">Das bürgerliche Recht des Deutschen Reichs und Preußens</title>
           </bibl>
-          <author key="person__55187" role="hat-geschaffen">Dernburg, Heinrich</author>
+          <author key="pmb55187" role="hat-geschaffen">Dernburg, Heinrich</author>
           <date notBefore-iso="1902-01-01" when-iso="1902-07-02">1902</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55188/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45152,7 +45152,7 @@
             <title level="m">Zivilrechtlicher Anspruch auf Berichtigung unwahrer Mitteilungen über
               eine Person</title>
           </bibl>
-          <author key="person__51823" role="hat-geschaffen">Schreiber, Karl</author>
+          <author key="pmb51823" role="hat-geschaffen">Schreiber, Karl</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56185/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb56185</idno>
@@ -45177,8 +45177,8 @@
           <bibl type="sk">
             <title level="m">System des österreichischen allgemeinen Privatrechts</title>
           </bibl>
-          <author key="person__56805" role="hat-einen-beitrag-geschaffen-zu">Krainz, Josef</author>
-          <author key="person__56771" role="hat-einen-beitrag-geschaffen-zu">Ehrenzweig,
+          <author key="pmb56805" role="hat-einen-beitrag-geschaffen-zu">Krainz, Josef</author>
+          <author key="pmb56771" role="hat-einen-beitrag-geschaffen-zu">Ehrenzweig,
             Armin</author>
           <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56806/</idno>
@@ -45207,7 +45207,7 @@
             <title level="m">Reichspressgesetz und die übrigen pressrechtlichen Vorschriften des
               Reichs und der Länder</title>
           </bibl>
-          <author key="person__57006" role="hat-geschaffen">Häntzschel, Kurt</author>
+          <author key="pmb57006" role="hat-geschaffen">Häntzschel, Kurt</author>
           <date notBefore-iso="1927-01-01" when-iso="1927-07-02">1927</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57011/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45241,7 +45241,7 @@
           <bibl type="sk">
             <title level="m">Materielles Strafrecht</title>
           </bibl>
-          <author key="person__57691" role="hat-geschaffen">Kallab, Jaroslav</author>
+          <author key="pmb57691" role="hat-geschaffen">Kallab, Jaroslav</author>
           <date notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57692/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45271,8 +45271,8 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Kommentar zum
             Tschechoslowakischen Presserecht</title>
-          <author key="person__57824" role="hat-geschaffen">Hrabánek, Jan</author>
-          <author key="person__57825" role="hat-geschaffen">Milota, Albert</author>
+          <author key="pmb57824" role="hat-geschaffen">Hrabánek, Jan</author>
+          <author key="pmb57825" role="hat-geschaffen">Milota, Albert</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57827/</idno>
           <idno type="URL" subtype="legalkraus"
             >https://kraus.wienbibliothek.at/register/werke/pmb57827</idno>
@@ -45331,8 +45331,8 @@
           <bibl type="sk">
             <title level="m">Kommentar zum Allgemeinen deutschen Handelsgesetzbuch</title>
           </bibl>
-          <author key="person__61602" role="hat-geschaffen">Staub, Hermann</author>
-          <author key="person__61606" role="hat-herausgegeben">Pisko, Oskar</author>
+          <author key="pmb61602" role="hat-geschaffen">Staub, Hermann</author>
+          <author key="pmb61606" role="hat-herausgegeben">Pisko, Oskar</author>
           <date notBefore-iso="1908-01-01" when-iso="1908-07-01">1908</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61601/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45489,7 +45489,7 @@
           <bibl type="sk">
             <title level="m">Die pressgesetzliche Berichtigungspflicht</title>
           </bibl>
-          <author key="person__57016" role="hat-geschaffen">Regensburger, Norbert</author>
+          <author key="pmb57016" role="hat-geschaffen">Regensburger, Norbert</author>
           <date notBefore-iso="1911-01-01" when-iso="1911-07-02">1911</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57017/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45529,7 +45529,7 @@
           <bibl type="sk">
             <title level="m">Eine Krone für Zion</title>
           </bibl>
-          <author key="person__11988" role="hat-geschaffen">Kraus, Karl</author>
+          <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1898-01-01" when-iso="1898-07-02">1898</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56239/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45562,7 +45562,7 @@
           <bibl type="sk">
             <title level="m">Karl Kraus</title>
           </bibl>
-          <author key="person__37852" role="hat-geschaffen">Benjamin, Walter</author>
+          <author key="pmb37852" role="hat-geschaffen">Benjamin, Walter</author>
           <date notBefore-iso="1931-01-01" when-iso="1931-07-02">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88316/</idno>
           <idno type="URL" subtype="legalkraus"
@@ -45649,7 +45649,7 @@
           <bibl type="sk">
             <title level="m">[Brief von Moritz Rosenthal an Das Kleine Journal]</title>
           </bibl>
-          <author key="person__23605" role="hat-geschaffen">Rosenthal, Moritz</author>
+          <author key="pmb23605" role="hat-geschaffen">Rosenthal, Moritz</author>
           <date>1897-06-30 – 1897-06-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62815/</idno>
           <idno type="URL" subtype="legalkraus"
