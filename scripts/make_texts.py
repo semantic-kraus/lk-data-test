@@ -16,7 +16,7 @@ SK = Namespace(domain)
 title_type = URIRef(f"{SK}types/title/prov")
 
 g = Graph()
-LIMIT = False
+LIMIT = 100
 entity_type = "documents"
 if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))[:LIMIT]
