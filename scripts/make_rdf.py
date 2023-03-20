@@ -14,12 +14,16 @@ from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDF, OWL
 
+if os.environ.get("NO_LIMIT"):
+    LIMIT = False
+else:
+    LIMIT = 100
+
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 g = Graph()
-LIMIT = False
 entity_type = "person"
 index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)

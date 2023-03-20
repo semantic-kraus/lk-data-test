@@ -7,16 +7,21 @@ from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 from rdflib.namespace import RDF, RDFS
 
+
+if os.environ.get("NO_LIMIT"):
+    LIMIT = False
+else:
+    LIMIT = 100
+
 INT = Namespace("https://w3id.org/lso/intro/Vx/#")
+SCHEMA = Namespace("https://schema.org/")
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 title_type = URIRef(f"{SK}types/title/prov")
-
 g = Graph()
-LIMIT = False
 entity_type = "documents"
 if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))[:LIMIT]
@@ -160,6 +165,12 @@ for x in tqdm(to_process, total=len(to_process)):
             ))
             g.add((
                 text_segment, INT["R41_has_location"], Literal(arche_id_value) 
+            ))
+            g.add((
+                text_segment, SCHEMA["pages"], Literal(f"S. {pb_start}")
+            ))
+            g.add((
+                text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")
             ))
             # try:
             #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
