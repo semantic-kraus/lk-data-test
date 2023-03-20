@@ -20,4 +20,4 @@ for x in work_types:
     all += len(items)
 print(f"caterogized: {all} items out of {len(bibls)}")
 
-doc.tree_to_file("hansi.xml")
+doc.tree_to_file(list_work)
