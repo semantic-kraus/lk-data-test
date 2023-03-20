@@ -172,6 +172,10 @@ for x in tqdm(to_process, total=len(to_process)):
             g.add((
                 text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")
             ))
+
+            g.add((
+                subj_f4, CIDOC["P128_carries"], text_segment
+            ))
             # try:
             #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
             # except IndexError:
