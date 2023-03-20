@@ -1,6 +1,7 @@
 from acdh_tei_pyutils.tei import TeiReader
 
-doc = TeiReader("./data/indices/listwork.xml")
+source_tei = "./data/indices/listwork.xml"
+doc = TeiReader(source_tei)
 items = doc.any_xpath(f".//tei:listBibl/tei:bibl[./tei:bibl/tei:title[@level='j']]")
 nsmap = doc.nsmap
 print(len(nsmap))
@@ -24,4 +25,4 @@ for x in doc.any_xpath(".//*[@key]"):
         continue
     x.attrib["key"] = f"#{new_value}"
 
-doc.tree_to_file('hansi.xml')
+doc.tree_to_file(source_tei)
