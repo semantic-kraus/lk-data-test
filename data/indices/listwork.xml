@@ -24,7 +24,7 @@
         <bibl xml:id="pmb51826">
 
           <title type="main">Entscheidung Nr. 1723</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 1723</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51826/</idno>
@@ -45,7 +45,7 @@
         <bibl xml:id="pmb51828">
 
           <title type="main">Entscheidung Nr. 1870</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 1870</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51828/</idno>
@@ -66,7 +66,7 @@
         <bibl xml:id="pmb51830">
 
           <title type="main">Entscheidung Nr. 1933</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 1933</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51830/</idno>
@@ -87,7 +87,7 @@
         <bibl xml:id="pmb51832">
 
           <title type="main">Entscheidung Nr. 2112</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 2112</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51832/</idno>
@@ -108,7 +108,7 @@
         <bibl xml:id="pmb51834">
 
           <title type="main">Entscheidung Nr. 2926</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 2926</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51834/</idno>
@@ -129,7 +129,7 @@
         <bibl xml:id="pmb51836">
 
           <title type="main">Entscheidung Nr. 3376</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 3376</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51836/</idno>
@@ -150,7 +150,7 @@
         <bibl xml:id="pmb51838">
 
           <title type="main">Entscheidung Nr. 3436</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 3436</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51838/</idno>
@@ -171,7 +171,7 @@
         <bibl xml:id="pmb51840">
 
           <title type="main">Entscheidung Nr. 3716</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 3716</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51840/</idno>
@@ -192,7 +192,7 @@
         <bibl xml:id="pmb51842">
 
           <title type="main">Entscheidung Nr. 4484</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Entscheidung Nr. 4484</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51842/</idno>
@@ -214,7 +214,7 @@
 
           <title type="main">Das österreichische Strafgesetz über Verbrechen, Vergehen und
             Uebertretungen und die Preßordnung vom 27. Mai 1852</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das österreichische Strafgesetz über Verbrechen, Vergehen und
               Uebertretungen und die Preßordnung vom 27. Mai 1852</title>
           </bibl>
@@ -238,7 +238,7 @@
         <bibl xml:id="pmb51855">
 
           <title type="main">Das österreichische Strafrecht</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das österreichische Strafrecht</title>
           </bibl>
           <author key="pmb51854" role="hat-geschaffen">Finger, August</author>
@@ -261,7 +261,7 @@
         <bibl xml:id="pmb51857">
 
           <title type="main">Lehrbuch des Österreichischen Strafrechts</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Lehrbuch des Österreichischen Strafrechts</title>
           </bibl>
           <author key="pmb51801" role="hat-geschaffen">Stooß, Karl</author>
@@ -314,7 +314,7 @@
         <bibl xml:id="pmb52232">
 
           <title type="main">Österreichisches Strafprozeßrecht in systematischer Darstellung</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Österreichisches Strafprozeßrecht in systematischer Darstellung</title>
           </bibl>
           <author key="pmb52231" role="hat-geschaffen">Lohsing, Ernst</author>
@@ -345,7 +345,7 @@
 
           <title type="main">Das Österreichische Strafverfahren. Eine systematische
             Darstellung.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Österreichische Strafverfahren</title>
             <title level="m" type="subtitle">Eine systematische Darstellung.</title>
           </bibl>
@@ -373,7 +373,7 @@
         <bibl xml:id="pmb52686">
 
           <title type="main">Ein Witz Kasmaders?</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ein Witz Kasmaders?</title>
           </bibl>
           <date>1927-01-01 – 1927-01-01</date>
@@ -499,7 +499,7 @@
         <bibl xml:id="pmb53238">
 
           <title type="main">Das Reichsgesetz über die Presse vom 7. Mai 1874</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Reichsgesetz über die Presse vom 7. Mai 1874</title>
           </bibl>
           <author key="pmb53237" role="hat-geschaffen">Kitzinger, Friedrich</author>
@@ -720,7 +720,7 @@
         <bibl xml:id="pmb56404">
 
           <title type="main">Olleschauer Lesezeichen, Biographien bedeutender Schriftsteller</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Olleschauer Lesezeichen</title>
             <title level="m" type="subtitle">Biographien bedeutender Schriftsteller</title>
           </bibl>
@@ -824,7 +824,7 @@
         <bibl xml:id="pmb56804">
 
           <title type="main">Motivenbericht zu § 1330 Abgb. [Tschechoslowakei]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Motivenbericht zu § 1330 Abgb. [Tschechoslowakei]</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56804/</idno>
@@ -846,7 +846,7 @@
 
           <title type="main">Berichtigung des Protokolles über die Hauptverhandlung, Archiv der
             Rechts- und Staatswissenschaften</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Berichtigung des Protokolles über die Hauptverhandlung, Archiv der
               Rechts- und Staatswissenschaften</title>
           </bibl>
@@ -871,7 +871,7 @@
         <bibl xml:id="pmb59713">
 
           <title type="main">Peter Altenberg (Grabrede)</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Peter Altenberg (Grabrede)</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -915,7 +915,7 @@
         <bibl xml:id="pmb59972">
 
           <title type="main">Die Wiener Julitage 1927</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Wiener Julitage 1927</title>
           </bibl>
           <author key="pmb37942" role="hat-geschaffen">Braunthal, Julius</author>
@@ -939,7 +939,7 @@
         <bibl xml:id="pmb60398">
 
           <title type="main">Karl Kraus und die Jugend</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus und die Jugend</title>
           </bibl>
           <author key="pmb38133" role="hat-geschaffen">Fischer, Heinrich</author>
@@ -968,7 +968,7 @@
         <bibl xml:id="pmb61264">
 
           <title type="main">Die Legende vom weltverkommenen Sonka</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Legende vom weltverkommenen Sonka</title>
           </bibl>
           <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
@@ -992,7 +992,7 @@
         <bibl xml:id="pmb62256">
 
           <title type="main">Die Welt im Drama (Gesammelte Schriften)</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Welt im Drama (Gesammelte Schriften)</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -1042,7 +1042,7 @@
         <bibl xml:id="pmb62775">
 
           <title type="main">Mein Leopold</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Mein Leopold</title>
           </bibl>
           <author key="pmb2823" role="hat-geschaffen">L’Arronge, Adolph</author>
@@ -1067,7 +1067,7 @@
         <bibl xml:id="pmb62829">
 
           <title type="main">Encyclopædia Britannica</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Encyclopædia Britannica</title>
           </bibl>
           <date notBefore-iso="1768-01-01" when-iso="1768-07-01">1768</date>
@@ -1091,7 +1091,7 @@
 
           <title type="main">Recht und Staat im neuen Deutschland. Vorlesungen gehalten in der
             Deutschen Vereinigung für staatswissenschaftliche Fortbildung</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Recht und Staat im neuen Deutschland</title>
             <title level="m" type="subtitle">Vorlesungen gehalten in der Deutschen Vereinigung für
               staatswissenschaftliche Fortbildung</title>
@@ -1115,7 +1115,7 @@
         <bibl xml:id="pmb63966">
 
           <title type="main">Die permanente Revolution</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die permanente Revolution</title>
           </bibl>
           <author key="pmb26198" role="hat-geschaffen">Trotzki, Leo D.</author>
@@ -1171,7 +1171,7 @@
         <bibl xml:id="pmb31729">
 
           <title type="main">Die Journalisten</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Journalisten</title>
           </bibl>
           <author key="pmb11377" role="hat-geschaffen">Freytag, Gustav</author>
@@ -1205,7 +1205,7 @@
         <bibl xml:id="pmb32850">
 
           <title type="main">Der böse Geist Lumpazivagabundus oder Das liederliche Kleeblatt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der böse Geist Lumpazivagabundus oder Das liederliche Kleeblatt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
@@ -1232,7 +1232,7 @@
         <bibl xml:id="pmb50460">
 
           <title type="main">Die Himmelfahrt der Galgentoni</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Die Himmelfahrt der Galgentoni</title>
           </bibl>
           <author key="pmb8211" role="hat-geschaffen">Kisch, Egon Erwin</author>
@@ -1249,7 +1249,7 @@
         <bibl xml:id="pmb50463">
 
           <title type="main">Sonnenspektrum</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Sonnenspektrum</title>
           </bibl>
           <author key="pmb13068" role="hat-geschaffen">Wedekind, Frank</author>
@@ -1268,7 +1268,7 @@
           <title type="werk_bibliografische-angabe">Anton Kuh: Der Affe Zarathustras (Karl Kraus).
             Eine Stegreifrede. Gehalten am 25. Oktober 1925 im Wiener Konzerthaussaal
             (Stenographisches Protokoll), Wien 1925.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Anton Kuh: Der Affe Zarathustras (Karl Kraus)</title>
             <title level="m" type="subtitle">Eine Stegreifrede. Gehalten am 25. Oktober 1925 im
               Wiener Konzerthaussaal (Stenographisches Protokoll), Wien 1925.</title>
@@ -1388,7 +1388,7 @@
           <title type="main">Heine und die Folgen</title>
 
           <title type="werk_bibliografische-angabe">Heine und die Folgen, München 1910</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Heine und die Folgen, München 1910</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -1666,7 +1666,7 @@
         <bibl xml:id="pmb59804">
 
           <title type="main">Antwort an Karl Kraus</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Antwort an Karl Kraus</title>
           </bibl>
           <author key="pmb38008" role="hat-geschaffen">Brügel, Johann Wolfgang</author>
@@ -1689,7 +1689,7 @@
         <bibl xml:id="pmb60582">
 
           <title type="main">Bekessy’s Revolver</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Bekessy’s Revolver</title>
           </bibl>
           <author key="pmb38716" role="hat-geschaffen">Spitz, Ernst</author>
@@ -1772,7 +1772,7 @@
 
           <title type="main">Kollektiv-Antwort der Redaktion des ‚Kleinen Journals‘ [an
             Kerr]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kollektiv-Antwort der Redaktion des ‚Kleinen Journals‘ [an
               Kerr]</title>
           </bibl>
@@ -1822,7 +1822,7 @@
         <bibl xml:id="pmb62854">
 
           <title type="main">Der Triumph des Thersites</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Triumph des Thersites</title>
           </bibl>
           <author key="pmb62852" role="hat-geschaffen">Hader, Franz</author>
@@ -1853,7 +1853,7 @@
         <bibl xml:id="pmb62857">
 
           <title type="main">Die Abenteuer des braven Soldaten Schwejk</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Abenteuer des braven Soldaten Schwejk</title>
           </bibl>
           <author key="pmb62858" role="hat-geschaffen">Hašek, Jaroslav</author>
@@ -1879,7 +1879,7 @@
         <bibl xml:id="pmb62863">
 
           <title type="main">Reisebücher deutscher Schriftsteller</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Reisebücher deutscher Schriftsteller</title>
           </bibl>
           <author key="pmb62865" role="hat-geschaffen">Reifferscheidt, Friedrich M.</author>
@@ -2002,7 +2002,7 @@
         <bibl xml:id="pmb64057">
 
           <title type="main">Ich bin der größte lebende Lyriker</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ich bin der größte lebende Lyriker</title>
           </bibl>
           <date>1928-11-3 – 1928-11-3</date>
@@ -2079,7 +2079,7 @@
         <bibl xml:id="pmb65695">
 
           <title type="main">Kaiser Josef und die Prostituierte</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Kaiser Josef und die Prostituierte</title>
           </bibl>
           <author key="pmb2771" role="hat-geschaffen">Friedell, Egon</author>
@@ -2102,7 +2102,7 @@
         <bibl xml:id="pmb29827">
 
           <title type="main">Die Weber. Schauspiel aus den vierziger Jahren</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Weber</title>
             <title level="m" type="subtitle">Schauspiel aus den vierziger Jahren</title>
           </bibl>
@@ -2145,7 +2145,7 @@
         <bibl xml:id="pmb29829">
 
           <title type="main">Das Tschaperl</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Tschaperl</title>
           </bibl>
           <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
@@ -2183,7 +2183,7 @@
         <bibl xml:id="pmb30009">
 
           <title type="main">Hamlet</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Hamlet</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
@@ -2213,7 +2213,7 @@
         <bibl xml:id="pmb30595">
 
           <title type="main">Maß für Maß</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Maß für Maß</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
@@ -2248,7 +2248,7 @@
         <bibl xml:id="pmb30867">
 
           <title type="main">Henry IV, Part 1</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Henry IV, Part 1</title>
           </bibl>
 
@@ -2280,7 +2280,7 @@
         <bibl xml:id="pmb31181">
 
           <title type="main">Die Verschwörung des Fiesko zu Genua</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Verschwörung des Fiesko zu Genua</title>
           </bibl>
 
@@ -2302,7 +2302,7 @@
         <bibl xml:id="pmb31393">
 
           <title type="main">Die Büchse der Pandora. Tragödie in drei Aufzügen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Büchse der Pandora</title>
             <title level="m" type="subtitle">Tragödie in drei Aufzügen</title>
           </bibl>
@@ -2333,7 +2333,7 @@
         <bibl xml:id="pmb31511">
 
           <title type="main">Hanneles Himmelfahrt. Traumdichtung in zwei Teilen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Hanneles Himmelfahrt</title>
             <title level="m" type="subtitle">Traumdichtung in zwei Teilen</title>
           </bibl>
@@ -2370,7 +2370,7 @@
         <bibl xml:id="pmb31623">
 
           <title type="main">König Lear</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">König Lear</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
@@ -2399,7 +2399,7 @@
         <bibl xml:id="pmb31671">
 
           <title type="main">Othello</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Othello</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
@@ -2427,7 +2427,7 @@
         <bibl xml:id="pmb31929">
 
           <title type="main">Minna von Barnhelm oder das Soldatenglück</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Minna von Barnhelm oder das Soldatenglück</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
@@ -2455,7 +2455,7 @@
         <bibl xml:id="pmb32043">
 
           <title type="main">Der Querulant</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Querulant</title>
           </bibl>
           <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
@@ -2486,7 +2486,7 @@
         <bibl xml:id="pmb32047">
 
           <title type="main">Der Kaufmann von Venedig</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Kaufmann von Venedig</title>
           </bibl>
 
@@ -2517,7 +2517,7 @@
         <bibl xml:id="pmb32544">
 
           <title type="main">Die letzten Tage der Menschheit</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die letzten Tage der Menschheit</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -2913,7 +2913,7 @@
         <bibl xml:id="pmb32951">
 
           <title type="main">Iphigenie auf Tauris</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Iphigenie auf Tauris</title>
           </bibl>
           <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
@@ -2942,7 +2942,7 @@
         <bibl xml:id="pmb33273">
 
           <title type="main">Florian Geyer. Die Tragödie des Bauernkrieges</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Florian Geyer</title>
             <title level="m" type="subtitle">Die Tragödie des Bauernkrieges</title>
           </bibl>
@@ -2973,7 +2973,7 @@
         <bibl xml:id="pmb33366">
 
           <title type="main">Macbeth</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Macbeth</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
@@ -3019,7 +3019,7 @@
         <bibl xml:id="pmb42416">
 
           <title type="main">Frühlings Erwachen. Eine Kindertragödie</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Frühlings Erwachen</title>
             <title level="m" type="subtitle">Eine Kindertragödie</title>
           </bibl>
@@ -3050,7 +3050,7 @@
         <bibl xml:id="pmb53397">
 
           <title type="main">Die Unüberwindlichen. Nachkriegsdrama in vier Akten</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Unüberwindlichen</title>
             <title level="m" type="subtitle">Nachkriegsdrama in vier Akten</title>
           </bibl>
@@ -4050,7 +4050,7 @@
 
           <title type="main">Wolkenkuckucksheim. Phantastisches Versspiel in drei Akten auf Grund
             der „Vögel“ von Aristophanes</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wolkenkuckucksheim</title>
             <title level="m" type="subtitle">Phantastisches Versspiel in drei Akten auf Grund der
               „Vögel“ von Aristophanes</title>
@@ -4077,7 +4077,7 @@
         <bibl xml:id="pmb61461">
 
           <title type="main">Emilia Galotti. Ein Trauerspiel in fünf Aufzügen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Emilia Galotti</title>
             <title level="m" type="subtitle">Ein Trauerspiel in fünf Aufzügen</title>
           </bibl>
@@ -4098,7 +4098,7 @@
         <bibl xml:id="pmb77693">
 
           <title type="main">Die Affaire Dreyfus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Affaire Dreyfus</title>
           </bibl>
 
@@ -4129,7 +4129,7 @@
         <bibl xml:id="pmb60654">
 
           <title type="main">Die Reise zum Mond</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Reise zum Mond</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -4153,7 +4153,7 @@
         <bibl xml:id="pmb63885">
 
           <title type="main">Simon Boccanegra</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Simon Boccanegra</title>
           </bibl>
 
@@ -4182,7 +4182,7 @@
         <bibl xml:id="pmb33187">
 
           <title type="main">Buddenbrooks</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Buddenbrooks</title>
           </bibl>
           <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
@@ -4212,7 +4212,7 @@
         <bibl xml:id="pmb33247">
 
           <title type="main">Der Zauberberg. Roman</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Zauberberg. Roman</title>
           </bibl>
           <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
@@ -4301,7 +4301,7 @@
         <bibl xml:id="pmb54829">
 
           <title type="main">Geschenke des Lebens</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Geschenke des Lebens</title>
           </bibl>
           <author key="pmb12126" role="hat-geschaffen">Ludwig, Emil</author>
@@ -4379,7 +4379,7 @@
         <bibl xml:id="pmb52942">
 
           <title type="main">Sprüche und Widersprüche</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Sprüche und Widersprüche</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -4411,7 +4411,7 @@
         <bibl xml:id="pmb56746">
 
           <title type="main">Nachts</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Nachts</title>
           </bibl>
 
@@ -4448,7 +4448,7 @@
         <bibl xml:id="pmb55661">
 
           <title type="main">Das Land ohne Frauen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Land ohne Frauen</title>
           </bibl>
           <author key="pmb7334" role="hat-geschaffen">Gallone, Carmine</author>
@@ -4478,7 +4478,7 @@
         <bibl xml:id="pmb60417">
 
           <title type="main">The Merry Widow</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">The Merry Widow</title>
           </bibl>
 
@@ -4505,7 +4505,7 @@
         <bibl xml:id="pmb87767">
 
           <title type="main">Aetherwellen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Aetherwellen</title>
           </bibl>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
@@ -4529,7 +4529,7 @@
         <bibl xml:id="pmb88255">
 
           <title type="main">Mad Love</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Mad Love</title>
           </bibl>
           <date notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
@@ -4552,7 +4552,7 @@
         <bibl xml:id="pmb53291">
 
           <title type="main">Sonnet 81</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Sonnet 81</title>
           </bibl>
 
@@ -4590,7 +4590,7 @@
         <bibl xml:id="pmb53294">
 
           <title type="main">Sonnet 116</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Sonnet 116</title>
           </bibl>
 
@@ -4628,7 +4628,7 @@
         <bibl xml:id="pmb53297">
 
           <title type="main">Sonnet 129</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Sonnet 129</title>
           </bibl>
 
@@ -4672,7 +4672,7 @@
         <bibl xml:id="pmb53644">
 
           <title type="main">Alle Vögel sind schon da</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Alle Vögel sind schon da</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -4703,7 +4703,7 @@
         <bibl xml:id="pmb56828">
 
           <title type="main">Die Ballade vom Papagei. Couplet macabre</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Ballade vom Papagei&gt; </title>
             <title level="m" type="subtitle">Couplet macabre</title>
           </bibl>
@@ -4732,7 +4732,7 @@
         <bibl xml:id="pmb56921">
 
           <title type="main">Junge Tänzerin</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Junge Tänzerin</title>
           </bibl>
           <author key="pmb7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
@@ -4789,7 +4789,7 @@
         <bibl xml:id="pmb56928">
 
           <title type="main">Glockentänzerin</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Glockentänzerin</title>
           </bibl>
           <author key="pmb37820" role="hat-geschaffen">Zech, Paul</author>
@@ -4974,7 +4974,7 @@
         <bibl xml:id="pmb59331">
 
           <title type="main">Bekenntnis</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Bekenntnis</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -4999,7 +4999,7 @@
         <bibl xml:id="pmb59710">
 
           <title type="main">Peter Altenberg</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Peter Altenberg</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -5056,7 +5056,7 @@
         <bibl xml:id="pmb61851">
 
           <title type="main">Joffre an Kluck</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Joffre an Kluck</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5080,7 +5080,7 @@
         <bibl xml:id="pmb61856">
 
           <title type="main">Greys Lied</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Greys Lied</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5104,7 +5104,7 @@
         <bibl xml:id="pmb61861">
 
           <title type="main">Rückzug</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Rückzug</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5128,7 +5128,7 @@
         <bibl xml:id="pmb61880">
 
           <title type="main">Sechste Ode von d’Annunzio</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Sechste Ode von d’Annunzio</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5152,7 +5152,7 @@
         <bibl xml:id="pmb61885">
 
           <title type="main">Rumänisch</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Rumänisch</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5176,7 +5176,7 @@
         <bibl xml:id="pmb61891">
 
           <title type="main">Krisen ringsum</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Krisen ringsum</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5200,7 +5200,7 @@
         <bibl xml:id="pmb61896">
 
           <title type="main">Die Sechste</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Sechste</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5224,7 +5224,7 @@
         <bibl xml:id="pmb61901">
 
           <title type="main">Chronik.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Chronik.</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5248,7 +5248,7 @@
         <bibl xml:id="pmb61906">
 
           <title type="main">Montenegro</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Montenegro</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5272,7 +5272,7 @@
         <bibl xml:id="pmb61913">
 
           <title type="main">D'Annunzios vierte Ode</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">D'Annunzios vierte Ode</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5296,7 +5296,7 @@
         <bibl xml:id="pmb61918">
 
           <title type="main">Lloyd – George</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Lloyd – George</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5320,7 +5320,7 @@
         <bibl xml:id="pmb61932">
 
           <title type="main">Salandra – Dämmerung</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Salandra – Dämmerung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5344,7 +5344,7 @@
         <bibl xml:id="pmb61937">
 
           <title type="main">Die Niederlage (D’Annunzios fünfte Ode)</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Niederlage (D’Annunzios fünfte Ode)</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5368,7 +5368,7 @@
         <bibl xml:id="pmb61942">
 
           <title type="main">Portugal</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Portugal</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5392,7 +5392,7 @@
         <bibl xml:id="pmb61961">
 
           <title type="main">Rumänien</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Rumänien</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5416,7 +5416,7 @@
         <bibl xml:id="pmb61966">
 
           <title type="main">Pariser Konferenz</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Pariser Konferenz</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5440,7 +5440,7 @@
         <bibl xml:id="pmb61976">
 
           <title type="main">Bukarest</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Bukarest</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5464,7 +5464,7 @@
         <bibl xml:id="pmb61979">
 
           <title type="main">Briand</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Briand</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5488,7 +5488,7 @@
         <bibl xml:id="pmb62269">
 
           <title type="main">Begegnung</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Begegnung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5541,7 +5541,7 @@
         <bibl xml:id="pmb62351">
 
           <title type="main">Mobilmachung.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Mobilmachung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5594,7 +5594,7 @@
         <bibl xml:id="pmb62353">
 
           <title type="main">Es geht eine Schlacht ...</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Es geht eine Schlacht ...</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5640,7 +5640,7 @@
         <bibl xml:id="pmb62355">
 
           <title type="main">Er schleppte sich ...</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Er schleppte sich ...</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5679,7 +5679,7 @@
         <bibl xml:id="pmb62357">
 
           <title type="main">1918</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">1918</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -5724,7 +5724,7 @@
         <bibl xml:id="pmb87830">
 
           <title type="main">Einen Trunk der Liebe</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Einen Trunk der Liebe</title>
           </bibl>
           <author key="pmb37820" role="hat-geschaffen">Zech, Paul</author>
@@ -5755,7 +5755,7 @@
         <bibl xml:id="pmb88146">
 
           <title type="main">Die Raben</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Raben</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -5779,7 +5779,7 @@
         <bibl xml:id="pmb30421">
 
           <title type="main">Die Fledermaus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Fledermaus</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
@@ -5820,7 +5820,7 @@
         <bibl xml:id="pmb52902">
 
           <title type="main">Der Zigeunerbaron</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Zigeunerbaron</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
@@ -5852,7 +5852,7 @@
         <bibl xml:id="pmb52904">
 
           <title type="main">Das Spitzentuch der Königin. Operette in drei Akten</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Spitzentuch der Königin</title>
             <title level="m" type="subtitle">Operette in drei Akten</title>
           </bibl>
@@ -5885,7 +5885,7 @@
         <bibl xml:id="pmb53311">
 
           <title type="main">Pariser Leben</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Pariser Leben</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6011,7 +6011,7 @@
         <bibl xml:id="pmb53658">
 
           <title type="main">Die Briganten</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Briganten</title>
           </bibl>
 
@@ -6069,7 +6069,7 @@
         <bibl xml:id="pmb54326">
 
           <title type="main">Blaubart</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Blaubart</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6178,7 +6178,7 @@
         <bibl xml:id="pmb55390">
 
           <title type="main">Madame l’archiduc</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Madame l’archiduc</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6542,7 +6542,7 @@
         <bibl xml:id="pmb55407">
 
           <title type="main">Madame Favart</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Madame Favart</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6567,7 +6567,7 @@
         <bibl xml:id="pmb56707">
 
           <title type="main">La Périchole</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">La Périchole</title>
           </bibl>
           <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
@@ -6764,7 +6764,7 @@
         <bibl xml:id="pmb56821">
 
           <title type="main">Die Schwätzerin von Saragossa</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Die Schwätzerin von Saragossa</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6788,7 +6788,7 @@
         <bibl xml:id="pmb56823">
 
           <title type="main">Die Seufzerbrücke</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Seufzerbrücke</title>
           </bibl>
 
@@ -6815,7 +6815,7 @@
         <bibl xml:id="pmb56987">
 
           <title type="main">Die Großherzogin von Gerolstein</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Großherzogin von Gerolstein</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6861,7 +6861,7 @@
         <bibl xml:id="pmb57726">
 
           <title type="main">Fortunios Lied</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Fortunios Lied</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6886,7 +6886,7 @@
         <bibl xml:id="pmb57728">
 
           <title type="main">Die Insel Tulipatan</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Insel Tulipatan</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6917,7 +6917,7 @@
         <bibl xml:id="pmb60656">
 
           <title type="main">Prinzessin von Trapezunt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Prinzessin von Trapezunt</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -6955,7 +6955,7 @@
         <bibl xml:id="pmb61844">
 
           <title type="main">Der Walzerkavalier</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Walzerkavalier</title>
           </bibl>
           <date notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
@@ -6992,7 +6992,7 @@
         <bibl xml:id="pmb62199">
 
           <title type="main">Vert-Vert</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Vert-Vert</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
@@ -7035,7 +7035,7 @@
         <bibl xml:id="pmb62309">
 
           <title type="main">Die Blume von Hawaii</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Blume von Hawaii</title>
           </bibl>
           <date when-iso="1931-07-24">1931-07-24</date>
@@ -7067,7 +7067,7 @@
         <bibl xml:id="pmb64528">
 
           <title type="main">Auf den Straßen zu singen</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Auf den Straßen zu singen</title>
           </bibl>
           <author key="pmb38100" role="hat-geschaffen">Eisler, Hanns</author>
@@ -7114,7 +7114,7 @@
         <bibl xml:id="pmb65229">
 
           <title type="main">Naturbetrachtung</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Naturbetrachtung</title>
           </bibl>
           <author key="pmb38100" role="hat-geschaffen">Eisler, Hanns</author>
@@ -7197,7 +7197,7 @@
         <bibl xml:id="pmb52755">
 
           <title type="main">Unzeitgemäße Betrachtungen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Unzeitgemäße Betrachtungen</title>
           </bibl>
           <author key="pmb12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
@@ -7222,7 +7222,7 @@
         <bibl xml:id="pmb56717">
 
           <title type="main">Blätter der Staatsoper</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Blätter der Staatsoper</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56717/</idno>
@@ -7244,7 +7244,7 @@
         <bibl xml:id="pmb53092">
 
           <title type="main">Schoberlied</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Schoberlied</title>
           </bibl>
 
@@ -7308,7 +7308,7 @@
         <bibl xml:id="pmb56116">
 
           <title type="main">Heiraten</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Heiraten</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
@@ -7348,7 +7348,7 @@
         <bibl xml:id="pmb53315">
 
           <title type="main">Shakespeare Sonnette. Umdichtung von Stefan George</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeare Sonnette</title>
             <title level="m" type="subtitle">Umdichtung von Stefan George</title>
           </bibl>
@@ -7374,7 +7374,7 @@
         <bibl xml:id="pmb53326">
 
           <title type="main">Shakespeares Sonette. Nachdichtung von Karl Kraus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeares Sonette</title>
             <title level="m" type="subtitle">Nachdichtung von Karl Kraus</title>
           </bibl>
@@ -7406,7 +7406,7 @@
         <bibl xml:id="pmb53642">
 
           <title type="main">Worte in Versen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Worte in Versen</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -7431,7 +7431,7 @@
         <bibl xml:id="pmb62911">
 
           <title type="main">Die Weisheit des Brahmanen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Weisheit des Brahmanen</title>
           </bibl>
           <author key="pmb39101" role="hat-geschaffen">Rückert, Friedrich</author>
@@ -7536,7 +7536,7 @@
         <bibl xml:id="pmb53329">
 
           <title type="main">Karl Kraus als Nachdichter Shakespeares</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus als Nachdichter Shakespeares</title>
           </bibl>
           <author key="pmb53330" role="hat-geschaffen">Flatter, Richard</author>
@@ -7566,7 +7566,7 @@
         <bibl xml:id="pmb53335">
 
           <title type="main">Hamburgische Dramaturgie</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Hamburgische Dramaturgie</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
@@ -7591,7 +7591,7 @@
         <bibl xml:id="pmb50465">
 
           <title type="main">Die letzte Nacht</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Die letzte Nacht</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -7637,7 +7637,7 @@
         <bibl xml:id="pmb50709">
 
           <title type="main">Traumtheater</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Traumtheater</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -7728,7 +7728,7 @@
         <bibl xml:id="pmb50712">
 
           <title type="main">Traumstück</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Traumstück</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -7970,7 +7970,7 @@
         <bibl xml:id="pmb52757">
 
           <title type="main">Literatur oder Man wird doch da sehn</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Literatur oder Man wird doch da sehn</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -8003,7 +8003,7 @@
         <bibl xml:id="pmb53503">
 
           <title type="main">Die Vögel</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Vögel</title>
           </bibl>
           <author key="pmb13473" role="hat-geschaffen">Aristophanes</author>
@@ -8028,7 +8028,7 @@
         <bibl xml:id="pmb53718">
 
           <title type="main">Die Dreigroschenoper</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Dreigroschenoper</title>
           </bibl>
           <author key="pmb11008" role="hat-geschaffen">Brecht, Bertolt</author>
@@ -8055,7 +8055,7 @@
         <bibl xml:id="pmb61580">
 
           <title type="main">Shakespeares Dramen. Bearbeitet von Karl Kraus. Band I</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeares Dramen</title>
             <title level="m" type="subtitle">Bearbeitet von Karl Kraus. Band I</title>
           </bibl>
@@ -8081,7 +8081,7 @@
         <bibl xml:id="pmb62349">
 
           <title type="main">Die Hermannsschlacht</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Hermannsschlacht</title>
           </bibl>
           <author key="pmb11933" role="hat-geschaffen">Kleist, Heinrich von</author>
@@ -8099,7 +8099,7 @@
         <bibl xml:id="pmb63515">
 
           <title type="main">Die Wupper</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Wupper</title>
           </bibl>
           <author key="pmb38973" role="hat-geschaffen">Lasker-Schüler, Else</author>
@@ -8131,7 +8131,7 @@
         <bibl xml:id="pmb63857">
 
           <title type="main">Danton’s Tod</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Danton’s Tod</title>
           </bibl>
           <date notBefore-iso="1835-01-01" when-iso="1835-07-02">1835</date>
@@ -8163,7 +8163,7 @@
         <bibl xml:id="pmb63864">
 
           <title type="main">Die beiden Adler</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die beiden Adler</title>
           </bibl>
           <author key="pmb11527" role="hat-geschaffen">Großmann, Stefan</author>
@@ -8189,7 +8189,7 @@
         <bibl xml:id="pmb87931">
 
           <title type="main">Amnestie</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Amnestie</title>
           </bibl>
           <author key="pmb87930" role="hat-geschaffen">Finkelnburg, Karl Maria</author>
@@ -8213,7 +8213,7 @@
         <bibl xml:id="pmb55822">
 
           <title type="main">Des deutschen Spießers Wunderhorn</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Des deutschen Spießers Wunderhorn</title>
           </bibl>
           <author key="pmb12248" role="hat-geschaffen">Meyrink, Gustav</author>
@@ -8246,7 +8246,7 @@
         <bibl xml:id="pmb52660">
 
           <title type="main">Buch der Lieder (China)</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Buch der Lieder (China)</title>
           </bibl>
 
@@ -8269,7 +8269,7 @@
         <bibl xml:id="pmb53289">
 
           <title type="main">Shakespeare’s Sonnets</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeare’s Sonnets</title>
           </bibl>
 
@@ -8331,7 +8331,7 @@
         <bibl xml:id="pmb57434">
 
           <title type="main">Zeitstrophen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Zeitstrophen</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -8369,7 +8369,7 @@
         <bibl xml:id="pmb59325">
 
           <title type="main">Worte in Versen II</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Worte in Versen II</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -8394,7 +8394,7 @@
         <bibl xml:id="pmb59708">
 
           <title type="main">Worte in Versen V</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Worte in Versen V</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -8419,7 +8419,7 @@
         <bibl xml:id="pmb60048">
 
           <title type="main">Der Weltfreund</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Weltfreund</title>
           </bibl>
           <author key="pmb13094" role="hat-geschaffen">Werfel, Franz</author>
@@ -8444,7 +8444,7 @@
         <bibl xml:id="pmb64023">
 
           <title type="main">Nichts als Brot und Freiheit</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Nichts als Brot und Freiheit</title>
           </bibl>
           <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
@@ -8469,7 +8469,7 @@
         <bibl xml:id="pmb87713">
 
           <title type="main">Ausgewählte Gedichte</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ausgewählte Gedichte</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -8495,7 +8495,7 @@
 
           <title type="main">‚Die letzte Nacht‘ von Karl Kraus. Ein Streit um die
             Inszenierung</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">‚Die letzte Nacht‘ von Karl Kraus</title>
             <title level="m" type="subtitle">Ein Streit um die Inszenierung</title>
           </bibl>
@@ -8550,7 +8550,7 @@
         <bibl xml:id="pmb61380">
 
           <title type="main">[Kritik der „Unüberwindlichen“, Frankfurter Generalanzeiger]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">[Kritik der „Unüberwindlichen“, Frankfurter Generalanzeiger]</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61380/</idno>
@@ -8573,7 +8573,7 @@
         <bibl xml:id="pmb61382">
 
           <title type="main">[Kritik der „Unüberwindlichen“, Frankfurter Nachrichten]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">[Kritik der „Unüberwindlichen“, Frankfurter Nachrichten]</title>
           </bibl>
           <author key="pmb37985" role="hat-geschaffen">Bringezu, Otto</author>
@@ -8597,7 +8597,7 @@
         <bibl xml:id="pmb31849">
 
           <title type="main">Bibel</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Bibel</title>
           </bibl>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31849.html</idno>
@@ -8644,7 +8644,7 @@
         <bibl xml:id="pmb54049">
 
           <title type="main">Lehrbuch des österreichischen Preßrechts</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Lehrbuch des österreichischen Preßrechts</title>
           </bibl>
 
@@ -8670,7 +8670,7 @@
         <bibl xml:id="pmb54079">
 
           <title type="main">Lehrbuch des deutschen Preßrechtes</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Lehrbuch des deutschen Preßrechtes</title>
           </bibl>
           <author key="pmb54070" role="hat-geschaffen">Berner, Albert Friedrich</author>
@@ -8696,7 +8696,7 @@
           <title type="main">Das deutsche Reichs-Preßrecht. Unter Berücksichtigung der Literatur und
             der Rechtsprechung insbesondern des Berliner Obertribunals und des Reichsgerichtes
             systematisch dargestellt.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das deutsche Reichs-Preßrecht</title>
             <title level="m" type="subtitle">Unter Berücksichtigung der Literatur und der
               Rechtsprechung insbesondern des Berliner Obertribunals und des Reichsgerichtes
@@ -8817,7 +8817,7 @@
         <bibl xml:id="pmb62868">
 
           <title type="main">Yankee-Land. Eine Reise</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Yankee-Land</title>
             <title level="m" type="subtitle">Eine Reise</title>
           </bibl>
@@ -8843,7 +8843,7 @@
         <bibl xml:id="pmb63838">
 
           <title type="main">Die neue Stadt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die neue Stadt</title>
           </bibl>
 
@@ -8891,7 +8891,7 @@
         <bibl xml:id="pmb31571">
 
           <title type="main">Zahme Xenien</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Zahme Xenien</title>
           </bibl>
           <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
@@ -8909,7 +8909,7 @@
 
           <title type="main">Sammlung strafrechtlicher Entscheidungen des k.k. obersten Gerichts-
             und Cassationshofes</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Sammlung strafrechtlicher Entscheidungen des k.k. obersten Gerichts-
               und Cassationshofes</title>
           </bibl>
@@ -8936,7 +8936,7 @@
 
           <title type="main">Plenarbeschlüsse und Entscheidungen des obersten Gerichts- als
             Kassationshofes</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Plenarbeschlüsse und Entscheidungen des obersten Gerichts- als
               Kassationshofes</title>
           </bibl>
@@ -8992,7 +8992,7 @@
         <bibl xml:id="pmb53300">
 
           <title type="main">Shakespeare in deutscher Sprache</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeare in deutscher Sprache</title>
           </bibl>
           <author key="pmb3824" role="hat-herausgegeben">Gundolf, Friedrich</author>
@@ -9016,7 +9016,7 @@
         <bibl xml:id="pmb59796">
 
           <title type="main">Bilderbögen des kleinen Lebens</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Bilderbögen des kleinen Lebens</title>
           </bibl>
           <author key="pmb2147" role="hat-geschaffen">Altenberg, Peter</author>
@@ -9068,7 +9068,7 @@
         <bibl xml:id="pmb60281">
 
           <title type="main">Peter Altenberg. Auswahl aus seinen Büchern von Karl Kraus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Peter Altenberg</title>
             <title level="m" type="subtitle">Auswahl aus seinen Büchern von Karl Kraus</title>
           </bibl>
@@ -9480,7 +9480,7 @@
         <bibl xml:id="pmb63240">
 
           <title type="main">Literatur und Lüge</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Literatur und Lüge</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -9504,7 +9504,7 @@
         <bibl xml:id="pmb63251">
 
           <title type="main">Ludwig Börne oder: die Überwindung des Judentums</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ludwig Börne oder: die Überwindung des Judentums</title>
           </bibl>
           <author key="pmb38969" role="hat-geschaffen">Laserstein, Botho</author>
@@ -9528,7 +9528,7 @@
         <bibl xml:id="pmb53915">
 
           <title type="main">Die chinesische Mauer</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die chinesische Mauer</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -9584,7 +9584,7 @@
         <bibl xml:id="pmb55104">
 
           <title type="main">Taschenbuch für Bücherfreunde</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Taschenbuch für Bücherfreunde</title>
           </bibl>
           <date notBefore-iso="1913-01-01" when-iso="1913-07-02">1913</date>
@@ -9608,7 +9608,7 @@
         <bibl xml:id="pmb57776">
 
           <title type="main">Die österreichische Revolution</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die österreichische Revolution</title>
           </bibl>
           <author key="pmb10851" role="hat-geschaffen">Bauer, Otto</author>
@@ -9640,7 +9640,7 @@
         <bibl xml:id="pmb59042">
 
           <title type="main">Mein Lebensabend</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Mein Lebensabend</title>
           </bibl>
           <author key="pmb2147" role="bekommt-zugeschrieben">Altenberg, Peter</author>
@@ -9672,7 +9672,7 @@
         <bibl xml:id="pmb65468">
 
           <title type="main">Geschlecht und Charakter</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Geschlecht und Charakter</title>
           </bibl>
           <author key="pmb2630" role="hat-geschaffen">Weininger, Otto</author>
@@ -14696,7 +14696,7 @@
         <bibl xml:id="pmb57894">
 
           <title type="main">Selbstwehr. Jüdisches Volksblatt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="j" key="#sk_lk00044">Selbstwehr</title>
             <title level="m" type="subtitle">Jüdisches Volksblatt</title>
           </bibl>
@@ -17342,7 +17342,7 @@
           <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nab&amp;datum=19221219&amp;zoom=33</title>
 
           <title type="werk_bibliografische-angabe">Nr. 2456</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m" key="_">Nr. 2456</title>
           </bibl>
           <date>1922-12-19 – 1922-12-19</date>
@@ -28332,7 +28332,7 @@
         <bibl xml:id="pmb42403">
 
           <title type="main">Der Morgen. Wiener Montagsblatt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="j" key="#sk_lk00117">Der Morgen</title>
             <title level="m" type="subtitle">Wiener Montagsblatt</title>
           </bibl>
@@ -29482,7 +29482,7 @@
         <bibl xml:id="pmb53675">
 
           <title type="main">Der Bücherwurm. Eine Monatsschrift</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="j" key="#sk_lk00123">Der Bücherwurm</title>
             <title level="m" type="subtitle">Eine Monatsschrift</title>
           </bibl>
@@ -29662,7 +29662,7 @@
         <bibl xml:id="pmb63201">
 
           <title type="main">Der geistige Arbeiter. Deutsche Urheber-Zeitung</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="j" key="#sk_lk00126">Der geistige Arbeiter</title>
             <title level="m" type="subtitle">Deutsche Urheber-Zeitung</title>
           </bibl>
@@ -29687,7 +29687,7 @@
         <bibl xml:id="pmb51907">
 
           <title type="main">Der Affe Zarathustras</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der Affe Zarathustras</title>
           </bibl>
           <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
@@ -29747,7 +29747,7 @@
 
           <title type="main">Wirtschaft und Öffentliche Sicherheit. Vortrag gehalten im
             Niederösterreichischem Gewerbeverein von Polizeipräsident Schober</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wirtschaft und Öffentliche Sicherheit</title>
             <title level="m" type="subtitle">Vortrag gehalten im Niederösterreichischem
               Gewerbeverein von Polizeipräsident Schober</title>
@@ -29787,7 +29787,7 @@
         <bibl xml:id="pmb57036">
 
           <title type="main">Offenbach-Vorträge</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Offenbach-Vorträge</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -29803,7 +29803,7 @@
         <bibl xml:id="pmb56249">
 
           <title type="main">Die Juden von Wien</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Juden von Wien</title>
           </bibl>
           <author key="pmb12958" role="hat-geschaffen">Tietze, Hans</author>
@@ -29834,7 +29834,7 @@
         <bibl xml:id="pmb62825">
 
           <title type="main">„Die Tragödie Deutschlands“. Von einem Deutschen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">„Die Tragödie Deutschlands“</title>
             <title level="m" type="subtitle">Von einem Deutschen</title>
           </bibl>
@@ -29860,7 +29860,7 @@
         <bibl xml:id="pmb53926">
 
           <title type="main">Eine Wohnung ist zu vermiethen in der Stadt</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Eine Wohnung ist zu vermiethen in der Stadt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
@@ -29891,7 +29891,7 @@
         <bibl xml:id="pmb63872">
 
           <title type="main">Das Gut Waldegg</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Gut Waldegg</title>
           </bibl>
           <author key="pmb55048" role="hat-geschaffen">Hopp, Julius</author>
@@ -29916,7 +29916,7 @@
         <bibl xml:id="pmb53924">
 
           <title type="main">Kampl</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kampl</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
@@ -29943,7 +29943,7 @@
 
           <title type="main">Demokritos oder hinterlassene Papiere eines lachenden
             Philosophen</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Demokritos oder hinterlassene Papiere eines lachenden
               Philosophen</title>
           </bibl>
@@ -29976,7 +29976,7 @@
         <bibl xml:id="pmb30611">
 
           <title type="main">Also sprach Zarathustra</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Also sprach Zarathustra</title>
           </bibl>
           <author key="pmb12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
@@ -30020,7 +30020,7 @@
 
           <title type="main">Die beiden Grundprobleme der Ethik, behandelt in zwei akademischen
             Preisschriften</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die beiden Grundprobleme der Ethik, behandelt in zwei akademischen
               Preisschriften</title>
           </bibl>
@@ -30038,7 +30038,7 @@
 
           <title type="main">Preisschrift über die Grundlage der Moral, nicht gekrönt von der
             königlich dänischen Sozietät der Wissenschaften</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Preisschrift über die Grundlage der Moral, nicht gekrönt von der
               königlich dänischen Sozietät der Wissenschaften</title>
           </bibl>
@@ -30064,7 +30064,7 @@
         <bibl xml:id="pmb51849">
 
           <title type="main">Wörterbuch der deutschen Sprache</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Wörterbuch der deutschen Sprache</title>
           </bibl>
           <author key="pmb51846" role="hat-geschaffen">Sanders, Daniel</author>
@@ -30087,7 +30087,7 @@
         <bibl xml:id="pmb55240">
 
           <title type="main">Handwörterbuch der deutschen Sprache</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Handwörterbuch der deutschen Sprache</title>
           </bibl>
           <author key="pmb55254" role="hat-geschaffen">Weber, Ferdinand Adolf</author>
@@ -30118,7 +30118,7 @@
         <bibl xml:id="pmb65396">
 
           <title type="main">Wörterbuch des Wiener Dialektes</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wörterbuch des Wiener Dialektes</title>
           </bibl>
           <author key="pmb65395" role="hat-geschaffen">Jakob, Julius</author>
@@ -30143,7 +30143,7 @@
         <bibl xml:id="pmb60652">
 
           <title type="main">Pandora</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Pandora</title>
           </bibl>
           <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
@@ -30310,7 +30310,7 @@
 
           <title type="main">[Notiz über Ausbleiben eines angekündigten Artikels „Karl Kraus
             gleichgeschaltet “]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">[Notiz über Ausbleiben eines angekündigten Artikels „Karl Kraus
               gleichgeschaltet “]</title>
           </bibl>
@@ -30844,7 +30844,7 @@
         <bibl xml:id="pmb61448">
 
           <title type="main">Genugtuung für Karl Kraus.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Genugtuung für Karl Kraus.</title>
           </bibl>
           <date>1937-10-28 – 1937-10-28</date>
@@ -30970,7 +30970,7 @@
         <bibl xml:id="pmb58510">
 
           <title type="main">Theodor Herzl’s Tagebücher. 1895–1904</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Theodor Herzl’s Tagebücher. 1895–1904</title>
           </bibl>
 
@@ -31020,7 +31020,7 @@
         <bibl xml:id="pmb62830">
 
           <title type="main">Kriegstagebuch [Alfred H. Fried]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kriegstagebuch [Alfred H. Fried]</title>
           </bibl>
 
@@ -31047,7 +31047,7 @@
         <bibl xml:id="pmb32624">
 
           <title type="main">Die Kulturgeschichte der Neuzeit</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die Kulturgeschichte der Neuzeit</title>
           </bibl>
           <author key="pmb2771" role="hat-geschaffen">Friedell, Egon</author>
@@ -31082,7 +31082,7 @@
         <bibl xml:id="pmb50442">
 
           <title type="main">Zwei geschlossene Vorstellungen an der Neuen Wiener Bühne</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Zwei geschlossene Vorstellungen an der Neuen Wiener Bühne</title>
           </bibl>
           <date>1922-12-19 – 1922-12-19</date>
@@ -33026,7 +33026,7 @@
         <bibl xml:id="pmb52833">
 
           <title type="main">Ein sensationeller Selbstmord in Monte Carlo</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ein sensationeller Selbstmord in Monte Carlo</title>
           </bibl>
           <date>1925-04-05 – 1925-04-05</date>
@@ -33041,7 +33041,7 @@
         <bibl xml:id="pmb52962">
 
           <title type="main">Amnestie?</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Amnestie?</title>
           </bibl>
           <date>1927-09-17 – 1927-09-17</date>
@@ -33101,7 +33101,7 @@
         <bibl xml:id="pmb52982">
 
           <title type="main">Karl Kraus fordert …!</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus fordert …!</title>
           </bibl>
           <date>1927-09-18 – 1927-09-18</date>
@@ -33378,7 +33378,7 @@
 
           <title type="main">„Der Fackelkraus“ gegen den „Völkischen Beobachter“. Ein
             Beleidigungsprozess</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">„Der Fackelkraus“ gegen den „Völkischen Beobachter“</title>
             <title level="m" type="subtitle">Ein Beleidigungsprozess</title>
           </bibl>
@@ -33516,7 +33516,7 @@
         <bibl xml:id="pmb53367">
 
           <title type="main">Skandalszenen bei einer Kraus-Vorlesung [3.9.1928]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [3.9.1928]</title>
           </bibl>
           <date>1928-09-03 – 1928-09-03</date>
@@ -33567,7 +33567,7 @@
         <bibl xml:id="pmb53371">
 
           <title type="main">Skandalszenen bei einer Kraus-Vorlesung [13.9.1928]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [13.9.1928]</title>
           </bibl>
           <date>1928-09-13 – 1928-09-13</date>
@@ -33599,7 +33599,7 @@
         <bibl xml:id="pmb53394">
 
           <title type="main">Skandalszenen bei einer Kraus-Vorlesung [21.9.1928]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [21.9.1928]</title>
           </bibl>
           <date>1928-09-21 – 1928-09-21</date>
@@ -33623,7 +33623,7 @@
         <bibl xml:id="pmb53405">
 
           <title type="main">Skandalszenen bei einer Kraus-Vorlesung [29.9.1928]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [29.9.1928]</title>
           </bibl>
           <date>1928-09-29 – 1928-09-29</date>
@@ -33647,7 +33647,7 @@
         <bibl xml:id="pmb53414">
 
           <title type="main">Eine gestörte Karl-Kraus-Vorlesung</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Eine gestörte Karl-Kraus-Vorlesung</title>
           </bibl>
           <date>1928-09-04 – 1928-09-04</date>
@@ -33814,7 +33814,7 @@
         <bibl xml:id="pmb53617">
 
           <title type="main">Vorlesungen Karl Kraus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Vorlesungen Karl Kraus</title>
           </bibl>
           <date>1927-03-17 – 1927-03-17</date>
@@ -34117,7 +34117,7 @@
         <bibl xml:id="pmb53868">
 
           <title type="main">Opfer der Berühmtheit</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Opfer der Berühmtheit</title>
           </bibl>
           <author key="pmb39233" role="hat-geschaffen">Reese, Wilhelm Friedrich Karl</author>
@@ -34201,7 +34201,7 @@
         <bibl xml:id="pmb53885">
 
           <title type="main">Fackel-Kraus als Plakat-Ankleber.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Fackel-Kraus als Plakat-Ankleber.</title>
           </bibl>
           <date>1927-09-19 – 1927-09-19</date>
@@ -34373,7 +34373,7 @@
 
           <title type="main">Empfindliche Verurteilung des „Fackel“-Kraus. Genossen unter
             sich</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Empfindliche Verurteilung des „Fackel“-Kraus</title>
             <title level="m" type="subtitle">Genossen unter sich</title>
           </bibl>
@@ -34607,7 +34607,7 @@
         <bibl xml:id="pmb55456">
 
           <title type="main">Karl Kraus versus AIfred Kerr</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus versus AIfred Kerr</title>
           </bibl>
           <date>1928-09-04 – 1928-09-04</date>
@@ -34637,7 +34637,7 @@
         <bibl xml:id="pmb55774">
 
           <title type="main">Verleumdungsparadies</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Verleumdungsparadies</title>
           </bibl>
           <author key="pmb13163" role="hat-geschaffen">Wolff, Theodor</author>
@@ -35156,7 +35156,7 @@
         <bibl xml:id="pmb56209">
 
           <title type="main">[Bericht über den Prozess gegen den Gegen-Angriff]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">[Bericht über den Prozess gegen den Gegen-Angriff]</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56209/</idno>
@@ -35178,7 +35178,7 @@
         <bibl xml:id="pmb56211">
 
           <title type="main">[Bericht über den Prozess gegen den Gegen-Angriff]</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">[Bericht über den Prozess gegen den Gegen-Angriff]</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56211/</idno>
@@ -35417,7 +35417,7 @@
 
           <title type="main">Der große Gegenspieler Wilhelms des II. Mit Maximilian Harden während
             der letzten Tage seines Lebens.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Der große Gegenspieler Wilhelms des II</title>
             <title level="m" type="subtitle">Mit Maximilian Harden während der letzten Tage seines
               Lebens.</title>
@@ -36091,7 +36091,7 @@
         <bibl xml:id="pmb56436">
 
           <title type="main">Rettung durch Fürst Starhemberg</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Rettung durch Fürst Starhemberg</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56436/</idno>
@@ -36119,7 +36119,7 @@
         <bibl xml:id="pmb56609">
 
           <title type="main">Aus der Radiowoche</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Aus der Radiowoche</title>
           </bibl>
 
@@ -36257,7 +36257,7 @@
         <bibl xml:id="pmb56860">
 
           <title type="main">Auch eine Wohltätigkeitsvorstellung</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Auch eine Wohltätigkeitsvorstellung</title>
           </bibl>
           <date>1929-05-16 – 1929-05-16</date>
@@ -36281,7 +36281,7 @@
         <bibl xml:id="pmb56877">
 
           <title type="main">Theater von heute und morgen.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Theater von heute und morgen</title>
           </bibl>
           <date>1929-04-29 – 1929-04-29</date>
@@ -36296,7 +36296,7 @@
         <bibl xml:id="pmb56894">
 
           <title type="main">Karl der Goste</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl der Goste</title>
           </bibl>
           <author key="pmb7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
@@ -36382,7 +36382,7 @@
         <bibl xml:id="pmb57021">
 
           <title type="main">Karl Kraus berichtigt. Zum letztenmal Kraus contra Hesse</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus berichtigt</title>
             <title level="m" type="subtitle">Zum letztenmal Kraus contra Hesse</title>
           </bibl>
@@ -36550,7 +36550,7 @@
         <bibl xml:id="pmb57237">
 
           <title type="main">Wr. Konzerthaus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wr. Konzerthaus</title>
           </bibl>
           <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
@@ -37209,7 +37209,7 @@
 
           <title type="main">[Artikel im Zusammenhang mit dem Pressprozess Kraus ca.
             Sozialdemokrat]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Artikel im Zusammenhang mit dem Pressprozess Kraus ca.
               Sozialdemokrat]</title>
           </bibl>
@@ -38035,7 +38035,7 @@
         <bibl xml:id="pmb57909">
 
           <title type="main">Karl Kraus gestorben</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Karl Kraus gestorben</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57909/</idno>
@@ -38101,7 +38101,7 @@
         <bibl xml:id="pmb57921">
 
           <title type="main">[Nachruf auf Karl Kraus]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Nachruf auf Karl Kraus]</title>
           </bibl>
           <author key="pmb57923" role="hat-geschaffen">Kodiček, Josef</author>
@@ -38244,7 +38244,7 @@
         <bibl xml:id="pmb58142">
 
           <title type="main">Karl Kraus bei Haken- und Kruckenkreuz</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Karl Kraus bei Haken- und Kruckenkreuz</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58142/</idno>
@@ -38834,7 +38834,7 @@
         <bibl xml:id="pmb61446">
 
           <title type="main">[Bericht über Prozess Kraus – Arbeiter-Zeitung]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Bericht über Prozess Kraus – Arbeiter-Zeitung]</title>
           </bibl>
           <date from-iso="1937-10-01" to-iso="1937-10-31">1937-10 – 1937-10</date>
@@ -39001,7 +39001,7 @@
         <bibl xml:id="pmb62549">
 
           <title type="main">Prozess Tappert - Kempner (Kerr)</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Prozess Tappert - Kempner (Kerr)</title>
           </bibl>
           <date>1897-06-22 – 1897-06-22</date>
@@ -39025,7 +39025,7 @@
         <bibl xml:id="pmb62636">
 
           <title type="main">Tappert</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Tappert</title>
           </bibl>
           <date>1897-12-22 – 1897-12-22</date>
@@ -39049,7 +39049,7 @@
         <bibl xml:id="pmb62904">
 
           <title type="main">[Prozessbericht über Tappert/Lackowitz - Kerr]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Prozessbericht über Tappert/Lackowitz - Kerr]</title>
           </bibl>
           <date>1897-06-25 – 1897-06-25</date>
@@ -39754,7 +39754,7 @@
         <bibl xml:id="pmb63957">
 
           <title type="main">Wiener Osterpremieren.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wiener Osterpremieren.</title>
           </bibl>
 
@@ -39982,7 +39982,7 @@
         <bibl xml:id="pmb65357">
 
           <title type="main">Deutsche Kultur in Prag. Die Urania und ihr Anton Kuh</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Deutsche Kultur in Prag</title>
             <title level="m" type="subtitle">Die Urania und ihr Anton Kuh</title>
           </bibl>
@@ -40080,7 +40080,7 @@
         <bibl xml:id="pmb62920">
 
           <title type="main">Eulenspiegel</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Eulenspiegel</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -40161,7 +40161,7 @@
         <bibl xml:id="pmb87762">
 
           <title type="main">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87762/</idno>
@@ -40197,7 +40197,7 @@
         <bibl xml:id="pmb57954">
 
           <title type="main">[Nachruf auf Karl Kraus]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Nachruf auf Karl Kraus]</title>
           </bibl>
           <author key="pmb38144" role="hat-geschaffen">Franzel, Emil</author>
@@ -40249,7 +40249,7 @@
         <bibl xml:id="pmb53218">
 
           <title type="main">Satire und Polemik 1914–1920</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Satire und Polemik 1914–1920</title>
           </bibl>
           <author key="pmb38322" role="hat-geschaffen">Haecker, Theodor</author>
@@ -40280,7 +40280,7 @@
         <bibl xml:id="pmb50452">
 
           <title type="main">Preßgesetz</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Preßgesetz</title>
           </bibl>
           <date notBefore-iso="1922-01-01" when-iso="1922-07-02">1922</date>
@@ -40297,7 +40297,7 @@
         <bibl xml:id="pmb53063">
 
           <title type="main">Leipziger Kommentar</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Leipziger Kommentar</title>
           </bibl>
           <author key="pmb53060" role="hat-geschaffen">Ebermayer, Ludwig</author>
@@ -40321,7 +40321,7 @@
         <bibl xml:id="pmb53303">
 
           <title type="main">Symphoniae Sacrae III</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Symphoniae Sacrae III</title>
           </bibl>
           <author key="pmb53302" role="hat-geschaffen">Schütz, Heinrich</author>
@@ -40338,7 +40338,7 @@
 
           <title type="main">Das Strafgesetzbuch für das Deutsche Reich nebst dem
             Einführungsgesetz</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Das Strafgesetzbuch für das Deutsche Reich nebst dem
               Einführungsgesetz</title>
           </bibl>
@@ -40363,7 +40363,7 @@
         <bibl xml:id="pmb54794">
 
           <title type="main">Kommentar zum Preßgesetz und zur Strafgesetznovelle 1929.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kommentar zum Preßgesetz und zur Strafgesetznovelle 1929.</title>
           </bibl>
           <author key="pmb54793" role="hat-geschaffen">Swoboda, Ernst</author>
@@ -40387,7 +40387,7 @@
         <bibl xml:id="pmb54798">
 
           <title type="main">Kommentar zum österreichischen Strafrecht</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kommentar zum österreichischen Strafrecht</title>
           </bibl>
 
@@ -40436,7 +40436,7 @@
         <bibl xml:id="pmb55109">
 
           <title type="main">Das Gesetz vom 26. Dezember 1895</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das Gesetz vom 26</title>
             <title level="m" type="subtitle">Dezember 1895</title>
           </bibl>
@@ -40495,7 +40495,7 @@
 
           <title type="main">Das österreichische Urheberrecht an Werken der Literatur, Kunst und
             Photographie. Historisch und dogmatisch erläutert</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das österreichische Urheberrecht an Werken der Literatur, Kunst und
               Photographie</title>
             <title level="m" type="subtitle">Historisch und dogmatisch erläutert</title>
@@ -40530,7 +40530,7 @@
 
           <title type="main">Gesetz über das Urheberrecht an Werken der bildenden Künste und der
             Photographie vom 9. Januar 1907</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Gesetz über das Urheberrecht an Werken der bildenden Künste und der
               Photographie vom 9. Januar 1907</title>
           </bibl>
@@ -40569,7 +40569,7 @@
         <bibl xml:id="pmb55178">
 
           <title type="main">Österreichische Rechtsprechung in Strafsachen, Bd. 6</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Österreichische Rechtsprechung in Strafsachen</title>
             <title level="m" type="subtitle">, Bd. 6</title>
           </bibl>
@@ -40594,7 +40594,7 @@
         <bibl xml:id="pmb55188">
 
           <title type="main">Das bürgerliche Recht des Deutschen Reichs und Preußens</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Das bürgerliche Recht des Deutschen Reichs und Preußens</title>
           </bibl>
           <author key="pmb55187" role="hat-geschaffen">Dernburg, Heinrich</author>
@@ -40620,7 +40620,7 @@
 
           <title type="main">Zivilrechtlicher Anspruch auf Berichtigung unwahrer Mitteilungen über
             eine Person</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Zivilrechtlicher Anspruch auf Berichtigung unwahrer Mitteilungen über
               eine Person</title>
           </bibl>
@@ -40644,7 +40644,7 @@
         <bibl xml:id="pmb56806">
 
           <title type="main">System des österreichischen allgemeinen Privatrechts</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">System des österreichischen allgemeinen Privatrechts</title>
           </bibl>
           <author key="pmb56805" role="hat-einen-beitrag-geschaffen-zu">Krainz, Josef</author>
@@ -40671,7 +40671,7 @@
 
           <title type="main">Reichspressgesetz und die übrigen pressrechtlichen Vorschriften des
             Reichs und der Länder</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Reichspressgesetz und die übrigen pressrechtlichen Vorschriften des
               Reichs und der Länder</title>
           </bibl>
@@ -40703,7 +40703,7 @@
         <bibl xml:id="pmb57692">
 
           <title type="main">Materielles Strafrecht</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Materielles Strafrecht</title>
           </bibl>
           <author key="pmb57691" role="hat-geschaffen">Kallab, Jaroslav</author>
@@ -40728,7 +40728,7 @@
         <bibl xml:id="pmb57827">
 
           <title type="main">Tiskové právo československé</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Tiskové právo československé</title>
           </bibl>
 
@@ -40763,7 +40763,7 @@
 
           <title type="main">Deutschsprachiger Kommentar zum tschechischen Gesetz über den Schutz
             der Ehre</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Deutschsprachiger Kommentar zum tschechischen Gesetz über den Schutz
               der Ehre</title>
           </bibl>
@@ -40786,7 +40786,7 @@
         <bibl xml:id="pmb61601">
 
           <title type="main">Kommentar zum Allgemeinen deutschen Handelsgesetzbuch</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Kommentar zum Allgemeinen deutschen Handelsgesetzbuch</title>
           </bibl>
           <author key="pmb61602" role="hat-geschaffen">Staub, Hermann</author>
@@ -40811,7 +40811,7 @@
         <bibl xml:id="pmb54276">
 
           <title type="main">Programmheft Nr. 8</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Programmheft Nr. 8</title>
           </bibl>
           <date notBefore-iso="1930-01-01" when-iso="1930-07-02">1930</date>
@@ -40856,7 +40856,7 @@
         <bibl xml:id="pmb54289">
 
           <title type="main">Programmheft Nr. 6</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Programmheft Nr. 6</title>
           </bibl>
           <date notBefore-iso="1930-01-01" when-iso="1930-07-02">1930</date>
@@ -40894,7 +40894,7 @@
         <bibl xml:id="pmb56215">
 
           <title type="main">Panorama (Programmschrift für Die letzten Tage der Menschheit)</title>
-          <bibl type="sk" subtype="standalone text">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Panorama (Programmschrift für Die letzten Tage der Menschheit)</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56215/</idno>
@@ -40929,7 +40929,7 @@
         <bibl xml:id="pmb57017">
 
           <title type="main">Die pressgesetzliche Berichtigungspflicht</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Die pressgesetzliche Berichtigungspflicht</title>
           </bibl>
           <author key="pmb57016" role="hat-geschaffen">Regensburger, Norbert</author>
@@ -40965,7 +40965,7 @@
         <bibl xml:id="pmb56239">
 
           <title type="main">Eine Krone für Zion</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Eine Krone für Zion</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
@@ -40995,7 +40995,7 @@
         <bibl xml:id="pmb88316">
 
           <title type="main">Karl Kraus</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus</title>
           </bibl>
           <author key="pmb37852" role="hat-geschaffen">Benjamin, Walter</author>
@@ -41019,7 +41019,7 @@
         <bibl xml:id="pmb58362">
 
           <title type="main">Stimmen über Karl Kraus zum 60. Geburtstag.</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Stimmen über Karl Kraus zum 60. Geburtstag.</title>
           </bibl>
           <date notBefore-iso="1934-04-01" when-iso="1934-04-15">1934-04</date>
@@ -41073,7 +41073,7 @@
         <bibl xml:id="pmb62815">
 
           <title type="main">[Brief von Moritz Rosenthal an Das Kleine Journal]</title>
-          <bibl type="sk" subtype="standalone publication">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Brief von Moritz Rosenthal an Das Kleine Journal]</title>
           </bibl>
           <author key="pmb23605" role="hat-geschaffen">Rosenthal, Moritz</author>
