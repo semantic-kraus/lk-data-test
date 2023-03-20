@@ -1021,6 +1021,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00004">Theaterwelt</title>
             <num type="issue">Nr. 3</num>
+            <date key="pmb62323"/>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62323/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62323</idno>
@@ -8729,6 +8730,7 @@
             <title level="a">Theater in Berlin</title>
             <title level="j" key="#sk_lk00019">Programmheft</title>
             <num type="issue">Nr. 8</num>
+            <date key="pmb54279"/>
           </bibl>
           <author key="pmb54278" role="hat-geschaffen">N., S.</author>
           <date from-iso="1930-01-01" to-iso="1930-12-31">1930 – 1930</date>
@@ -12852,6 +12854,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00032">Sonderausgabe der Fackel</title>
             <num type="issue">Nr. 1 (= Schoberlied)</num>
+            <date key="pmb53123"/>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
@@ -13043,6 +13046,7 @@
           <bibl type="sk">
             <title level="j" key="#sk_lk00032">Sonderausgabe der Fackel</title>
             <num type="issue">Nr. 2(= Für Sangesbrüder)</num>
+            <date key="pmb53128"/>
           </bibl>
           <date notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53128/</idno>
@@ -13310,6 +13314,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb54804">Die Wahrheit</title>
             <num type="issue">Nr. 12</num>
+            <date key="pmb54811"/>
           </bibl>
           <date notBefore-iso="1931-01-01" when-iso="1931-07-02">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54811/</idno>
@@ -13452,6 +13457,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb54804">Die Wahrheit</title>
             <num type="issue">Nr. 32</num>
+            <date key="pmb55928"/>
           </bibl>
           <date notBefore-iso="1933-01-01" when-iso="1933-07-02">1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55928/</idno>
@@ -13498,6 +13504,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb55930">Welt im Wort</title>
             <num type="issue">Nr. 9</num>
+            <date key="pmb55932"/>
           </bibl>
           <date notBefore-iso="1933-01-01" when-iso="1933-07-02">1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55932/</idno>
@@ -14158,6 +14165,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb55934">Der Gegen-Angriff</title>
             <num type="issue">Nr. 34</num>
+            <date key="pmb56429"/>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56429/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56429</idno>
@@ -14193,6 +14201,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb55934">Der Gegen-Angriff</title>
             <num type="issue">Nr. 37</num>
+            <date key="pmb56431"/>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56431/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56431</idno>
@@ -14229,6 +14238,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb55934">Der Gegen-Angriff</title>
             <num type="issue">Nr. 33</num>
+            <date key="pmb56433"/>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56433/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56433</idno>
@@ -15349,6 +15359,7 @@
             <title level="j" key="#sk_lk00056">Anbruch</title>
             <num type="volume">Jg. 11</num>
             <num type="issue">Nr. 3</num>
+            <date key="pmb65581"/>
           </bibl>
           <date notBefore-iso="1929-03-01" when-iso="1929-03-16">1929-03</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65581/</idno>
@@ -19067,7 +19078,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb41202">Arbeiter-Zeitung</title>
             <num type="issue">Nr. 200</num>
-            <date when="1926-07-22" key="#sk_lk00220">22.7.1926</date>
+            <date when="1926-07-22" key="pmb52208">22.7.1926</date>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19260722&amp;zoom=33</title>
@@ -23607,7 +23618,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb41202">Arbeiter-Zeitung</title>
             <num type="issue">Nr.334</num>
-            <date when="1930-12-05" key="#sk_lk00317">05.12.1930</date>
+            <date when="1930-12-05" key="pmb56997">05.12.1930</date>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19301205&amp;zoom=33</title>
@@ -25136,6 +25147,7 @@
           <bibl type="sk">
             <title level="j" key="#pmb59117">Europäische Hefte vereinigt mit dem Aufruf</title>
             <num type="issue">Nr. 5</num>
+            <date key="pmb59118"/>
           </bibl>
           <date notBefore-iso="1935-03-01" when-iso="1935-03-16">1935-03</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59118/</idno>
@@ -26745,7 +26757,7 @@
           <title type="main">Allgemeiner Tiroler Anzeiger, 10.02.1920</title>
           <bibl type="sk">
             <title level="j" key="#pmb62913">Allgemeiner Tiroler Anzeiger</title>
-            <date when="1920-02-10" key="#sk_lk00396">10.02.1920</date>
+            <date when="1920-02-10" key="pmb62915">10.02.1920</date>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=tan&amp;datum=19200210&amp;seite=1</title>
@@ -32284,6 +32296,7 @@
             <title level="j" key="#pmb41202">Arbeiter-Zeitung</title>
             <num type="issue">Nr. 200</num>
             <biblScope>S. 4</biblScope>
+            <date key="pmb52208"/>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19260722&amp;seite=4&amp;zoom=33</title>
@@ -34436,6 +34449,7 @@
             <title level="a">Theater der Dichtung</title>
             <title level="j" key="#pmb54804">Die Wahrheit</title>
             <num type="issue">Nr. 12</num>
+            <date key="pmb54811"/>
           </bibl>
           <date notBefore-iso="1931-01-01" when-iso="1931-07-02">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54813/</idno>
@@ -36417,6 +36431,7 @@
             <title level="j" key="#pmb41202">Arbeiter-Zeitung</title>
             <num type="issue">Nr.334</num>
             <biblScope>S. 11</biblScope>
+            <date key="pmb56997"/>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19301205&amp;seite=11&amp;zoom=33</title>
@@ -36477,7 +36492,7 @@
             <title level="a">Eine Vorlesung von Karl Kraus</title>
             <title level="j" key="#pmb41202">Arbeiter-Zeitung</title>
             <num type="issue">Nr.334</num>
-            <date when="1930-12-05" key="#sk_lk00467">5.12.1930</date>
+            <date when="1930-12-05" key="pmb56997">5.12.1930</date>
             <biblScope>S. 11</biblScope>
           </bibl>
 
@@ -38389,6 +38404,7 @@
             <title level="a">Lumpenball</title>
             <title level="j" key="#pmb59117">Europäische Hefte vereinigt mit dem Aufruf</title>
             <num type="issue">Nr. 5</num>
+            <date key="pmb59118"/>
           </bibl>
           <author key="pmb43666" role="hat-geschaffen">Schlamm, William Siegmund</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59120/</idno>
@@ -39058,6 +39074,7 @@
             <num type="volume">13. Jhg</num>
             <num type="issue">Nr. 32</num>
             <biblScope>S. 3</biblScope>
+            <date key="pmb62915"/>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=tan&amp;datum=19200210&amp;seite=3&amp;zoom=33</title>
