@@ -133,6 +133,9 @@ for x in tqdm(to_process, total=len(to_process)):
             g.add((
                 text_passage, INT["R44_has_wording"], mention_wording
             ))
+            g.add((
+                subj, INT["R10_has_Text_Passage"], text_passage
+            ))
 
             text_segment = URIRef(f"{subj}/segment/{i}")
             text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
