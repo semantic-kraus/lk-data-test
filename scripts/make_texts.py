@@ -46,7 +46,7 @@ for x in tqdm(to_process, total=len(to_process)):
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
     g.add((subj, RDF.type, CIDOC["E73_Information_Object"]))
 # DOC-ARCHE-IDs
-    arche_id = URIRef(f"{SK}identifier/{xml_id}")
+    arche_id = URIRef(f"{SK}{xml_id}/identifier/0")
     arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{xml_id}.xml"
     g.add((
         subj, CIDOC["P1_is_identified_by"], arche_id
