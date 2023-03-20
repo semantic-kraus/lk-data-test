@@ -87,7 +87,7 @@ for x in tqdm(items, total=len(items)):
     subj = URIRef(item_id)
     g.add((subj, RDF.type, CIDOC["E74_Group"]))
     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
+    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
 
 # PLACES
 entity_type = "place"
@@ -105,7 +105,7 @@ for x in tqdm(items, total=len(items)):
     g.add((subj, RDF.type, CIDOC["E53_Place"]))
     g += coordinates_to_p168(subj, x)
     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und")
+    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
     try:
         pmb = x.xpath('.//tei:idno[@type="pmb"]/text()', namespaces=nsmap)[0]
     except IndexError:
