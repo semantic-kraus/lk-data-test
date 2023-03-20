@@ -9913,6 +9913,7 @@
           <title type="main">Die neue Rundschau</title>
           <bibl type="sk">
             <title level="j" key="#pmb36156">Die neue Rundschau</title>
+            <date when="1904">1904</date>
           </bibl>
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36156/</idno>
@@ -13338,7 +13339,8 @@
 
           <title type="main">Der Österreichische Volkswirt</title>
           <bibl type="sk">
-            <title level="j" key="#pmb55032">Der Österreichische Volkswirt</title>
+            <title level="j" key="#sk_lk00470">Der Österreichische Volkswirt</title>
+            <date when="1908" key="#pmb55032">1908</date>
           </bibl>
           <date notBefore-iso="1908-01-01" when-iso="1908-07-01">1908</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55032/</idno>
