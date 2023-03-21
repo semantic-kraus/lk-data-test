@@ -50,48 +50,25 @@ for x in tqdm(to_process, total=len(to_process)):
     subj_f4 = URIRef(f"{item_id}/carrier")
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
     g.add((subj, RDF.type, CIDOC["E73_Information_Object"]))
-# DOC-ARCHE-IDs
+    # DOC-ARCHE-IDs
     arche_id = URIRef(f"{SK}{xml_id}/identifier/0")
     arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{xml_id}.xml"
-    g.add((
-        subj, CIDOC["P1_is_identified_by"], arche_id
-    ))
-    g.add((
-        arche_id, RDF.type, CIDOC["E42_Identifier"]
-    ))
-    g.add((
-        arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)
-    ))
-    g.add((
-        arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")
-    ))
-# appellations
+    g.add((subj, CIDOC["P1_is_identified_by"], arche_id))
+    g.add((arche_id, RDF.type, CIDOC["E42_Identifier"]))
+    g.add((arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)))
+    g.add((arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")))
+    # appellations
     title_uri = URIRef(f"{subj}/title/0")
-    g.add((
-        title_uri, RDF.type, CIDOC["E35_Title"]
-    ))
-    g.add((
-        title_uri, RDF.value, Literal(item_label, lang="de")
-    ))
-    g.add((
-        title_uri, RDFS.label, Literal(item_label, lang="de")
-    ))
+    g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
+    g.add((title_uri, RDF.value, Literal(item_label, lang="de")))
+    g.add((title_uri, RDFS.label, Literal(item_label, lang="de")))
     g.add((subj, CIDOC["P102_has_title"], title_uri))
-    g.add((
-        title_uri, CIDOC["P2_has_type"], title_type
-    ))
+    g.add((title_uri, CIDOC["P2_has_type"], title_type))
 
-
-# F4_Manifestation
-    g.add((
-        subj_f4, RDF.type, FRBROO["F4_Manifestation_Singleton"]
-    ))
-    g.add((
-        subj_f4, RDFS.label, Literal(f"Carrier of: {item_label}")
-    ))
-    g.add((
-        subj_f4, CIDOC["P128_carries"], subj
-    ))
+    # F4_Manifestation
+    g.add((subj_f4, RDF.type, FRBROO["F4_Manifestation_Singleton"]))
+    g.add((subj_f4, RDFS.label, Literal(f"Carrier of: {item_label}")))
+    g.add((subj_f4, CIDOC["P128_carries"], subj))
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     creation_uri = URIRef(f"{subj}/creation")
     g.add((creation_uri, RDF.type, CIDOC["E65_Creation"]))
@@ -121,69 +98,48 @@ for x in tqdm(to_process, total=len(to_process)):
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
 
     # # fun with mentions
-    for i, mention in enumerate(doc.any_xpath('.//tei:body//tei:rs[@ref and @type="person"]')):
+    for i, mention in enumerate(
+        doc.any_xpath('.//tei:body//tei:rs[@ref and @type="person"]')
+    ):
         if mention.get("type") == "person":
             person_id = mention.attrib["ref"][1:]
             person_uri = URIRef(f"{SK}{person_id}")
             mention_string = normalize_string(" ".join(mention.xpath(".//text()")))
             text_passage = URIRef(f"{subj}/passage/{i}")
-            mention_wording = Literal(normalize_string(" ".join(mention.xpath('.//text()'))), lang="und")
+            mention_wording = Literal(
+                normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
+            )
             text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
-            g.add((
-                text_passage, RDF.type, INT["INT1_TextPassage"]
-            ))
-            g.add((
-                text_passage, RDFS.label, text_passage_label
-            ))
-            g.add((
-                text_passage, INT["R44_has_wording"], mention_wording
-            ))
-            g.add((
-                subj, INT["R10_has_Text_Passage"], text_passage
-            ))
+            g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
+            g.add((text_passage, RDFS.label, text_passage_label))
+            g.add((text_passage, INT["R44_has_wording"], mention_wording))
+            g.add((subj, INT["R10_has_Text_Passage"], text_passage))
 
             text_segment = URIRef(f"{subj}/segment/{i}")
             text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
-            g.add((
-                text_segment, RDF.type, INT["INT16_Segment"]
-            ))
-            g.add((
-                text_segment, RDFS.label, text_segment_label
-            ))
-            g.add((
-                text_segment, INT["R16_incorporates"], text_passage
-            ))
-            g.add((
-                text_segment, INT["R44_has_wording"], mention_wording
-            ))
+            g.add((text_segment, RDF.type, INT["INT16_Segment"]))
+            g.add((text_segment, RDFS.label, text_segment_label))
+            g.add((text_segment, INT["R16_incorporates"], text_passage))
+            g.add((text_segment, INT["R44_has_wording"], mention_wording))
             try:
-                pb_start = mention.xpath('.//preceding::tei:pb/@n', namespaces=NSMAP)[-1]
+                pb_start = mention.xpath(".//preceding::tei:pb/@n", namespaces=NSMAP)[
+                    -1
+                ]
             except IndexError:
                 pb_start = 1
-            g.add((
-                text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")
-            ))
-            g.add((
-                text_segment, INT["R41_has_location"], Literal(arche_id_value) 
-            ))
-            g.add((
-                text_segment, SCHEMA["pages"], Literal(f"S. {pb_start}")
-            ))
-            g.add((
-                text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")
-            ))
+            g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")))
+            g.add((text_segment, INT["R41_has_location"], Literal(arche_id_value)))
+            g.add((text_segment, SCHEMA["pages"], Literal(f"S. {pb_start}")))
+            g.add((text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")))
 
-            g.add((
-                subj_f4, CIDOC["P128_carries"], text_segment
-            ))
+            g.add((subj_f4, CIDOC["P128_carries"], text_segment))
             # try:
             #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
             # except IndexError:
             #     pb_end = pb_start
         else:
             continue
-        
-            
+
         # mention_singleton_uri = URIRef(f"{subj}/text-passage/{person_id}/{i}/f4")
         # mention_segment = URIRef(f"{text_passage}/int16")
         # g.add((text_passage, RDF.type, CIDOC["E5_Event"]))
@@ -228,55 +184,34 @@ for x in tqdm(files, total=len(files)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
-    item_comment = normalize_string(doc.any_xpath(".//tei:abstract[1]/tei:p//text()")[0])
-    
+    item_comment = normalize_string(
+        doc.any_xpath(".//tei:abstract[1]/tei:p//text()")[0]
+    )
+
     g.add((subj, RDF.type, CIDOC["E5_Event"]))
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
-    g.add((
-        subj, RDFS.comment, Literal(item_comment, lang="de")
-    ))
+    g.add((subj, RDFS.comment, Literal(item_comment, lang="de")))
     # appellations
     app_uri = URIRef(f"{subj}/appellation/0")
-    g.add((
-        app_uri, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]
-    ))
-    g.add((
-        app_uri, RDF.value, Literal(item_label, lang="de")
-    ))
-    g.add((
-        app_uri, RDFS.label, Literal(item_label, lang="de")
-    ))
+    g.add((app_uri, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
+    g.add((app_uri, RDF.value, Literal(item_label, lang="de")))
+    g.add((app_uri, RDFS.label, Literal(item_label, lang="de")))
     g.add((subj, CIDOC["P1_is_identified_by"], app_uri))
 
-# DOC-ARCHE-IDs
+    # DOC-ARCHE-IDs
     arche_id = URIRef(f"{SK}identifier/{xml_id}")
     arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{xml_id}.xml"
-    g.add((
-        subj, CIDOC["P1_is_identified_by"], arche_id
-    ))
-    g.add((
-        arche_id, RDF.type, CIDOC["E42_Identifier"]
-    ))
-    g.add((
-        arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)
-    ))
-    g.add((
-        arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")
-    ))
+    g.add((subj, CIDOC["P1_is_identified_by"], arche_id))
+    g.add((arche_id, RDF.type, CIDOC["E42_Identifier"]))
+    g.add((arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)))
+    g.add((arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")))
 
     # linked documents
     for y in doc.any_xpath('.//tei:list[@type="objects"]//tei:ref/text()'):
-        doc_xml_id = y.replace('.xml', '')
+        doc_xml_id = y.replace(".xml", "")
         doc_uri = URIRef(f"{SK}{doc_xml_id}")
-        g.add((
-            doc_uri, CIDOC["P12i_was_present_at"], subj
-        ))
-        g.add((
-            subj, CIDOC["P12_occurred_in_the_presence_of"], doc_uri
-        ))
-
-
-
+        g.add((doc_uri, CIDOC["P12i_was_present_at"], subj))
+        g.add((subj, CIDOC["P12_occurred_in_the_presence_of"], doc_uri))
 
 
 print("writing graph to file")

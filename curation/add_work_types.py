@@ -2,13 +2,13 @@ from acdh_tei_pyutils.tei import TeiReader
 
 from work_type_mapping import work_types
 
-list_work = './data/indices/listwork.xml'
+list_work = "./data/indices/listwork.xml"
 
 
 doc = TeiReader(list_work)
 
 all = 0
-bibls = doc.any_xpath('.//tei:listBibl/tei:bibl')
+bibls = doc.any_xpath(".//tei:listBibl/tei:bibl")
 print("deleting existing tpyes")
 for x in doc.any_xpath('.//tei:bibl[@type="sk"]'):
     x.attrib["subtype"] = "no_type"

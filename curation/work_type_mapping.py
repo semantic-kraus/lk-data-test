@@ -5,7 +5,7 @@ work_types = [
     },
     {
         "type_value": "issue",
-        "type_xpath": '//tei:bibl[@type="sk"][./tei:title[@level="j"] and not(./tei:title[@level="a"]) and ./tei:date[@key]]'
+        "type_xpath": '//tei:bibl[@type="sk"][./tei:title[@level="j"] and not(./tei:title[@level="a"]) and ./tei:date[@key]]',
     },
     {
         "type_value": "article",

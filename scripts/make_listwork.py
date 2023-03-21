@@ -21,7 +21,7 @@ entity_type = "work"
 index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
 nsmap = doc.nsmap
-items = doc.any_xpath(f".//tei:listBibl/tei:bibl")
+items = doc.any_xpath(".//tei:listBibl/tei:bibl")
 if LIMIT:
     items = items[:LIMIT]
 print(f"converting {entity_type}s derived from {index_file}")
@@ -64,34 +64,22 @@ for x in tqdm(items, total=len(items)):
 
     # creation
     expre_creation_uri = URIRef(f"{subj}/creation")
-    g.add((
-        expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]
-    ))
-    g.add((
-        expre_creation_uri, RDFS.label, Literal(f"Creation of: {label_value}")
-    ))
-    g.add((
-        expre_creation_uri, FRBROO["R17_created"], subj
-    ))
-    for author in x.xpath('.//tei:author/@key', namespaces=nsmap):
+    g.add((expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]))
+    g.add((expre_creation_uri, RDFS.label, Literal(f"Creation of: {label_value}")))
+    g.add((expre_creation_uri, FRBROO["R17_created"], subj))
+    for author in x.xpath(".//tei:author/@key", namespaces=nsmap):
         author_uri = URIRef(f"{SK}{author}")
-        g.add((
-            expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri
-        ))
-        g.add((
-            author_uri, CIDOC["P14i_performed"], expre_creation_uri
-        ))
+        g.add((expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri))
+        g.add((author_uri, CIDOC["P14i_performed"], expre_creation_uri))
     # title
     title_uri = URIRef(f"{subj}/title/0")
     g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-    g.add(
-        (title_uri, RDF.value, Literal(f"{label_value}", lang="und"))
-    )
+    g.add((title_uri, RDF.value, Literal(f"{label_value}", lang="und")))
     g.add((title_uri, CIDOC["P2_has_type"], main_title_type_uri))
     g.add((subj, CIDOC["P102_has_title"], title_uri))
 
-    #F24 Publication Expression
-    if len(x.xpath('.//tei:date', namespaces=nsmap)) > 0:
+    # F24 Publication Expression
+    if len(x.xpath(".//tei:date", namespaces=nsmap)) > 0:
         publ_expr_uri = URIRef(f"{subj}/publication")
 
     # subtitle
@@ -115,9 +103,6 @@ for x in tqdm(items, total=len(items)):
     g += make_e42_identifiers(
         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
     )
-
-    
-
 
 print("writing graph to file")
 g.serialize(f"{rdf_dir}/{entity_type}s.ttl")
