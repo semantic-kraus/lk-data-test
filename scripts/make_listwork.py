@@ -69,14 +69,14 @@ for x in tqdm(items, total=len(items)):
         else:
             label_value = title.text
             break
-    # label_value = normalize_string(label_value)
-    # g.add(
-    #     (
-    #         subj,
-    #         RDFS.label,
-    #         Literal(f"Expression: {label_value}", lang="en"),
-    #     )
-    # )
+    label_value = normalize_string(label_value)
+    g.add(
+        (
+            subj,
+            RDFS.label,
+            Literal(f"Expression: {label_value}", lang="en"),
+        )
+    )
 
     # # creation
     # expre_creation_uri = URIRef(f"{subj}/creation")
