@@ -2,7 +2,7 @@ import os
 import glob
 from tqdm import tqdm
 from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
-from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP
+from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 from rdflib.namespace import RDF, RDFS
@@ -13,14 +13,13 @@ if os.environ.get("NO_LIMIT"):
 else:
     LIMIT = 100
 
-INT = Namespace("https://w3id.org/lso/intro/Vx/#")
-SCHEMA = Namespace("https://schema.org/")
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 title_type = URIRef(f"{SK}types/title/prov")
+arche_text_type_uri = URIRef("https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE")
 g = Graph()
 entity_type = "documents"
 if LIMIT:
@@ -57,6 +56,7 @@ for x in tqdm(to_process, total=len(to_process)):
     g.add((arche_id, RDF.type, CIDOC["E42_Identifier"]))
     g.add((arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)))
     g.add((arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")))
+    g.add((arche_id, CIDOC["P2_has_type"], arche_text_type_uri))
     # appellations
     title_uri = URIRef(f"{subj}/title/0")
     g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
@@ -205,6 +205,7 @@ for x in tqdm(files, total=len(files)):
     g.add((arche_id, RDF.type, CIDOC["E42_Identifier"]))
     g.add((arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)))
     g.add((arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")))
+    g.add((arche_id, CIDOC["P2_has_type"], arche_text_type_uri))
 
     # linked documents
     for y in doc.any_xpath('.//tei:list[@type="objects"]//tei:ref/text()'):
