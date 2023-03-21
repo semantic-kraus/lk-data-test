@@ -12,12 +12,33 @@ if os.environ.get("NO_LIMIT"):
     LIMIT = False
 else:
     LIMIT = 100
+domain = "https://sk.acdh.oeaw.ac.at/"
+SK = Namespace(domain)
+# build uri lookup dict for listwork.xml
+
+listwork = "./data/indices/listwork.xml"
+doc = TeiReader(listwork)
+items = doc.any_xpath(".//tei:listBibl/tei:bibl[./tei:bibl[@subtype]]")
+nsmap = doc.nsmap
+bibl_class_lookup_dict = {}
+for x in tqdm(items, total=len(items)):
+    try:
+        xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+    except Exception as e:
+        print(x, e)
+        continue
+    item_sk_type = x.xpath('./tei:bibl/@subtype', namespaces=nsmap)[0]
+    if item_sk_type == "journal":
+        bibl_class_lookup_dict[xml_id] = f"{SK}{xml_id}/published-expression"
+    else:
+        bibl_class_lookup_dict[xml_id] = f"{SK}{xml_id}"
+
+
 
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
-domain = "https://sk.acdh.oeaw.ac.at/"
-SK = Namespace(domain)
+
 title_type = URIRef(f"{SK}types/title/prov")
 arche_text_type_uri = URIRef("https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE")
 g = Graph()
@@ -157,7 +178,29 @@ for x in tqdm(to_process, total=len(to_process)):
             g.add((text_reference, CIDOC["P67_refers_to"], person_uri))
         if mention.get("type") == "work" and mention.get("subtype") == "pmb":
             work_id = mention.attrib["ref"][1:]
-            # work_uri = URIRef(f"{SK}{work_id}")
+            try:
+                work_uri = URIRef(bibl_class_lookup_dict[work_id])
+            except KeyError:
+                print(f"no uri for ref {work_id} found")
+                continue
+            intertext_relation = URIRef(f"{subj}/relation/{i}")
+            g.add((
+                intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]
+            ))
+            g.add(
+                (
+                    intertext_relation,
+                    RDFS.label,
+                    Literal(f"Intertextual relation", lang="en"),
+                )
+            )
+            g.add((
+                intertext_relation, INT["R24_has_related_entity"], text_passage
+            ))
+            g.add((
+                intertext_relation, INT["R24_has_related_entity"], work_uri
+            ))
+
 
 
 # cases

@@ -10,7 +10,7 @@ from rdflib.namespace import RDF, RDFS
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
 else:
-    LIMIT = 100
+    LIMIT = False
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
@@ -21,7 +21,7 @@ entity_type = "work"
 index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
 nsmap = doc.nsmap
-items = doc.any_xpath(".//tei:listBibl/tei:bibl")
+items = doc.any_xpath(".//tei:listBibl/tei:bibl[./tei:bibl[@subtype]]")
 if LIMIT:
     items = items[:LIMIT]
 print(f"converting {entity_type}s derived from {index_file}")
@@ -37,8 +37,25 @@ for x in tqdm(items, total=len(items)):
     except Exception as e:
         print(x, e)
         continue
-    item_id = f"{SK}{xml_id}"
-    subj = URIRef(item_id)
+    item_sk_type = x.xpath('./tei:bibl/@subtype', namespaces=nsmap)[0]
+    if item_sk_type == "standalone_publication" or item_sk_type == "article" or item_sk_type == "standalone_text":
+        item_id = f"{SK}{xml_id}"
+        subj = URIRef(item_id)
+        g.add((
+            subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]
+        ))
+    elif item_sk_type == "journal":
+        item_id = f"{SK}{xml_id}/published-expression"
+        subj = URIRef(item_id)
+        g.add((
+            subj, RDF.type, FRBROO["F24_Publication_Expression"]
+        ))
+    else:
+        item_id = f"{SK}{xml_id}"
+        subj = URIRef(item_id)
+        g.add((
+            subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]
+        ))
     for title in x.xpath(
         './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
     ):
@@ -52,57 +69,56 @@ for x in tqdm(items, total=len(items)):
         else:
             label_value = title.text
             break
-    label_value = normalize_string(label_value)
-    g.add((subj, RDF.type, CIDOC["F22_Self-Contained_Expression"]))
-    g.add(
-        (
-            subj,
-            RDFS.label,
-            Literal(f"Expression: {label_value}", lang="en"),
-        )
-    )
+    # label_value = normalize_string(label_value)
+    # g.add(
+    #     (
+    #         subj,
+    #         RDFS.label,
+    #         Literal(f"Expression: {label_value}", lang="en"),
+    #     )
+    # )
 
-    # creation
-    expre_creation_uri = URIRef(f"{subj}/creation")
-    g.add((expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]))
-    g.add((expre_creation_uri, RDFS.label, Literal(f"Creation of: {label_value}")))
-    g.add((expre_creation_uri, FRBROO["R17_created"], subj))
-    for author in x.xpath(".//tei:author/@key", namespaces=nsmap):
-        author_uri = URIRef(f"{SK}{author}")
-        g.add((expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri))
-        g.add((author_uri, CIDOC["P14i_performed"], expre_creation_uri))
-    # title
-    title_uri = URIRef(f"{subj}/title/0")
-    g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-    g.add((title_uri, RDF.value, Literal(f"{label_value}", lang="und")))
-    g.add((title_uri, CIDOC["P2_has_type"], main_title_type_uri))
-    g.add((subj, CIDOC["P102_has_title"], title_uri))
+    # # creation
+    # expre_creation_uri = URIRef(f"{subj}/creation")
+    # g.add((expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]))
+    # g.add((expre_creation_uri, RDFS.label, Literal(f"Creation of: {label_value}")))
+    # g.add((expre_creation_uri, FRBROO["R17_created"], subj))
+    # for author in x.xpath(".//tei:author/@key", namespaces=nsmap):
+    #     author_uri = URIRef(f"{SK}{author}")
+    #     g.add((expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri))
+    #     g.add((author_uri, CIDOC["P14i_performed"], expre_creation_uri))
+    # # title
+    # title_uri = URIRef(f"{subj}/title/0")
+    # g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
+    # g.add((title_uri, RDF.value, Literal(f"{label_value}", lang="und")))
+    # g.add((title_uri, CIDOC["P2_has_type"], main_title_type_uri))
+    # g.add((subj, CIDOC["P102_has_title"], title_uri))
 
-    # F24 Publication Expression
-    if len(x.xpath(".//tei:date", namespaces=nsmap)) > 0:
-        publ_expr_uri = URIRef(f"{subj}/publication")
+    # # F24 Publication Expression
+    # if len(x.xpath(".//tei:date", namespaces=nsmap)) > 0:
+    #     publ_expr_uri = URIRef(f"{subj}/publication")
 
-    # subtitle
-    for i, sub in enumerate(
-        x.xpath('.//tei:title[@type="subtitle"]', namespaces=nsmap), start=1
-    ):
-        label_value = sub.text
-        title_uri = URIRef(f"{subj}/title/{i}")
-        g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-        g.add(
-            (
-                title_uri,
-                RDF.value,
-                Literal(normalize_string(f"{label_value}"), lang="und"),
-            )
-        )
-        g.add((title_uri, CIDOC["P2_has_type"], sub_title_type_uri))
-        g.add((subj, CIDOC["P102_has_title"], title_uri))
+    # # subtitle
+    # for i, sub in enumerate(
+    #     x.xpath('.//tei:title[@type="subtitle"]', namespaces=nsmap), start=1
+    # ):
+    #     label_value = sub.text
+    #     title_uri = URIRef(f"{subj}/title/{i}")
+    #     g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
+    #     g.add(
+    #         (
+    #             title_uri,
+    #             RDF.value,
+    #             Literal(normalize_string(f"{label_value}"), lang="und"),
+    #         )
+    #     )
+    #     g.add((title_uri, CIDOC["P2_has_type"], sub_title_type_uri))
+    #     g.add((subj, CIDOC["P102_has_title"], title_uri))
 
-    # identifiers
-    g += make_e42_identifiers(
-        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
-    )
+    # # identifiers
+    # g += make_e42_identifiers(
+    #     subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+    # )
 
 print("writing graph to file")
 g.serialize(f"{rdf_dir}/{entity_type}s.ttl")
