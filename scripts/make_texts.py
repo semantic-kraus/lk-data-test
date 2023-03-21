@@ -137,6 +137,31 @@ for x in tqdm(to_process, total=len(to_process)):
             #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
             # except IndexError:
             #     pb_end = pb_start
+
+            text_actualization = URIRef(f"{subj}/actualization/{i}")
+            g.add((
+                text_actualization, RDF.type, INT["INT2_ActualizationOfFeature"]
+            ))
+            g.add((
+                text_actualization, RDFS.label, Literal(f"Actualization on: {item_label}", lang="en")
+            ))
+            g.add((
+                text_passage, INT["R18_shows_actualization"], text_actualization
+            ))
+
+            text_reference = URIRef(f"{subj}/reference/{i}")
+            g.add((
+                text_reference, RDF.type, INT["INT18_Reference"]
+            ))
+            g.add((
+                text_reference, RDFS.label, Literal(f"Reference on: {item_label}", lang="en")
+            ))
+            g.add((
+                text_actualization, INT["R17_actualizes_feature"], text_reference
+            ))
+            g.add((
+                text_reference, CIDOC["P67_refers_to"], person_uri
+            ))
         else:
             continue
 
