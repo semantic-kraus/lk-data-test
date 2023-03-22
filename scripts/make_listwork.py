@@ -37,25 +37,19 @@ for x in tqdm(items, total=len(items)):
     except Exception as e:
         print(x, e)
         continue
-    item_sk_type = x.xpath('./tei:bibl/@subtype', namespaces=nsmap)[0]
+    item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
     if item_sk_type == "standalone_publication" or item_sk_type == "article" or item_sk_type == "standalone_text":
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
-        g.add((
-            subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]
-        ))
+        g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
     elif item_sk_type == "journal":
         item_id = f"{SK}{xml_id}/published-expression"
         subj = URIRef(item_id)
-        g.add((
-            subj, RDF.type, FRBROO["F24_Publication_Expression"]
-        ))
+        g.add((subj, RDF.type, FRBROO["F24_Publication_Expression"]))
     else:
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
-        g.add((
-            subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]
-        ))
+        g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
     for title in x.xpath(
         './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
     ):
