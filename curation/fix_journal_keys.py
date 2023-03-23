@@ -46,4 +46,3 @@ for x in doc.any_xpath(".//*[@key]"):
         continue
     x.attrib["key"] = new_key
 doc.tree_to_file(source_tei)
-
