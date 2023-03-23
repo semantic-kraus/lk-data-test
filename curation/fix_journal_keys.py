@@ -26,7 +26,9 @@ doc.tree_to_file(source_tei)
 print("and now to #6 https://github.com/semantic-kraus/lk-data/issues/6")
 
 doc = TeiReader(source_tei)
-items = doc.any_xpath('.//tei:bibl[@type="sk"]/tei:title[@level="j" and not(parent::tei:bibl/tei:title[not(@level="j")][2]) and not(parent::tei:bibl/tei:date) and not(parent::tei:bibl/tei:num)]')
+items = doc.any_xpath(
+    './/tei:bibl[@type="sk"]/tei:title[@level="j" and not(parent::tei:bibl/tei:title[not(@level="j")][2]) and not(parent::tei:bibl/tei:date) and not(parent::tei:bibl/tei:num)]' # noqa:
+)
 nsmap = doc.nsmap
 print(len(items))
 replace_dict = {}
@@ -37,10 +39,10 @@ for x in items:
     print(journal_key, bibl_id)
     x.attrib["key"] = f"#{bibl_id}"
     replace_dict[journal_key] = f"#{bibl_id}"
-for x in doc.any_xpath('.//*[@key]'):
+for x in doc.any_xpath(".//*[@key]"):
     try:
         new_key = replace_dict[x.attrib["key"]]
-    except:
+    except KeyError:
         continue
     x.attrib["key"] = new_key
 doc.tree_to_file(source_tei)

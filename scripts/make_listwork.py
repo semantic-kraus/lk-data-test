@@ -1,6 +1,6 @@
 import os
 from tqdm import tqdm
-from acdh_cidoc_pyutils import normalize_string, make_e42_identifiers
+from acdh_cidoc_pyutils import normalize_string
 
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader

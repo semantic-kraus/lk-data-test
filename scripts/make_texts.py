@@ -27,13 +27,11 @@ for x in tqdm(items, total=len(items)):
     except Exception as e:
         print(x, e)
         continue
-    item_sk_type = x.xpath('./tei:bibl/@subtype', namespaces=nsmap)[0]
+    item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
     if item_sk_type == "journal":
         bibl_class_lookup_dict[xml_id] = f"{SK}{xml_id}/published-expression"
     else:
         bibl_class_lookup_dict[xml_id] = f"{SK}{xml_id}"
-
-
 
 
 rdf_dir = "./rdf"
@@ -184,23 +182,16 @@ for x in tqdm(to_process, total=len(to_process)):
                 print(f"no uri for ref {work_id} found")
                 continue
             intertext_relation = URIRef(f"{subj}/relation/{i}")
-            g.add((
-                intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]
-            ))
+            g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
             g.add(
                 (
                     intertext_relation,
                     RDFS.label,
-                    Literal(f"Intertextual relation", lang="en"),
+                    Literal("Intertextual relation", lang="en"),
                 )
             )
-            g.add((
-                intertext_relation, INT["R24_has_related_entity"], text_passage
-            ))
-            g.add((
-                intertext_relation, INT["R24_has_related_entity"], work_uri
-            ))
-
+            g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
+            g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
 
 
 # cases
