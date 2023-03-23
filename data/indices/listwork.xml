@@ -14697,7 +14697,7 @@
 
           <title type="main">Selbstwehr. Jüdisches Volksblatt</title>
           <bibl type="sk" subtype="standalone_publication">
-            <title level="j" key="#sk_lk00044">Selbstwehr</title>
+            <title level="j" key="#pmb57894">Selbstwehr</title>
             <title level="m" type="subtitle">Jüdisches Volksblatt</title>
           </bibl>
 
@@ -14745,7 +14745,7 @@
 
           <title type="werk_bibliografische-angabe">Selbstwehr, Nr. 26, 19.6.1936</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00044">Selbstwehr</title>
+            <title level="j" key="#pmb57894">Selbstwehr</title>
             <num type="issue">Nr. 26</num>
             <date when="1936-06-19" key="#sk_lk00184">19.6.1936</date>
           </bibl>
@@ -15066,7 +15066,7 @@
             1932</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb60433">Der Scheinwerfer</title>
-            <title level="j" type="subtitle" key="_">Programmschrift des Essener
+            <title level="j" type="subtitle" key="#pmb56336">Programmschrift des Essener
               Stadttheaters</title>
             <date when="1932-03" key="#sk_lk00188">März 1932</date>
           </bibl>
@@ -15442,7 +15442,7 @@
 
           <title type="main">Die Rote Fahne (Wien)</title>
           <bibl type="sk" subtype="journal">
-            <title level="j" key="#sk_lk00058">Die Rote Fahne</title>
+            <title level="j" key="#pmb87695">Die Rote Fahne</title>
             <pubPlace>Wien</pubPlace>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87695/</idno>
@@ -15468,7 +15468,7 @@
 
           <title type="werk_bibliografische-angabe">Die Rote Fahne, Nr. 112, 13.5.1927</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00058">Die Rote Fahne</title>
+            <title level="j" key="#pmb87695">Die Rote Fahne</title>
             <num type="issue">Nr. 112</num>
             <date when="1927-05-13" key="#sk_lk00193">13.5.1927</date>
           </bibl>
@@ -17343,7 +17343,7 @@
 
           <title type="werk_bibliografische-angabe">Nr. 2456</title>
           <bibl type="sk" subtype="standalone_publication">
-            <title level="m" key="_">Nr. 2456</title>
+            <title level="m" key="#pmb56336">Nr. 2456</title>
           </bibl>
           <date>1922-12-19 – 1922-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50450/</idno>
@@ -20324,7 +20324,7 @@
 
           <title type="main">Fränkischer Kurier, 5.3.1928</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <date when="1928-03-05" key="#sk_lk00250">5.3.1928</date>
           </bibl>
           <date>1928-03-05 – 1928-03-05</date>
@@ -20384,7 +20384,7 @@
 
           <title type="main">Fränkischer Kurier, 20.4.1929</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <date when="1929-04-20" key="#sk_lk00251">20.4.1929</date>
           </bibl>
           <date>1929-04-20 – 1929-04-20</date>
@@ -20642,7 +20642,7 @@
           <title type="main">Literarische Rundschau (Berliner Tageblatt), 14.10.1928</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41531">Berliner Tageblatt</title>
-            <title level="j" type="subtitle" key="_">Literarische Rundschau</title>
+            <title level="j" type="subtitle" key="#pmb56336">Literarische Rundschau</title>
             <date when="1928-10-14" key="#sk_lk00259">14.10.1928</date>
           </bibl>
           <date>1928-10-14 – 1928-10-14</date>
@@ -20865,7 +20865,7 @@
 
           <title type="main">Fränkischer Kurier, 19.4.1929</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <date when="1929-04-19" key="#sk_lk00267">19.4.1929</date>
           </bibl>
           <date>1929-04-19 – 1929-04-19</date>
@@ -25842,7 +25842,7 @@
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 15.10.1914</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
             <date when="1914-10-15" key="#sk_lk00371">15.10.1914</date>
           </bibl>
           <date>1914-10-15 – 1914-10-15</date>
@@ -25869,7 +25869,7 @@
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 30.12.1914</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
             <date when="1914-12-30" key="#sk_lk00372">30.12.1914</date>
           </bibl>
           <date>1914-12-30 – 1914-12-30</date>
@@ -25896,7 +25896,7 @@
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 19.12.1914</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
             <date when="1914-12-19" key="#sk_lk00373">19.12.1914</date>
           </bibl>
           <date>1914-12-19 – 1914-12-19</date>
@@ -25923,7 +25923,7 @@
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 27.01.1915</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
             <date when="1915-01-27" key="#sk_lk00374">27.01.1915</date>
           </bibl>
           <date>1915-01-27 – 1915-01-27</date>
@@ -26059,7 +26059,7 @@
             16.01.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 13</num>
             <date when="1916-01-16" key="#sk_lk00379">16.01.1916</date>
           </bibl>
@@ -26088,7 +26088,7 @@
             19.01.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 15</num>
             <date when="1916-01-19" key="#sk_lk00380">19.01.1916</date>
           </bibl>
@@ -26117,7 +26117,7 @@
             22.01.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 18</num>
             <date when="1916-01-22" key="#sk_lk00381">22.01.1916</date>
           </bibl>
@@ -26146,7 +26146,7 @@
             28.01.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 23</num>
             <date when="1916-01-28" key="#sk_lk00382">28.01.1916</date>
           </bibl>
@@ -26175,7 +26175,7 @@
             09.02.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 33</num>
             <date when="1916-02-09" key="#sk_lk00383">09.02.1916</date>
           </bibl>
@@ -26204,7 +26204,7 @@
             26.02.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 48</num>
             <date when="1916-02-26" key="#sk_lk00384">26.02.1916</date>
           </bibl>
@@ -26233,7 +26233,7 @@
             11.03.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 60</num>
             <date when="1916-03-11" key="#sk_lk00385">11.03.1916</date>
           </bibl>
@@ -26262,7 +26262,7 @@
             24.03.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 71</num>
             <date when="1916-03-24" key="#sk_lk00386">24.03.1916</date>
           </bibl>
@@ -26291,7 +26291,7 @@
             30.03.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 76</num>
             <date when="1916-03-30" key="#sk_lk00387">30.03.1916</date>
           </bibl>
@@ -26320,7 +26320,7 @@
             12.04.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 87</num>
             <date when="1916-04-12" key="#sk_lk00388">12.04.1916</date>
           </bibl>
@@ -26349,7 +26349,7 @@
             24.05.1916</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="_">Illustr. Teil, Ausgabe A</title>
+            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
             <num type="issue">Nr. 121</num>
             <date when="1916-05-24" key="#sk_lk00389">24.05.1916</date>
           </bibl>
@@ -27834,7 +27834,7 @@
             2.12.1927</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb36374">Neue Freie Presse</title>
-            <title level="j" type="subtitle" key="_">Abendblatt</title>
+            <title level="j" type="subtitle" key="#pmb56336">Abendblatt</title>
             <num type="issue">Nr. 22705</num>
             <date when="1927-12-02" key="#sk_lk00426">2.12.1927</date>
           </bibl>
@@ -28187,7 +28187,7 @@
 
           <title type="main">Fränkischer Kurier Nürnberg</title>
           <bibl type="sk" subtype="journal">
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <pubPlace>Nürnberg</pubPlace>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87708/</idno>
@@ -28333,7 +28333,7 @@
 
           <title type="main">Der Morgen. Wiener Montagsblatt</title>
           <bibl type="sk" subtype="standalone_publication">
-            <title level="j" key="#sk_lk00117">Der Morgen</title>
+            <title level="j" key="#pmb42403">Der Morgen</title>
             <title level="m" type="subtitle">Wiener Montagsblatt</title>
           </bibl>
 
@@ -28897,8 +28897,8 @@
 
           <title type="main">Die Fackel (Sozialistische Wochenzeitung)</title>
           <bibl type="sk" subtype="journal">
-            <title level="j" key="#pmb41244">Die Fackel</title>
-            <title level="j" type="subtitle" key="_">Sozialistische Wochenzeitung</title>
+            <title level="j" key="#pmb56336">Die Fackel</title>
+            <title level="j" type="subtitle" key="#pmb56336">Sozialistische Wochenzeitung</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56336/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56336</idno>
@@ -29465,8 +29465,8 @@
           <title type="werk_bibliografische-angabe">Die Fackel (Sozialistische Wochenzeitung),
             11.11.1931</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#pmb41244">Die Fackel</title>
-            <title level="j" type="subtitle" key="_">Sozialistische Wochenzeitung</title>
+            <title level="j" key="#pmb56336">Die Fackel</title>
+            <title level="j" type="subtitle" key="#pmb56336">Sozialistische Wochenzeitung</title>
             <date when="1931-11-11" key="#sk_lk00450">11.11.1931</date>
           </bibl>
           <date>1931-11-11 – 1931-11-11</date>
@@ -29483,7 +29483,7 @@
 
           <title type="main">Der Bücherwurm. Eine Monatsschrift</title>
           <bibl type="sk" subtype="standalone_text">
-            <title level="j" key="#sk_lk00123">Der Bücherwurm</title>
+            <title level="j" key="#pmb53675">Der Bücherwurm</title>
             <title level="m" type="subtitle">Eine Monatsschrift</title>
           </bibl>
           <author key="pmb43577" role="hat-herausgegeben">Weichardt, Walter</author>
@@ -29503,8 +29503,8 @@
           <title type="werk_bibliografische-angabe">Der Bücherwurm. Eine Monatsschrift, Jg. 12, H.
             ?, September 1927</title>
           <bibl type="sk" subtype="issue">
-            <title level="j" key="#sk_lk00123">Der Bücherwurm</title>
-            <title level="j" type="subtitle" key="_">Eine Monatsschrift</title>
+            <title level="j" key="#pmb53675">Der Bücherwurm</title>
+            <title level="j" type="subtitle" key="#pmb56336">Eine Monatsschrift</title>
             <num type="volume">Jg. 12</num>
             <num type="issue">H. ?</num>
             <date when="1927-09" key="#sk_lk00451">September 1927</date>
@@ -29663,7 +29663,7 @@
 
           <title type="main">Der geistige Arbeiter. Deutsche Urheber-Zeitung</title>
           <bibl type="sk" subtype="standalone_text">
-            <title level="j" key="#sk_lk00126">Der geistige Arbeiter</title>
+            <title level="j" key="#pmb63201">Der geistige Arbeiter</title>
             <title level="m" type="subtitle">Deutsche Urheber-Zeitung</title>
           </bibl>
           <author key="pmb63199" role="hat-herausgegeben">Hirschberg, Herbert</author>
@@ -33420,7 +33420,7 @@
             Fränkischer Kurier, 5.3.1928, Nr. 65, S. 14</title>
           <bibl type="sk" subtype="article">
             <title level="a">Antinationaler Skandal in München</title>
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <date when="1928-03-05" key="#sk_lk00250">5.3.1928</date>
             <num type="issue">Nr. 65</num>
             <biblScope>S. 14</biblScope>
@@ -33744,7 +33744,7 @@
             in: Fränkischer Kurier, 19.4.1929</title>
           <bibl type="sk" subtype="article">
             <title level="a">Der Prozess um das „Traumstück“ von Karl Kraus</title>
-            <title level="j" key="#sk_lk00082">Fränkischer Kurier</title>
+            <title level="j" key="#pmb87708">Fränkischer Kurier</title>
             <date when="1929-04-19" key="#sk_lk00267">19.4.1929</date>
           </bibl>
           <date>1929-04-19 – 1929-04-19</date>
@@ -37956,7 +37956,7 @@
             Selbstwehr, Nr. 26, 19.6.1936, S. 3</title>
           <bibl type="sk" subtype="article">
             <title level="a">Moritz[!] Benedikt und Karl Kraus</title>
-            <title level="j" key="#sk_lk00044">Selbstwehr</title>
+            <title level="j" key="#pmb57894">Selbstwehr</title>
             <num type="issue">Nr. 26</num>
             <date when="1936-06-19" key="#sk_lk00184">19.6.1936</date>
             <biblScope>S. 3</biblScope>
@@ -40014,7 +40014,7 @@
           <bibl type="sk" subtype="article">
             <title level="a">Eine Frechheit der‚Wipag‘. Sie verweigert die Plakatierung eines
               Aufrufes von Karl Kraus</title>
-            <title level="j" key="#sk_lk00058">Die Rote Fahne</title>
+            <title level="j" key="#pmb87695">Die Rote Fahne</title>
             <num type="issue">Nr. 112</num>
             <date when="1927-05-13" key="#sk_lk00193">13.5.1927</date>
             <biblScope>S. 2</biblScope>
