@@ -2521,7 +2521,7 @@
             <title level="m">Die letzten Tage der Menschheit</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
-          <author key="pmb51630" role="hat-ubersetzt">Münzer, Jan</author>
+          <!--<author key="pmb51630" role="hat-ubersetzt">Münzer, Jan</author>-->
           <date from-iso="1919-01-01" to-iso="1919-12-31">1919 – 1926</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32544.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32544</idno>
@@ -9911,7 +9911,7 @@
         <bibl xml:id="pmb36156">
 
           <title type="main">Die neue Rundschau</title>
-          <bibl type="sk" subtype="no_type">
+          <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb36156">Die neue Rundschau</title>
             <date when="1904">1904</date>
           </bibl>
