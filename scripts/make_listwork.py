@@ -99,6 +99,20 @@ for x in tqdm(items, total=len(items)):
             author_uri = URIRef(f"{SK}{author_id}")
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
 
+    try:
+        pub_date = x.xpath('./tei:bibl[@type="sk"]/tei:date/@when', namespaces=nsmap)[0]
+    except IndexError:
+        try:
+            pub_date = x.xpath(
+                './tei:bibl[not(@type="sk")]/tei:date/text()', namespaces=nsmap
+            )[0]
+        except IndexError:
+            pub_date = False
+    if pub_date:
+        pub_event_uri = URIRef(f"{subj}/publication")
+        g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
+        g.add((pub_event_uri, FRBROO["R24_created"], subj))
+
     # # creation
     # expre_creation_uri = URIRef(f"{subj}/creation")
     # g.add((expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]))
