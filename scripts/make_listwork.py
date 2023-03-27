@@ -75,6 +75,20 @@ for x in tqdm(items, total=len(items)):
             Literal(f"Expression: {label_value}", lang="en"),
         )
     )
+    # add more classes
+    if item_sk_type == "standalone_publication":
+        pub_expr_uri = URIRef(f"{subj}/published-expression")
+        g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
+        g.add(
+            (
+                pub_expr_uri,
+                RDFS.label,
+                Literal(
+                    normalize_string(f"Published Expression: {label_value}", lang="en")
+                ),
+            )
+        )
+        g.add((pub_expr_uri, CIDOC["P165_incorporates"], subj))
 
     # authors
     uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
