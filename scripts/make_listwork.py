@@ -1,6 +1,6 @@
 import os
 from tqdm import tqdm
-from acdh_cidoc_pyutils import normalize_string
+from acdh_cidoc_pyutils import normalize_string, create_e52
 
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
@@ -104,7 +104,7 @@ for x in tqdm(items, total=len(items)):
     except IndexError:
         try:
             pub_date = x.xpath(
-                './tei:bibl[not(@type="sk")]/tei:date/text()', namespaces=nsmap
+                './tei:date/text()', namespaces=nsmap
             )[0]
         except IndexError:
             pub_date = False
@@ -112,6 +112,11 @@ for x in tqdm(items, total=len(items)):
         pub_event_uri = URIRef(f"{subj}/publication")
         g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
         g.add((pub_event_uri, FRBROO["R24_created"], subj))
+        time_span_uri = URIRef(f"{pub_event_uri}/time-span")
+        g.add((
+            pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri
+        ))
+        g += create_e52(time_span_uri, begin_of_begin=pub_date, end_of_end=pub_date)
 
     # # creation
     # expre_creation_uri = URIRef(f"{subj}/creation")
