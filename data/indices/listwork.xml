@@ -39754,8 +39754,13 @@
         <bibl xml:id="pmb63957">
 
           <title type="main">Wiener Osterpremieren.</title>
-          <bibl type="sk" subtype="standalone_publication">
-            <title level="m">Wiener Osterpremieren.</title>
+          <bibl type="sk" subtype="article">
+            <title level="a">Wiener Osterpremieren.</title>
+          	<title level="j" key="pmb54745">Berliner Börsen-Zeitung</title>
+          	<date when="1930-04-25" key="#pmb63955">25.04.1930<note>Morgenausgabe</note></date>
+          	<num type="volume">75. Jhg.</num>
+          	<num type="issue">Nr. 191</num>
+          	<biblScope>Unterhaltungs-Beilage „Kunst Welt Wissen“, S. 7</biblScope>
           </bibl>
 
           <title type="werk_link">Wiener Osterpremieren. In: Berliner Börsen-Zeitung, 25.04.1930,
