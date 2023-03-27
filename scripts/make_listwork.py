@@ -38,7 +38,11 @@ for x in tqdm(items, total=len(items)):
         print(x, e)
         continue
     item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
-    if item_sk_type == "standalone_publication" or item_sk_type == "article" or item_sk_type == "standalone_text":
+    if (
+        item_sk_type == "standalone_publication"
+        or item_sk_type == "article"
+        or item_sk_type == "standalone_text"
+    ):
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
@@ -63,7 +67,7 @@ for x in tqdm(items, total=len(items)):
         else:
             label_value = title.text
             break
-    label_value = normalize_string(label_value)
+
     g.add(
         (
             subj,
@@ -71,6 +75,29 @@ for x in tqdm(items, total=len(items)):
             Literal(f"Expression: {label_value}", lang="en"),
         )
     )
+
+    # authors
+    uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
+    if not uebersetzt:
+        uebersetzt = x.xpath(
+            './tei:author[@role="hat-anonym-veroffentlicht" or @role="hat-geschaffen"]',
+            namespaces=nsmap,
+        )
+    if uebersetzt:
+        creation = URIRef(f"{subj}/creation")
+        g.add((creation, RDF.type, FRBROO["F28_Expression_Creation"]))
+        g.add(
+            (
+                creation,
+                RDFS.label,
+                Literal(normalize_string(f"Creation of: {label_value}"), lang="en"),
+            )
+        )
+        g.add((creation, FRBROO["R17_created"], subj))
+        for a in uebersetzt:
+            author_id = a.attrib["key"]
+            author_uri = URIRef(f"{SK}{author_id}")
+            g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
 
     # # creation
     # expre_creation_uri = URIRef(f"{subj}/creation")
