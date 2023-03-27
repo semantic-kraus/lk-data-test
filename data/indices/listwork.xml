@@ -376,7 +376,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ein Witz Kasmaders?</title>
           </bibl>
-          <date>1927-01-01 – 1927-01-01</date>
+          <date>1927-01-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52686/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52686</idno>
           <note type="collections">
@@ -919,7 +919,7 @@
             <title level="m">Die Wiener Julitage 1927</title>
           </bibl>
           <author key="pmb37942" role="hat-geschaffen">Braunthal, Julius</author>
-          <date from-iso="1927-01-01" to-iso="1927-12-31">1927 – 1927</date>
+          <date from-iso="1927-01-01" to-iso="1927-12-31">1927</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59972/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb59972</idno>
           <note type="collections">
@@ -943,7 +943,7 @@
             <title level="m">Karl Kraus und die Jugend</title>
           </bibl>
           <author key="pmb38133" role="hat-geschaffen">Fischer, Heinrich</author>
-          <date from-iso="1934-01-01" to-iso="1934-12-31">1934 – 1934</date>
+          <date from-iso="1934-01-01" to-iso="1934-12-31">1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60398/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60398</idno>
           <note type="collections">
@@ -972,7 +972,7 @@
             <title level="m">Die Legende vom weltverkommenen Sonka</title>
           </bibl>
           <author key="pmb25105" role="hat-geschaffen">Sonnenschein, Hugo</author>
-          <date from-iso="1920-01-01" to-iso="1920-12-31">1920 – 1920</date>
+          <date from-iso="1920-01-01" to-iso="1920-12-31">1920</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61264/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61264</idno>
           <note type="collections">
@@ -996,7 +996,7 @@
             <title level="m">Die Welt im Drama (Gesammelte Schriften)</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date from-iso="1917-01-01" to-iso="1917-12-31">1917 – 1917</date>
+          <date from-iso="1917-01-01" to-iso="1917-12-31">1917</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62256/</idno>
           <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb62256.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb62256.html</idno>
@@ -1119,7 +1119,7 @@
             <title level="m">Die permanente Revolution</title>
           </bibl>
           <author key="pmb26198" role="hat-geschaffen">Trotzki, Leo D.</author>
-          <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
+          <date from-iso="1929-01-01" to-iso="1929-12-31">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63966/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63966</idno>
           <note type="collections">
@@ -1776,7 +1776,7 @@
             <title level="m">Kollektiv-Antwort der Redaktion des ‚Kleinen Journals‘ [an
               Kerr]</title>
           </bibl>
-          <date>1897-07-01 – 1897-07-01</date>
+          <date>1897-07-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62820/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62820</idno>
           <note type="collections">
@@ -1883,7 +1883,7 @@
             <title level="m">Reisebücher deutscher Schriftsteller</title>
           </bibl>
           <author key="pmb62865" role="hat-geschaffen">Reifferscheidt, Friedrich M.</author>
-          <date from-iso="1927-09-01" to-iso="1927-09-30">1927-09 – 1927-09</date>
+          <date from-iso="1927-09-01" to-iso="1927-09-30">1927-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62863/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62863</idno>
           <note type="collections">
@@ -2005,7 +2005,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ich bin der größte lebende Lyriker</title>
           </bibl>
-          <date>1928-11-3 – 1928-11-3</date>
+          <date>1928-11-3</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64057/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb64057</idno>
           <note type="collections">
@@ -2947,7 +2947,7 @@
             <title level="m" type="subtitle">Die Tragödie des Bauernkrieges</title>
           </bibl>
           <author key="pmb11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
-          <date from-iso="1896-01-01" to-iso="1896-12-31">1896 – 1896</date>
+          <date from-iso="1896-01-01" to-iso="1896-12-31">1896</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33273</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33273</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33273.html</idno>
@@ -4159,7 +4159,7 @@
 
           <title type="legacy-name-merge">Simone Boccanegra</title>
           <author key="pmb13007" role="hat-geschaffen">Verdi, Giuseppe</author>
-          <date from-iso="1857-01-01" to-iso="1857-12-31">1857 – 1857</date>
+          <date from-iso="1857-01-01" to-iso="1857-12-31">1857</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63885/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76699/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76699.html</idno>
@@ -5060,7 +5060,7 @@
             <title level="m">Joffre an Kluck</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-10-15 – 1914-10-15</date>
+          <date>1914-10-15</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61851/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61851</idno>
           <note type="collections">
@@ -5084,7 +5084,7 @@
             <title level="m">Greys Lied</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-12-30 – 1914-12-30</date>
+          <date>1914-12-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61856/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61856</idno>
           <note type="collections">
@@ -5108,7 +5108,7 @@
             <title level="m">Rückzug</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-12-19 – 1914-12-19</date>
+          <date>1914-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61861/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61861</idno>
           <note type="collections">
@@ -5132,7 +5132,7 @@
             <title level="m">Sechste Ode von d’Annunzio</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-05-21 – 1916-05-21</date>
+          <date>1916-05-21</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61880/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61880</idno>
           <note type="collections">
@@ -5156,7 +5156,7 @@
             <title level="m">Rumänisch</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-10-08 – 1916-10-08</date>
+          <date>1916-10-08</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61885/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61885</idno>
           <note type="collections">
@@ -5180,7 +5180,7 @@
             <title level="m">Krisen ringsum</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-12-13 – 1916-12-13</date>
+          <date>1916-12-13</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61891/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61891</idno>
           <note type="collections">
@@ -5204,7 +5204,7 @@
             <title level="m">Die Sechste</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1917-03-07 – 1917-03-07</date>
+          <date>1917-03-07</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61896/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61896</idno>
           <note type="collections">
@@ -5228,7 +5228,7 @@
             <title level="m">Chronik.</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-01-16 – 1916-01-16</date>
+          <date>1916-01-16</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61901/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61901</idno>
           <note type="collections">
@@ -5252,7 +5252,7 @@
             <title level="m">Montenegro</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-01-19 – 1916-01-19</date>
+          <date>1916-01-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61906/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61906</idno>
           <note type="collections">
@@ -5276,7 +5276,7 @@
             <title level="m">D'Annunzios vierte Ode</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-01-22 – 1916-01-22</date>
+          <date>1916-01-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61913/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61913</idno>
           <note type="collections">
@@ -5300,7 +5300,7 @@
             <title level="m">Lloyd – George</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-01-28 – 1916-01-28</date>
+          <date>1916-01-28</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61918/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61918</idno>
           <note type="collections">
@@ -5324,7 +5324,7 @@
             <title level="m">Salandra – Dämmerung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-02-09 – 1916-02-09</date>
+          <date>1916-02-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61932/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61932</idno>
           <note type="collections">
@@ -5348,7 +5348,7 @@
             <title level="m">Die Niederlage (D’Annunzios fünfte Ode)</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-02-26 – 1916-02-26</date>
+          <date>1916-02-26</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61937/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61937</idno>
           <note type="collections">
@@ -5372,7 +5372,7 @@
             <title level="m">Portugal</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-03-11 – 1916-03-11</date>
+          <date>1916-03-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61942/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61942</idno>
           <note type="collections">
@@ -5396,7 +5396,7 @@
             <title level="m">Rumänien</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-03-24 – 1916-03-24</date>
+          <date>1916-03-24</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61961/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61961</idno>
           <note type="collections">
@@ -5420,7 +5420,7 @@
             <title level="m">Pariser Konferenz</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-03-30 – 1916-03-30</date>
+          <date>1916-03-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61966/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61966</idno>
           <note type="collections">
@@ -5444,7 +5444,7 @@
             <title level="m">Bukarest</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-04-12 – 1916-04-12</date>
+          <date>1916-04-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61976/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61976</idno>
           <note type="collections">
@@ -5468,7 +5468,7 @@
             <title level="m">Briand</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1916-05-24 – 1916-05-24</date>
+          <date>1916-05-24</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61979/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61979</idno>
           <note type="collections">
@@ -5492,7 +5492,7 @@
             <title level="m">Begegnung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-12-16 – 1914-12-16</date>
+          <date>1914-12-16</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62269/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62269</idno>
           <note type="collections">
@@ -5545,7 +5545,7 @@
             <title level="m">Mobilmachung</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-08-02 – 1914-08-02</date>
+          <date>1914-08-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62351/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62351</idno>
           <note type="collections">
@@ -5598,7 +5598,7 @@
             <title level="m">Es geht eine Schlacht ...</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-09-12 – 1914-09-12</date>
+          <date>1914-09-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62353/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62353</idno>
           <note type="collections">
@@ -5644,7 +5644,7 @@
             <title level="m">Er schleppte sich ...</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date>1914-10-23 – 1914-10-23</date>
+          <date>1914-10-23</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62355/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62355</idno>
           <note type="collections">
@@ -8007,7 +8007,7 @@
             <title level="m">Die Vögel</title>
           </bibl>
           <author key="pmb13473" role="hat-geschaffen">Aristophanes</author>
-          <date>414 v. Chr.</date>
+          <date>-0414</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53503/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53503</idno>
           <note type="collections">
@@ -8499,7 +8499,7 @@
             <title level="m">‚Die letzte Nacht‘ von Karl Kraus</title>
             <title level="m" type="subtitle">Ein Streit um die Inszenierung</title>
           </bibl>
-          <date when-iso="1922-12-17">17.12.1922</date>
+          <date when-iso="1922-12-17">1922-12-17</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50467/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb50467</idno>
           <note type="collections">
@@ -8822,7 +8822,7 @@
             <title level="m" type="subtitle">Eine Reise</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date from-iso="1925-01-01" to-iso="1925-12-31">1925 – 1925</date>
+          <date from-iso="1925-01-01" to-iso="1925-12-31">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62868/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62868</idno>
           <note type="collections">
@@ -8850,7 +8850,7 @@
           <title type="person_namensvariante_nachname-komma-vorname">Wohnbaukantate</title>
           <author key="pmb39325" role="hat-vertont">Pisk, Paul Amadeus</author>
           <author key="pmb65142" role="hat-geschaffen">Stern, Josef Luitpold</author>
-          <date from-iso="1926-01-01" to-iso="1926-12-31">1926 – 1926</date>
+          <date from-iso="1926-01-01" to-iso="1926-12-31">1926</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63838/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63838</idno>
           <note type="collections">
@@ -9484,7 +9484,7 @@
             <title level="m">Literatur und Lüge</title>
           </bibl>
           <author key="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
-          <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
+          <date from-iso="1929-01-01" to-iso="1929-12-31">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63240/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63240</idno>
           <note type="collections">
@@ -9508,7 +9508,7 @@
             <title level="m">Ludwig Börne oder: die Überwindung des Judentums</title>
           </bibl>
           <author key="pmb38969" role="hat-geschaffen">Laserstein, Botho</author>
-          <date from-iso="1931-01-01" to-iso="1931-12-31">1931 – 1931</date>
+          <date from-iso="1931-01-01" to-iso="1931-12-31">1931</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63251/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63251</idno>
           <note type="collections">
@@ -12195,7 +12195,7 @@
           <title type="person_namensvariante_nachname-komma-vorname">Die neue Weltbühne</title>
           <author key="pmb11813" role="hat-herausgegeben">Jacobsohn, Siegfried</author>
           <author key="pmb43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
-          <date>7.9.1905 – 1993</date>
+          <date>1905-09-07 – 1993</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41564/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41564</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41564</idno>
@@ -12236,7 +12236,7 @@
           </bibl>
           <author key="pmb14049" role="hat-herausgegeben">Berg, Leo</author>
           <author key="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
-          <date from-iso="1891-01-01" to-iso="1891-12-31">1891 – 1891</date>
+          <date from-iso="1891-01-01" to-iso="1891-12-31">1891</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42987/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42987</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42987</idno>
@@ -15897,7 +15897,7 @@
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb39950">Wiener Allgemeine Zeitung</title>
           </bibl>
-          <date>1.3.1880 – 11.2.1934</date>
+          <date>1880-03-01 – 1934-02-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39950/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39950</idno>
@@ -15934,7 +15934,7 @@
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?apm=0&amp;aid=aze</title>
           <author key="pmb59249" role="hat-herausgegeben">Kovanda, Václav</author>
-          <date>12.7.1881 – 31.10.1991</date>
+          <date>1881-07-12 – 1991-10-31</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41202/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41202</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41202</idno>
@@ -16890,7 +16890,7 @@
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb41560">Der Tag</title>
           </bibl>
-          <date>19.12.1900 – 1934</date>
+          <date>1900-12-19 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41560/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41560</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41560</idno>
@@ -17046,7 +17046,7 @@
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb41572">Deutsche Tageszeitung</title>
           </bibl>
-          <date>1.9.1894 – 1934</date>
+          <date>1894-09-01 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41572/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41572</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41572</idno>
@@ -17088,7 +17088,7 @@
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb42406">Neue Zürcher Zeitung</title>
           </bibl>
-          <date when-iso="1780-01-12">12.1.1780</date>
+          <date when-iso="1780-01-12">1780-01-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42406/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42406</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42406</idno>
@@ -17345,7 +17345,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m" key="#pmb56336">Nr. 2456</title>
           </bibl>
-          <date>1922-12-19 – 1922-12-19</date>
+          <date>1922-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50450/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb50450</idno>
           <note type="collections">
@@ -30122,7 +30122,7 @@
             <title level="m">Wörterbuch des Wiener Dialektes</title>
           </bibl>
           <author key="pmb65395" role="hat-geschaffen">Jakob, Julius</author>
-          <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
+          <date from-iso="1929-01-01" to-iso="1929-12-31">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65396/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb65396</idno>
           <note type="collections">
@@ -30847,7 +30847,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Genugtuung für Karl Kraus.</title>
           </bibl>
-          <date>1937-10-28 – 1937-10-28</date>
+          <date>1937-10-28</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61448/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61448</idno>
           <note type="collections">
@@ -31085,7 +31085,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Zwei geschlossene Vorstellungen an der Neuen Wiener Bühne</title>
           </bibl>
-          <date>1922-12-19 – 1922-12-19</date>
+          <date>1922-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50442/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb50442</idno>
           <note type="collections">
@@ -33029,7 +33029,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Ein sensationeller Selbstmord in Monte Carlo</title>
           </bibl>
-          <date>1925-04-05 – 1925-04-05</date>
+          <date>1925-04-05</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52833/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52833</idno>
           <note type="collections">
@@ -33044,7 +33044,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Amnestie?</title>
           </bibl>
-          <date>1927-09-17 – 1927-09-17</date>
+          <date>1927-09-17</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52962/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52962</idno>
           <note type="collections">
@@ -33104,7 +33104,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus fordert …!</title>
           </bibl>
-          <date>1927-09-18 – 1927-09-18</date>
+          <date>1927-09-18</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52982/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52982</idno>
           <note type="collections">
@@ -33382,7 +33382,7 @@
             <title level="m">„Der Fackelkraus“ gegen den „Völkischen Beobachter“</title>
             <title level="m" type="subtitle">Ein Beleidigungsprozess</title>
           </bibl>
-          <date>1928-06-09 – 1928-06-09</date>
+          <date>1928-06-09</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53078/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53078</idno>
           <note type="collections">
@@ -33519,7 +33519,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [3.9.1928]</title>
           </bibl>
-          <date>1928-09-03 – 1928-09-03</date>
+          <date>1928-09-03</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53367/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53367</idno>
           <note type="collections">
@@ -33570,7 +33570,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [13.9.1928]</title>
           </bibl>
-          <date>1928-09-13 – 1928-09-13</date>
+          <date>1928-09-13</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53371/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53371</idno>
           <note type="collections">
@@ -33602,7 +33602,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [21.9.1928]</title>
           </bibl>
-          <date>1928-09-21 – 1928-09-21</date>
+          <date>1928-09-21</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53394/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53394</idno>
           <note type="collections">
@@ -33626,7 +33626,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Skandalszenen bei einer Kraus-Vorlesung [29.9.1928]</title>
           </bibl>
-          <date>1928-09-29 – 1928-09-29</date>
+          <date>1928-09-29</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53405/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53405</idno>
           <note type="collections">
@@ -33650,7 +33650,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Eine gestörte Karl-Kraus-Vorlesung</title>
           </bibl>
-          <date>1928-09-04 – 1928-09-04</date>
+          <date>1928-09-04</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53414/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53414</idno>
           <note type="collections">
@@ -33817,7 +33817,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Vorlesungen Karl Kraus</title>
           </bibl>
-          <date>1927-03-17 – 1927-03-17</date>
+          <date>1927-03-17</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53617/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53617</idno>
           <note type="collections">
@@ -34204,7 +34204,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Fackel-Kraus als Plakat-Ankleber.</title>
           </bibl>
-          <date>1927-09-19 – 1927-09-19</date>
+          <date>1927-09-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53885/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53885</idno>
           <note type="collections">
@@ -34377,7 +34377,7 @@
             <title level="m">Empfindliche Verurteilung des „Fackel“-Kraus</title>
             <title level="m" type="subtitle">Genossen unter sich</title>
           </bibl>
-          <date>1930-12-05 – 1930-12-05</date>
+          <date>1930-12-05</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54322/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb54322</idno>
           <note type="collections">
@@ -34610,7 +34610,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Karl Kraus versus AIfred Kerr</title>
           </bibl>
-          <date>1928-09-04 – 1928-09-04</date>
+          <date>1928-09-04</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55456/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55456</idno>
           <note type="collections">
@@ -34641,7 +34641,7 @@
             <title level="m">Verleumdungsparadies</title>
           </bibl>
           <author key="pmb13163" role="hat-geschaffen">Wolff, Theodor</author>
-          <date>1928-09-06 – 1928-09-06</date>
+          <date>1928-09-06</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55774/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55774</idno>
           <note type="collections">
@@ -35423,7 +35423,7 @@
               Lebens.</title>
           </bibl>
           <author key="pmb39313" role="hat-geschaffen">Pfemfert, Franz</author>
-          <date>1927-11-27 – 1927-11-27</date>
+          <date>1927-11-27</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56338/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56338</idno>
           <note type="collections">
@@ -36124,7 +36124,7 @@
           </bibl>
 
           <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19270619&amp;seite=9&amp;zoom=33</title>
-          <date>1927-06-19 – 1927-06-19</date>
+          <date>1927-06-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56609/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56609</idno>
           <note type="collections">
@@ -36260,7 +36260,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Auch eine Wohltätigkeitsvorstellung</title>
           </bibl>
-          <date>1929-05-16 – 1929-05-16</date>
+          <date>1929-05-16</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56860/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56860</idno>
           <note type="collections">
@@ -36284,7 +36284,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Theater von heute und morgen</title>
           </bibl>
-          <date>1929-04-29 – 1929-04-29</date>
+          <date>1929-04-29</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56877/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56877</idno>
           <note type="collections">
@@ -36300,7 +36300,7 @@
             <title level="m">Karl der Goste</title>
           </bibl>
           <author key="pmb7834" role="hat-geschaffen">Hesse, Otto Ernst</author>
-          <date>1929-03-01 – 1929-03-01</date>
+          <date>1929-03-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56894/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56894</idno>
           <note type="collections">
@@ -36386,7 +36386,7 @@
             <title level="m">Karl Kraus berichtigt</title>
             <title level="m" type="subtitle">Zum letztenmal Kraus contra Hesse</title>
           </bibl>
-          <date>1929-04-03 – 1929-04-03</date>
+          <date>1929-04-03</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57021/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57021</idno>
           <note type="collections">
@@ -36553,7 +36553,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wr. Konzerthaus</title>
           </bibl>
-          <date from-iso="1929-01-01" to-iso="1929-12-31">1929 – 1929</date>
+          <date from-iso="1929-01-01" to-iso="1929-12-31">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57237/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57237</idno>
           <note type="collections">
@@ -38837,7 +38837,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Bericht über Prozess Kraus – Arbeiter-Zeitung]</title>
           </bibl>
-          <date from-iso="1937-10-01" to-iso="1937-10-31">1937-10 – 1937-10</date>
+          <date from-iso="1937-10-01" to-iso="1937-10-31">1937-10</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61446/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61446</idno>
           <note type="collections">
@@ -39004,7 +39004,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Prozess Tappert - Kempner (Kerr)</title>
           </bibl>
-          <date>1897-06-22 – 1897-06-22</date>
+          <date>1897-06-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62549/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62549</idno>
           <note type="collections">
@@ -39028,7 +39028,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Tappert</title>
           </bibl>
-          <date>1897-12-22 – 1897-12-22</date>
+          <date>1897-12-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62636/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62636</idno>
           <note type="collections">
@@ -39052,7 +39052,7 @@
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">[Prozessbericht über Tappert/Lackowitz - Kerr]</title>
           </bibl>
-          <date>1897-06-25 – 1897-06-25</date>
+          <date>1897-06-25</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62904/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62904</idno>
           <note type="collections">
@@ -39764,7 +39764,7 @@
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300425-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=42cf85a71f11b0b8979b4cf9bf4e7907</title>
           <author key="pmb39325" role="hat-geschaffen">Pisk, Paul Amadeus</author>
-          <date>25.04.1930 – 25.04.1930</date>
+          <date>1930-04-25</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63957/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63957</idno>
           <note type="collections">
@@ -39986,7 +39986,7 @@
             <title level="m">Deutsche Kultur in Prag</title>
             <title level="m" type="subtitle">Die Urania und ihr Anton Kuh</title>
           </bibl>
-          <date>1932-04-22 – 1932-04-22</date>
+          <date>1932-04-22</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65357/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb65357</idno>
           <note type="collections">
@@ -40084,7 +40084,7 @@
             <title level="m">Eulenspiegel</title>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
-          <date from-iso="1928-01-01" to-iso="1928-01-31">1928-01 – 1928-01</date>
+          <date from-iso="1928-01-01" to-iso="1928-01-31">1928-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62920/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62920</idno>
           <note type="collections">
@@ -41077,7 +41077,7 @@
             <title level="m">[Brief von Moritz Rosenthal an Das Kleine Journal]</title>
           </bibl>
           <author key="pmb23605" role="hat-geschaffen">Rosenthal, Moritz</author>
-          <date>1897-06-30 – 1897-06-30</date>
+          <date>1897-06-30</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62815/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62815</idno>
           <note type="collections">
