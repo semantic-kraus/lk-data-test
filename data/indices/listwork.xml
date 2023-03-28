@@ -9914,7 +9914,7 @@
           <title type="main">Die neue Rundschau</title>
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb36156">Die neue Rundschau</title>
-            <date when="1904">1904</date>
+            <date when="1904" key="#sk_lk00469">1904</date>
           </bibl>
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36156/</idno>
