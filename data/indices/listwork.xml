@@ -7459,7 +7459,8 @@
 
           <title type="werk_bibliografische-angabe">Wiener Rundschau, Jg. 1, H. 1–2, 15. 11.–1. 12.
             1896</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
+            <title level="a">Die demolirte Literatur</title>
             <title level="j" key="#sk_lk00017">Wiener Rundschau</title>
             <num type="volume">Jg. 1</num>
             <num type="issue">H. 1-2</num>
@@ -39756,7 +39757,7 @@
           <title type="main">Wiener Osterpremieren.</title>
           <bibl type="sk" subtype="article">
             <title level="a">Wiener Osterpremieren.</title>
-          	<title level="j" key="pmb54745">Berliner Börsen-Zeitung</title>
+          	<title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
           	<date when="1930-04-25" key="#pmb63955">25.04.1930<note>Morgenausgabe</note></date>
           	<num type="volume">75. Jhg.</num>
           	<num type="issue">Nr. 191</num>
@@ -40166,8 +40167,8 @@
         <bibl xml:id="pmb87762">
 
           <title type="main">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
-          <bibl type="sk" subtype="standalone_text">
-            <title level="m">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
+          <bibl type="sk" subtype="issue">
+            <title level="j">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87762/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb87762</idno>
