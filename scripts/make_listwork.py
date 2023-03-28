@@ -125,7 +125,10 @@ for x in tqdm(items, total=len(items)):
         pub_event_uri = URIRef(f"{subj}/publication")
         g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
         g.add((pub_event_uri, RDFS.label, Literal(f"Publication of: {label_value}")))
-        g.add((pub_event_uri, FRBROO["R24_created"], subj))
+        if item_sk_type == "standalone_publication":
+            g.add((pub_event_uri, FRBROO["R24_created"], URIRef(f"{subj}/published-expression")))
+        else:
+            g.add((pub_event_uri, FRBROO["R24_created"], subj))
         time_span_uri = URIRef(f"{pub_event_uri}/time-span")
         g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
         g += create_e52(time_span_uri, begin_of_begin=pub_date, end_of_end=pub_date)
