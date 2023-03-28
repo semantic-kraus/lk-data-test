@@ -29483,9 +29483,9 @@
         <bibl xml:id="pmb53675">
 
           <title type="main">Der Bücherwurm. Eine Monatsschrift</title>
-          <bibl type="sk" subtype="standalone_text">
+          <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb53675">Der Bücherwurm</title>
-            <title level="m" type="subtitle">Eine Monatsschrift</title>
+            <title level="j" type="subtitle">Eine Monatsschrift</title>
           </bibl>
           <author key="pmb43577" role="hat-herausgegeben">Weichardt, Walter</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53675/</idno>
