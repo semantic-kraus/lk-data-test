@@ -92,7 +92,7 @@ for x in tqdm(items, total=len(items)):
         g.add((pub_expr_uri, CIDOC["P165_incorporates"], subj))
 
     if item_sk_type in ["journal", "issue", "article"]:
-        title_j = x.xpath("./tei:bibl[@type='sk']/tei:title[@level='j']", namespaces=nsmap)[0]
+        title_j = x.xpath("./tei:bibl[@type='sk']/tei:title[@level='j' and @key]", namespaces=nsmap)[0]
         title_j_key = title_j.attrib["key"][1:]
         title_j_text = normalize_string(title_j.text)
         periodical_uri = URIRef(f"{SK}{title_j_key}/published-expression")
