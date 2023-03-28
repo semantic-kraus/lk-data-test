@@ -69,13 +69,13 @@ for x in tqdm(items, total=len(items)):
             break
     label_value = normalize_string(label_value)
 
-    g.add(
-        (
-            subj,
-            RDFS.label,
-            Literal(f"Expression: {label_value}", lang="en"),
-        )
-    )
+    # g.add(
+    #     (
+    #         subj,
+    #         RDFS.label,
+    #         Literal(f"Expression: {label_value}", lang="en"),
+    #     )
+    # )
     # add more classes
     if item_sk_type == "standalone_publication":
         pub_expr_uri = URIRef(f"{subj}/published-expression")
@@ -90,6 +90,58 @@ for x in tqdm(items, total=len(items)):
             )
         )
         g.add((pub_expr_uri, CIDOC["P165_incorporates"], subj))
+
+    if item_sk_type in ["journal", "issue", "article"]:
+        title_j = x.xpath("./tei:bibl[@type='sk']/tei:title[@level='j']", namespaces=nsmap)[0]
+        title_j_key = title_j.attrib["key"][1:]
+        title_j_text = normalize_string(title_j.text)
+        periodical_uri = URIRef(f"{SK}{title_j_key}/published-expression")
+        g.add((
+            periodical_uri, RDF.type, FRBROO["F24_Publication_Expression"]
+        ))
+        g.add((
+            periodical_uri, RDFS.label, Literal(f"Periodical: {title_j_text}", lang="en")
+        ))
+        try:
+            title_date = x.xpath("./tei:bibl[@type='sk']/tei:date", namespaces=nsmap)[0]
+        except IndexError:
+            continue
+        try:
+            title_date_key = title_date.attrib["key"]
+        except KeyError:
+            print(xml_id)
+            continue
+        title_date_key = title_date_key[1:]
+        issue_uri = URIRef(f"{SK}{title_date_key}")
+        g.add((
+            issue_uri, RDF.type, FRBROO["F22_Self-Contained_Expression"]
+        ))
+        g.add((
+            issue_uri, RDFS.label, Literal(f"Expression: {label_value}", lang="en")
+        ))
+        issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
+        g.add((
+            issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]
+        ))
+        g.add((
+            issue_uri_f24, RDFS.label, Literal(f"Issue: {label_value}", lang="en")
+        ))
+        g.add((
+            issue_uri_f24, CIDOC["P165_incorporates"], issue_uri
+        ))
+        g.add((
+            periodical_uri, FRBROO["R5_has_component"], issue_uri_f24
+        ))
+        issue_uri_pub_event_uri = URIRef(f"{SK}{issue_uri}/publication")
+        g.add((
+            issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]
+        ))
+        g.add((
+            issue_uri_pub_event_uri, RDFS.label, Literal(f"Publication: {label_value}")
+        ))
+        g.add((
+            issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24
+        ))
 
     # authors
     uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
@@ -126,7 +178,13 @@ for x in tqdm(items, total=len(items)):
         g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
         g.add((pub_event_uri, RDFS.label, Literal(f"Publication of: {label_value}")))
         if item_sk_type == "standalone_publication":
-            g.add((pub_event_uri, FRBROO["R24_created"], URIRef(f"{subj}/published-expression")))
+            g.add(
+                (
+                    pub_event_uri,
+                    FRBROO["R24_created"],
+                    URIRef(f"{subj}/published-expression"),
+                )
+            )
         else:
             g.add((pub_event_uri, FRBROO["R24_created"], subj))
         time_span_uri = URIRef(f"{pub_event_uri}/time-span")
