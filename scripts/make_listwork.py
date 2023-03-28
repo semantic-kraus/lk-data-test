@@ -67,6 +67,7 @@ for x in tqdm(items, total=len(items)):
         else:
             label_value = title.text
             break
+    label_value = normalize_string(label_value)
 
     g.add(
         (
@@ -123,6 +124,7 @@ for x in tqdm(items, total=len(items)):
     if pub_date:
         pub_event_uri = URIRef(f"{subj}/publication")
         g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
+        g.add((pub_event_uri, RDFS.label, Literal(f"Publication of: {label_value}")))
         g.add((pub_event_uri, FRBROO["R24_created"], subj))
         time_span_uri = URIRef(f"{pub_event_uri}/time-span")
         g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
