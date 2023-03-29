@@ -138,7 +138,7 @@ for x in tqdm(items, total=len(items)):
             g.add((
                 periodical_uri, FRBROO["R5_has_component"], issue_uri_f24
             ))
-            issue_uri_pub_event_uri = URIRef(f"{SK}{issue_uri}/publication")
+            issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
             g.add((
                 issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]
             ))
