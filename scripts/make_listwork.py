@@ -62,6 +62,22 @@ for x in tqdm(items, total=len(items)):
         print(x, e)
         continue
     item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
+    for title in x.xpath(
+        './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
+    ):
+        level_type = title.attrib["level"]
+        if level_type == "a":
+            label_value = title.text
+            break
+        elif level_type == "m":
+            label_value = title.text
+            break
+        elif level_type == "j":
+            label_value = title.text
+            break
+        else:
+            label_value = xml_id
+    label_value = normalize_string(label_value)
     if (
         item_sk_type == "standalone_publication"
         or item_sk_type == "article"
@@ -78,30 +94,14 @@ for x in tqdm(items, total=len(items)):
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
-    for title in x.xpath(
-        './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
-    ):
-        level_type = title.attrib["level"]
-        if level_type == "a":
-            label_value = title.text
-            break
-        elif level_type == "m":
-            label_value = title.text
-            break
-        else:
-            label_value = title.text
-            break
-    label_value = normalize_string(label_value)
 
-    # g.add(
-    #     (
-    #         subj,
-    #         RDFS.label,
-    #         Literal(f"Expression: {label_value}", lang="en"),
-    #     )
-    # )
     # add more classes
+    if item_sk_type == "article":
+        g.add((subj, RDFS.label, Literal(f"??? {label_value}", lang="en")))
     if item_sk_type == "standalone_publication":
+        g.add((
+            subj, RDFS.label, Literal(f"Expression: {label_value}")
+        ))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
         g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
         g.add(
@@ -164,6 +164,7 @@ for x in tqdm(items, total=len(items)):
                 (issue_uri_f24, RDFS.label, Literal(f"Issue: {label_value}", lang="en"))
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
+            g.add((issue_uri, CIDOC["P165_incorporates"], subj))
             g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
             issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
             g.add((issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
@@ -228,6 +229,9 @@ for x in tqdm(items, total=len(items)):
                         URIRef(f"{subj}/published-expression"),
                     )
                 )
+                g.add((
+                    URIRef(f"{subj}/published-expression"), CIDOC["P165_incorporates"], subj
+                ))
             else:
                 g.add((pub_event_uri, FRBROO["R24_created"], subj))
             time_span_uri = URIRef(f"{pub_event_uri}/time-span")
@@ -245,4 +249,4 @@ for x in tqdm(items, total=len(items)):
 print("writing graph to file")
 # g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
 g_all = ConjunctiveGraph(store=project_store)
-g_all.serialize(f"{rdf_dir}/data.trig", format="trig")
+g_all.serialize(f"{rdf_dir}/{entity_type}.trig", format="trig")
