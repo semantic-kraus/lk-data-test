@@ -4,8 +4,15 @@ from acdh_cidoc_pyutils import normalize_string, extract_begin_end, create_e52
 
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, RDFS
+from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
+from rdflib.namespace import RDF, RDFS, DCTERMS, VOID
+# from rdflib.void import generateVoID
+from rdflib.store import Store
+
+LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
+
+store = plugin.get("Memory", Store)()
+project_store = plugin.get("Memory", Store)()
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
@@ -16,7 +23,26 @@ rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
-g = Graph()
+
+project_uri = URIRef(f"{SK}project/legal-kraus")
+
+g_prov = Graph(
+    store=project_store, identifier=URIRef(f"{SK}provenance")
+)
+g_prov.bind("dct", DCTERMS)
+g_prov.bind("void", VOID)
+g_prov.bind("sk", SK)
+g_prov.bind("lk", LK)
+g_prov.bind("cidoc", CIDOC)
+g_prov.bind("frbroo", FRBROO)
+g_prov.parse("./data/about.ttl")
+
+
+g = Graph(identifier=project_uri, store=project_store)
+g.bind("cidoc", CIDOC)
+g.bind("frbroo", FRBROO)
+g.bind("sk", SK)
+g.bind("lk", LK)
 entity_type = "work"
 index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
@@ -199,47 +225,7 @@ for x in tqdm(items, total=len(items)):
         g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
         g += create_e52(time_span_uri, begin_of_begin=pub_date, end_of_end=pub_date)
 
-    # # creation
-    # expre_creation_uri = URIRef(f"{subj}/creation")
-    # g.add((expre_creation_uri, RDF.type, CIDOC["F28_Expression_Creation"]))
-    # g.add((expre_creation_uri, RDFS.label, Literal(f"Creation of: {label_value}")))
-    # g.add((expre_creation_uri, FRBROO["R17_created"], subj))
-    # for author in x.xpath(".//tei:author/@key", namespaces=nsmap):
-    #     author_uri = URIRef(f"{SK}{author}")
-    #     g.add((expre_creation_uri, CIDOC["P14_carried_out_by"], author_uri))
-    #     g.add((author_uri, CIDOC["P14i_performed"], expre_creation_uri))
-    # # title
-    # title_uri = URIRef(f"{subj}/title/0")
-    # g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-    # g.add((title_uri, RDF.value, Literal(f"{label_value}", lang="und")))
-    # g.add((title_uri, CIDOC["P2_has_type"], main_title_type_uri))
-    # g.add((subj, CIDOC["P102_has_title"], title_uri))
-
-    # # F24 Publication Expression
-    # if len(x.xpath(".//tei:date", namespaces=nsmap)) > 0:
-    #     publ_expr_uri = URIRef(f"{subj}/publication")
-
-    # # subtitle
-    # for i, sub in enumerate(
-    #     x.xpath('.//tei:title[@type="subtitle"]', namespaces=nsmap), start=1
-    # ):
-    #     label_value = sub.text
-    #     title_uri = URIRef(f"{subj}/title/{i}")
-    #     g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-    #     g.add(
-    #         (
-    #             title_uri,
-    #             RDF.value,
-    #             Literal(normalize_string(f"{label_value}"), lang="und"),
-    #         )
-    #     )
-    #     g.add((title_uri, CIDOC["P2_has_type"], sub_title_type_uri))
-    #     g.add((subj, CIDOC["P102_has_title"], title_uri))
-
-    # # identifiers
-    # g += make_e42_identifiers(
-    #     subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
-    # )
-
 print("writing graph to file")
-g.serialize(f"{rdf_dir}/{entity_type}s.ttl")
+# g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
+g_all = ConjunctiveGraph(store=project_store)
+g_all.serialize(f"{rdf_dir}/data.trig", format="trig")
