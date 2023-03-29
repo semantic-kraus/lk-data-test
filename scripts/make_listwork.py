@@ -26,7 +26,6 @@ domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 
 project_uri = URIRef(f"{SK}project/legal-kraus")
-
 g_prov = Graph(store=project_store, identifier=URIRef(f"{SK}provenance"))
 g_prov.bind("dct", DCTERMS)
 g_prov.bind("void", VOID)
