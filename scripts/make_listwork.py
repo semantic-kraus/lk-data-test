@@ -6,6 +6,7 @@ from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
 from rdflib.namespace import RDF, RDFS, DCTERMS, VOID
+
 # from rdflib.void import generateVoID
 from rdflib.store import Store
 
@@ -26,9 +27,7 @@ SK = Namespace(domain)
 
 project_uri = URIRef(f"{SK}project/legal-kraus")
 
-g_prov = Graph(
-    store=project_store, identifier=URIRef(f"{SK}provenance")
-)
+g_prov = Graph(store=project_store, identifier=URIRef(f"{SK}provenance"))
 g_prov.bind("dct", DCTERMS)
 g_prov.bind("void", VOID)
 g_prov.bind("sk", SK)
@@ -119,7 +118,10 @@ for x in tqdm(items, total=len(items)):
 
     if item_sk_type in ["journal", "issue", "article"]:
         try:
-            title_j = x.xpath("./tei:bibl[@type='sk']/tei:title[@level='j' and @key]", namespaces=nsmap)[0]
+            title_j = x.xpath(
+                "./tei:bibl[@type='sk']/tei:title[@level='j' and @key]",
+                namespaces=nsmap,
+            )[0]
             good_to_go = True
         except IndexError:
             print(f"missing @key in: {xml_id}")
@@ -128,14 +130,18 @@ for x in tqdm(items, total=len(items)):
             title_j_key = title_j.attrib["key"][1:]
             title_j_text = normalize_string(title_j.text)
             periodical_uri = URIRef(f"{SK}{title_j_key}/published-expression")
-            g.add((
-                periodical_uri, RDF.type, FRBROO["F24_Publication_Expression"]
-            ))
-            g.add((
-                periodical_uri, RDFS.label, Literal(f"Periodical: {title_j_text}", lang="en")
-            ))
+            g.add((periodical_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
+            g.add(
+                (
+                    periodical_uri,
+                    RDFS.label,
+                    Literal(f"Periodical: {title_j_text}", lang="en"),
+                )
+            )
             try:
-                title_date = x.xpath("./tei:bibl[@type='sk']/tei:date", namespaces=nsmap)[0]
+                title_date = x.xpath(
+                    "./tei:bibl[@type='sk']/tei:date", namespaces=nsmap
+                )[0]
             except IndexError:
                 continue
             try:
@@ -145,37 +151,35 @@ for x in tqdm(items, total=len(items)):
                 continue
             title_date_key = title_date_key[1:]
             issue_uri = URIRef(f"{SK}{title_date_key}")
-            g.add((
-                issue_uri, RDF.type, FRBROO["F22_Self-Contained_Expression"]
-            ))
-            g.add((
-                issue_uri, RDFS.label, Literal(f"Expression: {label_value}", lang="en")
-            ))
+            g.add((issue_uri, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
+            g.add(
+                (
+                    issue_uri,
+                    RDFS.label,
+                    Literal(f"Expression: {label_value}", lang="en"),
+                )
+            )
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
-            g.add((
-                issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]
-            ))
-            g.add((
-                issue_uri_f24, RDFS.label, Literal(f"Issue: {label_value}", lang="en")
-            ))
-            g.add((
-                issue_uri_f24, CIDOC["P165_incorporates"], issue_uri
-            ))
-            g.add((
-                periodical_uri, FRBROO["R5_has_component"], issue_uri_f24
-            ))
+            g.add((issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]))
+            g.add(
+                (issue_uri_f24, RDFS.label, Literal(f"Issue: {label_value}", lang="en"))
+            )
+            g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
+            g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
             issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
-            g.add((
-                issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]
-            ))
-            g.add((
-                issue_uri_pub_event_uri, RDFS.label, Literal(f"Publication: {label_value}")
-            ))
-            g.add((
-                issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24
-            ))
+            g.add((issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
+            g.add(
+                (
+                    issue_uri_pub_event_uri,
+                    RDFS.label,
+                    Literal(f"Publication: {label_value}"),
+                )
+            )
+            g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
             start, end = extract_begin_end(title_date)
-            g += create_e52(issue_uri_pub_event_uri, begin_of_begin=start, end_of_end=end)
+            ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
+            g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
+            g.add((issue_uri_pub_event_uri, CIDOC["P4_has_time-span"], ts_uri))
 
     # authors
     uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
@@ -199,32 +203,46 @@ for x in tqdm(items, total=len(items)):
             author_id = a.attrib["key"]
             author_uri = URIRef(f"{SK}{author_id}")
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
-
-    try:
-        pub_date = x.xpath('./tei:bibl[@type="sk"]/tei:date/@when', namespaces=nsmap)[0]
-    except IndexError:
+    if item_sk_type not in ["journal", "issue", "article"]:
         try:
-            pub_date = x.xpath("./tei:date/text()", namespaces=nsmap)[0]
+            pub_date = x.xpath(
+                './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
+            )[0]
+            from_sk = True
         except IndexError:
-            pub_date = False
-    if pub_date:
-        pub_event_uri = URIRef(f"{subj}/publication")
-        g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
-        g.add((pub_event_uri, RDFS.label, Literal(f"Publication of: {label_value}")))
-        if item_sk_type == "standalone_publication":
+            from_sk = False
+            try:
+                pub_date = x.xpath("./tei:date", namespaces=nsmap)[0]
+            except IndexError:
+                pub_date = None
+        if pub_date is not None:
+            pub_event_uri = URIRef(f"{subj}/publication")
+            g.add((pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
             g.add(
-                (
-                    pub_event_uri,
-                    FRBROO["R24_created"],
-                    URIRef(f"{subj}/published-expression"),
-                )
+                (pub_event_uri, RDFS.label, Literal(f"Publication of: {label_value}"))
             )
-        else:
-            g.add((pub_event_uri, FRBROO["R24_created"], subj))
-        time_span_uri = URIRef(f"{pub_event_uri}/time-span")
-        g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
-        g += create_e52(time_span_uri, begin_of_begin=pub_date, end_of_end=pub_date)
-
+            if item_sk_type == "standalone_publication":
+                g.add(
+                    (
+                        pub_event_uri,
+                        FRBROO["R24_created"],
+                        URIRef(f"{subj}/published-expression"),
+                    )
+                )
+            else:
+                g.add((pub_event_uri, FRBROO["R24_created"], subj))
+            time_span_uri = URIRef(f"{pub_event_uri}/time-span")
+            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
+            if from_sk:
+                begin, end = extract_begin_end(pub_date)
+            else:
+                if " – " in pub_date.text:
+                    begin, end = pub_date.text.split(" – ")
+                else:
+                    begin = pub_date.text
+                    end = begin
+            g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
+            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
 print("writing graph to file")
 # g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
 g_all = ConjunctiveGraph(store=project_store)
