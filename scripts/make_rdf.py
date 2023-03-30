@@ -73,7 +73,7 @@ for x in tqdm(items, total=len(items)):
 
 # ORGS
 entity_type = "org"
-index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
+index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
 nsmap = doc.nsmap
 items = doc.any_xpath(f".//tei:{entity_type}")
@@ -90,7 +90,7 @@ for x in tqdm(items, total=len(items)):
 
 # PLACES
 entity_type = "place"
-index_file = f"./legalkraus-archiv/data/indices/list{entity_type}.xml"
+index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
 nsmap = doc.nsmap
 items = doc.any_xpath(f".//tei:{entity_type}")
