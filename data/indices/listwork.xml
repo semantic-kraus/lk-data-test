@@ -8732,7 +8732,7 @@
             <title level="a">Theater in Berlin</title>
             <title level="j" key="#sk_lk00019">Programmheft</title>
             <num type="issue">Nr. 8</num>
-            <date key="#pmb54279"/>
+            <date key="#pmb54279" when="1930">1930</date>
           </bibl>
           <author key="pmb54278" role="hat-geschaffen">N., S.</author>
           <date from-iso="1930-01-01" to-iso="1930-12-31">1930 – 1930</date>
@@ -17344,8 +17344,10 @@
           <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nab&amp;datum=19221219&amp;zoom=33</title>
 
           <title type="werk_bibliografische-angabe">Nr. 2456</title>
-          <bibl type="sk" subtype="standalone_publication">
+          <bibl type="sk" subtype="issue">
+            <title level="j" key="#sk_lk00073">Neues 8 Uhr-Blatt</title>
             <title level="m" key="#pmb56336">Nr. 2456</title>
+            <date when="1922-12-19" key="#sk_lk00471">19.12.1922</date>
           </bibl>
           <date>1922-12-19</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50450/</idno>
@@ -40817,8 +40819,10 @@
         <bibl xml:id="pmb54276">
 
           <title type="main">Programmheft Nr. 8</title>
-          <bibl type="sk" subtype="standalone_publication">
-            <title level="m">Programmheft Nr. 8</title>
+          <bibl type="sk" subtype="issue">
+            <title level="j">Programmheft</title>
+            <num typ="issue">Nr. 8</num>
+            <date when="1930" key="#pmb54279">1930</date>
           </bibl>
           <date notBefore-iso="1930-01-01" when-iso="1930-07-02">1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54276/</idno>
@@ -40862,8 +40866,10 @@
         <bibl xml:id="pmb54289">
 
           <title type="main">Programmheft Nr. 6</title>
-          <bibl type="sk" subtype="standalone_publication">
-            <title level="m">Programmheft Nr. 6</title>
+          <bibl type="sk" subtype="issue">
+            <title level="j">Programmheft</title>
+            <num type="issue">Nr. 6</num>
+            <date when="1930" key="#sk_lk00472">1930</date>
           </bibl>
           <date notBefore-iso="1930-01-01" when-iso="1930-07-02">1930</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54289/</idno>
