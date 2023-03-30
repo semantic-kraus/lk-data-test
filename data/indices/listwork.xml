@@ -35053,8 +35053,8 @@
           <title type="werk_bibliografische-angabe">[Berichtigung von Karl Kraus’ Abschied, in: Der
             Aufruf, 1.11.1933], in: Der Aufruf, 20.12.1933, S. 197</title>
           <bibl type="sk" subtype="article">
-            <title level="a">[Berichtigung von Karl Kraus’ Abschied, in: <title level="j">Der
-                Aufruf</title>, <date when="1933-11-01">1.11.1933</date>]</title>
+            <title level="a">[Berichtigung von Karl Kraus’ Abschied, in: Der
+                Aufruf, 1.11.1933]</title>
             <title level="j" key="#pmb55906">Der Aufruf</title>
             <date when="1933-12-20" key="#pmb55942">20.12.1933</date>
             <biblScope>S. 197</biblScope>
@@ -40170,8 +40170,8 @@
         <bibl xml:id="pmb87762">
 
           <title type="main">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
-          <bibl type="sk" subtype="issue">
-            <title level="j">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
+          <bibl type="sk" subtype="journal">
+            <title level="j" key="#sk_lk00474">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87762/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb87762</idno>
@@ -40822,7 +40822,7 @@
 
           <title type="main">Programmheft Nr. 8</title>
           <bibl type="sk" subtype="issue">
-            <title level="j">Programmheft</title>
+            <title level="j" key="sk_lk00475">Programmheft</title>
             <num type="issue">Nr. 8</num>
             <date when="1930" key="#pmb54279">1930</date>
           </bibl>
@@ -40869,7 +40869,7 @@
 
           <title type="main">Programmheft Nr. 6</title>
           <bibl type="sk" subtype="issue">
-            <title level="j">Programmheft</title>
+            <title level="j" key="sk_lk00475">Programmheft</title>
             <num type="issue">Nr. 6</num>
             <date when="1930" key="#sk_lk00472">1930</date>
           </bibl>
