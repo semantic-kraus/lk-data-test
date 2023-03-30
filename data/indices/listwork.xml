@@ -40577,9 +40577,10 @@
         <bibl xml:id="pmb55178">
 
           <title type="main">Österreichische Rechtsprechung in Strafsachen, Bd. 6</title>
-          <bibl type="sk" subtype="standalone_text">
+          <bibl type="sk" subtype="standalone_publication">
             <title level="m">Österreichische Rechtsprechung in Strafsachen</title>
             <num type="volume">Bd. 6</num>
+            <date key="#sk_lk00473"/>
           </bibl>
           <author key="pmb55108" role="hat-geschaffen">Löffler, Alexander</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55178/</idno>
