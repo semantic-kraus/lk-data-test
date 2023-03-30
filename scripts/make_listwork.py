@@ -104,16 +104,17 @@ for x in tqdm(items, total=len(items)):
         ))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
         g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
-        g.add(
-            (
-                pub_expr_uri,
-                RDFS.label,
-                Literal(
-                    normalize_string(f"Published Expression: {label_value}"), lang="en"
-                ),
+        if pub_expr_uri != subj:
+            g.add(
+                (
+                    pub_expr_uri,
+                    RDFS.label,
+                    Literal(
+                        normalize_string(f"Published Expression: {label_value}"), lang="en"
+                    ),
+                )
             )
-        )
-        g.add((pub_expr_uri, CIDOC["P165_incorporates"], subj))
+            g.add((pub_expr_uri, CIDOC["P165_incorporates"], subj))
 
     if item_sk_type in ["journal", "issue", "article"]:
         try:
@@ -155,24 +156,25 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri,
                     RDFS.label,
-                    Literal(f"Expression: {label_value}", lang="en"),
+                    Literal(f"Expression: {title_j_text}", lang="en"),
                 )
             )
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
             g.add((issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]))
             g.add(
-                (issue_uri_f24, RDFS.label, Literal(f"Issue: {label_value}", lang="en"))
+                (issue_uri_f24, RDFS.label, Literal(f"Issue: {title_j_text}", lang="en"))
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
-            g.add((issue_uri, CIDOC["P165_incorporates"], subj))
-            g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
+            if issue_uri != subj:
+                g.add((issue_uri, CIDOC["P165_incorporates"], subj))
+                g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
             issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
             g.add((issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
             g.add(
                 (
                     issue_uri_pub_event_uri,
                     RDFS.label,
-                    Literal(f"Publication: {label_value}"),
+                    Literal(f"Publication: {title_j_text}"),
                 )
             )
             g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
@@ -229,9 +231,10 @@ for x in tqdm(items, total=len(items)):
                         URIRef(f"{subj}/published-expression"),
                     )
                 )
-                g.add((
-                    URIRef(f"{subj}/published-expression"), CIDOC["P165_incorporates"], subj
-                ))
+                if URIRef(f"{subj}/published-expression") != subj:
+                    g.add((
+                        URIRef(f"{subj}/published-expression"), CIDOC["P165_incorporates"], subj
+                    ))
             else:
                 g.add((pub_event_uri, FRBROO["R24_created"], subj))
             time_span_uri = URIRef(f"{pub_event_uri}/time-span")
