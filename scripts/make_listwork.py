@@ -230,6 +230,7 @@ for x in tqdm(items, total=len(items)):
             print(f"missing @key in: {xml_id}")
             good_to_go = False
         if good_to_go:
+            bibl_sk = x.xpath('./tei:bibl[@type="sk"]', namespaces=nsmap)[0]
             title_j_key = title_j.attrib["key"][1:]
             title_j_text = normalize_string(title_j.text)
             periodical_uri = URIRef(f"{SK}{title_j_key}/published-expression")
@@ -272,6 +273,66 @@ for x in tqdm(items, total=len(items)):
                 )
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
+            issue_uri_appellation = URIRef(f"{issue_uri}/appellation/0")
+            g.add(
+                (
+                    issue_uri_appellation,
+                    RDF.type,
+                    CIDOC["E33_E41_Linguistic_Appellation"],
+                )
+            )
+            g.add(
+                (
+                    issue_uri_appellation,
+                    RDFS.label,
+                    Literal(f"Appellation for: {title_j_text}", lang="en"),
+                )
+            )
+            g.add((issue_uri_appellation, CIDOC["P1i_identifies"], issue_uri_f24))
+            g.add((issue_uri_f24, CIDOC["P1_is_identified_by"], issue_uri_appellation))
+            if issue_uri_f24 != subj:
+                for i, title in enumerate(
+                    bibl_sk.xpath('.//tei:title[not(@level="a")]', namespaces=nsmap)
+                ):
+                    cur_title_text = normalize_string(title.text)
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{issue_uri}/appellation-title/{i}"
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.type,
+                            CIDOC["E90_Symbolic_Object"],
+                        )
+                    )
+                    g.add(
+                        (
+                            issue_uri_appellation,
+                            CIDOC["P106_is_composed_of"],
+                            pub_expr_appellation_e90,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            CIDOC["P106i_forms_part_of"],
+                            issue_uri_appellation,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDFS.label,
+                            Literal(f"Appellation Part: {cur_title_text}", lang="en"),
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.value,
+                            Literal(f"{cur_title_text}", lang="en"),
+                        )
+                    )
             if issue_uri != subj:
                 g.add((issue_uri, CIDOC["P165_incorporates"], subj))
                 g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
