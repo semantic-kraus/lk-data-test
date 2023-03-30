@@ -8058,7 +8058,8 @@
           <title type="main">Shakespeares Dramen. Bearbeitet von Karl Kraus. Band I</title>
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Shakespeares Dramen</title>
-            <title level="m" type="subtitle">Bearbeitet von Karl Kraus. Band I</title>
+            <title level="m" type="subtitle">Bearbeitet von Karl Kraus</title>
+          	<num type="volume">Band I</num>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
@@ -20641,9 +20642,9 @@
         <bibl xml:id="pmb53420">
 
           <title type="main">Literarische Rundschau (Berliner Tageblatt), 14.10.1928</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb41531">Berliner Tageblatt</title>
-            <title level="j" type="subtitle" key="#pmb56336">Literarische Rundschau</title>
+            <title level="a">Literarische Rundschau</title>
             <date when="1928-10-14" key="#pmb53420">14.10.1928</date>
           </bibl>
           <date>1928-10-14 – 1928-10-14</date>
@@ -25841,9 +25842,9 @@
           <title type="main">Der Tag, 15.10.1914</title>
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 15.10.1914</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
+            <title level="a">[Illustr. Teil]</title>
             <date when="1914-10-15" key="#pmb61849">15.10.1914</date>
           </bibl>
           <date>1914-10-15 – 1914-10-15</date>
@@ -25868,9 +25869,9 @@
           <title type="main">Der Tag, 30.12.1914</title>
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 30.12.1914</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
+            <title level="a">[Illustr. Teil]</title>
             <date when="1914-12-30" key="#pmb61854">30.12.1914</date>
           </bibl>
           <date>1914-12-30 – 1914-12-30</date>
@@ -25895,9 +25896,9 @@
           <title type="main">Der Tag, 19.12.1914</title>
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 19.12.1914</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
+            <title level="a">[Illustr. Teil]</title>
             <date when="1914-12-19" key="#pmb61859">19.12.1914</date>
           </bibl>
           <date>1914-12-19 – 1914-12-19</date>
@@ -25922,9 +25923,9 @@
           <title type="main">Der Tag, 27.1.1915</title>
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, 27.01.1915</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil</title>
+            <title level="a">[Illustr. Teil]</title>
             <date when="1915-01-27" key="#pmb61864">27.01.1915</date>
           </bibl>
           <date>1915-01-27 – 1915-01-27</date>
@@ -26058,10 +26059,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 13,
             16.01.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 13</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 13, Ausgabe A</num>
             <date when="1916-01-16" key="#pmb61899">16.01.1916</date>
           </bibl>
           <date>1916-01-16 – 1916-01-16</date>
@@ -26087,10 +26088,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 15,
             19.01.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 15</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 15, Ausgabe A</num>
             <date when="1916-01-19" key="#pmb61904">19.01.1916</date>
           </bibl>
           <date>1916-01-19 – 1916-01-19</date>
@@ -26116,10 +26117,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 18,
             22.01.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 18</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 18, Ausgabe A</num>
             <date when="1916-01-22" key="#pmb61910">22.01.1916</date>
           </bibl>
           <date>1916-01-22 – 1916-01-22</date>
@@ -26145,10 +26146,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 23,
             28.01.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 23</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 23, Ausgabe A</num>
             <date when="1916-01-28" key="#pmb61916">28.01.1916</date>
           </bibl>
           <date>1916-01-28 – 1916-01-28</date>
@@ -26174,10 +26175,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 33,
             09.02.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 33</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 33, Ausgabe A</num>
             <date when="1916-02-09" key="#pmb61930">09.02.1916</date>
           </bibl>
           <date>1916-02-09 – 1916-02-09</date>
@@ -26203,10 +26204,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 48,
             26.02.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 48</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 48, Ausgabe A</num>
             <date when="1916-02-26" key="#pmb61935">26.02.1916</date>
           </bibl>
           <date>1916-02-26 – 1916-02-26</date>
@@ -26232,10 +26233,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 60,
             11.03.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 60</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 60, Ausgabe A</num>
             <date when="1916-03-11" key="#pmb61940">11.03.1916</date>
           </bibl>
           <date>1916-03-11 – 1916-03-11</date>
@@ -26261,10 +26262,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 71,
             24.03.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 71</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 71, Ausgabe A</num>
             <date when="1916-03-24" key="#pmb61959">24.03.1916</date>
           </bibl>
           <date>1916-03-24 – 1916-03-24</date>
@@ -26290,10 +26291,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 76,
             30.03.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 76</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 76, Ausgabe A</num>
             <date when="1916-03-30" key="#pmb61964">30.03.1916</date>
           </bibl>
           <date>1916-03-30 – 1916-03-30</date>
@@ -26319,10 +26320,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 87,
             12.04.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 87</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 87, Ausgabe A</num>
             <date when="1916-04-12" key="#pmb61972">12.04.1916</date>
           </bibl>
           <date>1916-04-12 – 1916-04-12</date>
@@ -26348,10 +26349,10 @@
 
           <title type="werk_bibliografische-angabe">Der Tag, Illustr. Teil, Ausgabe A, Nr. 121,
             24.05.1916</title>
-          <bibl type="sk" subtype="issue">
+        	<bibl type="sk" subtype="article">
             <title level="j" key="#pmb41560">Der Tag</title>
-            <title level="j" type="subtitle" key="#pmb56336">Illustr. Teil, Ausgabe A</title>
-            <num type="issue">Nr. 121</num>
+            <title level="a">[Illustr. Teil]</title>
+            <num type="issue">Nr. 121, Ausgabe A</num>
             <date when="1916-05-24" key="#pmb61974">24.05.1916</date>
           </bibl>
           <date>1916-05-24 – 1916-05-24</date>
@@ -27835,9 +27836,8 @@
             2.12.1927</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb36374">Neue Freie Presse</title>
-            <title level="j" type="subtitle" key="#pmb56336">Abendblatt</title>
             <num type="issue">Nr. 22705</num>
-            <date when="1927-12-02" key="#pmb65240">2.12.1927</date>
+            <date when="1927-12-02" key="#pmb65240">2.12.1927<note>Abendblatt</note></date>
           </bibl>
           <date>1927-12-02 – 1927-12-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65240/</idno>
@@ -28333,9 +28333,9 @@
         <bibl xml:id="pmb42403">
 
           <title type="main">Der Morgen. Wiener Montagsblatt</title>
-          <bibl type="sk" subtype="standalone_publication">
+          <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb42403">Der Morgen</title>
-            <title level="m" type="subtitle">Wiener Montagsblatt</title>
+            <title level="j" type="subtitle">Wiener Montagsblatt</title>
           </bibl>
 
           <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=dmo</title>
@@ -29663,9 +29663,9 @@
         <bibl xml:id="pmb63201">
 
           <title type="main">Der geistige Arbeiter. Deutsche Urheber-Zeitung</title>
-          <bibl type="sk" subtype="standalone_text">
+          <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb63201">Der geistige Arbeiter</title>
-            <title level="m" type="subtitle">Deutsche Urheber-Zeitung</title>
+            <title level="j" type="subtitle">Deutsche Urheber-Zeitung</title>
           </bibl>
           <author key="pmb63199" role="hat-herausgegeben">Hirschberg, Herbert</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63201/</idno>
@@ -40577,7 +40577,7 @@
           <title type="main">Österreichische Rechtsprechung in Strafsachen, Bd. 6</title>
           <bibl type="sk" subtype="standalone_text">
             <title level="m">Österreichische Rechtsprechung in Strafsachen</title>
-            <title level="m" type="subtitle">, Bd. 6</title>
+            <num type="volume">Bd. 6</num>
           </bibl>
           <author key="pmb55108" role="hat-geschaffen">Löffler, Alexander</author>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55178/</idno>
