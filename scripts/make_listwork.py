@@ -95,13 +95,12 @@ for x in tqdm(items, total=len(items)):
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
 
-    # add more classes
+    if item_sk_type == "standalone_text":
+        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
     if item_sk_type == "article":
-        g.add((subj, RDFS.label, Literal(f"??? {label_value}", lang="en")))
+        g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
     if item_sk_type == "standalone_publication":
-        g.add((
-            subj, RDFS.label, Literal(f"Expression: {label_value}")
-        ))
+        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
         g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
         if pub_expr_uri != subj:
@@ -110,7 +109,8 @@ for x in tqdm(items, total=len(items)):
                     pub_expr_uri,
                     RDFS.label,
                     Literal(
-                        normalize_string(f"Published Expression: {label_value}"), lang="en"
+                        normalize_string(f"Published Expression: {label_value}"),
+                        lang="en",
                     ),
                 )
             )
@@ -162,7 +162,11 @@ for x in tqdm(items, total=len(items)):
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
             g.add((issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]))
             g.add(
-                (issue_uri_f24, RDFS.label, Literal(f"Issue: {title_j_text}", lang="en"))
+                (
+                    issue_uri_f24,
+                    RDFS.label,
+                    Literal(f"Issue: {title_j_text}", lang="en"),
+                )
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
             if issue_uri != subj:
@@ -232,9 +236,13 @@ for x in tqdm(items, total=len(items)):
                     )
                 )
                 if URIRef(f"{subj}/published-expression") != subj:
-                    g.add((
-                        URIRef(f"{subj}/published-expression"), CIDOC["P165_incorporates"], subj
-                    ))
+                    g.add(
+                        (
+                            URIRef(f"{subj}/published-expression"),
+                            CIDOC["P165_incorporates"],
+                            subj,
+                        )
+                    )
             else:
                 g.add((pub_event_uri, FRBROO["R24_created"], subj))
             time_span_uri = URIRef(f"{pub_event_uri}/time-span")
