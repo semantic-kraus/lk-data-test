@@ -52,6 +52,8 @@ print(f"converting {entity_type}s derived from {index_file}")
 
 main_title_type_uri = URIRef(f"{SK}types/appellation/title/main")
 sub_title_type_uri = URIRef(f"{SK}types/appellation/title/sub")
+num_volume_type_uri = URIRef(f"{SK}types/appellation/num/volume")
+num_issue_type_uri = URIRef(f"{SK}types/appellation/num/issue")
 
 
 g.add((main_title_type_uri, RDF.type, CIDOC["E55_Type"]))
@@ -137,6 +139,41 @@ for x in tqdm(items, total=len(items)):
                 (pub_expr_uri, CIDOC["P1_is_identified_by"], pub_expr_appellation_uri)
             )
             g.add((pub_expr_appellation_uri, CIDOC["P1i_identifies"], pub_expr_uri))
+            for i, num in enumerate(x.xpath("./tei:bibl/tei:num", namespaces=nsmap)):
+                num_type = num.attrib["type"]
+                if num_type == "volume":
+                    appellation_type = num_volume_type_uri
+                else:
+                    appellation_type = num_issue_type_uri
+                cur_num_text = normalize_string(num.text)
+                pub_expr_appellation_e90 = URIRef(f"{subj}/appellation-num/{i}")
+                g.add(
+                    (pub_expr_appellation_e90, RDF.type, CIDOC["E90_Symbolic_Object"])
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_uri,
+                        CIDOC["P106_is_composed_of"],
+                        pub_expr_appellation_e90,
+                    )
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_e90,
+                        CIDOC["P106i_forms_part_of"],
+                        pub_expr_appellation_uri,
+                    )
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_e90,
+                        RDFS.label,
+                        Literal(f"Appellation Part: {cur_num_text}", lang="en"),
+                    )
+                )
+                g.add(
+                    (pub_expr_appellation_e90, CIDOC["P2_has_type"], appellation_type)
+                )
             for i, title in enumerate(
                 x.xpath('./tei:bibl/tei:title[@level="m"]', namespaces=nsmap)
             ):
