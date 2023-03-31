@@ -342,6 +342,8 @@ for x in tqdm(items, total=len(items)):
                 ):
                     appellation_type = date_issue_type_uri
                     date_text = date.text
+                    if date_text:
+                        date_text = normalize_string(date_text)
                     pub_expr_appellation_e90 = URIRef(
                         f"{issue_uri}/appellation-date/{i}"
                     )
@@ -431,7 +433,7 @@ for x in tqdm(items, total=len(items)):
                         appellation_type = num_volume_type_uri
                     else:
                         appellation_type = num_issue_type_uri
-                    num_text = num.text
+                    num_text = normalize_string(num.text)
                     pub_expr_appellation_e90 = URIRef(
                         f"{issue_uri}/appellation-num/{i}"
                     )
