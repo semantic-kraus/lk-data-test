@@ -2,7 +2,7 @@ import os
 from tqdm import tqdm
 from acdh_cidoc_pyutils import normalize_string, extract_begin_end, create_e52
 
-from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
+from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, INT
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
 from rdflib.namespace import RDF, RDFS, DCTERMS, VOID
@@ -148,6 +148,22 @@ for x in tqdm(items, total=len(items)):
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
     if item_sk_type == "article":
         g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
+        article_segment = URIRef(f"{subj}/segment")
+        seg_f24_key = x.xpath('.//tei:date[@key]/@key', namespaces=nsmap)[0][1:]
+        seg_f24_uri = URIRef(f"{SK}{seg_f24_key}/published-expression")
+        g.add((
+            article_segment, RDF.type, INT["INT16_Segment"]
+        ))
+        g.add((
+            article_segment, RDFS.label, Literal(f"Segment: {label_value}", lang="en")
+        ))
+        g.add((
+            article_segment, INT["R16_incorporates"], subj
+        ))
+        g.add((
+            article_segment, INT["R25_is_segment_of"], seg_f24_uri
+        ))
+
     if item_sk_type == "standalone_publication":
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
