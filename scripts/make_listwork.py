@@ -294,6 +294,11 @@ for x in tqdm(items, total=len(items)):
                 for i, title in enumerate(
                     bibl_sk.xpath('.//tei:title[not(@level="a")]', namespaces=nsmap)
                 ):
+                    try:
+                        title.attrib["type"]
+                        appellation_type = sub_title_type_uri
+                    except KeyError:
+                        appellation_type = main_title_type_uri
                     cur_title_text = normalize_string(title.text)
                     pub_expr_appellation_e90 = URIRef(
                         f"{issue_uri}/appellation-title/{i}"
@@ -303,6 +308,13 @@ for x in tqdm(items, total=len(items)):
                             pub_expr_appellation_e90,
                             RDF.type,
                             CIDOC["E90_Symbolic_Object"],
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            CIDOC["P2_has_type"],
+                            appellation_type,
                         )
                     )
                     g.add(
