@@ -102,6 +102,48 @@ for x in tqdm(items, total=len(items)):
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
 
+    for i, title_e35 in enumerate(
+        x.xpath('.//tei:title[@level="a"]', namespaces=nsmap)
+    ):
+        try:
+            title_e35_text = normalize_string(title_e35.text)
+        except AttributeError:
+            continue
+        try:
+            title_e35.attrib["type"]
+            title_e35_type = sub_title_type
+        except KeyError:
+            title_e35_type = main_title_type
+
+        title_e35_uri = URIRef(f"{subj}/title/{i}")
+        g.add((title_e35_uri, RDF.type, CIDOC["E35_Title"]))
+        g.add(
+            (title_e35_uri, RDFS.label, Literal(f"Title: {title_e35_text}", lang="en"))
+        )
+        g.add((title_e35_uri, RDF.value, Literal(f"{title_e35_text}")))
+        g.add((subj, CIDOC["P102_has_title"], title_e35_uri))
+        g.add((title_e35_uri, CIDOC["P102i_is_title_of"], subj))
+        g.add((title_e35_uri, CIDOC["P2_has_type"], title_e35_type))
+    for i, title_e35 in enumerate(
+        x.xpath('.//tei:title[@level="m"]', namespaces=nsmap)
+    ):
+        title_e35_text = normalize_string(title_e35.text)
+        try:
+            title_e35.attrib["type"]
+            title_e35_type = sub_title_type
+        except KeyError:
+            title_e35_type = main_title_type
+
+        title_e35_uri = URIRef(f"{subj}/title/{i}")
+        g.add((title_e35_uri, RDF.type, CIDOC["E35_Title"]))
+        g.add(
+            (title_e35_uri, RDFS.label, Literal(f"Title: {title_e35_text}", lang="en"))
+        )
+        g.add((title_e35_uri, RDF.value, Literal(f"{title_e35_text}")))
+        g.add((subj, CIDOC["P102_has_title"], title_e35_uri))
+        g.add((title_e35_uri, CIDOC["P102i_is_title_of"], subj))
+        g.add((title_e35_uri, CIDOC["P2_has_type"], title_e35_type))
+
     if item_sk_type == "standalone_text":
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
     if item_sk_type == "article":
@@ -312,7 +354,9 @@ for x in tqdm(items, total=len(items)):
                     Literal(f"Issue: {title_j_text}", lang="en"),
                 )
             )
-            for i, title_e35 in enumerate(bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)):
+            for i, title_e35 in enumerate(
+                bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
+            ):
                 title_e35_text = normalize_string(title_e35.text)
                 try:
                     title_e35.attrib["type"]
@@ -321,24 +365,18 @@ for x in tqdm(items, total=len(items)):
                     title_e35_type = main_title_type
 
                 title_e35_uri = URIRef(f"{issue_uri}/title/{i}")
-                g.add((
-                    title_e35_uri, RDF.type, CIDOC["E35_Title"]
-                ))
-                g.add((
-                    title_e35_uri, RDFS.label, Literal(f"Title: {title_e35_text}", lang="en")
-                ))
-                g.add((
-                    title_e35_uri, RDF.value, Literal(f"{title_e35_text}")
-                ))
-                g.add((
-                    issue_uri, CIDOC["P102_has_title"], title_e35_uri
-                ))
-                g.add((
-                    title_e35_uri, CIDOC["P102i_is_title_of"], issue_uri
-                ))
-                g.add((
-                    title_e35_uri, CIDOC["P2_has_type"], title_e35_type
-                ))
+                g.add((title_e35_uri, RDF.type, CIDOC["E35_Title"]))
+                g.add(
+                    (
+                        title_e35_uri,
+                        RDFS.label,
+                        Literal(f"Title: {title_e35_text}", lang="en"),
+                    )
+                )
+                g.add((title_e35_uri, RDF.value, Literal(f"{title_e35_text}")))
+                g.add((issue_uri, CIDOC["P102_has_title"], title_e35_uri))
+                g.add((title_e35_uri, CIDOC["P102i_is_title_of"], issue_uri))
+                g.add((title_e35_uri, CIDOC["P2_has_type"], title_e35_type))
 
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
             g.add((issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]))
@@ -414,14 +452,12 @@ for x in tqdm(items, total=len(items)):
                         )
                     )
                     try:
-                        note = date.xpath('./tei:note', namespaces=nsmap)[0]
+                        note = date.xpath("./tei:note", namespaces=nsmap)[0]
                     except IndexError:
                         continue
                     note_text = note.text
                     appellation_type = ed_issue_type_uri
-                    pub_expr_appellation_e90 = URIRef(
-                        f"{issue_uri}/appellation-ed/0"
-                    )
+                    pub_expr_appellation_e90 = URIRef(f"{issue_uri}/appellation-ed/0")
                     g.add(
                         (
                             issue_uri_appellation,
