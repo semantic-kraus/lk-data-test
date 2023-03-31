@@ -14698,9 +14698,9 @@
         <bibl xml:id="pmb57894">
 
           <title type="main">Selbstwehr. Jüdisches Volksblatt</title>
-          <bibl type="sk" subtype="standalone_publication">
+          <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb57894">Selbstwehr</title>
-            <title level="m" type="subtitle">Jüdisches Volksblatt</title>
+            <title level="j" type="subtitle">Jüdisches Volksblatt</title>
           </bibl>
 
           <title type="werk_link">https://digipres.cjh.org/delivery/DeliveryManagerServlet?dps_pid=IE394663</title>
@@ -27410,13 +27410,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 26.02.1930, 75. Jhg.,
             Nr. 95, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-02-26" key="#pmb63925">26.02.1930<note>Morgenausgabe</note>
+            <date when="1930-02-26" key="#sk_lk00477">26.02.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 95</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300226-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=2f2b6ca68dad1c0915ec3e7db5a38f5b</title>
@@ -27444,13 +27444,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 15.03.1930, 75. Jhg.,
             Nr. 125, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-03-15" key="#pmb63930">15.03.1930<note>Morgenausgabe</note>
+            <date when="1930-03-15" key="#sk_lk00476">15.03.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 125</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300315-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=244abbd5b9b66bd8ec4a4520476ae7a9</title>
@@ -27478,13 +27478,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 25.03.1930, 75. Jhg.,
             Nr. 141, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-03-25" key="#pmb63934">25.03.1930<note>Morgenausgabe</note>
+          	<date when="1930-03-25" key="#sk_lk00478">25.03.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 141</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300325-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=fba4d3e4bad6c0dc8028968fcde8b966</title>
@@ -27511,13 +27511,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 03.04.1930, 75. Jhg.,
             Nr. 157, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-04-03" key="#pmb63940">03.04.1930<note>Morgenausgabe</note>
+          	<date when="1930-04-03" key="#sk_lk00479">03.04.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 157</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300403-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=55e5655bcf5c5e2a58953528aab3aac3</title>
@@ -27545,13 +27545,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 16.04.1930, 75. Jhg.,
             Nr. 179, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-04-16" key="#pmb63945">16.04.1930<note>Morgenausgabe</note>
+          	<date when="1930-04-16" key="#sk_lk00480">16.04.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 179</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_bibliografische-angabe">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300416-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=327ebda0ad196ddd3c3e6badab8f41cd</title>
@@ -27580,13 +27580,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 17.04.1930, 75. Jhg.,
             Nr. 181, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-04-17" key="#pmb63950">17.04.1930<note>Morgenausgabe</note>
+          	<date when="1930-04-17" key="##sk_lk00481">17.04.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 181</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300417-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=a7033f40cd3486a8b6c970d8a1006a59</title>
@@ -27614,13 +27614,13 @@
 
           <title type="werk_bibliografische-angabe">Berliner Börsen-Zeitung, 25.04.1930, 75. Jhg.,
             Nr. 191, Morgenausgabe, Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-04-25" key="#pmb63955">25.04.1930<note>Morgenausgabe</note>
+          	<date when="1930-04-25" key="##sk_lk00482">25.04.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 191</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen"</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen"</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300425-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=1&amp;tx_dlf%5Bpagegrid%5D=1&amp;cHash=89fe22b6642b5d76a50a598985b0d4a3</title>
@@ -34172,11 +34172,12 @@
           <title type="main">Fackel-Kraus als Plakat-Ankleber.</title>
 
           <title type="werk_bibliografische-angabe">Silesia, Nr. 213, 19.9.1927, S. 1.</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb53877">Silesia</title>
             <num type="issue">Nr. 213</num>
-            <date when="1927-09-19" key="#pmb53879">19.9.1927</date>
+          	<date when="1927-09-19" key="#sk_lk00482">19.9.1927</date>
             <biblScope>S. 1</biblScope>
+          	<title level="a"/>
           </bibl>
           <date from-iso="1927-01-01" to-iso="1927-12-31">1927 – 1927</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53879/</idno>
@@ -38575,12 +38576,13 @@
 
           <title type="werk_bibliografische-angabe">Neues Wiener Journal, Jg. 28, Nr. 9467,
             14.3.1920, S. 4</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
             <title level="j" key="#pmb36376">Neues Wiener Journal</title>
             <num type="volume">Jg. 28</num>
             <num type="issue">Nr. 9467</num>
-            <date when="1920-03-14" key="#pmb59983">14.3.1920</date>
+          	<date when="1920-03-14" key="#sk_lk00483">14.3.1920</date>
             <biblScope>S. 4</biblScope>
+          	<title level="a"/>
           </bibl>
 
           <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19200314&amp;seite=4&amp;zoom=33</title>
@@ -39585,11 +39587,11 @@
           <bibl type="sk" subtype="article">
             <title level="a">Uraufführung einer neuen Sinfonie in Wien</title>
             <title level="j" key="#pmb54745">Berliner Börsen-Zeitung</title>
-            <date when="1930-03-15" key="#pmb63930">15.03.1930<note>Morgenausgabe</note>
+          	<date when="1930-03-15" key="#sk_lk00476">15.03.1930<note>Morgenausgabe</note>
             </date>
             <num type="volume">75. Jhg.</num>
             <num type="issue">Nr. 125</num>
-            <biblScope>Unterhaltungs-Beilage "Kunst Welt Wissen", S. 7</biblScope>
+            <title level="a">Unterhaltungs-Beilage "Kunst Welt Wissen", S. 7</title>
           </bibl>
 
           <title type="werk_link">https://dfg-viewer.de/show?tx_dlf%5Bdouble%5D=0&amp;tx_dlf%5Bid%5D=https%3A%2F%2Fcontent.staatsbibliothek-berlin.de%2Fzefys%2FSNP2436020X-19300315-0-0-0-0.xml&amp;tx_dlf%5Bpage%5D=7&amp;cHash=6e9c2f3528048215fcb4dd22a163727c</title>
