@@ -306,7 +306,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri,
                     RDFS.label,
-                    Literal(f"Expression: {title_j_text}", lang="en"),
+                    Literal(f"Issue: {title_j_text}", lang="en"),
                 )
             )
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
