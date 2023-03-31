@@ -7464,7 +7464,7 @@
             <title level="j" key="#sk_lk00017">Wiener Rundschau</title>
             <num type="volume">Jg. 1</num>
             <num type="issue">H. 1-2</num>
-            <date notBefore="1896-11-15" notAfter="1896-12-01" key="#pmb32606">15. 11.–1. 12.
+            <date notBefore="1896-11-15" notAfter="1896-12-01" key="#sk_lk00475">15. 11.–1. 12.
               1896</date>
           </bibl>
 
@@ -9915,7 +9915,7 @@
           <title type="main">Die neue Rundschau</title>
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb36156">Die neue Rundschau</title>
-            <date when="1904" key="#sk_lk00469">1904</date>
+            
           </bibl>
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36156/</idno>
