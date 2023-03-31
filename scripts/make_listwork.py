@@ -243,6 +243,51 @@ for x in tqdm(items, total=len(items)):
                     Literal(f"Periodical: {title_j_text}", lang="en"),
                 )
             )
+            periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
+            for i, title in enumerate(
+                bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
+            ):
+                try:
+                    title.attrib["type"]
+                    appellation_type = sub_title_type_uri
+                except KeyError:
+                    appellation_type = main_title_type_uri
+                cur_title_text = normalize_string(title.text)
+                pub_expr_appellation_e90 = URIRef(
+                    f"{periodical_uri}/appellation-title/{i}"
+                )
+                g.add(
+                    (pub_expr_appellation_e90, CIDOC["P2_has_type"], appellation_type)
+                )
+                g.add(
+                    (
+                        periodical_uri_appellation,
+                        CIDOC["P106_is_composed_of"],
+                        pub_expr_appellation_e90,
+                    )
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_e90,
+                        CIDOC["P106i_forms_part_of"],
+                        periodical_uri_appellation,
+                    )
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_e90,
+                        RDFS.label,
+                        Literal(f"Appellation Part: {cur_title_text}", lang="en"),
+                    )
+                )
+                g.add(
+                    (
+                        pub_expr_appellation_e90,
+                        RDF.value,
+                        Literal(f"{cur_title_text}", lang="en"),
+                    )
+                )
+
             try:
                 title_date = x.xpath(
                     "./tei:bibl[@type='sk']/tei:date", namespaces=nsmap
@@ -292,7 +337,9 @@ for x in tqdm(items, total=len(items)):
             g.add((issue_uri_appellation, CIDOC["P1i_identifies"], issue_uri_f24))
             g.add((issue_uri_f24, CIDOC["P1_is_identified_by"], issue_uri_appellation))
             if issue_uri_f24 != subj:
-                for i, date in enumerate(bibl_sk.xpath('.//tei:date', namespaces=nsmap)):
+                for i, date in enumerate(
+                    bibl_sk.xpath(".//tei:date", namespaces=nsmap)
+                ):
                     appellation_type = date_issue_type_uri
                     date_text = date.text
                     pub_expr_appellation_e90 = URIRef(
@@ -333,7 +380,7 @@ for x in tqdm(items, total=len(items)):
                             Literal(f"{date_text}", lang="en"),
                         )
                     )
-                for i, num in enumerate(bibl_sk.xpath('.//tei:num', namespaces=nsmap)):
+                for i, num in enumerate(bibl_sk.xpath(".//tei:num", namespaces=nsmap)):
                     num_type = num.attrib["type"]
                     if num_type == "volume":
                         appellation_type = num_volume_type_uri
