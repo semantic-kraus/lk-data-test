@@ -38,7 +38,7 @@ for x in tqdm(files, total=len(files)):
     _, tail = os.path.split(x)
     quotes = doc.any_xpath(".//tei:quote[@source]")
     for q in quotes:
-        source = q.attrib["source"]
+        source = q.attrib["source"].lower()
         if "fackel" in source:
             texts = normalize_string(" ".join(q.xpath(".//text()")))
             value = f"{tail}||{texts}"
@@ -52,3 +52,19 @@ more_than_one_sorted = dict(
 )
 with open("./rdf/fackel_mentions.json", "w") as f:
     json.dump(more_than_one_sorted, f, ensure_ascii=False)
+
+
+fa_texts = set(page_text_list)
+mention_more_than_one = set()
+for x in set(sources):
+    try:
+        more_than_one[x]
+        mention_more_than_one.add(x)
+    except:  # noqa:
+        pass
+print(len(mention_more_than_one))
+print(len(set(sources)))
+
+with open("./rdf/mention_more_than_one.txt", "w") as f:
+    for x in mention_more_than_one:
+        f.write(f"{x}\n")
