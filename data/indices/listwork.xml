@@ -15068,7 +15068,7 @@
             1932</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb60433">Der Scheinwerfer</title>
-            <title level="j" type="subtitle" key="#pmb56336">Programmschrift des Essener
+            <title level="j" type="subtitle">Programmschrift des Essener
               Stadttheaters</title>
             <date when="1932-03" key="#pmb62237">März 1932</date>
           </bibl>
@@ -28901,7 +28901,7 @@
           <title type="main">Die Fackel (Sozialistische Wochenzeitung)</title>
           <bibl type="sk" subtype="journal">
             <title level="j" key="#pmb56336">Die Fackel</title>
-            <title level="j" type="subtitle" key="#pmb56336">Sozialistische Wochenzeitung</title>
+            <title level="j" type="subtitle">Sozialistische Wochenzeitung</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56336/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56336</idno>
@@ -29469,7 +29469,7 @@
             11.11.1931</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb56336">Die Fackel</title>
-            <title level="j" type="subtitle" key="#pmb56336">Sozialistische Wochenzeitung</title>
+            <title level="j" type="subtitle">Sozialistische Wochenzeitung</title>
             <date when="1931-11-11" key="#pmb88193">11.11.1931</date>
           </bibl>
           <date>1931-11-11 – 1931-11-11</date>
@@ -29507,7 +29507,7 @@
             ?, September 1927</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb53675">Der Bücherwurm</title>
-            <title level="j" type="subtitle" key="#pmb56336">Eine Monatsschrift</title>
+            <title level="j" type="subtitle">Eine Monatsschrift</title>
             <num type="volume">Jg. 12</num>
             <num type="issue">H. ?</num>
             <date when="1927-09" key="#pmb53687">September 1927</date>
