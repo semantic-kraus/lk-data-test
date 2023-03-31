@@ -9791,7 +9791,7 @@
           <title type="werk_bibliografische-angabe">Volkskampf Nr. 18, Jg. 1 (30.4.1927)</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb53441">Volkskampf</title>
-            <num type="type">Nr. 18</num>
+            <num type="issue">Nr. 18</num>
             <num type="volume">Jg. 1</num>
             <date when="1927-04-30" key="#pmb53619">30.4.1927</date>
           </bibl>
