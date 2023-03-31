@@ -55,7 +55,7 @@ sub_title_type_uri = URIRef(f"{SK}types/appellation/title/sub")
 num_volume_type_uri = URIRef(f"{SK}types/appellation/num/volume")
 num_issue_type_uri = URIRef(f"{SK}types/appellation/num/issue")
 date_issue_type_uri = URIRef(f"{SK}types/appellation/date")
-
+ed_issue_type_uri = URIRef(f"{SK}types/appellation/ed")
 
 g.add((main_title_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_title_type_uri, RDF.type, CIDOC["E55_Type"]))
@@ -380,6 +380,51 @@ for x in tqdm(items, total=len(items)):
                             Literal(f"{date_text}", lang="en"),
                         )
                     )
+                    try:
+                        note = date.xpath('./tei:note', namespaces=nsmap)[0]
+                    except IndexError:
+                        continue
+                    note_text = note.text
+                    appellation_type = ed_issue_type_uri
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{issue_uri}/appellation-ed/0"
+                    )
+                    g.add(
+                        (
+                            issue_uri_appellation,
+                            CIDOC["P106_is_composed_of"],
+                            pub_expr_appellation_e90,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.type,
+                            CIDOC["E90_Symbolic_Object"],
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            CIDOC["P2_has_type"],
+                            appellation_type,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDFS.label,
+                            Literal(f"Appellation Part: {note_text}", lang="en"),
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.value,
+                            Literal(f"{note_text}", lang="en"),
+                        )
+                    )
+
                 for i, num in enumerate(bibl_sk.xpath(".//tei:num", namespaces=nsmap)):
                     num_type = num.attrib["type"]
                     if num_type == "volume":
