@@ -291,6 +291,51 @@ for x in tqdm(items, total=len(items)):
             g.add((issue_uri_appellation, CIDOC["P1i_identifies"], issue_uri_f24))
             g.add((issue_uri_f24, CIDOC["P1_is_identified_by"], issue_uri_appellation))
             if issue_uri_f24 != subj:
+                for i, num in enumerate(bibl_sk.xpath('.//tei:num', namespaces=nsmap)):
+                    num_type = num.attrib["type"]
+                    if num_type == "volume":
+                        appellation_type = num_volume_type_uri
+                    else:
+                        appellation_type = num_issue_type_uri
+                    num_text = num.text
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{issue_uri}/appellation-num/{i}"
+                    )
+                    g.add(
+                        (
+                            issue_uri_appellation,
+                            CIDOC["P106_is_composed_of"],
+                            pub_expr_appellation_e90,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.type,
+                            CIDOC["E90_Symbolic_Object"],
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            CIDOC["P2_has_type"],
+                            appellation_type,
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDFS.label,
+                            Literal(f"Appellation Part: {num_text}", lang="en"),
+                        )
+                    )
+                    g.add(
+                        (
+                            pub_expr_appellation_e90,
+                            RDF.value,
+                            Literal(f"{num_text}", lang="en"),
+                        )
+                    )
                 for i, title in enumerate(
                     bibl_sk.xpath('.//tei:title[not(@level="a")]', namespaces=nsmap)
                 ):
