@@ -50,15 +50,18 @@ if LIMIT:
     items = items[:LIMIT]
 print(f"converting {entity_type}s derived from {index_file}")
 
-main_title_type_uri = URIRef(f"{SK}types/appellation/title/main")
-sub_title_type_uri = URIRef(f"{SK}types/appellation/title/sub")
+main_appellation_type_uri = URIRef(f"{SK}types/appellation/title/main")
+sub_appellation_type_uri = URIRef(f"{SK}types/appellation/title/sub")
 num_volume_type_uri = URIRef(f"{SK}types/appellation/num/volume")
 num_issue_type_uri = URIRef(f"{SK}types/appellation/num/issue")
 date_issue_type_uri = URIRef(f"{SK}types/appellation/date")
 ed_issue_type_uri = URIRef(f"{SK}types/appellation/ed")
+main_title_type = URIRef(f"{SK}types/title/main")
+sub_title_type = URIRef(f"{SK}types/title/sub")
 
-g.add((main_title_type_uri, RDF.type, CIDOC["E55_Type"]))
-g.add((sub_title_type_uri, RDF.type, CIDOC["E55_Type"]))
+
+g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 for x in tqdm(items, total=len(items)):
     try:
         xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
@@ -180,9 +183,9 @@ for x in tqdm(items, total=len(items)):
             ):
                 try:
                     title.attrib["type"]
-                    appellation_type = sub_title_type_uri
+                    appellation_type = sub_appellation_type_uri
                 except KeyError:
-                    appellation_type = main_title_type_uri
+                    appellation_type = main_appellation_type_uri
                 cur_title_text = normalize_string(title.text)
                 pub_expr_appellation_e90 = URIRef(f"{subj}/appellation-title/{i}")
                 g.add(
@@ -249,9 +252,9 @@ for x in tqdm(items, total=len(items)):
             ):
                 try:
                     title.attrib["type"]
-                    appellation_type = sub_title_type_uri
+                    appellation_type = sub_appellation_type_uri
                 except KeyError:
-                    appellation_type = main_title_type_uri
+                    appellation_type = main_appellation_type_uri
                 cur_title_text = normalize_string(title.text)
                 pub_expr_appellation_e90 = URIRef(
                     f"{periodical_uri}/appellation-title/{i}"
@@ -309,6 +312,34 @@ for x in tqdm(items, total=len(items)):
                     Literal(f"Issue: {title_j_text}", lang="en"),
                 )
             )
+            for i, title_e35 in enumerate(bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)):
+                title_e35_text = normalize_string(title_e35.text)
+                try:
+                    title_e35.attrib["type"]
+                    title_e35_type = sub_title_type
+                except KeyError:
+                    title_e35_type = main_title_type
+
+                title_e35_uri = URIRef(f"{issue_uri}/title/{i}")
+                g.add((
+                    title_e35_uri, RDF.type, CIDOC["E35_Title"]
+                ))
+                g.add((
+                    title_e35_uri, RDFS.label, Literal(f"Title: {title_e35_text}", lang="en")
+                ))
+                g.add((
+                    title_e35_uri, RDF.value, Literal(f"{title_e35_text}")
+                ))
+                g.add((
+                    issue_uri, CIDOC["P102_has_title"], title_e35_uri
+                ))
+                g.add((
+                    title_e35_uri, CIDOC["P102i_is_title_of"], issue_uri
+                ))
+                g.add((
+                    title_e35_uri, CIDOC["P2_has_type"], title_e35_type
+                ))
+
             issue_uri_f24 = URIRef(f"{issue_uri}/published-expression")
             g.add((issue_uri_f24, RDF.type, FRBROO["F24_Publication_Expression"]))
             g.add(
@@ -477,9 +508,9 @@ for x in tqdm(items, total=len(items)):
                 ):
                     try:
                         title.attrib["type"]
-                        appellation_type = sub_title_type_uri
+                        appellation_type = sub_appellation_type_uri
                     except KeyError:
-                        appellation_type = main_title_type_uri
+                        appellation_type = main_appellation_type_uri
                     cur_title_text = normalize_string(title.text)
                     pub_expr_appellation_e90 = URIRef(
                         f"{issue_uri}/appellation-title/{i}"
