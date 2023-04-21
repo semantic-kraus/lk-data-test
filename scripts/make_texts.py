@@ -50,6 +50,7 @@ print("filtering documents without transcriptions")
 for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
     try:
+        # maybe process these too?
         doc.any_xpath('.//tei:div[@type="no-transcription"]')[0]
         os.remove(x)
     except IndexError:
@@ -91,6 +92,7 @@ for x in tqdm(to_process, total=len(to_process)):
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     creation_uri = URIRef(f"{subj}/creation")
     g.add((creation_uri, RDF.type, CIDOC["E65_Creation"]))
+    g.add((creation_uri, CIDOC["P94_has_created"], URIRef(item_id)))
     g.add((creation_uri, RDFS.label, Literal(f"Creation of: {item_label}")))
     # g.add((creation_uri, FRBROO["R17"], subj))
     # g.add((subj, FRBROO["R17i"], subj))
