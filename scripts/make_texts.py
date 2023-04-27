@@ -142,8 +142,7 @@ for x in tqdm(to_process, total=len(to_process)):
             pb_start = 1
         g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")))
         g.add((text_segment, INT["R41_has_location"], Literal(arche_id_value)))
-        g.add((text_segment, SCHEMA["pages"], Literal(f"S. {pb_start}")))
-        g.add((text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")))
+        g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pb_start}")))
 
         g.add((subj_f4, CIDOC["P128_carries"], text_segment))
         # try:
