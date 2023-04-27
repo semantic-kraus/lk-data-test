@@ -11,7 +11,7 @@ from rdflib.namespace import RDF, RDFS
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
 else:
-    LIMIT = 100
+    LIMIT = 500
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 # build uri lookup dict for listwork.xml
@@ -118,7 +118,7 @@ for x in tqdm(to_process, total=len(to_process)):
         creator_uri = URIRef(f"{SK}{creator[1:]}")
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
 
-    # # fun with mentions (persons)
+    # # fun with mentions (persons, works)
     for i, mention in enumerate(doc.any_xpath(".//tei:body//tei:rs[@ref]")):
         text_passage = URIRef(f"{subj}/passage/{i}")
         mention_wording = Literal(
@@ -175,25 +175,52 @@ for x in tqdm(to_process, total=len(to_process)):
             )
             g.add((text_actualization, INT["R17_actualizes_feature"], text_reference))
             g.add((text_reference, CIDOC["P67_refers_to"], person_uri))
-        if mention.get("type") == "work" and mention.get("subtype") == "pmb":
-            work_id = mention.attrib["ref"][1:]
-            try:
-                work_uri = URIRef(bibl_class_lookup_dict[work_id])
-            except KeyError:
-                print(f"no uri for ref {work_id} found")
-                continue
-            intertext_relation = URIRef(f"{subj}/relation/{i}")
-            g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
-            g.add(
-                (
-                    intertext_relation,
-                    RDFS.label,
-                    Literal("Intertextual relation", lang="en"),
+            
+        elif mention.get("type") == "work":
+            if mention.get("subtype") == "pmb":
+                work_id = mention.attrib["ref"][1:]
+                try:
+                    work_uri = URIRef(bibl_class_lookup_dict[work_id])
+                except KeyError:
+                    print(f"pmb: no uri for ref {work_id} found")
+                    continue
+                intertext_relation = URIRef(f"{subj}/relation/{i}")
+                g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
+                g.add(
+                    (
+                        intertext_relation,
+                        RDFS.label,
+                        Literal("Intertextual relation", lang="en"),
+                    )
                 )
-            )
-            g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
-            g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
-
+                g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
+                g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
+            
+            elif (mention.get("subtype")=="legal-doc"
+                and not(mention.attrib["ref"].startswith("pmb") or mention.attrib["ref"].startswith("#"))
+            ):
+                ref_val = mention.attrib["ref"]
+                work_id = ref_val.split("/")[-1].replace(".xml", "")
+                work_uri = URIRef(f"{SK}{work_id}")
+                # some ids are random: so far i found:
+                # but most are wellformed
+                # https://id.acdh.oeaw.ac …
+                # #pmbD_00020 …
+                # #pmbD_00020 … .xml
+                # #pmb10920312930
+                # why?
+                # how do i check these?
+                intertext_relation = URIRef(f"{work_uri}/relation/{i}")
+                g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
+                g.add(
+                    (
+                        intertext_relation,
+                        RDFS.label,
+                        Literal("Intertextual relation", lang="en"),
+                    )
+                )
+                g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
+                g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
 
 # cases
 print("lets process cases as E5 Events")
