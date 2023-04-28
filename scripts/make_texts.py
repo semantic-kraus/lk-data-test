@@ -163,7 +163,7 @@ for x in tqdm(to_process, total=len(to_process)):
 
     # # fun with mentions (persons, works, quotes)
     rs_xpath = ".//tei:body//tei:rs[@ref]"
-    quote_xpath = "//tei:body//tei:quote[starts-with(@source, '#D')]"
+    quote_xpath = "//tei:body//tei:quote[starts-with(@source, '#')]"
     for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
@@ -219,7 +219,17 @@ for x in tqdm(to_process, total=len(to_process)):
                     create_mention_intertex_relation(subj, i, text_passage, work_uri)
         elif mention.xpath("local-name()='quote'"):
             work_id = mention.get("source").lstrip("#")
-            work_uri = URIRef(f"{SK}{work_id}")
+            if work_id.isnumeric():
+                work_id = "pmb" + work_id
+                try:
+                    work_uri = URIRef(bibl_class_lookup_dict[work_id])
+                except KeyError:
+                    print(f"quote: no uri for ref {work_id} found")
+                    continue
+            elif work_id.startswith("D"):
+                work_uri = URIRef(f"{SK}{work_id}")
+            else:
+                continue
             create_mention_intertex_relation(subj, i, text_passage, work_uri)
 
 
