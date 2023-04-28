@@ -192,8 +192,8 @@ for x in tqdm(to_process, total=len(to_process)):
                         Literal("Intertextual relation", lang="en"),
                     )
                 )
-                g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
-                g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
+                g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
+                g.add((intertext_relation, INT["R12_has_referred_to_entity"], work_uri))
 
             elif mention.get("subtype") == "legal-doc":
                 if not mention.attrib["ref"].startswith("pmb") and not mention.attrib["ref"].startswith("#"):
@@ -217,8 +217,8 @@ for x in tqdm(to_process, total=len(to_process)):
                             Literal("Intertextual relation", lang="en"),
                         )
                     )
-                    g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
-                    g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
+                    g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
+                    g.add((intertext_relation, INT["R12_has_referred_to_entity"], work_uri))
 
 # cases
 print("lets process cases as E5 Events")
