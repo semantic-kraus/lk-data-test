@@ -5894,7 +5894,7 @@
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <author key="pmb38307" role="hat-ubersetzt">Treumann, Karl</author>
-          <date type="premiere" notBefore-iso="1866-01-01" when-iso="1866-07-02">1866</date>
+          <!--<date type="premiere" notBefore-iso="1866-01-01" when-iso="1866-07-02">1866</date>-->
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53311/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53311</idno>
           <note type="collections">
@@ -6187,7 +6187,7 @@
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
-          <date type="premiere" notBefore-iso="1874-01-01" when-iso="1874-07-02">1874</date>
+          <!--<date type="premiere" notBefore-iso="1874-01-01" when-iso="1874-07-02">1874</date>-->
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55390/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55390</idno>
           <note type="collections">
@@ -6576,7 +6576,7 @@
           </bibl>
           <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>
+          <!--<date type="premiere" notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>-->
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56707/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56707</idno>
           <note type="collections">
@@ -6824,7 +6824,7 @@
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <author key="pmb11988" role="hat-ubersetzt">Kraus, Karl</author>
-          <date type="premiere" notBefore-iso="1867-01-01" when-iso="1867-07-02">1867</date>
+          <!--<date type="premiere" notBefore-iso="1867-01-01" when-iso="1867-07-02">1867</date>-->
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56987/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb56987.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56987</idno>
