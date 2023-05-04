@@ -164,7 +164,9 @@ for x in tqdm(items, total=len(items)):
             bibl_scope = None
         if bibl_scope is not None:
             bibl_scope_text = normalize_string(bibl_scope.text)
-            g.add((article_segment, SCHEMA["pagination"], Literal(f"{bibl_scope_text}")))
+            g.add(
+                (article_segment, SCHEMA["pagination"], Literal(f"{bibl_scope_text}"))
+            )
 
     if item_sk_type == "standalone_publication":
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))

@@ -27,7 +27,9 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
     return text_passage
 
 
-def create_mention_text_segment(subj, i, item_label, text_passage, mention_wording, arche_id_value):
+def create_mention_text_segment(
+    subj, i, item_label, text_passage, mention_wording, arche_id_value
+):
     text_segment = URIRef(f"{subj}/segment/{i}")
     text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
@@ -170,7 +172,9 @@ for x in tqdm(to_process, total=len(to_process)):
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
         )
         text_passage = create_mention_text_passage(subj, i, mention_wording, item_label)
-        text_segment = create_mention_text_segment(subj, i, item_label, text_passage, mention_wording, arche_id_value)
+        text_segment = create_mention_text_segment(
+            subj, i, item_label, text_passage, mention_wording, arche_id_value
+        )
         g.add((subj_f4, CIDOC["P128_carries"], text_segment))
         # try:
         #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
@@ -213,7 +217,9 @@ for x in tqdm(to_process, total=len(to_process)):
                 create_mention_intertex_relation(subj, i, text_passage, work_uri)
             elif mention.get("subtype") == "legal-doc":
                 # # follwing test is used cause the ref val is defectiv in some cases
-                if not mention.attrib["ref"].startswith("pmb") and not mention.attrib["ref"].startswith("#"):
+                if not mention.attrib["ref"].startswith("pmb") and not mention.attrib[
+                    "ref"
+                ].startswith("#"):
                     ref_val = mention.attrib["ref"]
                     work_id = ref_val.split("/")[-1].replace(".xml", "")
                     work_uri = URIRef(f"{SK}{work_id}")

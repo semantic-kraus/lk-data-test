@@ -39,7 +39,9 @@ for x in tqdm(items, total=len(items)):
     name_node = x.xpath(".//tei:persName", namespaces=nsmap)[0]
     item_label = make_entity_label(name_node)[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
+    g += make_e42_identifiers(
+        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+    )
     g += make_appellations(subj, x, type_domain=f"{SK}types", default_lang="und")
     g += make_occupations(subj, x, default_lang="de")[0]
     # g += make_affiliations(
@@ -87,7 +89,9 @@ for x in tqdm(items, total=len(items)):
     subj = URIRef(item_id)
     g.add((subj, RDF.type, CIDOC["E74_Group"]))
     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
+    g += make_e42_identifiers(
+        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+    )
 
 # PLACES
 entity_type = "place"
@@ -105,7 +109,9 @@ for x in tqdm(items, total=len(items)):
     g.add((subj, RDF.type, CIDOC["E53_Place"]))
     g += coordinates_to_p168(subj, x)
     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers(subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False)
+    g += make_e42_identifiers(
+        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+    )
     try:
         pmb = x.xpath('.//tei:idno[@type="pmb"]/text()', namespaces=nsmap)[0]
     except IndexError:

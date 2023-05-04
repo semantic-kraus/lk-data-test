@@ -26,6 +26,6 @@ for key, value in d.items():
     print(len(value), new_key)
     for item in value:
         date = item.xpath("./tei:date", namespaces=nsmap)[0]
-        date.attrib['key'] = new_key
+        date.attrib["key"] = new_key
 
 doc.tree_to_file(file)
