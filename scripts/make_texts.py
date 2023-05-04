@@ -11,9 +11,52 @@ from rdflib.namespace import RDF, RDFS
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
 else:
-    LIMIT = 100
+    LIMIT = 500
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
+
+
+def create_mention_text_passage(subj, i, mention_wording, item_label):
+    text_passage = URIRef(f"{subj}/passage/{i}")
+    text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
+    g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
+    g.add((text_passage, RDFS.label, text_passage_label))
+    g.add((text_passage, INT["R44_has_wording"], mention_wording))
+    g.add((subj, INT["R10_has_Text_Passage"], text_passage))
+    return text_passage
+
+
+def create_mention_text_segment(subj, i, item_label, text_passage, mention_wording, arche_id_value):
+    text_segment = URIRef(f"{subj}/segment/{i}")
+    text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+    g.add((text_segment, RDF.type, INT["INT16_Segment"]))
+    g.add((text_segment, RDFS.label, text_segment_label))
+    g.add((text_segment, INT["R16_incorporates"], text_passage))
+    g.add((text_segment, INT["R44_has_wording"], mention_wording))
+    try:
+        pb_start = mention.xpath(".//preceding::tei:pb/@n", namespaces=NSMAP)[-1]
+    except IndexError:
+        pb_start = 1
+    g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")))
+    g.add((text_segment, INT["R41_has_location"], Literal(arche_id_value)))
+    g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pb_start}")))
+    return text_segment
+
+
+def create_mention_intertex_relation(subj, i, text_passage, work_uri):
+    intertext_relation = URIRef(f"{subj}/relation/{i}")
+    g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
+    g.add(
+        (
+            intertext_relation,
+            RDFS.label,
+            Literal("Intertextual relation", lang="en"),
+        )
+    )
+    g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
+    g.add((intertext_relation, INT["R12_has_referred_to_entity"], work_uri))
+
+
 # build uri lookup dict for listwork.xml
 
 listwork = "./data/indices/listwork.xml"
@@ -50,6 +93,7 @@ print("filtering documents without transcriptions")
 for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
     try:
+        # maybe process these too?
         doc.any_xpath('.//tei:div[@type="no-transcription"]')[0]
         os.remove(x)
     except IndexError:
@@ -91,6 +135,7 @@ for x in tqdm(to_process, total=len(to_process)):
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     creation_uri = URIRef(f"{subj}/creation")
     g.add((creation_uri, RDF.type, CIDOC["E65_Creation"]))
+    g.add((creation_uri, CIDOC["P94_has_created"], URIRef(item_id)))
     g.add((creation_uri, RDFS.label, Literal(f"Creation of: {item_label}")))
     # g.add((creation_uri, FRBROO["R17"], subj))
     # g.add((subj, FRBROO["R17i"], subj))
@@ -116,33 +161,15 @@ for x in tqdm(to_process, total=len(to_process)):
         creator_uri = URIRef(f"{SK}{creator[1:]}")
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
 
-    # # fun with mentions (persons)
-    for i, mention in enumerate(doc.any_xpath(".//tei:body//tei:rs[@ref]")):
-        text_passage = URIRef(f"{subj}/passage/{i}")
+    # # fun with mentions (persons, works, quotes)
+    rs_xpath = ".//tei:body//tei:rs[@ref]"
+    quote_xpath = "//tei:body//tei:quote[starts-with(@source, '#')]"
+    for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
         )
-        text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
-        g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-        g.add((text_passage, RDFS.label, text_passage_label))
-        g.add((text_passage, INT["R44_has_wording"], mention_wording))
-        g.add((subj, INT["R10_has_Text_Passage"], text_passage))
-
-        text_segment = URIRef(f"{subj}/segment/{i}")
-        text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
-        g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-        g.add((text_segment, RDFS.label, text_segment_label))
-        g.add((text_segment, INT["R16_incorporates"], text_passage))
-        g.add((text_segment, INT["R44_has_wording"], mention_wording))
-        try:
-            pb_start = mention.xpath(".//preceding::tei:pb/@n", namespaces=NSMAP)[-1]
-        except IndexError:
-            pb_start = 1
-        g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")))
-        g.add((text_segment, INT["R41_has_location"], Literal(arche_id_value)))
-        g.add((text_segment, SCHEMA["pages"], Literal(f"S. {pb_start}")))
-        g.add((text_segment, SCHEMA["pages"], Literal(f"S. {arche_id_value}")))
-
+        text_passage = create_mention_text_passage(subj, i, mention_wording, item_label)
+        text_segment = create_mention_text_segment(subj, i, item_label, text_passage, mention_wording, arche_id_value)
         g.add((subj_f4, CIDOC["P128_carries"], text_segment))
         # try:
         #     pb_end = mention.xpath('.//following::tei:pb/@n', namespaces=NSMAP)[0]
@@ -174,24 +201,36 @@ for x in tqdm(to_process, total=len(to_process)):
             )
             g.add((text_actualization, INT["R17_actualizes_feature"], text_reference))
             g.add((text_reference, CIDOC["P67_refers_to"], person_uri))
-        if mention.get("type") == "work" and mention.get("subtype") == "pmb":
-            work_id = mention.attrib["ref"][1:]
-            try:
-                work_uri = URIRef(bibl_class_lookup_dict[work_id])
-            except KeyError:
-                print(f"no uri for ref {work_id} found")
+        elif mention.get("type") == "work":
+            if mention.get("subtype") == "pmb":
+                work_id = mention.attrib["ref"][1:]
+                try:
+                    work_uri = URIRef(bibl_class_lookup_dict[work_id])
+                except KeyError:
+                    print(f"pmb: no uri for ref {work_id} found")
+                    continue
+                create_mention_intertex_relation(subj, i, text_passage, work_uri)
+            elif mention.get("subtype") == "legal-doc":
+                # # follwing test is used cause the ref val is defectiv in some cases
+                if not mention.attrib["ref"].startswith("pmb") and not mention.attrib["ref"].startswith("#"):
+                    ref_val = mention.attrib["ref"]
+                    work_id = ref_val.split("/")[-1].replace(".xml", "")
+                    work_uri = URIRef(f"{SK}{work_id}")
+                    create_mention_intertex_relation(subj, i, text_passage, work_uri)
+        elif mention.xpath("local-name()='quote'"):
+            work_id = mention.get("source").lstrip("#")
+            if work_id.isnumeric():
+                work_id = "pmb" + work_id
+                try:
+                    work_uri = URIRef(bibl_class_lookup_dict[work_id])
+                except KeyError:
+                    print(f"quote: no uri for ref {work_id} found")
+                    continue
+            elif work_id.startswith("D"):
+                work_uri = URIRef(f"{SK}{work_id}")
+            else:
                 continue
-            intertext_relation = URIRef(f"{subj}/relation/{i}")
-            g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
-            g.add(
-                (
-                    intertext_relation,
-                    RDFS.label,
-                    Literal("Intertextual relation", lang="en"),
-                )
-            )
-            g.add((intertext_relation, INT["R24_has_related_entity"], text_passage))
-            g.add((intertext_relation, INT["R24_has_related_entity"], work_uri))
+            create_mention_intertex_relation(subj, i, text_passage, work_uri)
 
 
 # cases
