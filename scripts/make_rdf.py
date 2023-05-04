@@ -15,6 +15,7 @@ from rdflib.namespace import RDF, OWL
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
+    print("no limit")
 else:
     LIMIT = 100
 

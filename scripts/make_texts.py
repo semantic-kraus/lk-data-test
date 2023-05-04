@@ -10,6 +10,7 @@ from rdflib.namespace import RDF, RDFS
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
+    print("no limit")
 else:
     LIMIT = 500
 domain = "https://sk.acdh.oeaw.ac.at/"

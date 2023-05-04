@@ -16,6 +16,7 @@ store = plugin.get("Memory", Store)()
 project_store = plugin.get("Memory", Store)()
 
 if os.environ.get("NO_LIMIT"):
+    print("no limit")
     LIMIT = False
 else:
     LIMIT = False
