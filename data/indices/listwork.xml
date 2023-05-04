@@ -7464,7 +7464,7 @@
             <title level="j" key="#sk_lk00017">Wiener Rundschau</title>
             <num type="volume">Jg. 1</num>
             <num type="issue">H. 1-2</num>
-            <date notBefore="1896-11-15" notAfter="1896-12-01" key="#sk_lk00475">15. 11.–1. 12.
+            <date notBefore="1896-11-15" notAfter="1896-12-01" key="#sk_lk00485">15. 11.–1. 12.
               1896</date>
           </bibl>
 
@@ -14884,8 +14884,9 @@
         <bibl xml:id="pmb59515">
 
           <title type="main">Zeitschau</title>
-          <bibl type="sk" subtype="journal">
+          <bibl type="sk" subtype="issue">
             <title level="j" key="#pmb59515">Zeitschau</title>
+          	<date key="#sk_lk00484"/>
           </bibl>
           <date when-iso="1934-12-16" notAfter-iso="1934-12-31">1934-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59515/</idno>
@@ -17346,7 +17347,7 @@
           <title type="werk_bibliografische-angabe">Nr. 2456</title>
           <bibl type="sk" subtype="issue">
             <title level="j" key="#sk_lk00073">Neues 8 Uhr-Blatt</title>
-            <title level="m" key="#pmb56336">Nr. 2456</title>
+            <num type="issue">Nr. 2456</num>
             <date when="1922-12-19" key="#sk_lk00471">19.12.1922</date>
           </bibl>
           <date>1922-12-19</date>
@@ -29749,11 +29750,12 @@
         <bibl xml:id="pmb55033">
 
           <title type="main">Wirtschaft und Öffentliche Sicherheit. Vortrag gehalten im
-            Niederösterreichischem Gewerbeverein von Polizeipräsident Schober</title>
+            Niederösterreichischen Gewerbeverein von Polizeipräsident Schober</title>
           <bibl type="sk" subtype="standalone_publication">
             <title level="m">Wirtschaft und Öffentliche Sicherheit</title>
-            <title level="m" type="subtitle">Vortrag gehalten im Niederösterreichischem
+            <title level="m" type="subtitle">Vortrag gehalten im Niederösterreichischen
               Gewerbeverein von Polizeipräsident Schober</title>
+            <date when="1928-02">Februar 1928</date>
           </bibl>
           <author key="pmb24444" role="hat-geschaffen">Schober, Johannes</author>
           <date notBefore-iso="1928-02-01" when-iso="1928-02-15">1928-02</date>
