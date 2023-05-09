@@ -137,7 +137,7 @@ for x in tqdm(to_process, total=len(to_process)):
     g.add((subj_f4, CIDOC["P128_carries"], subj))
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     creation_uri = URIRef(f"{subj}/creation")
-    g.add((creation_uri, RDF.type, INT["E65_Creation"]))
+    g.add((creation_uri, RDF.type, CIDOC["E65_Creation"]))
     g.add((creation_uri, CIDOC["P94_has_created"], URIRef(item_id)))
     g.add((creation_uri, RDFS.label, Literal(f"Creation of: {item_label}")))
     # g.add((creation_uri, FRBROO["R17"], subj))
