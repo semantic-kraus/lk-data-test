@@ -1,4 +1,3 @@
-
 from acdh_tei_pyutils.tei import TeiReader
 from glob import glob
 
@@ -7,11 +6,7 @@ matchstring = "https://facke"
 files_dir = (
     "/home/zorg/Dokumente/kraus/semantic/lk-data/legalkraus-archiv/data/editions/*"
 )
-element_results = {
-    "note":[],
-    "rs":[],
-    "quote":[]
-}
+element_results = {"note": [], "rs": [], "quote": []}
 # index_file = "/home/zorg/Dokumente/kraus/semantic/fa-data/data/indices/fackelTexts_cascaded.xml"
 index_file = "/home/zorg/Downloads/fackelTexts_cascaded.xml"
 index_doc = TeiReader(index_file)
@@ -23,7 +18,9 @@ for filepath in glob(files_dir):
     for element_name in element_results:
         element_results[element_name] += [
             link.lower()
-            for link in doc.any_xpath(f".//tei:body//tei:{element_name}/@*[contains(., '{matchstring}')]")
+            for link in doc.any_xpath(
+                f".//tei:body//tei:{element_name}/@*[contains(., '{matchstring}')]"
+            )
         ]
 
 existing_source_vals = [value.lower() for value in index_doc.any_xpath("//*/@range")]
