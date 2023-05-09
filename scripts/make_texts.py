@@ -225,7 +225,7 @@ for x in tqdm(to_process, total=len(to_process)):
                     work_uri = URIRef(f"{SK}{work_id}")
                     create_mention_intertex_relation(subj, i, text_passage, work_uri)
         elif mention.xpath("local-name()='quote'"):
-            work_id = mention.get("source").lstrip("#")
+            work_id = mention.get("source").lstrip("#").replace(".xml", "")
             if work_id.isnumeric():
                 work_id = "pmb" + work_id
                 try:
