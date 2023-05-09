@@ -152,6 +152,7 @@ for x in tqdm(to_process, total=len(to_process)):
     if go_on:
         begin, end = extract_begin_end(creation_date_node)
         creation_ts = URIRef(f"{creation_uri}/time-span")
+        g.add((creation_uri, CIDOC["P4_has_time-span"], creation_ts))
         g += create_e52(creation_ts, begin_of_begin=begin, end_of_end=end)
 
     # creator Brief:
