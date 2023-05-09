@@ -13,5 +13,5 @@ for author_pmb_id in author_pmb_ids:
         non_existing.append(author_pmb_id)
     else:
         found += 1
-non_existing_log = '\n'.join(non_existing)
+non_existing_log = "\n".join(non_existing)
 print(f"{found} where found, {len(non_existing)} are missing: \n{non_existing_log}")
