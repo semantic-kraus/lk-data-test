@@ -150,7 +150,8 @@ for x in tqdm(items, total=len(items)):
     if item_sk_type == "article":
         g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
         article_segment = URIRef(f"{subj}/segment")
-        seg_f24_key = x.xpath(".//tei:date[@key]/@key", namespaces=nsmap)[0][1:]
+        seg_f24_key_raw = x.xpath(".//tei:date[@key]/@key", namespaces=nsmap)[0]
+        seg_f24_key = seg_f24_key_raw.strip("# ")
         seg_f24_uri = URIRef(f"{SK}{seg_f24_key}/published-expression")
         g.add((article_segment, RDF.type, INT["INT16_Segment"]))
         g.add(
@@ -297,7 +298,7 @@ for x in tqdm(items, total=len(items)):
             good_to_go = False
         if good_to_go:
             bibl_sk = x.xpath('./tei:bibl[@type="sk"]', namespaces=nsmap)[0]
-            title_j_key = title_j.attrib["key"][1:]
+            title_j_key = title_j.attrib["key"].strip("# ")
             title_j_text = normalize_string(title_j.text)
             periodical_uri = URIRef(f"{SK}{title_j_key}/published-expression")
             g.add((periodical_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
@@ -360,11 +361,10 @@ for x in tqdm(items, total=len(items)):
             except IndexError:
                 continue
             try:
-                title_date_key = title_date.attrib["key"]
+                title_date_key = title_date.attrib["key"].strip("# ")
             except KeyError:
                 print(xml_id)
                 continue
-            title_date_key = title_date_key[1:]
             issue_uri = URIRef(f"{SK}{title_date_key}")
             g.add((issue_uri, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
             g.add(
