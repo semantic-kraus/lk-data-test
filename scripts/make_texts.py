@@ -291,4 +291,4 @@ for x in tqdm(files, total=len(files)):
 
 
 print("writing graph to file")
-g.serialize(f"{rdf_dir}/texts.ttl")
+g.serialize(f"{rdf_dir}/texts.trig", format="trig")
