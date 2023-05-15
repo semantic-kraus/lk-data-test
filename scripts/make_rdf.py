@@ -31,6 +31,8 @@ nsmap = doc.nsmap
 items = doc.any_xpath(f".//tei:{entity_type}")
 if LIMIT:
     items = items[:LIMIT]
+
+
 print(f"converting {entity_type}s derived from {index_file}")
 for x in tqdm(items, total=len(items)):
     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
@@ -43,6 +45,17 @@ for x in tqdm(items, total=len(items)):
         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
     )
     g += make_appellations(subj, x, type_domain=f"{SK}types", default_lang="und")
+    try:
+        gender = x.xpath(".//tei:sex/@value", namespaces=doc.nsmap)[0]
+    except IndexError:
+        gender = None
+    if gender is not None:
+        type_uri = f"{SK}types/person/persname/{gender}"
+        for appellation_uri in g.objects(
+            subject=subj, predicate=CIDOC["P1_is_identified_by"]
+        ):
+            if "/appellation/" in appellation_uri:
+                g.add((appellation_uri, CIDOC["P2_has_Type"], URIRef(f"{type_uri}")))
     g += make_occupations(subj, x, default_lang="de")[0]
     # g += make_affiliations(
     #     subj,
