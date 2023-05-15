@@ -61,8 +61,24 @@ main_title_type = URIRef(f"{SK}types/title/main")
 sub_title_type = URIRef(f"{SK}types/title/sub")
 
 
+def create_E42_identifier(id_number: int, id_value: type, obj_ref: URIRef) -> Graph:
+    if "pmb" in id_value:
+        id_type = "xml-id"
+    else:
+        id_type = "pmb"
+    xml_identifier_uri = URIRef(f"{item_id}/identifier/idno/{id_number}")
+    return [
+        (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
+        (xml_identifier_uri, RDFS.label, Literal(f"Identifier: {id_value}", lang="en")),
+        (xml_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/{id_type}")),
+        (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(obj_ref)),
+        (xml_identifier_uri, RDF.value, Literal(id_value)),
+    ]
+
+
 g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
+global_xml_id_counter = 0
 for x in tqdm(items, total=len(items)):
     try:
         xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
@@ -103,6 +119,39 @@ for x in tqdm(items, total=len(items)):
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
 
+    if x.xpath("./tei:bibl[@type='sk']", namespaces=doc.nsmap):
+        cleaned_pmb_id = xml_id.replace("pmb", "")
+        if x.xpath(
+            "./tei:bibl[@type='sk' and @subtype='periodical']", namespaces=doc.nsmap
+        ):
+            global_xml_id_counter += 1
+            g += create_E42_identifier(
+                id_number=global_xml_id_counter,
+                id_value=xml_id,
+                obj_ref=URIRef(f"{item_id}/published-expression"),
+            )
+            global_xml_id_counter += 1
+            g += create_E42_identifier(
+                id_number=global_xml_id_counter,
+                id_value=cleaned_pmb_id,
+                obj_ref=URIRef(f"{item_id}/published-expression"),
+            )
+        elif x.xpath(
+            "./tei:bibl[@type='sk' and not(@subtype='periodical')]",
+            namespaces=doc.nsmap,
+        ):
+            global_xml_id_counter += 1
+            g += create_E42_identifier(
+                id_number=global_xml_id_counter,
+                id_value=xml_id,
+                obj_ref=URIRef(item_id),
+            )
+            global_xml_id_counter += 1
+            g += create_E42_identifier(
+                id_number=global_xml_id_counter,
+                id_value=cleaned_pmb_id,
+                obj_ref=URIRef(item_id),
+            )
     for i, title_e35 in enumerate(
         x.xpath('.//tei:title[@level="a"]', namespaces=nsmap)
     ):
