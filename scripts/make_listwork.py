@@ -106,96 +106,51 @@ for x in tqdm(items, total=len(items)):
     if x.xpath("./tei:bibl[@type='sk']", namespaces=doc.nsmap):
         bibl_xml_id_counter = 0
         cleaned_pmb_id = xml_id.replace("pmb", "")
-        if item_sk_type == "journal":
-            xml_identifier_uri = URIRef(
-                f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
-            )
-            g += [
-                (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
-                (
-                    xml_identifier_uri,
-                    RDFS.label,
-                    Literal(f"Identifier: {xml_id}", lang="en"),
+        xml_identifier_uri = URIRef(
+            f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
+        )
+        g += [
+            (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
+            (
+                xml_identifier_uri,
+                RDFS.label,
+                Literal(f"Identifier: {xml_id}", lang="en"),
+            ),
+            (
+                xml_identifier_uri,
+                CIDOC["P2_has_type"],
+                URIRef(f"{SK}types/idno/xml-id"),
+            ),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (xml_identifier_uri, RDF.value, Literal(xml_id)),
+        ]
+        bibl_xml_id_counter += 1
+        xml_identifier_uri = URIRef(
+            f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
+        )
+        g += [
+            (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
+            (
+                xml_identifier_uri,
+                RDFS.label,
+                Literal(
+                    f"Identifier: https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}",
+                    lang="en",
                 ),
-                (
-                    xml_identifier_uri,
-                    CIDOC["P2_has_type"],
-                    URIRef(f"{SK}types/idno/xml-id"),
-                ),
-                (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
-                (xml_identifier_uri, RDF.value, Literal(xml_id)),
-            ]
-            bibl_xml_id_counter += 1
-            xml_identifier_uri = URIRef(
-                f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
-            )
-            g += [
-                (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
-                (
-                    xml_identifier_uri,
-                    RDFS.label,
-                    Literal(
-                        f"Identifier: https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}",
-                        lang="en",
-                    ),
-                ),
-                (
-                    xml_identifier_uri,
-                    CIDOC["P2_has_type"],
-                    URIRef(f"{SK}types/idno/URL/pmb"),
-                ),
-                (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
-                (
-                    xml_identifier_uri,
-                    RDF.value,
-                    Literal(f"https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}"),
-                ),
-            ]
-        else:
-            xml_identifier_uri = URIRef(
-                f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
-            )
-            g += [
-                (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
-                (
-                    xml_identifier_uri,
-                    RDFS.label,
-                    Literal(f"Identifier: {xml_id}", lang="en"),
-                ),
-                (
-                    xml_identifier_uri,
-                    CIDOC["P2_has_type"],
-                    URIRef(f"{SK}types/idno/xml-id"),
-                ),
-                (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
-                (xml_identifier_uri, RDF.value, Literal(xml_id)),
-            ]
-            bibl_xml_id_counter += 1
-            xml_identifier_uri = URIRef(
-                f"{SK}{xml_id}/identifier/idno/{bibl_xml_id_counter}"
-            )
-            g += [
-                (xml_identifier_uri, RDF.type, CIDOC["E42_Identifier"]),
-                (
-                    xml_identifier_uri,
-                    RDFS.label,
-                    Literal(
-                        f"Identifier: https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}",
-                        lang="en",
-                    ),
-                ),
-                (
-                    xml_identifier_uri,
-                    CIDOC["P2_has_type"],
-                    URIRef(f"{SK}types/idno/URL/pmb"),
-                ),
-                (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
-                (
-                    xml_identifier_uri,
-                    RDF.value,
-                    Literal(f"https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}"),
-                ),
-            ]
+            ),
+            (
+                xml_identifier_uri,
+                CIDOC["P2_has_type"],
+                URIRef(f"{SK}types/idno/URL/pmb"),
+            ),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (
+                xml_identifier_uri,
+                RDF.value,
+                Literal(f"https://pmb.acdh.oeaw.ac.at/entity/{cleaned_pmb_id}"),
+            ),
+        ]
+
     for i, title_e35 in enumerate(
         x.xpath('.//tei:title[@level="a"]', namespaces=nsmap)
     ):
