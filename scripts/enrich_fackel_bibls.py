@@ -56,14 +56,6 @@ for text in fackel_texts.any_xpath("//issue"):
 
 
 def search_4_listfackel_bibl(listfackel_bibl: BiblIf):
-    # # Step 1: Match for every bibl in listfackel.xml with fackelTexts_cascaded.xml
-    # #
-    # #     @corresp with //@webLink
-    # #     and if there is a biblScope:
-    # #         biblScope/@from with text/@startPage
-    # #         biblScope/@to with text/@endPage
-    # #     If there is more than one corresponding text-element in fackelTexts_cascaded.xml, compare listfackel.xml's title[@level="a"] with text/@titleText there.
-    # #
     global nomatches
     global single_machtes
     global multimatches
@@ -154,22 +146,5 @@ if __name__ == "__main__":
         else:
             search_4_listfackel_issue_bibl(listfackel_bibl)
 
-print(
-    f"{single_machtes} exact matches, {multimatches} unclear matches, {nomatches} couldn't be matched at all.\n In {nolinkmatches} cases the link couldn't be matched."
-)
-
-# # Step 1: Match for every bibl in listfackel.xml with fackelTexts_cascaded.xml
-# #
-# #     @corresp with //@webLink
-# #     and if there is a biblScope:
-# #         biblScope/@from with text/@startPage
-# #         biblScope/@to with text/@endPage
-# #     If there is more than one corresponding text-element in fackelTexts_cascaded.xml, compare listfackel.xml's title[@level="a"] with text/@titleText there.
-# #
-
-# # Step 2 - 2 options:
-# #
-# #     (clean): take the @id value from the corresponding element in fackelTexts_cascaded.xml and add it to listfackel.xml - in an idno[@type="fackel"]/@corresp in the respective bibl element
-# #     (quick and dirty): make a key-value-list with every //ref/@target and the @id value from the corresponding element in fackelTexts_cascaded.xml
-# #
-# # In any case: Also add a list of the bibl's that couldn't find a matching counterpart in fackelTexts_cascaded.xml
+print(f"{single_machtes} exact matches, {multimatches} unclear matches, {nomatches} couldn't be matched at all.")
+print("\n In {nolinkmatches} cases the link couldn't be matched.")
