@@ -5,17 +5,20 @@ import lxml.builder
 
 listfackel_path = "./data/indices/listfackel.xml"
 listfackel = TeiReader(listfackel_path)
-fackel_texts = TeiReader("https://raw.githubusercontent.com/semantic-kraus/fa-data/main/data/indices/fackelTexts_cascaded.xml")
+fackel_texts = TeiReader(
+    "https://raw.githubusercontent.com/semantic-kraus/fa-data/main/data/indices/fackelTexts_cascaded.xml"
+)
 nsmap = fackel_texts.nsmap
 teiMaker = lxml.builder.ElementMaker()
 single_machtes = 0
 nomatches = 0
 unmatched = []
 
+
 def delete_old_matches():
     # # need to delete old matches, befor I create new ones
     # # be careful to only delete exact matches
-    for idno in listfackel.any_xpath("//tei:idno[@type='fackel' and (@subtype='text' or subtype='issue')]"):
+    for idno in listfackel.any_xpath("//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue')]"):
         idno.getparent().remove(idno)
 
 
@@ -79,8 +82,8 @@ def search_4_listfackel_bibl(listfackel_bibl: BiblIf):
         for match in matches
         if match.get("endPage") == listfackel_bibl.bibl_scope_to
     ]
-    # # If there is more than one corresponding text-element in fackelTexts_cascaded.xml, 
-    # # compare listfackel.xml's title[@level="a"] with text/@titleText there. 
+    # # If there is more than one corresponding text-element in fackelTexts_cascaded.xml,
+    # # compare listfackel.xml's title[@level="a"] with text/@titleText there.
     # # Take the one that fits better.
     if len(matches) > 1 and listfackel_bibl.title:
         matches = [
@@ -88,9 +91,8 @@ def search_4_listfackel_bibl(listfackel_bibl: BiblIf):
             for match in matches
             if match.get("titleText").lower().strip(" .") == listfackel_bibl.title
         ]
-    
-    # # if there is no corresponding text-element in fackelTexts_cascaded.xml, 
-    # # look if the @corresp-value from listfackel can be found in a @range in 
+    # # if there is no corresponding text-element in fackelTexts_cascaded.xml,
+    # # look if the @corresp-value from listfackel can be found in a @range in
     # # fackelTexts_cascaded.xml. If so, take that text's ID.
     if len(matches) == 0:
         matches = fackel_texts.any_xpath(f"//text[contains(translate(@range, 'F', 'f'), '{listfackel_bibl.corresp}')]")
@@ -130,8 +132,8 @@ if __name__ == "__main__":
         if not listfackel_bibl.issue:
             search_4_listfackel_bibl(listfackel_bibl)
         else:
-            # # If @corresp in listfackel.xml ends with "0u1", 
-            # # the @corresp should match an issue-element in 
+            # # If @corresp in listfackel.xml ends with "0u1",
+            # # the @corresp should match an issue-element in
             # # fackelTexts_cascaded.xml - take that id instead.
             search_4_listfackel_issue_bibl(listfackel_bibl)
     listfackel.tree_to_file(listfackel_path)

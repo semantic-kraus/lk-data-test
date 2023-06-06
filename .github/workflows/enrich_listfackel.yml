@@ -1,4 +1,4 @@
-name: enricht listfackel
+name: enrich listfackel
 on:
   workflow_dispatch
 jobs:
