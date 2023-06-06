@@ -1,1 +1,5 @@
-acdh-cidoc-pyutils
+acdh_cidoc_pyutils
+acdh_tei_pyutils
+lxml
+rdflib
+tqdm
