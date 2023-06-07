@@ -18,9 +18,9 @@ unmatched = []
 def delete_old_matches():
     # # need to delete old matches, befor I create new ones
     # # be careful to only delete exact matches
-    # # don't delete @type="manual"
+    # # don't delete @resp="manual"
     for idno in listfackel.any_xpath(
-        "//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue') and @ana!='manual']"
+        "//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue') and @resp!='manual']"
     ):
         idno.getparent().remove(idno)
 
