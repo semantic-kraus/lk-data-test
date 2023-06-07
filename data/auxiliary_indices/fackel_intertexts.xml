@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+	<info>
+	Auxiliary file 
+		
+	created by 
+	- determining which attribute values conatining "fackel.oeaw" in legalkraus-archiv/data/editions is not to be found in indices/listfackel.xml
+	- listing @id and @range of all text elements from github_semantickraus_fa_data\data\indices\fackelTexts_cascaded.xml that contain one or more of these values in @range and @displayCat=""
+	- some xml refactoring
+	
+	to determine which fackel text these values refer to.
+	
+	</info>
+<text>
+<textID>text05225</textID>
+<range>https://fackel.oeaw.ac.at/f/198,001  https://fackel.oeaw.ac.at/f/198,002  https://fackel.oeaw.ac.at/f/198,003</range>
+</text>
+<text>
+<textID>text05226</textID>
+<range>https://fackel.oeaw.ac.at/f/198,003  https://fackel.oeaw.ac.at/f/198,004  https://fackel.oeaw.ac.at/f/198,005  https://fackel.oeaw.ac.at/f/198,006  https://fackel.oeaw.ac.at/f/198,007  https://fackel.oeaw.ac.at/f/198,008  https://fackel.oeaw.ac.at/f/198,009</range>
+</text>
+<text>
+<textID>text06085</textID>
+<range>https://fackel.oeaw.ac.at/f/259,035  https://fackel.oeaw.ac.at/f/259,036  https://fackel.oeaw.ac.at/f/259,037  https://fackel.oeaw.ac.at/f/259,038  https://fackel.oeaw.ac.at/f/259,039  https://fackel.oeaw.ac.at/f/259,040  https://fackel.oeaw.ac.at/f/259,041  https://fackel.oeaw.ac.at/f/259,042  https://fackel.oeaw.ac.at/f/259,043  https://fackel.oeaw.ac.at/f/259,044  https://fackel.oeaw.ac.at/f/259,045  https://fackel.oeaw.ac.at/f/259,046  https://fackel.oeaw.ac.at/f/259,047  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text06090</textID>
+<range>https://fackel.oeaw.ac.at/f/261,001  https://fackel.oeaw.ac.at/f/261,002  https://fackel.oeaw.ac.at/f/261,003  https://fackel.oeaw.ac.at/f/261,004  https://fackel.oeaw.ac.at/f/261,005  https://fackel.oeaw.ac.at/f/261,006  https://fackel.oeaw.ac.at/f/261,007  https://fackel.oeaw.ac.at/f/261,008  https://fackel.oeaw.ac.at/f/261,009  https://fackel.oeaw.ac.at/f/261,010  https://fackel.oeaw.ac.at/f/261,011  https://fackel.oeaw.ac.at/f/261,012  https://fackel.oeaw.ac.at/f/261,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text06959</textID>
+<range>https://fackel.oeaw.ac.at/f/326,028  https://fackel.oeaw.ac.at/f/326,029  https://fackel.oeaw.ac.at/f/326,030  https://fackel.oeaw.ac.at/f/326,031  https://fackel.oeaw.ac.at/f/326,032  https://fackel.oeaw.ac.at/f/326,033  https://fackel.oeaw.ac.at/f/326,034</range>
+</text>
+<text>
+<textID>text07289</textID>
+<range>https://fackel.oeaw.ac.at/f/343,042  https://fackel.oeaw.ac.at/f/343,043  https://fackel.oeaw.ac.at/f/343,044  https://fackel.oeaw.ac.at/f/343,045  https://fackel.oeaw.ac.at/f/343,046  https://fackel.oeaw.ac.at/f/343,047  https://fackel.oeaw.ac.at/f/343,048  https://fackel.oeaw.ac.at/f/343,049  https://fackel.oeaw.ac.at/f/343,050  https://fackel.oeaw.ac.at/f/343,051  https://fackel.oeaw.ac.at/f/343,052  https://fackel.oeaw.ac.at/f/343,053  https://fackel.oeaw.ac.at/f/343,054  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text08143</textID>
+<range>https://fackel.oeaw.ac.at/f/381,069  https://fackel.oeaw.ac.at/f/381,070  https://fackel.oeaw.ac.at/f/381,071  https://fackel.oeaw.ac.at/f/381,072  https://fackel.oeaw.ac.at/f/381,073  https://fackel.oeaw.ac.at/f/381,074  https://fackel.oeaw.ac.at/f/381,075  https://fackel.oeaw.ac.at/f/381,076</range>
+</text>
+<text>
+<textID>text08214</textID>
+<range>https://fackel.oeaw.ac.at/f/387,023  https://fackel.oeaw.ac.at/f/387,024  https://fackel.oeaw.ac.at/f/387,025  https://fackel.oeaw.ac.at/f/387,026  https://fackel.oeaw.ac.at/f/387,027  https://fackel.oeaw.ac.at/f/387,028  https://fackel.oeaw.ac.at/f/387,029  https://fackel.oeaw.ac.at/f/387,030  https://fackel.oeaw.ac.at/f/387,031  https://fackel.oeaw.ac.at/f/387,032</range>
+</text>
+<text>
+<textID>text08939</textID>
+<range>https://fackel.oeaw.ac.at/f/423,041  https://fackel.oeaw.ac.at/f/423,042  https://fackel.oeaw.ac.at/f/423,043  https://fackel.oeaw.ac.at/f/423,044  https://fackel.oeaw.ac.at/f/423,045  https://fackel.oeaw.ac.at/f/423,046  https://fackel.oeaw.ac.at/f/423,047  https://fackel.oeaw.ac.at/f/423,048  https://fackel.oeaw.ac.at/f/423,049  https://fackel.oeaw.ac.at/f/423,050  https://fackel.oeaw.ac.at/f/423,051  https://fackel.oeaw.ac.at/f/423,052</range>
+</text>
+<text>
+<textID>text09449</textID>
+<range>https://fackel.oeaw.ac.at/f/445,087  https://fackel.oeaw.ac.at/f/445,088  https://fackel.oeaw.ac.at/f/445,089  https://fackel.oeaw.ac.at/f/445,090</range>
+</text>
+<text>
+<textID>text10411</textID>
+<range>https://fackel.oeaw.ac.at/f/499,006  https://fackel.oeaw.ac.at/f/499,007  https://fackel.oeaw.ac.at/f/499,008  https://fackel.oeaw.ac.at/f/499,009  https://fackel.oeaw.ac.at/f/499,010  https://fackel.oeaw.ac.at/f/499,011  https://fackel.oeaw.ac.at/f/499,012</range>
+</text>
+<text>
+<textID>text10713</textID>
+<range>https://fackel.oeaw.ac.at/f/546,003  https://fackel.oeaw.ac.at/f/546,004  https://fackel.oeaw.ac.at/f/546,005  https://fackel.oeaw.ac.at/f/546,006  https://fackel.oeaw.ac.at/f/546,007  https://fackel.oeaw.ac.at/f/546,008  https://fackel.oeaw.ac.at/f/546,009  https://fackel.oeaw.ac.at/f/546,010  https://fackel.oeaw.ac.at/f/546,011  https://fackel.oeaw.ac.at/f/546,012  https://fackel.oeaw.ac.at/f/546,013  https://fackel.oeaw.ac.at/f/546,014  https://fackel.oeaw.ac.at/f/546,015  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text10736</textID>
+<range>https://fackel.oeaw.ac.at/f/546,045  https://fackel.oeaw.ac.at/f/546,046  https://fackel.oeaw.ac.at/f/546,047  https://fackel.oeaw.ac.at/f/546,048  https://fackel.oeaw.ac.at/f/546,049  https://fackel.oeaw.ac.at/f/546,050  https://fackel.oeaw.ac.at/f/546,051  https://fackel.oeaw.ac.at/f/546,052  https://fackel.oeaw.ac.at/f/546,053  https://fackel.oeaw.ac.at/f/546,054  https://fackel.oeaw.ac.at/f/546,055  https://fackel.oeaw.ac.at/f/546,056  https://fackel.oeaw.ac.at/f/546,057  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text10787</textID>
+<range>https://fackel.oeaw.ac.at/f/552,014  https://fackel.oeaw.ac.at/f/552,015  https://fackel.oeaw.ac.at/f/552,016  https://fackel.oeaw.ac.at/f/552,017  https://fackel.oeaw.ac.at/f/552,018  https://fackel.oeaw.ac.at/f/552,019  https://fackel.oeaw.ac.at/f/552,020  https://fackel.oeaw.ac.at/f/552,021  https://fackel.oeaw.ac.at/f/552,022</range>
+</text>
+<text>
+<textID>text10983</textID>
+<range>https://fackel.oeaw.ac.at/f/572,001  https://fackel.oeaw.ac.at/f/572,002  https://fackel.oeaw.ac.at/f/572,003  https://fackel.oeaw.ac.at/f/572,004  https://fackel.oeaw.ac.at/f/572,005  https://fackel.oeaw.ac.at/f/572,006  https://fackel.oeaw.ac.at/f/572,007  https://fackel.oeaw.ac.at/f/572,008  https://fackel.oeaw.ac.at/f/572,009  https://fackel.oeaw.ac.at/f/572,010  https://fackel.oeaw.ac.at/f/572,011  https://fackel.oeaw.ac.at/f/572,012  https://fackel.oeaw.ac.at/f/572,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text11110</textID>
+<range>https://fackel.oeaw.ac.at/f/583,045  https://fackel.oeaw.ac.at/f/583,046  https://fackel.oeaw.ac.at/f/583,047  https://fackel.oeaw.ac.at/f/583,048  https://fackel.oeaw.ac.at/f/583,049  https://fackel.oeaw.ac.at/f/583,050  https://fackel.oeaw.ac.at/f/583,051  https://fackel.oeaw.ac.at/f/583,052  https://fackel.oeaw.ac.at/f/583,053  https://fackel.oeaw.ac.at/f/583,054  https://fackel.oeaw.ac.at/f/583,055  https://fackel.oeaw.ac.at/f/583,056  https://fackel.oeaw.ac.at/f/583,057  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text11451</textID>
+<range>https://fackel.oeaw.ac.at/f/613,022  https://fackel.oeaw.ac.at/f/613,023  https://fackel.oeaw.ac.at/f/613,024  https://fackel.oeaw.ac.at/f/613,025  https://fackel.oeaw.ac.at/f/613,026  https://fackel.oeaw.ac.at/f/613,027  https://fackel.oeaw.ac.at/f/613,028  https://fackel.oeaw.ac.at/f/613,029  https://fackel.oeaw.ac.at/f/613,030  https://fackel.oeaw.ac.at/f/613,031  https://fackel.oeaw.ac.at/f/613,032  https://fackel.oeaw.ac.at/f/613,033  https://fackel.oeaw.ac.at/f/613,034  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text11564</textID>
+<range>https://fackel.oeaw.ac.at/f/622,076  https://fackel.oeaw.ac.at/f/622,077  https://fackel.oeaw.ac.at/f/622,078  https://fackel.oeaw.ac.at/f/622,079  https://fackel.oeaw.ac.at/f/622,080  https://fackel.oeaw.ac.at/f/622,081  https://fackel.oeaw.ac.at/f/622,082  https://fackel.oeaw.ac.at/f/622,083  https://fackel.oeaw.ac.at/f/622,084  https://fackel.oeaw.ac.at/f/622,085  https://fackel.oeaw.ac.at/f/622,086  https://fackel.oeaw.ac.at/f/622,087  https://fackel.oeaw.ac.at/f/622,088  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text11831</textID>
+<range>https://fackel.oeaw.ac.at/f/640,116</range>
+</text>
+<text>
+<textID>text11866</textID>
+<range>https://fackel.oeaw.ac.at/f/649,011  https://fackel.oeaw.ac.at/f/649,012  https://fackel.oeaw.ac.at/f/649,013  https://fackel.oeaw.ac.at/f/649,014  https://fackel.oeaw.ac.at/f/649,015  https://fackel.oeaw.ac.at/f/649,016  https://fackel.oeaw.ac.at/f/649,017  https://fackel.oeaw.ac.at/f/649,018  https://fackel.oeaw.ac.at/f/649,019  https://fackel.oeaw.ac.at/f/649,020  https://fackel.oeaw.ac.at/f/649,021  https://fackel.oeaw.ac.at/f/649,022  https://fackel.oeaw.ac.at/f/649,023  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text11945</textID>
+<range>https://fackel.oeaw.ac.at/f/657,001  https://fackel.oeaw.ac.at/f/657,002  https://fackel.oeaw.ac.at/f/657,003  https://fackel.oeaw.ac.at/f/657,004  https://fackel.oeaw.ac.at/f/657,005  https://fackel.oeaw.ac.at/f/657,006  https://fackel.oeaw.ac.at/f/657,007  https://fackel.oeaw.ac.at/f/657,008  https://fackel.oeaw.ac.at/f/657,009  https://fackel.oeaw.ac.at/f/657,010  https://fackel.oeaw.ac.at/f/657,011  https://fackel.oeaw.ac.at/f/657,012  https://fackel.oeaw.ac.at/f/657,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text12016</textID>
+<range>https://fackel.oeaw.ac.at/f/657,121  https://fackel.oeaw.ac.at/f/657,122  https://fackel.oeaw.ac.at/f/657,123  https://fackel.oeaw.ac.at/f/657,124  https://fackel.oeaw.ac.at/f/657,125  https://fackel.oeaw.ac.at/f/657,126</range>
+</text>
+<text>
+<textID>text12311</textID>
+<range>https://fackel.oeaw.ac.at/f/686,027  https://fackel.oeaw.ac.at/f/686,028  https://fackel.oeaw.ac.at/f/686,029  https://fackel.oeaw.ac.at/f/686,030  https://fackel.oeaw.ac.at/f/686,031  https://fackel.oeaw.ac.at/f/686,032</range>
+</text>
+<text>
+<textID>text12480</textID>
+<range>https://fackel.oeaw.ac.at/f/697,063  https://fackel.oeaw.ac.at/f/697,064  https://fackel.oeaw.ac.at/f/697,065  https://fackel.oeaw.ac.at/f/697,066  https://fackel.oeaw.ac.at/f/697,067  https://fackel.oeaw.ac.at/f/697,068  https://fackel.oeaw.ac.at/f/697,069  https://fackel.oeaw.ac.at/f/697,070  https://fackel.oeaw.ac.at/f/697,071</range>
+</text>
+<text>
+<textID>text12586</textID>
+<range>https://fackel.oeaw.ac.at/f/706,071  https://fackel.oeaw.ac.at/f/706,072  https://fackel.oeaw.ac.at/f/706,073  https://fackel.oeaw.ac.at/f/706,074  https://fackel.oeaw.ac.at/f/706,075  https://fackel.oeaw.ac.at/f/706,076  https://fackel.oeaw.ac.at/f/706,077  https://fackel.oeaw.ac.at/f/706,078  https://fackel.oeaw.ac.at/f/706,079  https://fackel.oeaw.ac.at/f/706,080  https://fackel.oeaw.ac.at/f/706,081  https://fackel.oeaw.ac.at/f/706,082  https://fackel.oeaw.ac.at/f/706,083  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text12616</textID>
+<range>https://fackel.oeaw.ac.at/f/712,001  https://fackel.oeaw.ac.at/f/712,002  https://fackel.oeaw.ac.at/f/712,003  https://fackel.oeaw.ac.at/f/712,004  https://fackel.oeaw.ac.at/f/712,005  https://fackel.oeaw.ac.at/f/712,006  https://fackel.oeaw.ac.at/f/712,007  https://fackel.oeaw.ac.at/f/712,008  https://fackel.oeaw.ac.at/f/712,009  https://fackel.oeaw.ac.at/f/712,010  https://fackel.oeaw.ac.at/f/712,011  https://fackel.oeaw.ac.at/f/712,012  https://fackel.oeaw.ac.at/f/712,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text12617</textID>
+<range>https://fackel.oeaw.ac.at/f/712,019  https://fackel.oeaw.ac.at/f/712,020  https://fackel.oeaw.ac.at/f/712,021  https://fackel.oeaw.ac.at/f/712,022  https://fackel.oeaw.ac.at/f/712,023  https://fackel.oeaw.ac.at/f/712,024  https://fackel.oeaw.ac.at/f/712,025  https://fackel.oeaw.ac.at/f/712,026  https://fackel.oeaw.ac.at/f/712,027  https://fackel.oeaw.ac.at/f/712,028  https://fackel.oeaw.ac.at/f/712,029  https://fackel.oeaw.ac.at/f/712,030  https://fackel.oeaw.ac.at/f/712,031  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text12646</textID>
+<range>https://fackel.oeaw.ac.at/f/712,052  https://fackel.oeaw.ac.at/f/712,053  https://fackel.oeaw.ac.at/f/712,054  https://fackel.oeaw.ac.at/f/712,055  https://fackel.oeaw.ac.at/f/712,056  https://fackel.oeaw.ac.at/f/712,057  https://fackel.oeaw.ac.at/f/712,058  https://fackel.oeaw.ac.at/f/712,059  https://fackel.oeaw.ac.at/f/712,060  https://fackel.oeaw.ac.at/f/712,061  https://fackel.oeaw.ac.at/f/712,062</range>
+</text>
+<text>
+<textID>text12716</textID>
+<range>https://fackel.oeaw.ac.at/f/717,047  https://fackel.oeaw.ac.at/f/717,048  https://fackel.oeaw.ac.at/f/717,049  https://fackel.oeaw.ac.at/f/717,050  https://fackel.oeaw.ac.at/f/717,051  https://fackel.oeaw.ac.at/f/717,052  https://fackel.oeaw.ac.at/f/717,053  https://fackel.oeaw.ac.at/f/717,054  https://fackel.oeaw.ac.at/f/717,055  https://fackel.oeaw.ac.at/f/717,056  https://fackel.oeaw.ac.at/f/717,057  https://fackel.oeaw.ac.at/f/717,058  https://fackel.oeaw.ac.at/f/717,059  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text12842</textID>
+<range>https://fackel.oeaw.ac.at/f/732,001  https://fackel.oeaw.ac.at/f/732,002  https://fackel.oeaw.ac.at/f/732,003  https://fackel.oeaw.ac.at/f/732,004  https://fackel.oeaw.ac.at/f/732,005  https://fackel.oeaw.ac.at/f/732,006  https://fackel.oeaw.ac.at/f/732,007  https://fackel.oeaw.ac.at/f/732,008  https://fackel.oeaw.ac.at/f/732,009  https://fackel.oeaw.ac.at/f/732,010  https://fackel.oeaw.ac.at/f/732,011  https://fackel.oeaw.ac.at/f/732,012  https://fackel.oeaw.ac.at/f/732,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13066</textID>
+<range>https://fackel.oeaw.ac.at/f/743,098  https://fackel.oeaw.ac.at/f/743,099  https://fackel.oeaw.ac.at/f/743,100  https://fackel.oeaw.ac.at/f/743,101  https://fackel.oeaw.ac.at/f/743,102  https://fackel.oeaw.ac.at/f/743,103  https://fackel.oeaw.ac.at/f/743,104  https://fackel.oeaw.ac.at/f/743,105  https://fackel.oeaw.ac.at/f/743,106  https://fackel.oeaw.ac.at/f/743,107  https://fackel.oeaw.ac.at/f/743,108  https://fackel.oeaw.ac.at/f/743,109  https://fackel.oeaw.ac.at/f/743,110  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13261</textID>
+<range>https://fackel.oeaw.ac.at/f/759,045  https://fackel.oeaw.ac.at/f/759,046  https://fackel.oeaw.ac.at/f/759,047  https://fackel.oeaw.ac.at/f/759,048  https://fackel.oeaw.ac.at/f/759,049  https://fackel.oeaw.ac.at/f/759,050  https://fackel.oeaw.ac.at/f/759,051  https://fackel.oeaw.ac.at/f/759,052  https://fackel.oeaw.ac.at/f/759,053  https://fackel.oeaw.ac.at/f/759,054  https://fackel.oeaw.ac.at/f/759,055  https://fackel.oeaw.ac.at/f/759,056  https://fackel.oeaw.ac.at/f/759,057  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13305</textID>
+<range>https://fackel.oeaw.ac.at/f/759,117  https://fackel.oeaw.ac.at/f/759,118  https://fackel.oeaw.ac.at/f/759,119  https://fackel.oeaw.ac.at/f/759,120  https://fackel.oeaw.ac.at/f/759,121  https://fackel.oeaw.ac.at/f/759,122  https://fackel.oeaw.ac.at/f/759,123  https://fackel.oeaw.ac.at/f/759,124  https://fackel.oeaw.ac.at/f/759,125  https://fackel.oeaw.ac.at/f/759,126  https://fackel.oeaw.ac.at/f/759,127  https://fackel.oeaw.ac.at/f/759,128  https://fackel.oeaw.ac.at/f/759,129  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13312</textID>
+<range>https://fackel.oeaw.ac.at/f/766,001  https://fackel.oeaw.ac.at/f/766,002  https://fackel.oeaw.ac.at/f/766,003  https://fackel.oeaw.ac.at/f/766,004  https://fackel.oeaw.ac.at/f/766,005  https://fackel.oeaw.ac.at/f/766,006  https://fackel.oeaw.ac.at/f/766,007  https://fackel.oeaw.ac.at/f/766,008  https://fackel.oeaw.ac.at/f/766,009  https://fackel.oeaw.ac.at/f/766,010  https://fackel.oeaw.ac.at/f/766,011  https://fackel.oeaw.ac.at/f/766,012  https://fackel.oeaw.ac.at/f/766,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13344</textID>
+<range>https://fackel.oeaw.ac.at/f/778,001  https://fackel.oeaw.ac.at/f/778,002  https://fackel.oeaw.ac.at/f/778,003  https://fackel.oeaw.ac.at/f/778,004  https://fackel.oeaw.ac.at/f/778,005  https://fackel.oeaw.ac.at/f/778,006  https://fackel.oeaw.ac.at/f/778,007  https://fackel.oeaw.ac.at/f/778,008  https://fackel.oeaw.ac.at/f/778,009  https://fackel.oeaw.ac.at/f/778,010  https://fackel.oeaw.ac.at/f/778,011  https://fackel.oeaw.ac.at/f/778,012  https://fackel.oeaw.ac.at/f/778,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13354</textID>
+<range>https://fackel.oeaw.ac.at/f/781,047  https://fackel.oeaw.ac.at/f/781,048  https://fackel.oeaw.ac.at/f/781,049  https://fackel.oeaw.ac.at/f/781,050  https://fackel.oeaw.ac.at/f/781,051  https://fackel.oeaw.ac.at/f/781,052  https://fackel.oeaw.ac.at/f/781,053  https://fackel.oeaw.ac.at/f/781,054  https://fackel.oeaw.ac.at/f/781,055  https://fackel.oeaw.ac.at/f/781,056  https://fackel.oeaw.ac.at/f/781,057  https://fackel.oeaw.ac.at/f/781,058  https://fackel.oeaw.ac.at/f/781,059  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13393</textID>
+<range>https://fackel.oeaw.ac.at/f/781,084  https://fackel.oeaw.ac.at/f/781,085  https://fackel.oeaw.ac.at/f/781,086  https://fackel.oeaw.ac.at/f/781,087  https://fackel.oeaw.ac.at/f/781,088  https://fackel.oeaw.ac.at/f/781,089  https://fackel.oeaw.ac.at/f/781,090  https://fackel.oeaw.ac.at/f/781,091  https://fackel.oeaw.ac.at/f/781,092  https://fackel.oeaw.ac.at/f/781,093  https://fackel.oeaw.ac.at/f/781,094  https://fackel.oeaw.ac.at/f/781,095  https://fackel.oeaw.ac.at/f/781,096  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13400</textID>
+<range>https://fackel.oeaw.ac.at/f/787,001  https://fackel.oeaw.ac.at/f/787,002  https://fackel.oeaw.ac.at/f/787,003  https://fackel.oeaw.ac.at/f/787,004  https://fackel.oeaw.ac.at/f/787,005  https://fackel.oeaw.ac.at/f/787,006  https://fackel.oeaw.ac.at/f/787,007  https://fackel.oeaw.ac.at/f/787,008  https://fackel.oeaw.ac.at/f/787,009  https://fackel.oeaw.ac.at/f/787,010  https://fackel.oeaw.ac.at/f/787,011  https://fackel.oeaw.ac.at/f/787,012  https://fackel.oeaw.ac.at/f/787,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13408</textID>
+<range>https://fackel.oeaw.ac.at/f/795,001  https://fackel.oeaw.ac.at/f/795,002  https://fackel.oeaw.ac.at/f/795,003  https://fackel.oeaw.ac.at/f/795,004  https://fackel.oeaw.ac.at/f/795,005  https://fackel.oeaw.ac.at/f/795,006  https://fackel.oeaw.ac.at/f/795,007  https://fackel.oeaw.ac.at/f/795,008  https://fackel.oeaw.ac.at/f/795,009  https://fackel.oeaw.ac.at/f/795,010  https://fackel.oeaw.ac.at/f/795,011  https://fackel.oeaw.ac.at/f/795,012  https://fackel.oeaw.ac.at/f/795,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13469</textID>
+<range>https://fackel.oeaw.ac.at/f/800,075  https://fackel.oeaw.ac.at/f/800,076  https://fackel.oeaw.ac.at/f/800,077  https://fackel.oeaw.ac.at/f/800,078  https://fackel.oeaw.ac.at/f/800,079  https://fackel.oeaw.ac.at/f/800,080  https://fackel.oeaw.ac.at/f/800,081  https://fackel.oeaw.ac.at/f/800,082  https://fackel.oeaw.ac.at/f/800,083  https://fackel.oeaw.ac.at/f/800,084  https://fackel.oeaw.ac.at/f/800,085  https://fackel.oeaw.ac.at/f/800,086  https://fackel.oeaw.ac.at/f/800,087  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13476</textID>
+<range>https://fackel.oeaw.ac.at/f/806,005  https://fackel.oeaw.ac.at/f/806,006  https://fackel.oeaw.ac.at/f/806,007  https://fackel.oeaw.ac.at/f/806,008  https://fackel.oeaw.ac.at/f/806,009  https://fackel.oeaw.ac.at/f/806,010  https://fackel.oeaw.ac.at/f/806,011  https://fackel.oeaw.ac.at/f/806,012  https://fackel.oeaw.ac.at/f/806,013  https://fackel.oeaw.ac.at/f/806,014  https://fackel.oeaw.ac.at/f/806,015  https://fackel.oeaw.ac.at/f/806,016  https://fackel.oeaw.ac.at/f/806,017  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13500</textID>
+<range>https://fackel.oeaw.ac.at/f/806,043  https://fackel.oeaw.ac.at/f/806,044  https://fackel.oeaw.ac.at/f/806,045  https://fackel.oeaw.ac.at/f/806,046  https://fackel.oeaw.ac.at/f/806,047  https://fackel.oeaw.ac.at/f/806,048  https://fackel.oeaw.ac.at/f/806,049  https://fackel.oeaw.ac.at/f/806,050  https://fackel.oeaw.ac.at/f/806,051  https://fackel.oeaw.ac.at/f/806,052  https://fackel.oeaw.ac.at/f/806,053  https://fackel.oeaw.ac.at/f/806,054  https://fackel.oeaw.ac.at/f/806,055  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text13525</textID>
+<range>https://fackel.oeaw.ac.at/f/810,001  https://fackel.oeaw.ac.at/f/810,002  https://fackel.oeaw.ac.at/f/810,003  https://fackel.oeaw.ac.at/f/810,004  https://fackel.oeaw.ac.at/f/810,005  https://fackel.oeaw.ac.at/f/810,006  https://fackel.oeaw.ac.at/f/810,007  https://fackel.oeaw.ac.at/f/810,008  https://fackel.oeaw.ac.at/f/810,009  https://fackel.oeaw.ac.at/f/810,010  https://fackel.oeaw.ac.at/f/810,011  https://fackel.oeaw.ac.at/f/810,012</range>
+</text>
+<text>
+<textID>text13664</textID>
+<range>https://fackel.oeaw.ac.at/f/820,065  https://fackel.oeaw.ac.at/f/820,066  https://fackel.oeaw.ac.at/f/820,067  https://fackel.oeaw.ac.at/f/820,068  https://fackel.oeaw.ac.at/f/820,069  https://fackel.oeaw.ac.at/f/820,070  https://fackel.oeaw.ac.at/f/820,071  https://fackel.oeaw.ac.at/f/820,072  https://fackel.oeaw.ac.at/f/820,073  https://fackel.oeaw.ac.at/f/820,074  https://fackel.oeaw.ac.at/f/820,075  https://fackel.oeaw.ac.at/f/820,076  https://fackel.oeaw.ac.at/f/820,077  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text14910</textID>
+<range>https://fackel.oeaw.ac.at/f/908,001  https://fackel.oeaw.ac.at/f/908,002  https://fackel.oeaw.ac.at/f/908,003  https://fackel.oeaw.ac.at/f/908,004  https://fackel.oeaw.ac.at/f/908,005  https://fackel.oeaw.ac.at/f/908,006  https://fackel.oeaw.ac.at/f/908,007  https://fackel.oeaw.ac.at/f/908,008  https://fackel.oeaw.ac.at/f/908,009  https://fackel.oeaw.ac.at/f/908,010  https://fackel.oeaw.ac.at/f/908,011  https://fackel.oeaw.ac.at/f/908,012  https://fackel.oeaw.ac.at/f/908,013  https://fackel.oeaw ...</range>
+</text>
+<text>
+<textID>text15001</textID>
+<range>https://fackel.oeaw.ac.at/f/912,004  https://fackel.oeaw.ac.at/f/912,005  https://fackel.oeaw.ac.at/f/912,006  https://fackel.oeaw.ac.at/f/912,007  https://fackel.oeaw.ac.at/f/912,008  https://fackel.oeaw.ac.at/f/912,009  https://fackel.oeaw.ac.at/f/912,010  https://fackel.oeaw.ac.at/f/912,011</range>
+</text>
+<text>
+<textID>text15015</textID>
+<range>https://fackel.oeaw.ac.at/f/912,069  https://fackel.oeaw.ac.at/f/912,070  https://fackel.oeaw.ac.at/f/912,071  https://fackel.oeaw.ac.at/f/912,072</range>
+</text>
+</result>
