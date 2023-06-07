@@ -18,7 +18,10 @@ unmatched = []
 def delete_old_matches():
     # # need to delete old matches, befor I create new ones
     # # be careful to only delete exact matches
-    for idno in listfackel.any_xpath("//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue')]"):
+    # # don't delete @type="manual"
+    for idno in listfackel.any_xpath(
+        "//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue') and @ana!='manual']"
+    ):
         idno.getparent().remove(idno)
 
 
@@ -95,12 +98,18 @@ def search_4_listfackel_bibl(listfackel_bibl: BiblIf):
     # # look if the @corresp-value from listfackel can be found in a @range in
     # # fackelTexts_cascaded.xml. If so, take that text's ID.
     if len(matches) == 0:
-        matches = fackel_texts.any_xpath(f"//text[contains(translate(@range, 'F', 'f'), '{listfackel_bibl.corresp}')]")
-        print(f"matches was 0 for {listfackel_bibl.corresp} but {len(matches)} by range.")
+        matches = fackel_texts.any_xpath(
+            f"//text[contains(translate(@range, 'F', 'f'), '{listfackel_bibl.corresp}')]"
+        )
+        print(
+            f"matches was 0 for {listfackel_bibl.corresp} but {len(matches)} by range."
+        )
     matched = matches[0] if len(matches) >= 1 else None
     if matched is not None:
         matched_id = matched.get("id")
-        listfackel_bibl.element.insert(0, teiMaker.idno(matched_id, type="fackel", subtype="text"))
+        listfackel_bibl.element.insert(
+            0, teiMaker.idno(matched_id, type="fackel", subtype="text")
+        )
         single_machtes += 1
     else:
         nomatches += 1
@@ -116,10 +125,14 @@ def search_4_listfackel_issue_bibl(listfackel_bibl: BiblIf):
             matches += val
     if len(matches) == 1:
         matched_id = matches[0].get("id")
-        listfackel_bibl.element.insert(0, teiMaker.idno(matched_id, type="fackel", subtype="issue"))
+        listfackel_bibl.element.insert(
+            0, teiMaker.idno(matched_id, type="fackel", subtype="issue")
+        )
         single_machtes += 1
     else:
-        print(f"bibl with corresp '{listfackel_bibl.corresp}' couldn't be matched at all.")
+        print(
+            f"bibl with corresp '{listfackel_bibl.corresp}' couldn't be matched at all."
+        )
         nomatches += 1
 
 
