@@ -6,6 +6,7 @@ from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 from rdflib.namespace import RDF, RDFS
+from slugify import slugify
 
 
 if os.environ.get("NO_LIMIT"):
@@ -241,6 +242,41 @@ for x in tqdm(to_process, total=len(to_process)):
                 continue
             create_mention_intertex_relation(subj, i, text_passage, work_uri)
 
+    # # create IntertextualRelationship for notes[@type="intertext"]
+    fackel_intertexts = "./data/auxiliary_indices/fackel_intertexts.xml"
+    doc_int = TeiReader(fackel_intertexts)
+    int_lookup = {}
+    for i, x in enumerate(doc_int.any_xpath("//text")):
+        int_id = x.xpath("./textID/text()")[0]
+        int_range = x.xpath("./range/text()")[0].split()
+        for x in int_range:
+            x = slugify(x)
+            if x in int_lookup.keys():
+                int_lookup[x].append(int_id)
+            else:
+                int_lookup[x] = [int_id]
+    note_xpath = ".//tei:note[@type='intertext']"
+    find_duplicates = []
+    for n, note in enumerate(doc.any_xpath(note_xpath)):
+        note_source = note.get("source")
+        note_source_slugify = slugify(note_source)
+        try:
+            text_id = int_lookup[str(note_source_slugify)]
+        except KeyError:
+            text_id = False
+        if text_id:
+            for text in text_id:
+                if len(find_duplicates) == 0:
+                    text_id_uri = URIRef(f"{SK}{text}")
+                    create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
+                    print("find duplicates 0")
+                elif note_source_slugify not in find_duplicates:
+                    text_id_uri = URIRef(f"{SK}{text}")
+                    create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
+                    print("find duplicates 1")
+                else:
+                    print("textID already in file")
+        find_duplicates.append(note_source_slugify)
 
 # cases
 print("lets process cases as E5 Events")
