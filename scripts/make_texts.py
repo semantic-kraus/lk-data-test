@@ -168,7 +168,8 @@ for x in tqdm(to_process, total=len(to_process)):
     # # fun with mentions (persons, works, quotes)
     rs_xpath = ".//tei:body//tei:rs[@ref]"
     quote_xpath = "//tei:body//tei:quote[starts-with(@source, '#')]"
-    for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}")):
+    quote_xpath_fackel = "//tei:body//tei:quote[starts-with(@source, 'https://fackel')]"
+    for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}|{quote_xpath_fackel}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
         )
