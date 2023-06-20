@@ -269,14 +269,15 @@ for x in tqdm(to_process, total=len(to_process)):
                 if len(find_duplicates) == 0:
                     text_id_uri = URIRef(f"{SK}{text}")
                     create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
-                    print("find duplicates 0")
+                    print("duplicates list initialized; added first relation item")
                 elif note_source_slugify not in find_duplicates:
                     text_id_uri = URIRef(f"{SK}{text}")
                     create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
-                    print("find duplicates 1")
+                    print("no duplicates found; added relation item")
                 else:
-                    print("textID already in file")
+                    print("source ID already in file")
         find_duplicates.append(note_source_slugify)
+print("finished adding intertextual relations (incl. duplicates). count:", len(find_duplicates))
 
 # cases
 print("lets process cases as E5 Events")

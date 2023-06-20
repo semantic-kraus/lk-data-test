@@ -59,10 +59,12 @@ date_issue_type_uri = URIRef(f"{SK}types/appellation/date")
 ed_issue_type_uri = URIRef(f"{SK}types/appellation/ed")
 main_title_type = URIRef(f"{SK}types/title/main")
 sub_title_type = URIRef(f"{SK}types/title/sub")
+translation = URIRef(f"{SK}types/translation")
 
 
 g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((translation, RDF.type, CIDOC["E55_Type"]))
 for x in tqdm(items, total=len(items)):
     try:
         xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
@@ -697,10 +699,26 @@ for x in tqdm(items, total=len(items)):
             )
         )
         g.add((creation, FRBROO["R17_created"], subj))
+        if uebersetzt[0].get("role") == "hat-ubersetzt":
+            g.add((creation, CIDOC["P2_has_type"], translation))
+            subj_orig = URIRef(f"{subj}orig")
+            g.add((subj_orig, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
+            g.add((subj_orig,
+                   RDFS.label,
+                   Literal(normalize_string(f"Original Expression of: {label_value}"), lang="en")))
+            g.add((subj_orig, CIDOC["P16i_was_used_for"], creation))
+            creation_orig = URIRef(f"{subj_orig}/creation")
+            g.add((creation_orig, RDF.type, FRBROO["F28_Expression_Creation"]))
+            g.add((creation_orig,
+                   RDFS.label,
+                   Literal(normalize_string(f"Creation of original: {label_value}"), lang="en")))
+            g.add((creation_orig, FRBROO["R17_created"], subj_orig))
         for a in uebersetzt:
             author_id = a.attrib["key"]
             author_uri = URIRef(f"{SK}{author_id}")
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
+            if a.get("role") == "hat-ubersetzt":
+                g.add((creation_orig, CIDOC["P14_carried_out_by"], author_uri))
     if item_sk_type not in ["journal", "issue", "article"]:
         try:
             pub_date = x.xpath(
