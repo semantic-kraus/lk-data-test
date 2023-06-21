@@ -243,7 +243,7 @@ for x in tqdm(to_process, total=len(to_process)):
             create_mention_intertex_relation(subj, i, text_passage, work_uri)
 
     # # create IntertextualRelationship for notes[@type="intertext"]
-    fackel_intertexts = "./data/auxiliary_indices/fackel_intertexts.xml"
+    fackel_intertexts = "./data/auxiliary_indices/fackel_notes.xml"
     doc_int = TeiReader(fackel_intertexts)
     int_lookup = {}
     for i, x in enumerate(doc_int.any_xpath("//text")):
