@@ -248,7 +248,7 @@ for x in tqdm(to_process, total=len(to_process)):
     int_lookup = {}
     for i, x in enumerate(doc_int.any_xpath("//text")):
         int_id = x.xpath("./textID/text()")[0]
-        int_range = x.xpath("./range/text()")[0].split()
+        int_range = x.xpath("./textRange/text()")[0].split()
         for x in int_range:
             x = slugify(x)
             if x in int_lookup.keys():
