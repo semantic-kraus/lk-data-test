@@ -92,19 +92,19 @@ if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))[:LIMIT]
 else:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))
-to_process = []
-print("filtering documents without transcriptions")
-for x in tqdm(files, total=len(files)):
-    doc = TeiReader(x)
-    try:
-        # maybe process these too?
-        doc.any_xpath('.//tei:div[@type="no-transcription"]')[0]
-        os.remove(x)
-    except IndexError:
-        to_process.append(x)
-print(f"continue processing {len(to_process)} out of {len(files)} Documents")
+# to_process = []
+# print("filtering documents without transcriptions")
+# for x in tqdm(files, total=len(files)):
+#     doc = TeiReader(x)
+#     try:
+#         # maybe process these too?
+#         doc.any_xpath('.//tei:div[@type="no-transcription"]')[0]
+#         os.remove(x)
+#     except IndexError:
+#         to_process.append(x)
+# print(f"continue processing {len(to_process)} out of {len(files)} Documents")
 
-for x in tqdm(to_process, total=len(to_process)):
+for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
     xml_id = (
         doc.tree.getroot()
