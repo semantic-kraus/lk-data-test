@@ -28,6 +28,15 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
     return text_passage
 
 
+def create_text_passage_of(subj, i, file, item_label):
+    text_passage = URIRef(f"{subj}/passage/{file}/{i}")
+    text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
+    g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
+    g.add((text_passage, RDFS.label, text_passage_label))
+    g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
+    return text_passage
+
+
 def create_mention_text_segment(
     subj, i, item_label, text_passage, mention_wording, arche_id_value
 ):
@@ -44,6 +53,21 @@ def create_mention_text_segment(
     g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pb_start}")))
     g.add((text_segment, INT["R41_has_location"], Literal(arche_id_value)))
     g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pb_start}")))
+    return text_segment
+
+
+def create_text_segment_of(
+    subj, i, file, item_label, pagination, published_expression
+):
+    text_segment = URIRef(f"{subj}/segment/{file}/{i}")
+    text_passage = URIRef(f"{subj}/passage/{file}/{i}")
+    text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+    g.add((text_segment, RDF.type, INT["INT16_Segment"]))
+    g.add((text_segment, RDFS.label, text_segment_label))
+    g.add((text_segment, INT["R16_incorporates"], text_passage))
+    g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination}")))
+    g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pagination}")))
+    g.add((text_segment, INT["R25_is_segment_of"], published_expression))
     return text_segment
 
 
@@ -103,6 +127,20 @@ else:
 #     except IndexError:
 #         to_process.append(x)
 # print(f"continue processing {len(to_process)} out of {len(files)} Documents")
+
+# # create lookup for IntertextualRelationship of notes[@type="intertext"]
+fackel_intertexts = "./data/auxiliary_indices/fackel_notes.xml"
+doc_int = TeiReader(fackel_intertexts)
+int_lookup = {}
+for i, x in enumerate(doc_int.any_xpath("//text")):
+    int_id = x.xpath("./textID/text()")[0]
+    int_range = x.xpath("./textRange/text()")[0].split()
+    for x in int_range:
+        x = slugify(x)
+        if x in int_lookup.keys():
+            int_lookup[x].append(int_id)
+        else:
+            int_lookup[x] = [int_id]
 
 for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
@@ -170,7 +208,10 @@ for x in tqdm(files, total=len(files)):
     rs_xpath = ".//tei:body//tei:rs[@ref]"
     quote_xpath = "//tei:body//tei:quote[starts-with(@source, '#')]"
     quote_xpath_fackel = "//tei:body//tei:quote[starts-with(@source, 'https://fackel')]"
-    for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}|{quote_xpath_fackel}")):
+    note_inter_xpath = ".//tei:note[@type='intertext']"
+    # # duplicated source values in notes[@type="intertext"] are filtered out
+    find_duplicates = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
+    for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}|{quote_xpath_fackel}|{note_inter_xpath}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
         )
@@ -241,43 +282,35 @@ for x in tqdm(files, total=len(files)):
             else:
                 continue
             create_mention_intertex_relation(subj, i, text_passage, work_uri)
-
-    # # create IntertextualRelationship for notes[@type="intertext"]
-    fackel_intertexts = "./data/auxiliary_indices/fackel_notes.xml"
-    doc_int = TeiReader(fackel_intertexts)
-    int_lookup = {}
-    for i, x in enumerate(doc_int.any_xpath("//text")):
-        int_id = x.xpath("./textID/text()")[0]
-        int_range = x.xpath("./textRange/text()")[0].split()
-        for x in int_range:
-            x = slugify(x)
-            if x in int_lookup.keys():
-                int_lookup[x].append(int_id)
-            else:
-                int_lookup[x] = [int_id]
-    note_xpath = ".//tei:note[@type='intertext']"
-    find_duplicates = []
-    for n, note in enumerate(doc.any_xpath(note_xpath)):
-        note_source = note.get("source")
-        note_source_slugify = slugify(note_source)
-        try:
-            text_id = int_lookup[str(note_source_slugify)]
-        except KeyError:
-            text_id = False
-        if text_id:
-            for text in text_id:
-                if len(find_duplicates) == 0:
-                    text_id_uri = URIRef(f"{SK}{text}")
-                    create_mention_intertex_relation(subj, text, text_id_uri, subj)
-                    print("duplicates list initialized; added first relation item")
-                elif note_source_slugify not in find_duplicates:
-                    text_id_uri = URIRef(f"{SK}{text}")
-                    create_mention_intertex_relation(subj, text, text_id_uri, subj)
-                    print("no duplicates found; added relation item")
-                else:
-                    print("source ID already in file")
-        find_duplicates.append(note_source_slugify)
-print("finished adding intertextual relations (incl. duplicates). count:", len(find_duplicates))
+        elif mention.xpath("local-name()='note'"):
+            note_source = mention.get("source")
+            note_source_slugify = slugify(note_source)
+            try:
+                text_id = int_lookup[str(note_source_slugify)]
+            except KeyError:
+                text_id = False
+            if text_id:
+                for text in text_id:
+                    if note_source_slugify not in find_duplicates:
+                        text_id_uri = f"{SK}{text}"
+                        create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
+                        file = subj.split("/")[-1]
+                        create_text_passage_of(text_id_uri, i, file, item_label)
+                        text_segment = f"{text_id_uri}/segment/{file}"
+                        pagination = "S. 1"
+                        published_expression = f"{text_segment}/published-expression"
+                        create_text_segment_of(
+                            text_id_uri,
+                            i,
+                            file,
+                            item_label,
+                            pagination,
+                            URIRef(published_expression))
+                        print("no duplicates found; added relation item")
+                    else:
+                        print("source ID already in file")
+            find_duplicates.append(note_source_slugify)
+            print("finished adding intertextual relations (incl. duplicates). count:", len(find_duplicates) - 1)
 
 # cases
 print("lets process cases as E5 Events")
