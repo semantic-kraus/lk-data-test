@@ -268,11 +268,11 @@ for x in tqdm(files, total=len(files)):
             for text in text_id:
                 if len(find_duplicates) == 0:
                     text_id_uri = URIRef(f"{SK}{text}")
-                    create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
+                    create_mention_intertex_relation(subj, text, text_id_uri, subj)
                     print("duplicates list initialized; added first relation item")
                 elif note_source_slugify not in find_duplicates:
                     text_id_uri = URIRef(f"{SK}{text}")
-                    create_mention_intertex_relation(subj, f"{n}-99", subj, text_id_uri)
+                    create_mention_intertex_relation(subj, text, text_id_uri, subj)
                     print("no duplicates found; added relation item")
                 else:
                     print("source ID already in file")
