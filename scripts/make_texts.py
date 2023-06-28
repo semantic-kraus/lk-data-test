@@ -1,5 +1,6 @@
 import os
 import glob
+import requests
 from tqdm import tqdm
 from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
@@ -7,6 +8,8 @@ from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 from rdflib.namespace import RDF, RDFS
 from slugify import slugify
+from lxml.etree import XMLParser
+from lxml import etree as ET
 
 
 if os.environ.get("NO_LIMIT"):
@@ -57,16 +60,18 @@ def create_mention_text_segment(
 
 
 def create_text_segment_of(
-    subj, i, file, item_label, pagination, published_expression
+    subj, i, file, item_label, pagination_url, published_expression
 ):
     text_segment = URIRef(f"{subj}/segment/{file}/{i}")
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
     text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+    pagination_label = pagination_url.split(',')[-1]
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
     g.add((text_segment, RDFS.label, text_segment_label))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
-    g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination}")))
-    g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pagination}")))
+    g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination_label}")))
+    g.add((text_segment, INT["R41_has_location"], Literal(pagination_url)))
+    g.add((text_segment, SCHEMA["pagination"], Literal(f"S. {pagination_label}")))
     g.add((text_segment, INT["R25_is_segment_of"], published_expression))
     return text_segment
 
@@ -141,6 +146,13 @@ for i, x in enumerate(doc_int.any_xpath("//text")):
             int_lookup[x].append(int_id)
         else:
             int_lookup[x] = [int_id]
+
+# # parse fackelTexts_cascaded.xml
+fa_texts_url = "https://raw.githubusercontent.com/semantic-kraus/fa-data/main/data/indices/fackelTexts_cascaded.xml"
+p = XMLParser(huge_tree=True)
+response = requests.get(fa_texts_url)
+fa_texts = ET.fromstring(response.content, parser=p)
+# fa_texts = TeiReader(fa_texts_url)
 
 for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
@@ -297,14 +309,15 @@ for x in tqdm(files, total=len(files)):
                         file = subj.split("/")[-1]
                         create_text_passage_of(text_id_uri, i, file, item_label)
                         text_segment = f"{text_id_uri}/segment/{file}"
-                        pagination = "S. 1"
-                        published_expression = f"{text_segment}/published-expression"
+                        pagination_url = mention.get("source")
+                        issue = fa_texts.xpath(f'//issue[child::text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                        published_expression = f"{SK}issue{issue}/published-expression"
                         create_text_segment_of(
                             text_id_uri,
                             i,
                             file,
                             item_label,
-                            pagination,
+                            pagination_url,
                             URIRef(published_expression))
                         print("no duplicates found; added relation item")
                     else:
