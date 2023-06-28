@@ -31,9 +31,9 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
     return text_passage
 
 
-def create_text_passage_of(subj, i, file, item_label):
+def create_text_passage_of(subj, i, file, label):
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
+    text_passage_label = Literal(f"Text passage from: {label}", lang="en")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
     g.add((text_passage, RDFS.label, text_passage_label))
     g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
@@ -60,11 +60,11 @@ def create_mention_text_segment(
 
 
 def create_text_segment_of(
-    subj, i, file, item_label, pagination_url, published_expression
+    subj, i, file, label, pagination_url, published_expression
 ):
     text_segment = URIRef(f"{subj}/segment/{file}/{i}")
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+    text_segment_label = Literal(f"Text segment from: {label}", lang="en")
     pagination_label = pagination_url.split(',')[-1]
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
     g.add((text_segment, RDFS.label, text_segment_label))
@@ -88,6 +88,22 @@ def create_mention_intertex_relation(subj, i, text_passage, work_uri):
     )
     g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
     g.add((intertext_relation, INT["R12_has_referred_to_entity"], work_uri))
+
+
+def create_intertex_relation_of(subj, i, file, text_passage):
+    intertext_relation = URIRef(f"{subj}/relation/{file}/{i}")
+    doc_passage = URIRef(f"{subj}/passage/{file}/{i}")
+    text_passage = URIRef(f"{text_passage}/passage/{i}")
+    g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
+    g.add(
+        (
+            intertext_relation,
+            RDFS.label,
+            Literal("Intertextual relation", lang="en"),
+        )
+    )
+    g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
+    g.add((intertext_relation, INT["R12_has_referred_to_entity"], doc_passage))
 
 
 # build uri lookup dict for listwork.xml
@@ -307,8 +323,8 @@ for x in tqdm(files, total=len(files)):
                         text_id_uri = f"{SK}{text}"
                         create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
                         file = subj.split("/")[-1]
-                        create_text_passage_of(text_id_uri, i, file, item_label)
-                        text_segment = f"{text_id_uri}/segment/{file}"
+                        label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
+                        create_text_passage_of(text_id_uri, i, file, label)
                         pagination_url = mention.get("source")
                         issue = fa_texts.xpath(f'//issue[child::text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
                         published_expression = f"{SK}issue{issue}/published-expression"
@@ -316,9 +332,10 @@ for x in tqdm(files, total=len(files)):
                             text_id_uri,
                             i,
                             file,
-                            item_label,
+                            label,
                             pagination_url,
                             URIRef(published_expression))
+                        create_intertex_relation_of(text_id_uri, i, file, subj)
                         print("no duplicates found; added relation item")
                     else:
                         print("source ID already in file")
