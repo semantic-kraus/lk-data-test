@@ -390,6 +390,21 @@ for x in tqdm(files, total=len(files)):
         g.add((doc_uri, CIDOC["P12i_was_present_at"], subj))
         g.add((subj, CIDOC["P12_occurred_in_the_presence_of"], doc_uri))
 
+    # linking legal cases to persons
+    for i, p in enumerate(doc.any_xpath('.//tei:particDesc//tei:person')):
+        person_id = p.get("sameAs").replace("#", "")
+        person_uri = URIRef(f"{SK}{person_id}")
+        person_role = URIRef(f"{subj}/role/{i}")
+        g.add((subj, CIDOC["P10i_contains"], person_role))
+        g.add((person_role, RDF.type, CIDOC["E7_Activity"]))
+        person_name = p.xpath('.//tei:persName/text()', namespaces=NSMAP)[0]
+        person_note = p.xpath('.//tei:note/text()', namespaces=NSMAP)[0]
+        g.add((person_role, RDFS.label, Literal(f"{person_name} as: {person_note}", lang="en")))
+        g.add((person_role, CIDOC["P14_carried_out_by"], person_uri))
+        person_type = p.get("role").split("/")[-1].split(".")[-1]
+        g.add((person_role, CIDOC["P2_has_type"], URIRef(f"{SK}types/role/{person_type}")))
+        g.add((URIRef(f"{SK}types/role/{person_type}"), RDF.type, CIDOC["E55_Type"]))
+
 
 print("writing graph to file")
 g.serialize(f"{rdf_dir}/texts.trig", format="trig")
