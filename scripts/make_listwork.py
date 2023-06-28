@@ -676,6 +676,8 @@ for x in tqdm(items, total=len(items)):
                 )
             )
             g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
+            title_j_key_pub_exp = URIRef(f"{SK}{title_j_key}/published-expression")
+            g.add((issue_uri_pub_event_uri, FRBROO["R5i_is_component_of"], title_j_key_pub_exp))
             start, end = extract_begin_end(title_date)
             ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
             g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
