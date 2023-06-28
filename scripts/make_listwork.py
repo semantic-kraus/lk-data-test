@@ -123,7 +123,7 @@ for x in tqdm(items, total=len(items)):
                 CIDOC["P2_has_type"],
                 URIRef(f"{SK}types/idno/xml-id"),
             ),
-            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], subj),
             (xml_identifier_uri, RDF.value, Literal(xml_id)),
         ]
         bibl_xml_id_counter += 1
@@ -145,7 +145,7 @@ for x in tqdm(items, total=len(items)):
                 CIDOC["P2_has_type"],
                 URIRef(f"{SK}types/idno/URL/pmb"),
             ),
-            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], subj),
             (
                 xml_identifier_uri,
                 RDF.value,
