@@ -90,10 +90,10 @@ def create_mention_intertex_relation(subj, i, text_passage, work_uri):
     g.add((intertext_relation, INT["R12_has_referred_to_entity"], work_uri))
 
 
-def create_intertex_relation_of(subj, i, file, text_passage):
+def create_intertex_relation_of(subj, i, file, doc_passage):
     intertext_relation = URIRef(f"{subj}/relation/{file}/{i}")
-    doc_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_passage = URIRef(f"{text_passage}/passage/{i}")
+    text_passage = URIRef(f"{subj}/passage/{file}/{i}")
+    doc_passage = URIRef(f"{doc_passage}/passage/{i}")
     g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
     g.add(
         (
@@ -102,8 +102,8 @@ def create_intertex_relation_of(subj, i, file, text_passage):
             Literal("Intertextual relation", lang="en"),
         )
     )
-    g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
-    g.add((intertext_relation, INT["R12_has_referred_to_entity"], doc_passage))
+    g.add((intertext_relation, INT["R13_has_referring_entity"], doc_passage))
+    g.add((intertext_relation, INT["R12_has_referred_to_entity"], text_passage))
 
 
 # build uri lookup dict for listwork.xml
@@ -216,7 +216,7 @@ for x in tqdm(files, total=len(files)):
         go_on = True
     except IndexError:
         go_on = False
-    if go_on:
+    if go_on and creation_date_node.get("when-iso"):
         begin, end = extract_begin_end(creation_date_node)
         creation_ts = URIRef(f"{creation_uri}/time-span")
         g.add((creation_uri, CIDOC["P4_has_time-span"], creation_ts))
