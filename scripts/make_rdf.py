@@ -65,27 +65,29 @@ for x in tqdm(items, total=len(items)):
     #     org_id_xpath="./tei:orgName[1]/@key",
     #     org_label_xpath="./tei:orgName[1]//text()",
     # )
-    birth_g, birth_uri, birth_timestamp = make_birth_death_entities(
-        subj,
-        x,
-        domain=SK,
-        event_type="birth",
-        verbose=False,
-        date_node_xpath="/tei:date[1]",
-        place_id_xpath="//tei:settlement[1]/@key",
-    )
-    g += birth_g
-    death_g, death_uri, death_timestamp = make_birth_death_entities(
-        subj,
-        x,
-        domain=SK,
-        event_type="death",
-        default_prefix="Tod von",
-        verbose=False,
-        date_node_xpath="/tei:date[1]",
-        place_id_xpath="//tei:settlement[1]/@key",
-    )
-    g += death_g
+    if x.xpath("./tei:birth", namespaces=nsmap):
+        birth_g, birth_uri, birth_timestamp = make_birth_death_entities(
+            subj,
+            x,
+            domain=SK,
+            event_type="birth",
+            verbose=False,
+            date_node_xpath="/tei:date[1]",
+            place_id_xpath="//tei:settlement[1]/@key",
+        )
+        g += birth_g
+    if x.xpath("./tei:death", namespaces=nsmap):
+        death_g, death_uri, death_timestamp = make_birth_death_entities(
+            subj,
+            x,
+            domain=SK,
+            event_type="death",
+            default_prefix="Tod von",
+            verbose=False,
+            date_node_xpath="/tei:date[1]",
+            place_id_xpath="//tei:settlement[1]/@key",
+        )
+        g += death_g
 
 # ORGS
 entity_type = "org"
