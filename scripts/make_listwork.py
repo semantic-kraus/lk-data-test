@@ -100,6 +100,7 @@ for x in tqdm(items, total=len(items)):
         item_id = f"{SK}{xml_id}/published-expression"
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F24_Publication_Expression"]))
+        g.add((subj, CIDOC["P1_is_identified_by"], URIRef(f"{SK}{xml_id}/appellation/0")))
     else:
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
@@ -359,7 +360,11 @@ for x in tqdm(items, total=len(items)):
                     Literal(f"Periodical: {title_j_text}", lang="en"),
                 )
             )
-            periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
+            if item_sk_type == "journal":
+                periodical_uri_appellation = URIRef(
+                    f"{periodical_uri.replace('published-expression', '')}appellation/0")
+            else:
+                periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
             for i, title in enumerate(
                 bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
             ):
@@ -369,9 +374,14 @@ for x in tqdm(items, total=len(items)):
                 except KeyError:
                     appellation_type = main_appellation_type_uri
                 cur_title_text = normalize_string(title.text)
-                pub_expr_appellation_e90 = URIRef(
-                    f"{periodical_uri}/appellation-title/{i}"
-                )
+                if item_sk_type == "journal":
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{periodical_uri.replace('published-expression', '')}appellation-title/{i}"
+                    )
+                else:
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{periodical_uri}/appellation-title/{i}"
+                    )
                 g.add(
                     (pub_expr_appellation_e90, CIDOC["P2_has_type"], appellation_type)
                 )
