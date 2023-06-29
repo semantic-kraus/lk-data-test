@@ -108,32 +108,33 @@ for x in tqdm(items, total=len(items)):
         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
     )
 
-# PLACES
-entity_type = "place"
-index_file = f"./data/indices/list{entity_type}.xml"
-doc = TeiReader(index_file)
-nsmap = doc.nsmap
-items = doc.any_xpath(f".//tei:{entity_type}")
-if LIMIT:
-    items = items[:LIMIT]
-print(f"converting {entity_type}s derived from {index_file}")
-for x in tqdm(items, total=len(items)):
-    xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
-    item_id = f"{SK}{xml_id}"
-    subj = URIRef(item_id)
-    g.add((subj, RDF.type, CIDOC["E53_Place"]))
-    g += coordinates_to_p168(subj, x)
-    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers(
-        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
-    )
-    try:
-        pmb = x.xpath('.//tei:idno[@type="pmb"]/text()', namespaces=nsmap)[0]
-    except IndexError:
-        pmb = None
-    if pmb:
-        pmb_uri = URIRef(pmb)
-        g.add((subj, OWL["sameAs"], pmb_uri))
-        g.add((pmb_uri, RDF.type, CIDOC["E42_Identifier"]))
+# # PLACES
+# entity_type = "place"
+# index_file = f"./data/indices/list{entity_type}.xml"
+# doc = TeiReader(index_file)
+# nsmap = doc.nsmap
+# items = doc.any_xpath(f".//tei:{entity_type}")
+# if LIMIT:
+#     items = items[:LIMIT]
+# print(f"converting {entity_type}s derived from {index_file}")
+# for x in tqdm(items, total=len(items)):
+#     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+#     item_id = f"{SK}{xml_id}"
+#     subj = URIRef(item_id)
+#     g.add((subj, RDF.type, CIDOC["E53_Place"]))
+#     g += coordinates_to_p168(subj, x)
+#     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
+#     g += make_e42_identifiers(
+#         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+#     )
+#     try:
+#         pmb = x.xpath('.//tei:idno[@type="pmb"]/text()', namespaces=nsmap)[0]
+#     except IndexError:
+#         pmb = None
+#     if pmb:
+#         pmb_uri = URIRef(pmb)
+#         g.add((subj, OWL["sameAs"], pmb_uri))
+#         g.add((pmb_uri, RDF.type, CIDOC["E42_Identifier"]))
+
 print("writing graph to file")
 g.serialize(f"{rdf_dir}/data.trig", format="trig")
