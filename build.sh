@@ -2,6 +2,7 @@ rm -rf html
 mkdir html
 touch html/.nojekyll
 
+python scripts/enrich_person_indices.py
 python scripts/make_rdf.py
 python scripts/make_texts.py
 python scripts/make_listwork.py

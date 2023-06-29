@@ -3,7 +3,6 @@ from tqdm import tqdm
 from acdh_cidoc_pyutils import (
     make_appellations,
     make_e42_identifiers,
-    coordinates_to_p168,
     make_birth_death_entities,
     make_occupations,
     make_entity_label,
@@ -11,7 +10,7 @@ from acdh_cidoc_pyutils import (
 from acdh_cidoc_pyutils.namespaces import CIDOC
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, OWL, RDFS
+from rdflib.namespace import RDF, RDFS
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
