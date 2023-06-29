@@ -665,7 +665,7 @@ for x in tqdm(items, total=len(items)):
                     )
             if issue_uri != subj:
                 g.add((issue_uri, CIDOC["P165_incorporates"], subj))
-                g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
+            g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
             issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
             g.add((issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
             g.add(
