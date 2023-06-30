@@ -21,7 +21,7 @@ files = sorted(glob.glob("./legalkraus-archiv/data/editions/*xml"))
 
 page_text_dict = defaultdict(list)
 page_text_list = []
-for x in fa_doc.any_xpath(".//text[@range]"):
+for x in fa_doc.xpath(".//text[@range]", namespaces=fa_doc.nsmap):
     text_id = x.attrib["id"]
     for y in x.attrib["range"].split():
         page_id = y.lower()
