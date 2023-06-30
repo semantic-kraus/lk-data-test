@@ -101,7 +101,7 @@ for x in tqdm(items, total=len(items)):
                 g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{SK}types/place/placename")))
                 g.add((place_appellations, RDF.value, Literal(place_label)))
                 for i, idno in enumerate(birth_place_node.xpath("./tei:idno", namespaces=nsmap)):
-                    idno_uri = URIRef(f"{birth_place_uri}/identifiers/idno/{i}")
+                    idno_uri = URIRef(f"{birth_place_uri}/identifier/idno/{i}")
                     g.add((birth_place_uri, CIDOC["P1_is_identified_by"], idno_uri))
                     g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
                     g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
@@ -149,7 +149,7 @@ for x in tqdm(items, total=len(items)):
                 g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{SK}types/place/placename")))
                 g.add((place_appellations, RDF.value, Literal(place_label)))
                 for i, idno in enumerate(death_place_node.xpath("./tei:idno", namespaces=nsmap)):
-                    idno_uri = URIRef(f"{death_place_uri}/identifiers/idno/{i}")
+                    idno_uri = URIRef(f"{death_place_uri}/identifier/idno/{i}")
                     g.add((death_place_uri, CIDOC["P1_is_identified_by"], idno_uri))
                     g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
                     g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
