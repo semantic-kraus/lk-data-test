@@ -406,5 +406,5 @@ for x in tqdm(files, total=len(files)):
         g.add((URIRef(f"{SK}types/role/{person_type}"), RDF.type, CIDOC["E55_Type"]))
 
 
-print("writing graph to file")
+print("writing graph to file: texts.trig")
 g.serialize(f"{rdf_dir}/texts.trig", format="trig")

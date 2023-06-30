@@ -212,5 +212,5 @@ for x in tqdm(items, total=len(items)):
 #         g.add((subj, OWL["sameAs"], pmb_uri))
 #         g.add((pmb_uri, RDF.type, CIDOC["E42_Identifier"]))
 
-print("writing graph to file")
+print("writing graph to file: data.trig")
 g.serialize(f"{rdf_dir}/data.trig", format="trig")

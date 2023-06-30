@@ -779,7 +779,7 @@ for x in tqdm(items, total=len(items)):
                     end = begin
             g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
             g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
-print("writing graph to file")
+print("writing graph to file: listworks.trig")
 # g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize(f"{rdf_dir}/{entity_type}.trig", format="trig")
