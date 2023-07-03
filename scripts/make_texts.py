@@ -163,6 +163,20 @@ for i, x in enumerate(doc_int.any_xpath("//text")):
         else:
             int_lookup[x] = [int_id]
 
+# # create lookup for IntertextualRelationship of quotes[@source="https://fackel..."]
+fackel_quotes = "./data/auxiliary_indices/fackel_quotes.xml"
+doc_quotes = TeiReader(fackel_quotes)
+int_lookup_quotes = {}
+for i, x in enumerate(doc_quotes.any_xpath("//text")):
+    quote_id = x.xpath("./textID/text()")[0]
+    quote_range = x.xpath("./textRange/text()")[0].split()
+    for x in quote_range:
+        x = slugify(x)
+        if x in int_lookup_quotes.keys():
+            int_lookup_quotes[x].append(quote_id)
+        else:
+            int_lookup_quotes[x] = [quote_id]
+
 # # parse fackelTexts_cascaded.xml
 fa_texts_url = "https://raw.githubusercontent.com/semantic-kraus/fa-data/main/data/indices/fackelTexts_cascaded.xml"
 p = XMLParser(huge_tree=True)
@@ -238,7 +252,8 @@ for x in tqdm(files, total=len(files)):
     quote_xpath_fackel = "//tei:body//tei:quote[starts-with(@source, 'https://fackel')]"
     note_inter_xpath = ".//tei:note[@type='intertext']"
     # # duplicated source values in notes[@type="intertext"] are filtered out
-    find_duplicates = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
+    find_duplicates_notes = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
+    find_duplicates_quotes = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
     for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}|{quote_xpath_fackel}|{note_inter_xpath}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
@@ -307,6 +322,37 @@ for x in tqdm(files, total=len(files)):
                     continue
             elif work_id.startswith("D"):
                 work_uri = URIRef(f"{SK}{work_id}")
+            elif work_id.startswith("https://fackel"):
+                quote_source_slugify = slugify(work_id)
+                try:
+                    quote_id = int_lookup_quotes[str(quote_source_slugify)]
+                except KeyError:
+                    quote_id = False
+                if quote_id:
+                    for q in quote_id:
+                        if quote_source_slugify not in find_duplicates_quotes:
+                            quote_id_uri = f"{SK}{q}"
+                            create_mention_intertex_relation(subj, q, text_passage, URIRef(quote_id_uri))
+                            file = subj.split("/")[-1]
+                            label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
+                            create_text_passage_of(quote_id_uri, q, file, label)
+                            pagination_url = mention.get("source")
+                            issue = fa_texts.xpath(f'//issue[child::text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                            published_expression = f"{SK}issue{issue}/published-expression"
+                            create_text_segment_of(
+                                quote_id_uri,
+                                q,
+                                file,
+                                label,
+                                pagination_url,
+                                URIRef(published_expression))
+                            create_intertex_relation_of(quote_id_uri, q, file, subj)
+                            print("no duplicates found; added relation item")
+                        else:
+                            print("quote source ID already in file")
+                find_duplicates_quotes.append(quote_source_slugify)
+                print("finished adding intertextual relations (incl. duplicates). count:",
+                      len(find_duplicates_quotes) - 1)
             else:
                 continue
             create_mention_intertex_relation(subj, i, text_passage, work_uri)
@@ -319,7 +365,7 @@ for x in tqdm(files, total=len(files)):
                 text_id = False
             if text_id:
                 for text in text_id:
-                    if note_source_slugify not in find_duplicates:
+                    if note_source_slugify not in find_duplicates_notes:
                         text_id_uri = f"{SK}{text}"
                         create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
                         file = subj.split("/")[-1]
@@ -338,9 +384,9 @@ for x in tqdm(files, total=len(files)):
                         create_intertex_relation_of(text_id_uri, i, file, subj)
                         print("no duplicates found; added relation item")
                     else:
-                        print("source ID already in file")
-            find_duplicates.append(note_source_slugify)
-            print("finished adding intertextual relations (incl. duplicates). count:", len(find_duplicates) - 1)
+                        print("note source ID already in file")
+            find_duplicates_notes.append(note_source_slugify)
+            print("finished adding intertextual relations (incl. duplicates). count:", len(find_duplicates_notes) - 1)
 
 # cases
 print("lets process cases as E5 Events")
