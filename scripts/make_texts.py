@@ -341,9 +341,9 @@ for x in tqdm(files, total=len(files)):
                             create_text_passage_of(quote_id_uri, q, file, label)
                             pagination_url = mention.get("source")
                             try:
-                                issue = fa_texts.xpath(f'//issue[child::text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                                issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
                             except IndexError:
-                                issue = "issue-not-found"
+                                issue = "Issue-not-found"
                             published_expression = f"{SK}issue{issue}/published-expression"
                             create_text_segment_of(
                                 quote_id_uri,
@@ -353,7 +353,6 @@ for x in tqdm(files, total=len(files)):
                                 pagination_url,
                                 URIRef(published_expression))
                             create_intertex_relation_of(quote_id_uri, q, file, subj)
-                            print("no duplicates found; added relation item")
                         else:
                             print("quote source ID already in file")
                 find_duplicates_quotes.append(quote_source_slugify)
@@ -382,9 +381,9 @@ for x in tqdm(files, total=len(files)):
                         create_text_passage_of(text_id_uri, i, file, label)
                         pagination_url = mention.get("source")
                         try:
-                            issue = fa_texts.xpath(f'//issue[child::text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                            issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
                         except IndexError:
-                            issue = "issue-not-found"
+                            issue = "Issue-not-found"
                         published_expression = f"{SK}issue{issue}/published-expression"
                         create_text_segment_of(
                             text_id_uri,
@@ -394,7 +393,6 @@ for x in tqdm(files, total=len(files)):
                             pagination_url,
                             URIRef(published_expression))
                         create_intertex_relation_of(text_id_uri, i, file, subj)
-                        print("no duplicates found; added relation item")
                     else:
                         print("note source ID already in file")
             find_duplicates_notes.append(note_source_slugify)
