@@ -334,10 +334,16 @@ for x in tqdm(files, total=len(files)):
                             quote_id_uri = f"{SK}{q}"
                             create_mention_intertex_relation(subj, q, text_passage, URIRef(quote_id_uri))
                             file = subj.split("/")[-1]
-                            label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
+                            try:
+                                label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
+                            except IndexError:
+                                label = ""
                             create_text_passage_of(quote_id_uri, q, file, label)
                             pagination_url = mention.get("source")
-                            issue = fa_texts.xpath(f'//issue[child::text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                            try:
+                                issue = fa_texts.xpath(f'//issue[child::text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                            except IndexError:
+                                issue = "issue-not-found"
                             published_expression = f"{SK}issue{issue}/published-expression"
                             create_text_segment_of(
                                 quote_id_uri,
@@ -369,10 +375,16 @@ for x in tqdm(files, total=len(files)):
                         text_id_uri = f"{SK}{text}"
                         create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
                         file = subj.split("/")[-1]
-                        label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
+                        try:
+                            label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
+                        except IndexError:
+                            label = ""
                         create_text_passage_of(text_id_uri, i, file, label)
                         pagination_url = mention.get("source")
-                        issue = fa_texts.xpath(f'//issue[child::text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                        try:
+                            issue = fa_texts.xpath(f'//issue[child::text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                        except IndexError:
+                            issue = "issue-not-found"
                         published_expression = f"{SK}issue{issue}/published-expression"
                         create_text_segment_of(
                             text_id_uri,
