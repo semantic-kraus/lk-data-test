@@ -374,24 +374,24 @@ for x in tqdm(files, total=len(files)):
                         text_id_uri = f"{SK}{text}"
                         create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
                         file = subj.split("/")[-1]
-                        try:
-                            label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
-                        except IndexError:
-                            label = ""
-                        create_text_passage_of(text_id_uri, i, file, label)
-                        pagination_url = mention.get("source")
-                        try:
-                            issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
-                        except IndexError:
-                            issue = "Issue-not-found"
-                        published_expression = f"{SK}issue{issue}/published-expression"
-                        create_text_segment_of(
-                            text_id_uri,
-                            i,
-                            file,
-                            label,
-                            pagination_url,
-                            URIRef(published_expression))
+                        # try:
+                        #     label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
+                        # except IndexError:
+                        #     label = ""
+                        # create_text_passage_of(text_id_uri, i, file, label)
+                        # pagination_url = mention.get("source")
+                        # try:
+                        #     issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                        # except IndexError:
+                        #     issue = "Issue-not-found"
+                        # published_expression = f"{SK}issue{issue}/published-expression"
+                        # create_text_segment_of(
+                        #     text_id_uri,
+                        #     i,
+                        #     file,
+                        #     label,
+                        #     pagination_url,
+                        #     URIRef(published_expression))
                         create_intertex_relation_of(text_id_uri, i, file, subj)
                     else:
                         print("note source ID already in file")
