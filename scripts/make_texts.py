@@ -375,8 +375,7 @@ for x in tqdm(files, total=len(files)):
                 for text in text_id:
                     if note_source_slugify not in find_duplicates_notes:
                         text_id_uri = f"{SK}{text}"
-                        i = ""
-                        create_mention_intertex_relation(subj, i, URIRef(text_id_uri), subj,
+                        create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj,
                                                          text_passage_add="__note-text-notes-lookup")
                     else:
                         print("note source ID already in file")
