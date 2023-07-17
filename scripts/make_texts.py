@@ -334,38 +334,32 @@ for x in tqdm(files, total=len(files)):
                     quote_id = False
                 if quote_id:
                     for q in quote_id:
-                        if quote_source_slugify not in find_duplicates_quotes:
-                            quote_id_uri = f"{SK}{q}"
-                            create_mention_intertex_relation(subj, q, text_passage, URIRef(quote_id_uri),
-                                                             text_passage_add="__quotes-fackel-quotes-lookup")
-                            # remove label add for production
-                            file = subj.split("/")[-1]
-                            try:
-                                label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
-                            except IndexError:
-                                label = ""
-                            create_text_passage_of(quote_id_uri, q, file, label,
-                                                   label_add="quotes-fackel-quotes-lookup")
-                            # remove label add for production
-                            pagination_url = mention.get("source")
-                            try:
-                                issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
-                            except IndexError:
-                                issue = "Issue-not-found"
-                            published_expression = f"{SK}issue{issue}/published-expression"
-                            create_text_segment_of(
-                                quote_id_uri,
-                                q,
-                                file,
-                                label,
-                                pagination_url,
-                                URIRef(published_expression),
-                                label_add="quotes-fackel-quotes-lookup")
-                            create_intertex_relation_of(quote_id_uri, q, file, subj,
-                                                        doc_passage_add="__quotes-fackel-quotes-lookup")
-                            # remove label add for production
-                        else:
-                            print("quote source ID already in file")
+                        work_uri = f"{SK}{q}"
+                        # remove label add for production
+                        file = subj.split("/")[-1]
+                        try:
+                            label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
+                        except IndexError:
+                            label = ""
+                        create_text_passage_of(work_uri, i, file, label, label_add="quotes-fackel-quotes-lookup")
+                        # remove label add for production
+                        pagination_url = mention.get("source")
+                        try:
+                            issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                        except IndexError:
+                            issue = "Issue-not-found"
+                        published_expression = f"{SK}issue{issue}/published-expression"
+                        create_text_segment_of(
+                            work_uri,
+                            i,
+                            file,
+                            label,
+                            pagination_url,
+                            URIRef(published_expression),
+                            label_add="quotes-fackel-quotes-lookup")
+                        create_intertex_relation_of(work_uri, i, file, subj,
+                                                    doc_passage_add="__quotes-fackel-quotes-lookup")
+                        # remove label add for production
                 find_duplicates_quotes.append(quote_source_slugify)
                 print("finished adding intertextual relations (incl. duplicates). count:",
                       len(find_duplicates_quotes) - 1)
@@ -387,26 +381,26 @@ for x in tqdm(files, total=len(files)):
                                                          text_passage_add="__note-text-notes-lookup")
                         # remove label add for production
                         file = subj.split("/")[-1]
-                        try:
-                            label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
-                        except IndexError:
-                            label = ""
-                        create_text_passage_of(text_id_uri, i, file, label, label_add="note-text-notes-lookup")
-                        # remove label add for production
-                        pagination_url = mention.get("source")
-                        try:
-                            issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
-                        except IndexError:
-                            issue = "Issue-not-found"
-                        published_expression = f"{SK}issue{issue}/published-expression"
-                        create_text_segment_of(
-                            text_id_uri,
-                            i,
-                            file,
-                            label,
-                            pagination_url,
-                            URIRef(published_expression),
-                            label_add="note-text-notes-lookup")
+                        # try:
+                        #     label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
+                        # except IndexError:
+                        #     label = ""
+                        # create_text_passage_of(text_id_uri, i, file, label, label_add="note-text-notes-lookup")
+                        # # remove label add for production
+                        # pagination_url = mention.get("source")
+                        # try:
+                        #     issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
+                        # except IndexError:
+                        #     issue = "Issue-not-found"
+                        # published_expression = f"{SK}issue{issue}/published-expression"
+                        # create_text_segment_of(
+                        #     text_id_uri,
+                        #     i,
+                        #     file,
+                        #     label,
+                        #     pagination_url,
+                        #     URIRef(published_expression),
+                        #     label_add="note-text-notes-lookup")
                         create_intertex_relation_of(text_id_uri, i, file, subj,
                                                     doc_passage_add="__note-text-notes-lookup")
                         # remove label add for production
