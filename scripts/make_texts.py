@@ -377,8 +377,8 @@ for x in tqdm(files, total=len(files)):
                 for text in text_id:
                     if note_source_slugify not in find_duplicates_notes:
                         text_id_uri = f"{SK}{text}"
-                        create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj,
-                                                         text_passage_add="__note-text-notes-lookup")
+                        # create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj,
+                        #                                  text_passage_add="__note-text-notes-lookup")
                         # remove label add for production
                         file = subj.split("/")[-1]
                         # try:
@@ -401,7 +401,7 @@ for x in tqdm(files, total=len(files)):
                         #     pagination_url,
                         #     URIRef(published_expression),
                         #     label_add="note-text-notes-lookup")
-                        create_intertex_relation_of(text_id_uri, i, file, subj,
+                        create_intertex_relation_of(subj, i, text, subj,
                                                     doc_passage_add="__note-text-notes-lookup")
                         # remove label add for production
                     else:
