@@ -257,7 +257,6 @@ for x in tqdm(files, total=len(files)):
     note_inter_xpath = ".//tei:note[@type='intertext']"
     # # duplicated source values in notes[@type="intertext"] are filtered out
     find_duplicates_notes = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
-    find_duplicates_quotes = ["https-fackel-oeaw-ac-at-PLACEHOLDER"]
     for i, mention in enumerate(doc.any_xpath(f"{rs_xpath}|{quote_xpath}|{quote_xpath_fackel}|{note_inter_xpath}")):
         mention_wording = Literal(
             normalize_string(" ".join(mention.xpath(".//text()"))), lang="und"
@@ -360,12 +359,11 @@ for x in tqdm(files, total=len(files)):
                         create_intertex_relation_of(work_uri, i, file, subj,
                                                     doc_passage_add="__quotes-fackel-quotes-lookup")
                         # remove label add for production
-                find_duplicates_quotes.append(quote_source_slugify)
-                print("finished adding intertextual relations (incl. duplicates). count:",
-                      len(find_duplicates_quotes) - 1)
+                print("finished adding intertextual relations (incl. duplicates)")
             else:
                 continue
-            create_mention_intertex_relation(subj, i, text_passage, work_uri)
+            create_mention_intertex_relation(subj, i, text_passage, work_uri,
+                                             text_passage_add="__quotes-fackel-quotes-lookup")
         elif mention.xpath("local-name()='note'"):
             note_source = mention.get("source")
             note_source_slugify = slugify(note_source)
@@ -377,33 +375,9 @@ for x in tqdm(files, total=len(files)):
                 for text in text_id:
                     if note_source_slugify not in find_duplicates_notes:
                         text_id_uri = f"{SK}{text}"
-                        # create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj,
-                        #                                  text_passage_add="__note-text-notes-lookup")
-                        # remove label add for production
-                        file = subj.split("/")[-1]
-                        # try:
-                        #     label = fa_texts.xpath(f'//text[@id="{text}"]/@titleText', namespaces=NSMAP)[0]
-                        # except IndexError:
-                        #     label = ""
-                        # create_text_passage_of(text_id_uri, i, file, label, label_add="note-text-notes-lookup")
-                        # # remove label add for production
-                        # pagination_url = mention.get("source")
-                        # try:
-                        #     issue = fa_texts.xpath(f'//issue[.//text[@id="{text}"]]/@issue', namespaces=NSMAP)[0]
-                        # except IndexError:
-                        #     issue = "Issue-not-found"
-                        # published_expression = f"{SK}issue{issue}/published-expression"
-                        # create_text_segment_of(
-                        #     text_id_uri,
-                        #     i,
-                        #     file,
-                        #     label,
-                        #     pagination_url,
-                        #     URIRef(published_expression),
-                        #     label_add="note-text-notes-lookup")
-                        create_intertex_relation_of(subj, i, text, subj,
-                                                    doc_passage_add="__note-text-notes-lookup")
-                        # remove label add for production
+                        i = ""
+                        create_mention_intertex_relation(subj, i, URIRef(text_id_uri), subj,
+                                                         text_passage_add="__note-text-notes-lookup")
                     else:
                         print("note source ID already in file")
             find_duplicates_notes.append(note_source_slugify)
