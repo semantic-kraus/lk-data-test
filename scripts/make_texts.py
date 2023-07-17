@@ -96,8 +96,8 @@ def create_mention_intertex_relation(subj, i, text_passage, work_uri, text_passa
 # remove label add for production
 def create_intertex_relation_of(subj, i, file, doc_passage, doc_passage_add="__placeholder"):
     intertext_relation = URIRef(f"{subj}/relation/{file}/{i}")
-    text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    doc_passage = URIRef(f"{doc_passage}/passage/{i}")
+    text_passage_uri = URIRef(f"{subj}/passage/{file}/{i}")
+    doc_passage_uri = URIRef(f"{doc_passage}/passage/{i}")
     g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
     g.add(
         (
@@ -106,8 +106,8 @@ def create_intertex_relation_of(subj, i, file, doc_passage, doc_passage_add="__p
             Literal(f"Intertextual relation{doc_passage_add}", lang="en"),
         )
     )
-    g.add((intertext_relation, INT["R13_has_referring_entity"], doc_passage))
-    g.add((intertext_relation, INT["R12_has_referred_to_entity"], text_passage))
+    g.add((intertext_relation, INT["R13_has_referring_entity"], doc_passage_uri))
+    g.add((intertext_relation, INT["R12_has_referred_to_entity"], text_passage_uri))
 
 
 # build uri lookup dict for listwork.xml
@@ -334,7 +334,7 @@ for x in tqdm(files, total=len(files)):
                     quote_id = False
                 if quote_id:
                     for q in quote_id:
-                        work_uri = f"{SK}{q}"
+                        work_uri = URIRef(f"{SK}{q}")
                         # remove label add for production
                         file = subj.split("/")[-1]
                         try:
