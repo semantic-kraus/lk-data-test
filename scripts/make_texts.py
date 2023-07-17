@@ -25,7 +25,7 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
     text_passage = URIRef(f"{subj}/passage/{i}")
     text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-    g.add((text_passage, RDFS.label, text_passage_label))
+    g.add((text_passage, RDFS.label, Literal(text_passage_label)))
     g.add((text_passage, INT["R44_has_wording"], mention_wording))
     g.add((subj, INT["R10_has_Text_Passage"], text_passage))
     return text_passage
@@ -36,7 +36,7 @@ def create_text_passage_of(subj, i, file, label, label_add="placeholder"):
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
     text_passage_label = Literal(f"Text passage from: {label}", lang="en")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-    g.add((text_passage, RDFS.label, f"{text_passage_label}__{label_add}"))
+    g.add((text_passage, RDFS.label, Literal(f"{text_passage_label}__{label_add}")))
     g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
     return text_passage
 
@@ -47,7 +47,7 @@ def create_mention_text_segment(
     text_segment = URIRef(f"{subj}/segment/{i}")
     text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, text_segment_label))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R44_has_wording"], mention_wording))
     try:
@@ -69,7 +69,7 @@ def create_text_segment_of(
     text_segment_label = Literal(f"Text segment from: {label}", lang="en")
     pagination_label = pagination_url.split(',')[-1]
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, f"{text_segment_label}__{label_add}"))
+    g.add((text_segment, RDFS.label, Literal(f"{text_segment_label}__{label_add}")))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination_label}")))
     g.add((text_segment, INT["R41_has_location"], Literal(pagination_url)))
