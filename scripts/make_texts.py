@@ -32,11 +32,11 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
 
 
 # remove label add for production
-def create_text_passage_of(subj, i, file, label, label_add="placeholder"):
+def create_text_passage_of(subj, i, file, label):
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
     text_passage_label = Literal(f"Text passage from: {label}", lang="en")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-    g.add((text_passage, RDFS.label, Literal(f"{text_passage_label}__{label_add}")))
+    g.add((text_passage, RDFS.label, Literal(text_passage_label)))
     g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
     return text_passage
 
@@ -62,14 +62,14 @@ def create_mention_text_segment(
 
 # remove label add for production
 def create_text_segment_of(
-    subj, i, file, label, pagination_url, published_expression, label_add="placeholder"
+    subj, i, file, label, pagination_url, published_expression
 ):
     text_segment = URIRef(f"{subj}/segment/{file}/{i}")
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
     text_segment_label = Literal(f"Text segment from: {label}", lang="en")
     pagination_label = pagination_url.split(',')[-1]
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, Literal(f"{text_segment_label}__{label_add}")))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination_label}")))
     g.add((text_segment, INT["R41_has_location"], Literal(pagination_url)))
@@ -79,14 +79,14 @@ def create_text_segment_of(
 
 
 # remove label add for production
-def create_mention_intertex_relation(subj, i, text_passage, work_uri, text_passage_add="__placeholder"):
+def create_mention_intertex_relation(subj, i, text_passage, work_uri):
     intertext_relation = URIRef(f"{subj}/relation/{i}")
     g.add((intertext_relation, RDF.type, INT["INT3_IntertextualRelationship"]))
     g.add(
         (
             intertext_relation,
             RDFS.label,
-            Literal(f"Intertextual relation{text_passage_add}", lang="en"),
+            Literal("Intertextual relation", lang="en"),
         )
     )
     g.add((intertext_relation, INT["R13_has_referring_entity"], text_passage))
@@ -94,7 +94,7 @@ def create_mention_intertex_relation(subj, i, text_passage, work_uri, text_passa
 
 
 # remove label add for production
-def create_intertex_relation_of(subj, i, file, doc_passage, doc_passage_add="__placeholder"):
+def create_intertex_relation_of(subj, i, file, doc_passage):
     intertext_relation = URIRef(f"{subj}/relation/{file}/{i}")
     text_passage_uri = URIRef(f"{subj}/passage/{file}/{i}")
     doc_passage_uri = URIRef(f"{doc_passage}/passage/{i}")
@@ -103,7 +103,7 @@ def create_intertex_relation_of(subj, i, file, doc_passage, doc_passage_add="__p
         (
             intertext_relation,
             RDFS.label,
-            Literal(f"Intertextual relation{doc_passage_add}", lang="en"),
+            Literal("Intertextual relation", lang="en"),
         )
     )
     g.add((intertext_relation, INT["R13_has_referring_entity"], doc_passage_uri))
@@ -333,15 +333,14 @@ for x in tqdm(files, total=len(files)):
                     quote_id = False
                 if quote_id:
                     for q in quote_id:
-                        work_uri = URIRef(f"{SK}{q}")
-                        # remove label add for production
+                        text_uri = URIRef(f"{SK}{q}")
                         file = subj.split("/")[-1]
+                        work_uri = URIRef(f"{SK}{q}/passage/{file}/{i}")
                         try:
                             label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
                         except IndexError:
                             label = ""
-                        create_text_passage_of(work_uri, i, file, label, label_add="quotes-fackel-quotes-lookup")
-                        # remove label add for production
+                        create_text_passage_of(text_uri, i, file, label)
                         pagination_url = mention.get("source")
                         try:
                             issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
@@ -349,21 +348,16 @@ for x in tqdm(files, total=len(files)):
                             issue = "Issue-not-found"
                         published_expression = f"{SK}issue{issue}/published-expression"
                         create_text_segment_of(
-                            work_uri,
+                            text_uri,
                             i,
                             file,
                             label,
                             pagination_url,
-                            URIRef(published_expression),
-                            label_add="quotes-fackel-quotes-lookup")
-                        create_intertex_relation_of(work_uri, i, file, subj,
-                                                    doc_passage_add="__quotes-fackel-quotes-lookup")
-                        # remove label add for production
+                            URIRef(published_expression))
                 print("finished adding intertextual relations (incl. duplicates)")
             else:
                 continue
-            create_mention_intertex_relation(subj, i, text_passage, work_uri,
-                                             text_passage_add="__quotes-fackel-quotes-lookup")
+            create_mention_intertex_relation(subj, i, text_passage, work_uri)
         elif mention.xpath("local-name()='note'"):
             note_source = mention.get("source")
             note_source_slugify = slugify(note_source)
@@ -375,8 +369,7 @@ for x in tqdm(files, total=len(files)):
                 for text in text_id:
                     if note_source_slugify not in find_duplicates_notes:
                         text_id_uri = f"{SK}{text}"
-                        create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj,
-                                                         text_passage_add="__note-text-notes-lookup")
+                        create_mention_intertex_relation(subj, text, URIRef(text_id_uri), subj)
                     else:
                         print("note source ID already in file")
             find_duplicates_notes.append(note_source_slugify)
