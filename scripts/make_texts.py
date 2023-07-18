@@ -349,9 +349,10 @@ for x in tqdm(files, total=len(files)):
                     work_uri = URIRef(f"{SK}{work_id}")
                     create_mention_intertex_relation(subj, i, text_passage, work_uri)
             elif mention.get("subtype") == "fackel":
-                ref_id = mention.attrib["ref"].lstrip("#")
-                issue_uri = URIRef(bibl_idno_lookup_dict[ref_id])
-                create_mention_intertex_relation(subj, i, text_passage, issue_uri)
+                if mention.attrib["ref"].startswith("#"):
+                    ref_id = mention.attrib["ref"].lstrip("#")
+                    issue_uri = URIRef(bibl_idno_lookup_dict[ref_id])
+                    create_mention_intertex_relation(subj, i, text_passage, issue_uri)
         elif mention.xpath("local-name()='quote'"):
             work_id = mention.get("source").lstrip("#").replace(".xml", "")
             if work_id.isnumeric():
