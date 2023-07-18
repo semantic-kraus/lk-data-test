@@ -129,6 +129,26 @@ for x in tqdm(items, total=len(items)):
     else:
         bibl_class_lookup_dict[xml_id] = f"{SK}{xml_id}"
 
+# build uri lookup dict for listfackel.xml
+
+listfackel = "./data/indices/listfackel.xml"
+doc = TeiReader(listfackel)
+items = doc.any_xpath(".//tei:listBibl/tei:bibl[./tei:idno[@type='fackel']]")
+nsmap = doc.nsmap
+bibl_idno_lookup_dict = {}
+for x in tqdm(items, total=len(items)):
+    try:
+        xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+    except Exception as e:
+        print(x, e)
+        continue
+    try:
+        idno_text = x.xpath("./tei:idno[@type='fackel']/text()", namespaces=nsmap)[0]
+    except Exception as e:
+        print(x, e)
+        continue
+    bibl_idno_lookup_dict[xml_id] = f"{SK}{idno_text}"
+
 
 rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
@@ -314,6 +334,10 @@ for x in tqdm(files, total=len(files)):
                     work_id = ref_val.split("/")[-1].replace(".xml", "")
                     work_uri = URIRef(f"{SK}{work_id}")
                     create_mention_intertex_relation(subj, i, text_passage, work_uri)
+            elif mention.get("subtype") == "fackel":
+                ref_id = mention.attrib["ref"].lstrip("#")
+                issue_uri = URIRef(bibl_idno_lookup_dict[ref_id])
+                create_mention_intertex_relation(subj, i, text_passage, issue_uri)
         elif mention.xpath("local-name()='quote'"):
             work_id = mention.get("source").lstrip("#").replace(".xml", "")
             if work_id.isnumeric():
