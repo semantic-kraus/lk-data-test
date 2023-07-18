@@ -57,7 +57,7 @@ for x in tqdm(items, total=len(items)):
         ):
             if "/appellation/" in appellation_uri:
                 g.add((appellation_uri, CIDOC["P2_has_Type"], URIRef(f"{type_uri}")))
-    g += make_occupations(subj, x, default_lang="de")[0]
+    g += make_occupations(subj, x, default_lang="de", special_label="works for: ")[0]
     # g += make_affiliations(
     #     subj,
     #     x,
