@@ -78,6 +78,20 @@ def create_text_segment_of(
     return text_segment
 
 
+def create_text_segment_d(
+    subj, i, file, label, arche_id_value
+):
+    text_segment = URIRef(f"{subj}/segment/{file}/{i}")
+    text_passage = URIRef(f"{subj}/passage/{file}/{i}")
+    text_segment_label = Literal(f"Text segment from: {label}", lang="en")
+    g.add((text_segment, RDF.type, INT["INT16_Segment"]))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
+    g.add((text_segment, INT["R16_incorporates"], text_passage))
+    g.add((text_segment, INT["R41_has_location"], Literal(f"{arche_id_value}")))
+    g.add((text_segment, CIDOC["P128i_is_carried_by"], URIRef(f"{subj}/carrier")))
+    return text_segment
+
+
 # remove label add for production
 def create_mention_intertex_relation(subj, i, text_passage, work_uri):
     intertext_relation = URIRef(f"{subj}/relation/{i}")
@@ -348,7 +362,9 @@ for x in tqdm(files, total=len(files)):
                     print(f"quote: no uri for ref {work_id} found")
                     continue
             elif work_id.startswith("D"):
-                work_uri = URIRef(f"{SK}{work_id}")
+                work_uri = URIRef(f"{SK}{work_id}/passage/{xml_id}/{i}")
+                create_text_passage_of(subj, i, xml_id, work_id)
+                create_text_segment_d(subj, i, xml_id, work_id, arche_id_value)
             elif work_id.startswith("https://fackel"):
                 quote_source_slugify = slugify(work_id)
                 try:
@@ -358,13 +374,12 @@ for x in tqdm(files, total=len(files)):
                 if quote_id:
                     for q in quote_id:
                         text_uri = URIRef(f"{SK}{q}")
-                        file = subj.split("/")[-1]
-                        work_uri = URIRef(f"{SK}{q}/passage/{file}/{i}")
+                        work_uri = URIRef(f"{SK}{q}/passage/{xml_id}/{i}")
                         try:
                             label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
                         except IndexError:
                             label = ""
-                        create_text_passage_of(text_uri, i, file, label)
+                        create_text_passage_of(text_uri, i, xml_id, label)
                         pagination_url = mention.get("source")
                         try:
                             issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
@@ -374,7 +389,7 @@ for x in tqdm(files, total=len(files)):
                         create_text_segment_of(
                             text_uri,
                             i,
-                            file,
+                            xml_id,
                             label,
                             pagination_url,
                             URIRef(published_expression))
