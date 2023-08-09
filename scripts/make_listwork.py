@@ -388,7 +388,7 @@ for x in tqdm(items, total=len(items)):
                     Literal(f"Periodical: {title_j_text}", lang="en"),
                 )
             )
-            if item_sk_type == "journal":
+            if item_sk_type in ["journal", "issue", "article"]:
                 periodical_uri_appellation = URIRef(
                     f"{periodical_uri.replace('published-expression', '')}appellation/0")
             else:
@@ -402,7 +402,7 @@ for x in tqdm(items, total=len(items)):
                 except KeyError:
                     appellation_type = main_appellation_type_uri
                 cur_title_text = normalize_string(title.text)
-                if item_sk_type == "journal":
+                if item_sk_type in ["journal", "issue", "article"]:
                     pub_expr_appellation_e90 = URIRef(
                         f"{periodical_uri.replace('published-expression', '')}appellation-title/{i}"
                     )
@@ -411,7 +411,17 @@ for x in tqdm(items, total=len(items)):
                         f"{periodical_uri}/appellation-title/{i}"
                     )
                 g.add(
+                    (pub_expr_appellation_e90, RDF.type, CIDOC["E90_Symbolic_Object"])
+                )
+                g.add(
                     (pub_expr_appellation_e90, CIDOC["P2_has_type"], appellation_type)
+                )
+                g.add(
+                    (
+                        periodical_uri_appellation,
+                        RDF.type,
+                        CIDOC["E33_E41_Linguistic_Appellation"],
+                    )
                 )
                 g.add(
                     (
