@@ -363,10 +363,9 @@ for x in tqdm(files, total=len(files)):
                     print(f"quote: no uri for ref {work_id} found")
                     continue
             elif work_id.startswith("D"):
-                work_uri = URIRef(f"{SK}{work_id}")
-                arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{work_id}.xml"
-                create_text_passage_of(work_uri, i, xml_id, work_id)
-                create_text_segment_d(work_uri, i, xml_id, work_id, arche_id_value)
+                work_uri = URIRef(f"{SK}{work_id}/passage/{xml_id}/{i}")
+                create_text_passage_of(subj, i, xml_id, work_id)
+                create_text_segment_d(subj, i, xml_id, work_id, arche_id_value)
             elif work_id.startswith("https://fackel"):
                 quote_source_slugify = slugify(work_id)
                 try:
