@@ -4,9 +4,9 @@ from acdh_cidoc_pyutils import (
     make_appellations,
     make_e42_identifiers,
     make_birth_death_entities,
-    make_occupations,
     make_entity_label,
 )
+from utils.utilities import make_occupations_type_req
 from acdh_cidoc_pyutils.namespaces import CIDOC
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal
@@ -57,7 +57,9 @@ for x in tqdm(items, total=len(items)):
         ):
             if "/appellation/" in appellation_uri:
                 g.add((appellation_uri, CIDOC["P2_has_Type"], URIRef(f"{type_uri}")))
-    g += make_occupations(subj, x, default_lang="de", special_label="works for: ")[0]
+    occupations = make_occupations_type_req(subj, x, default_lang="de", special_label="works for: ", type_required="sk")
+    print(occupations)
+    g += occupations
     # g += make_affiliations(
     #     subj,
     #     x,
