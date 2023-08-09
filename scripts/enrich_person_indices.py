@@ -38,7 +38,7 @@ def enrich_settlements(node):
             print(f"added place ids to {settlement_key}")
 
 
-for person in listperson.any_xpath("//tei:listPerson/tei:person"):
+for person in listperson.any_xpath(".//tei:listPerson/tei:person"):
     if person.xpath("./tei:birth[./tei:settlement]", namespaces=nsmap):
         settlement_node = person.xpath("./tei:birth/tei:settlement", namespaces=nsmap)[0]
         enrich_settlements(settlement_node)

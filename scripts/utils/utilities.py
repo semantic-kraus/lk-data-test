@@ -1,5 +1,5 @@
 from lxml.etree import Element
-from rdflib import Graph, Literal, URIRef, RDF, RDFS
+from rdflib import Graph, Literal, URIRef, RDF, RDFS, OWL
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP
 from acdh_cidoc_pyutils import (
     normalize_string,
@@ -62,4 +62,76 @@ def make_occupations_type_req(
                 end_of_end=end,
                 not_known_value=not_known_value,
             )
+    return g
+
+
+def make_e42_identifiers_utils(
+    subj: URIRef,
+    node: Element,
+    type_domain="https://foo-bar/",
+    default_lang="de",
+    set_lang=False,
+    same_as=True,
+    default_prefix="Identifier: ",
+) -> Graph:
+    g = Graph()
+    try:
+        lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
+    except KeyError:
+        lang = default_lang
+    if set_lang:
+        pass
+    else:
+        lang = "und"
+    xml_id = node.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+    label_value = normalize_string(f"{default_prefix}{xml_id}")
+    if not type_domain.endswith("/"):
+        type_domain = f"{type_domain}/"
+    app_uri = URIRef(f"{subj}/identifier/{xml_id}")
+    type_uri = URIRef(f"{type_domain}idno/xml-id")
+    approx_uri = URIRef(f"{type_domain}date/approx")
+    g.add((approx_uri, RDF.type, CIDOC["E55_Type"]))
+    g.add((approx_uri, RDFS.label, Literal("approx")))
+    g.add((type_uri, RDF.type, CIDOC["E55_Type"]))
+    g.add((subj, CIDOC["P1_is_identified_by"], app_uri))
+    g.add((app_uri, RDF.type, CIDOC["E42_Identifier"]))
+    g.add((app_uri, RDFS.label, Literal(label_value, lang=lang)))
+    g.add((app_uri, RDF.value, Literal(normalize_string(xml_id))))
+    g.add((app_uri, CIDOC["P2_has_type"], type_uri))
+    events_types = {}
+    for i, x in enumerate(node.xpath(".//tei:event[@type]", namespaces=NSMAP)):
+        events_types[x.attrib["type"]] = x.attrib["type"]
+    if events_types:
+        for i, x in enumerate(events_types.keys()):
+            event_type_uri = URIRef(f"{type_domain}event/{x}")
+            g.add((event_type_uri, RDF.type, CIDOC["E55_Type"]))
+            g.add((event_type_uri, RDFS.label, Literal(x, lang=default_lang)))
+    for i, x in enumerate(node.xpath("./tei:idno[not(@subtype='schnitzler-briefe')]", namespaces=NSMAP)):
+        idno_type_base_uri = f"{type_domain}idno"
+        if x.text:
+            idno_uri = URIRef(f"{subj}/identifier/idno/{i}")
+            g.add((subj, CIDOC["P1_is_identified_by"], idno_uri))
+            idno_type = x.get("type")
+            if idno_type:
+                idno_type_base_uri = f"{idno_type_base_uri}/{idno_type}"
+            idno_type = x.get("subtype")
+            if idno_type:
+                idno_type_base_uri = f"{idno_type_base_uri}/{idno_type}"
+            g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
+            g.add((idno_uri, CIDOC["P2_has_type"], URIRef(idno_type_base_uri)))
+            g.add((URIRef(idno_type_base_uri), RDF.type, CIDOC["E55_Type"]))
+            label_value = normalize_string(f"{default_prefix}{x.text}")
+            g.add((idno_uri, RDFS.label, Literal(label_value, lang=lang)))
+            g.add((idno_uri, RDF.value, Literal(normalize_string(x.text))))
+            if same_as:
+                if x.text.startswith("http"):
+                    g.add(
+                        (
+                            subj,
+                            OWL.sameAs,
+                            URIRef(
+                                x.text,
+                            ),
+                        )
+                    )
     return g
