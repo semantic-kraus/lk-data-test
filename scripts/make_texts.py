@@ -369,7 +369,7 @@ for x in tqdm(files, total=len(files)):
                                                                             f"{work_uri}/passage/")
                 create_text_passage_of(work_uri, i, xml_id, work_id)
                 create_text_segment_d(work_uri, i, xml_id, work_id, arche_id_value)
-            elif work_id.startswith("https://fackel"):
+            elif work_id.startswith("https://fackel") and not work_id.endswith("0u4"):
                 quote_source_slugify = slugify(work_id)
                 try:
                     quote_id = int_lookup_quotes[str(quote_source_slugify)]
