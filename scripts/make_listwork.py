@@ -60,8 +60,10 @@ ed_issue_type_uri = URIRef(f"{SK}types/appellation/ed")
 main_title_type = URIRef(f"{SK}types/title/main")
 sub_title_type = URIRef(f"{SK}types/title/sub")
 translation = URIRef(f"{SK}types/translation")
+event_first = URIRef(f"{SK}types/event/first")
 
 
+g.add((event_first, RDF.type, CIDOC["E55_Type"]))
 g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((translation, RDF.type, CIDOC["E55_Type"]))
@@ -198,6 +200,32 @@ for x in tqdm(items, total=len(items)):
 
     if item_sk_type == "standalone_text":
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
+        subj_performance = URIRef(f"{subj}/performance")
+        g.add((subj_performance, RDF.type, FRBROO["F31_Performance"]))
+        g.add((subj_performance,
+               RDFS.label,
+               Literal(f"Performance / Recital of: {label_value}", lang="en")))
+        g.add((subj_performance, CIDOC["P2_has_type"], event_first))
+        g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
+        try:
+            pub_date = x.xpath(
+                './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
+            )[0]
+            from_sk = True
+        except IndexError:
+            from_sk = False
+            try:
+                pub_date = x.xpath("./tei:date", namespaces=nsmap)[0]
+            except IndexError:
+                pub_date = None
+        if from_sk:
+            time_span_uri = URIRef(f"{subj}/performance/time-span")
+            g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
+            g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
+            start, end = extract_begin_end(pub_date)
+            g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
+            g.add((time_span_uri, RDFS.label, Literal(f"{pub_date}", lang="en")))
+            g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
     if item_sk_type == "article":
         g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
         article_segment = URIRef(f"{subj}/segment")
@@ -731,7 +759,7 @@ for x in tqdm(items, total=len(items)):
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
             if a.get("role") == "hat-ubersetzt":
                 g.add((creation_orig, CIDOC["P14_carried_out_by"], author_uri))
-    if item_sk_type not in ["journal", "issue", "article"]:
+    if item_sk_type not in ["journal", "issue", "article", "standalone_text"]:
         try:
             pub_date = x.xpath(
                 './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
