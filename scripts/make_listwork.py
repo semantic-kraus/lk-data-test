@@ -330,7 +330,7 @@ for x in tqdm(items, total=len(items)):
                     (
                         pub_expr_appellation_e90,
                         RDF.value,
-                        Literal(f"{cur_title_text}", lang="en"),
+                        Literal(f"{cur_title_text}"),
                     )
                 )
                 g.add(
@@ -410,7 +410,7 @@ for x in tqdm(items, total=len(items)):
                     (
                         pub_expr_appellation_e90,
                         RDF.value,
-                        Literal(f"{cur_title_text}", lang="en"),
+                        Literal(f"{cur_title_text}"),
                     )
                 )
 
@@ -528,7 +528,7 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{date_text}", lang="en"),
+                            Literal(f"{date_text}"),
                         )
                     )
                     try:
@@ -570,7 +570,7 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{note_text}", lang="en"),
+                            Literal(f"{note_text}"),
                         )
                     )
 
@@ -616,7 +616,7 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{num_text}", lang="en"),
+                            Literal(f"{num_text}"),
                         )
                     )
                 for i, title in enumerate(
@@ -670,7 +670,7 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{cur_title_text}", lang="en"),
+                            Literal(f"{cur_title_text}"),
                         )
                     )
             if issue_uri != subj:
