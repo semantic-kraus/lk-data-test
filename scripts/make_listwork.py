@@ -393,6 +393,7 @@ for x in tqdm(items, total=len(items)):
                     f"{periodical_uri.replace('published-expression', '')}appellation/0")
             else:
                 periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
+            g.add((periodical_uri, FRBROO["P1_is_identified_by"], periodical_uri_appellation))
             for i, title in enumerate(
                 bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
             ):
