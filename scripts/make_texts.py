@@ -365,10 +365,9 @@ for x in tqdm(files, total=len(files)):
             elif work_id.startswith("D"):
                 work_uri = URIRef(f"{SK}{work_id}")
                 arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{work_id}.xml"
-                text_passage = text_passage.replace("/passage", "").replace("https://sk.acdh.oeaw.ac.at/",
-                                                                            f"{work_uri}/passage/")
                 create_text_passage_of(work_uri, i, xml_id, work_id)
                 create_text_segment_d(work_uri, i, xml_id, work_id, arche_id_value)
+                work_uri = URIRef(f"{SK}{work_id}/passage/{xml_id}/{i}")
             elif work_id.startswith("https://fackel") and not work_id.endswith("0u4"):
                 quote_source_slugify = slugify(work_id)
                 try:
