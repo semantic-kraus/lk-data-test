@@ -73,7 +73,7 @@ for x in tqdm(items, total=len(items)):
     except Exception as e:
         print(x, e)
         continue
-    item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
+    item_sk_type = x.xpath("./tei:bibl[@type='sk']/@subtype", namespaces=nsmap)[0]
     for title in x.xpath(
         './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
     ):
@@ -200,32 +200,36 @@ for x in tqdm(items, total=len(items)):
 
     if item_sk_type == "standalone_text":
         g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
-        subj_performance = URIRef(f"{subj}/performance")
-        g.add((subj_performance, RDF.type, FRBROO["F31_Performance"]))
-        g.add((subj_performance,
-               RDFS.label,
-               Literal(f"Performance / Recital of: {label_value}", lang="en")))
-        g.add((subj_performance, CIDOC["P2_has_type"], event_first))
-        g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
         try:
-            pub_date = x.xpath(
-                './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
-            )[0]
-            from_sk = True
+            premiere = x.xpath("./tei:bibl[parent::tei:bibl/tei:date[@type='premiere']]", namespaces=nsmap)[0]
         except IndexError:
-            from_sk = False
+            premiere = False
+        if premiere:
+            subj_performance = URIRef(f"{subj}/performance")
+            g.add((subj_performance, RDF.type, FRBROO["F31_Performance"]))
+            g.add((subj_performance, RDFS.label,
+                   Literal(f"Performance / Recital of: {label_value}", lang="en")))
+            g.add((subj_performance, CIDOC["P2_has_type"], event_first))
+            g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
             try:
-                pub_date = x.xpath("./tei:date", namespaces=nsmap)[0]
+                pub_date = x.xpath(
+                    "./tei:date[@type='premiere']",
+                    namespaces=nsmap
+                )[0]
+                from_sk = True
             except IndexError:
-                pub_date = None
-        if from_sk:
-            time_span_uri = URIRef(f"{subj}/performance/time-span")
-            g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
-            g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
-            start, end = extract_begin_end(pub_date)
-            g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
-            g.add((time_span_uri, RDFS.label, Literal(f"{pub_date}", lang="en")))
-            g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
+                from_sk = False
+                try:
+                    pub_date = x.xpath("./tei:date[@type='premiere']", namespaces=nsmap)[0]
+                except IndexError:
+                    pub_date = None
+            if from_sk:
+                time_span_uri = URIRef(f"{subj}/performance/time-span")
+                g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
+                g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
+                start, end = extract_begin_end(pub_date)
+                g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
+                g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
     if item_sk_type == "article":
         g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
         article_segment = URIRef(f"{subj}/segment")
