@@ -204,7 +204,7 @@ for x in tqdm(items, total=len(items)):
             premiere = x.xpath("./tei:bibl[parent::tei:bibl/tei:date[@type='premiere']]", namespaces=nsmap)[0]
         except IndexError:
             premiere = False
-        if premiere:
+        if premiere is not False:
             subj_performance = URIRef(f"{subj}/performance")
             g.add((subj_performance, RDF.type, FRBROO["F31_Performance"]))
             g.add((subj_performance, RDFS.label,
@@ -213,17 +213,17 @@ for x in tqdm(items, total=len(items)):
             g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
             try:
                 pub_date = x.xpath(
-                    "./tei:date[@type='premiere']",
+                    "./tei:date[@type='premiere' and @when-iso]",
                     namespaces=nsmap
                 )[0]
                 from_sk = True
             except IndexError:
                 from_sk = False
-                try:
-                    pub_date = x.xpath("./tei:date[@type='premiere']", namespaces=nsmap)[0]
-                except IndexError:
-                    pub_date = None
-            if from_sk:
+                # try:
+                #     pub_date = x.xpath("./tei:date[@type='premiere']", namespaces=nsmap)[0]
+                # except IndexError:
+                #     pub_date = None
+            if from_sk is not False:
                 time_span_uri = URIRef(f"{subj}/performance/time-span")
                 g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
                 g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
@@ -459,7 +459,8 @@ for x in tqdm(items, total=len(items)):
 
             try:
                 title_date = x.xpath(
-                    "./tei:bibl[@type='sk']/tei:date", namespaces=nsmap
+                    "./tei:bibl[@type='sk']/tei:date",
+                    namespaces=nsmap
                 )[0]
             except IndexError:
                 continue
@@ -731,10 +732,11 @@ for x in tqdm(items, total=len(items)):
             g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
             title_j_key_pub_exp = URIRef(f"{SK}{title_j_key}/published-expression")
             g.add((issue_uri_pub_event_uri, FRBROO["R5i_is_component_of"], title_j_key_pub_exp))
-            start, end = extract_begin_end(title_date)
-            ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
-            g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
-            g.add((issue_uri_pub_event_uri, CIDOC["P4_has_time-span"], ts_uri))
+            if title_date is not None and title_date.get("when-iso") is not None:
+                start, end = extract_begin_end(title_date)
+                ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
+                g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
+                g.add((issue_uri_pub_event_uri, CIDOC["P4_has_time-span"], ts_uri))
 
     # authors
     uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
@@ -777,13 +779,13 @@ for x in tqdm(items, total=len(items)):
     if item_sk_type not in ["journal", "issue", "article", "standalone_text"]:
         try:
             pub_date = x.xpath(
-                './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
+                './tei:bibl[@type="sk"]/tei:date[@when-iso]', namespaces=nsmap
             )[0]
             from_sk = True
         except IndexError:
             from_sk = False
             try:
-                pub_date = x.xpath("./tei:date", namespaces=nsmap)[0]
+                pub_date = x.xpath("./tei:date[text()]", namespaces=nsmap)[0]
             except IndexError:
                 pub_date = None
         if pub_date is not None:
@@ -811,17 +813,17 @@ for x in tqdm(items, total=len(items)):
             else:
                 g.add((pub_event_uri, FRBROO["R24_created"], subj))
             time_span_uri = URIRef(f"{pub_event_uri}/time-span")
-            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
-            if from_sk:
+            if from_sk is not False:
                 begin, end = extract_begin_end(pub_date)
+                g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
             else:
                 if " – " in pub_date.text:
                     begin, end = pub_date.text.split(" – ")
                 else:
                     begin = pub_date.text
                     end = begin
-            g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
-            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
+                g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
+                g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
 print("writing graph to file: listworks.trig")
 # g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
 g_all = ConjunctiveGraph(store=project_store)
