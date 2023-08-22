@@ -227,7 +227,8 @@ for x in tqdm(items, total=len(items)):
                 time_span_uri = URIRef(f"{subj}/performance/time-span")
                 g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
                 g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
-                start, end = extract_begin_end(pub_date)
+                start = pub_date.get("when-iso")
+                end = pub_date.get("when-iso")
                 g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
                 g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
     if item_sk_type == "article":
@@ -397,7 +398,7 @@ for x in tqdm(items, total=len(items)):
                     f"{periodical_uri.replace('published-expression', '')}appellation/0")
             else:
                 periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
-            g.add((periodical_uri, FRBROO["P1_is_identified_by"], periodical_uri_appellation))
+            g.add((periodical_uri, CIDOC["P1_is_identified_by"], periodical_uri_appellation))
             for i, title in enumerate(
                 bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
             ):
@@ -732,7 +733,7 @@ for x in tqdm(items, total=len(items)):
             g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
             title_j_key_pub_exp = URIRef(f"{SK}{title_j_key}/published-expression")
             g.add((issue_uri_pub_event_uri, FRBROO["R5i_is_component_of"], title_j_key_pub_exp))
-            if title_date is not None and title_date.get("when-iso") is not None:
+            if title_date is not None:
                 start, end = extract_begin_end(title_date)
                 ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
                 g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
