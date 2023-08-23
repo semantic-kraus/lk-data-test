@@ -106,7 +106,7 @@ def make_e42_identifiers_utils(
             event_type_uri = URIRef(f"{type_domain}event/{x}")
             g.add((event_type_uri, RDF.type, CIDOC["E55_Type"]))
             g.add((event_type_uri, RDFS.label, Literal(x, lang=default_lang)))
-    for i, x in enumerate(node.xpath("./tei:idno[not(@subtype='schnitzler-briefe')]", namespaces=NSMAP)):
+    for i, x in enumerate(node.xpath("./tei:idno", namespaces=NSMAP)):
         idno_type_base_uri = f"{type_domain}idno"
         if x.text:
             idno_uri = URIRef(f"{subj}/identifier/idno/{i}")
