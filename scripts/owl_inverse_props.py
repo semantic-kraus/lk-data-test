@@ -5,7 +5,7 @@ import json
 from tqdm import tqdm
 from lxml.etree import XMLParser
 from lxml import etree as ET
-from collections import defaultdict
+# from collections import defaultdict
 # from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
 # from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
 from rdflib import Graph
