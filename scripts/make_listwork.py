@@ -460,7 +460,7 @@ for x in tqdm(items, total=len(items)):
 
             try:
                 title_date = x.xpath(
-                    "./tei:bibl[@type='sk']/tei:date[text()]",
+                    "./tei:bibl[@type='sk']/tei:date",
                     namespaces=nsmap
                 )[0]
             except IndexError:
