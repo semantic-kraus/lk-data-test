@@ -218,3 +218,4 @@ for x in tqdm(items, total=len(items)):
 
 print("writing graph to file: data.trig")
 g.serialize(f"{rdf_dir}/data.trig", format="trig")
+g.serialize(f"{rdf_dir}/data.ttl", format="ttl")
