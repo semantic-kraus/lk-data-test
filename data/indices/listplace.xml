@@ -31,7 +31,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb11</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -55,7 +55,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb20.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb20</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb20.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb20</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q688555</idno>
 <listBibl>
@@ -98,7 +98,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91649/</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91649.html</idno>
@@ -151,7 +151,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb43.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb43</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1630919</idno>
 <listBibl>
@@ -201,7 +201,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
@@ -240,7 +240,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb51</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -273,7 +273,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/410</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44238/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2772614/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb52.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb52</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52.html</idno>
 <listBibl>
@@ -312,7 +312,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50527/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50528/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2773040/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb53.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb53</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb53.html</idno>
 <listBibl>
@@ -333,7 +333,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2761393/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb54</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb54.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb54</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb54.html</idno>
 <listBibl>
@@ -354,7 +354,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2771956/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb55</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb55.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb55</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb55.html</idno>
 <listBibl>
@@ -380,7 +380,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2771932/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb56.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb56</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb56.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb56</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb56.html</idno>
 <listBibl>
@@ -401,7 +401,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2770853/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb57</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb57.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb57</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb57.html</idno>
 <listBibl>
@@ -429,7 +429,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb58.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/15566</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb58</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb58.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb58</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb58.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q256778</idno>
@@ -452,7 +452,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb59</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb59</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -473,7 +473,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2779776/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb60.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb60</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb60.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb60</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb60.html</idno>
 <listBibl>
@@ -495,7 +495,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2771704/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb62.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb62</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb62.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb62</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb62.html</idno>
 <listBibl>
@@ -517,7 +517,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2776420/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb63.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb63</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb63.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb63</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb63.html</idno>
 <listBibl>
@@ -539,7 +539,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2769121/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb64.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb64</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb64.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb64</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb64.html</idno>
 <listBibl>
@@ -560,7 +560,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2779138/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb65</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb65.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb65</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb65.html</idno>
 <listBibl>
@@ -582,7 +582,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2769357/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb66.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/66</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb66</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb66.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb66</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb66.html</idno>
 <listBibl>
@@ -608,7 +608,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb68.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/68</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb68</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb68.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb68</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb68.html</idno>
 <listBibl>
@@ -633,7 +633,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb69.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/69</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24723</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb69</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb69.html</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb69.html</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -673,7 +673,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2779467/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/71</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb71</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb71.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb71</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb71.html</idno>
 <listBibl>
@@ -694,7 +694,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb76.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb76</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb76.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb76</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76.html</idno>
 <listBibl>
@@ -716,7 +716,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb88.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb88</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb88.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb88</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q328191</idno>
 <listBibl>
@@ -784,7 +784,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb120.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/120</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb120</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb120.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb120</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb120.html</idno>
 <listBibl>
@@ -806,7 +806,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb126.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/126</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb126</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb126.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb126</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -852,7 +852,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb140.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/140</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7946</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb140</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb140.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb140</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb140.html</idno>
 <listBibl>
@@ -900,7 +900,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/145</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44841/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4031483-2</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb145</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb145.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb145</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -950,7 +950,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4018118-2</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
@@ -990,7 +990,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/151</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39639</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43456</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb151</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb151.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb151</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb151.html</idno>
 <listBibl>
@@ -1017,7 +1017,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb153.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/153</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb153</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb153.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb153</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q992631</idno>
 <listBibl>
@@ -1041,7 +1041,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb159.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb159</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb159.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb159</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1061,7 +1061,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb163.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/163</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb163</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb163.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb163</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1095,7 +1095,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4005728-8</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q64</idno>
@@ -1117,7 +1117,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb169.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/169</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb169</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb169.html</idno>
   <idno type="URL" subtype="geonames">https://www.geonames.org/2768462/poetzleinsdorf.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb169</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb169.html</idno>
@@ -1136,7 +1136,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/6255149/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb175.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/175</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb175</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb175.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb175</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1168,7 +1168,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4044660-8</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb182.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
@@ -1193,7 +1193,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb205.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/205</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb205</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb205.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb205</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb205.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q37865047</idno>
@@ -1220,7 +1220,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2782052/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb213.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/213</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb213</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb213.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb213</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb213.html</idno>
 <listBibl>
@@ -1241,7 +1241,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb216.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/216</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb216</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb216.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb216</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q160899</idno>
 <listBibl>
@@ -1268,7 +1268,7 @@
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2643743/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb224.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/224</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb224</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb224.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62748/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4074335-4</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64147/</idno>
@@ -1320,7 +1320,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb239.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/239</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb239</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb239.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb239</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb239.html</idno>
 <listBibl>
@@ -1342,7 +1342,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb240.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/240</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb240</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb240.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb240</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1362,7 +1362,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb255.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/255</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb255</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb255.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb255</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1536160</idno>
 <listBibl>
@@ -1386,7 +1386,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb257.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/257</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb257</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb257.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb257</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1407,7 +1407,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q694757</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb262.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/262</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb262</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb262.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb262</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1427,7 +1427,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb302.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/302</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb302</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb302.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb302</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb302.html</idno>
 <listBibl>
@@ -1496,7 +1496,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb332.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/332</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38080</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb332</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb332.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb332</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1520,7 +1520,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb337.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/337</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb337</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb337.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb337</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1631085</idno>
 <listBibl>
@@ -1544,7 +1544,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb338.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/338</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb338</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb338.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb338</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb338.html</idno>
 <listBibl>
@@ -1663,7 +1663,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb362.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/362</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb362</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb362.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb362</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1716,7 +1716,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/6324756/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb373.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/373</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb373</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb373.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb373</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1743,7 +1743,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36201</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44633/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/798549/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb378</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb378.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb378</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb378.html</idno>
 <listBibl>
@@ -1785,7 +1785,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2763586/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb423.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/423</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb423</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb423.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb423</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb423.html</idno>
 <listBibl>
@@ -1806,7 +1806,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb426.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/426</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb426</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb426.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb426</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1826,7 +1826,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb436.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/436</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb436</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb436.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb436</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb436.html</idno>
 <listBibl>
@@ -1867,7 +1867,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb444.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/444</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb444</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb444.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb444</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -1889,7 +1889,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb462.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/462</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb462</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb462.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64195/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3164603/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb462</idno>
@@ -1911,7 +1911,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/6255148/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb468.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/468</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb468</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb468.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb468</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb468.html</idno>
 <listBibl>
@@ -1963,7 +1963,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2657896/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb484.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/484</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb484</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb484.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62728/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4068038-1</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb484</idno>
@@ -1987,7 +1987,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb485.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/485</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb485</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb485.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb485</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1388047</idno>
 <listBibl>
@@ -2012,7 +2012,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb501.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/501</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb501</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb501.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb501</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb501.html</idno>
 <listBibl>
@@ -2060,7 +2060,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/506</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44883/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4023118-5</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb506</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb506.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64301/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2911298/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb506</idno>
@@ -2104,7 +2104,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2782058/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb521.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/521</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb521</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb521.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb521</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb521.html</idno>
 <listBibl>
@@ -2144,7 +2144,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb529.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/529</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb529</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb529.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb529</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2165,7 +2165,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb542.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/542</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb542</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb542.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb542</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2194,7 +2194,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb562.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/562</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22973</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb562</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb562.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64309/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2660646/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb562</idno>
@@ -2219,7 +2219,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb564.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/564</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb564</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb564.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb564</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb564.html</idno>
 <listBibl>
@@ -2258,7 +2258,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2761349/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb587.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/587</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb587</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb587.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb587</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2275,7 +2275,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/7873609/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb591.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/591</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb591</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb591.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb591</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb591.html</idno>
 <listBibl>
@@ -2297,7 +2297,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q39193</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb628.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/628</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb628</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb628.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb628</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2317,7 +2317,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb630.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/630</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb630</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb630.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb630</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2354,7 +2354,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22214</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26227</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43722</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb652</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb652.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64237/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3067695/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb652</idno>
@@ -2403,7 +2403,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb659.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/659</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb659</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb659.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb659</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2436,7 +2436,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q486450</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb662.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/662</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb662</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb662.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88112/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4004168-2</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88115/</idno>
@@ -2475,7 +2475,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/677</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29284</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41273</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb677</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb677.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64155/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb677</idno>
 <listBibl>
@@ -2497,7 +2497,7 @@
 </location>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q28513</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/687</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb687</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb687.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb687</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2561,7 +2561,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb717.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/717</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb717</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb717.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb717</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb717.html</idno>
 <listBibl>
@@ -2583,7 +2583,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb720.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/720</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb720</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb720.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb720</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2707,7 +2707,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q523469</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb772.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/772</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb772</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb772.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb772</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91211/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3071024/</idno>
@@ -2749,7 +2749,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb790.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/790</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb790</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb790.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb790</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb790.html</idno>
 <listBibl>
@@ -2771,7 +2771,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb795.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/795</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb795</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb795.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb795</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2812,7 +2812,7 @@
 </location>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb822.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/822</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb822</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb822.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb822</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -2867,7 +2867,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q14960</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb833.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/833</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb833</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb833.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88110/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4008456-5</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88117/</idno>
@@ -2899,7 +2899,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2973</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb834.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/834</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb834</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb834.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64281/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2938913/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb834</idno>
@@ -2938,7 +2938,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/842</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9192</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43429</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb842</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb842.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb842</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb842.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/95418/</idno>
@@ -2960,7 +2960,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q4656</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb851.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/851</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb851</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb851.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb851</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb851.html</idno>
 <listBibl>
@@ -2990,7 +2990,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2661604/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb854.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/854</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb854</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb854.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64159/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb854</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb854.html</idno>
@@ -3047,7 +3047,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/7871499/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/860</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42858</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb860</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb860.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64211/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2778058/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb860</idno>
@@ -3098,7 +3098,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/864</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44885/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4035206-7</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb864</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb864.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb864</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb864.html</idno>
 <listBibl>
@@ -3121,7 +3121,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb866.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/866</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39739</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb866</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb866.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb866</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3156,7 +3156,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/16043</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49584/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2775216/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb867</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb867.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb867</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/90931/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92637/</idno>
@@ -3178,7 +3178,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2954172/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb868.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/868</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb868</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb868.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb868</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb868.html</idno>
 <listBibl>
@@ -3197,7 +3197,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2873891/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb881.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/881</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb881</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb881.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb881</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb881.html</idno>
 <listBibl>
@@ -3227,7 +3227,7 @@
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb883.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/883</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9140</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb883</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb883.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62734/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4066043-6</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb883</idno>
@@ -3250,7 +3250,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3173435/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb886.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/886</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb886</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb886.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb886</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb886.html</idno>
 <listBibl>
@@ -3277,7 +3277,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1715</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb890.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/890</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb890</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb890.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64263/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2910831/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb890</idno>
@@ -3308,7 +3308,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q660687</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb909.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/909</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb909</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb909.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb909</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92001/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2762453/</idno>
@@ -3372,7 +3372,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2530333/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb951.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/951</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb951</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb951.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb951</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3403,7 +3403,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/6042</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53377/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3064288/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb955</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb955.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb955</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb955.html</idno>
 <listBibl>
@@ -3422,7 +3422,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/710719/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb976.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/976</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb976</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb976.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb976</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb976.html</idno>
 <listBibl>
@@ -3441,7 +3441,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2107</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb989.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/989</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb989</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb989.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb989</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3482,7 +3482,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2770542/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb1003.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1003</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1003</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1003.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1003</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1003.html</idno>
 <listBibl>
@@ -3542,7 +3542,7 @@
   <geo>52.51699 13.38832</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1090</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1090</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1090.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1090</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q698095</idno>
 <listBibl>
@@ -3565,7 +3565,7 @@
   <geo>48.25 16.33306</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1092</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1092</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1092.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1092</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3581,7 +3581,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3066138/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1122</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1122</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1122.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1122</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1122.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q81720</idno>
@@ -3603,7 +3603,7 @@
   <geo>48.20769 16.37049</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1178</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1178</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1178.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1178</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3619,7 +3619,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2953371/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1181</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1181</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1181.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1181</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1181.html</idno>
 <listBibl>
@@ -3644,7 +3644,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43451/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4005762-8</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1223</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1223</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1223.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1223</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1223.html</idno>
 <listBibl>
@@ -3664,7 +3664,7 @@
   <geo>48.19198 16.36714</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1227</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1227</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1227.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1227</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3683,7 +3683,7 @@
   <geo>48.21667 16.4</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1238</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1238</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1238.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1238</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3729,7 +3729,7 @@
   <geo>48.19625 16.32749</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1262</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1262</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1262.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1262</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1355359</idno>
 <listBibl>
@@ -3749,7 +3749,7 @@
   <geo>52.52437 13.41053</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1272</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1272</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1272.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb1272</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -3815,7 +3815,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/21799/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/21799</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb21799</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb21799.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb21799</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -3867,7 +3867,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33910/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33910</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33910</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33910.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb33910</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -3889,7 +3889,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3061344/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33978</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33978</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33978.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb33978</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33978.html</idno>
 <listBibl>
@@ -3911,7 +3911,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3177952/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34199</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34199</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34199.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34199</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb34199.html</idno>
 <listBibl>
@@ -3931,7 +3931,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34305/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34305</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34305</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34305.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34305</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb34305.html</idno>
 <listBibl>
@@ -3962,7 +3962,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14117</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34438</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43976</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34438</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34438.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34438</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb34438.html</idno>
 <listBibl>
@@ -3986,7 +3986,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34478</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44579/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3057568/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34478</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34478.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34478</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb34478.html</idno>
 <listBibl>
@@ -4031,7 +4031,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3028742/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34869</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34869</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34869.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34869</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -4050,7 +4050,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34933/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34933</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34933</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34933.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34933</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -4072,7 +4072,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34943/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34943</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34943</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34943.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34943</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -4092,7 +4092,7 @@
 </location>
   <idno type="URL" subtype="pmb">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34999/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34999</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34999</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34999.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb34999</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -4111,7 +4111,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/7873506/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35496</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35496</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb35496.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb35496</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -4158,7 +4158,7 @@
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1748</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb36300.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36300</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36300</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36300.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58083/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4032399-7</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64393/</idno>
@@ -4214,7 +4214,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3068927/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36539</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36539</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36539.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb36539</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb36539.html</idno>
 <listBibl>
@@ -4240,7 +4240,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/694864/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36570</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36570</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36570.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb36570</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -5314,7 +5314,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/7871688/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38404</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38404</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb38404.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb38404</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -5333,7 +5333,7 @@
   <idno type="URL" subtype="geonames">http://sws.geonames.org/8505031/</idno>
   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb38444.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38444</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38444</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb38444.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb38444</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb38444.html</idno>
 <listBibl>
@@ -5411,7 +5411,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/4142290/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38495</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38495</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb38495.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb38495</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -5459,7 +5459,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2660130/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38518</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38518</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb38518.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb38518</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb38518.html</idno>
 <listBibl>
@@ -5705,7 +5705,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/2765581/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38711</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38711</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb38711.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb38711</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -6273,7 +6273,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39599/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39599</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39599</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39599.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb39599</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6345,7 +6345,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/3196175/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40087</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40087</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40087.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40087</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40087.html</idno>
 <listBibl>
@@ -6383,7 +6383,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43521/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3175395/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40306</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40306</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40306.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40306</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40306.html</idno>
 <listBibl>
@@ -6407,7 +6407,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/7872630/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40329</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40329</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40329.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40329</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -6427,7 +6427,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40387/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40387</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40387</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40387.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40387</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q699947</idno>
 <listBibl>
@@ -6443,7 +6443,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40492/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40492</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40492</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40492.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40492</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6463,7 +6463,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40694/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40694</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40694</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40694.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40694</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40694.html</idno>
 <listBibl>
@@ -6484,7 +6484,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40772/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40772</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40772</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40772.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40772</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40772.html</idno>
 <listBibl>
@@ -6506,7 +6506,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40827/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40827</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40827</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40827.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40827</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6526,7 +6526,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40854/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40854</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40854</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40854.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb40854</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6546,7 +6546,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41038/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41038</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41038</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41038.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41038</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6578,7 +6578,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52167/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55242/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3068799/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41075</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41075.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41075</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41075.html</idno>
 <listBibl>
@@ -6610,7 +6610,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/455</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13400</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41212</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41212</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41212.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64763/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2463678/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41212</idno>
@@ -6647,7 +6647,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41240.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
 <listBibl>
@@ -6667,7 +6667,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41376/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41376</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41376</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41376.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41376</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q240744</idno>
 <listBibl>
@@ -6712,7 +6712,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41831/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41831</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41831</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41831.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb41831</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6732,7 +6732,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42213/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42213</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42213</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42213.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb42213</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb42213.html</idno>
 <listBibl>
@@ -6764,7 +6764,7 @@
 </location>
   <idno type="URL" subtype="geonames">http://sws.geonames.org/554234/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42605</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42605</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42605.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb42605</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb42605.html</idno>
 <listBibl>
@@ -6784,7 +6784,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42710/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42710</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42710</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42710.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb42710</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -6803,7 +6803,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42968/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42968</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42968</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42968.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb42968</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q578426</idno>
 <listBibl>
@@ -6857,7 +6857,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/490</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42779</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43406</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43406</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43406.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb43406</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43406.html</idno>
 <listBibl>
@@ -6882,7 +6882,7 @@
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2658434/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34006</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43435</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43435</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43435.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb43435</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43435.html</idno>
 <listBibl>
@@ -6917,7 +6917,7 @@
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4008684-7</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43471</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43797</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43471</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43471.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb43471</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43471.html</idno>
 <listBibl>
@@ -7003,7 +7003,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5199</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44053/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/5128581/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44053</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44053.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44053</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44053.html</idno>
 <listBibl>
@@ -7040,7 +7040,7 @@
   <idno type="URL" subtype="geonames">https://sws.geonames.org/717582/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45306/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4039555-8</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44142</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44142.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44142</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44142.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q102397</idno>
@@ -7068,7 +7068,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1145</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44172/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2861650/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44172</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44172.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44172</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44172.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q2090</idno>
@@ -7095,7 +7095,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3328</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44290/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3169561/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44290</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44290.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44290</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -7120,7 +7120,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1250</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44397/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2761524/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44397</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44397.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44397</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44397.html</idno>
 <listBibl>
@@ -7136,7 +7136,7 @@
   <geo>59.0 21.0</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44599/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44599</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44599.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb44599</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q545</idno>
 <listBibl>
@@ -7198,7 +7198,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38129</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45258/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2867714/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45258</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb45258.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb45258</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45258.html</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q1726</idno>
@@ -7249,7 +7249,7 @@
   <geo>48.20769 16.37049</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45381/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45381</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb45381.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb45381</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -7273,7 +7273,7 @@
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45385/</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53342/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45385</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb45385.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb45385</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -7377,7 +7377,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39446</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46224/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/702550/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46224</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb46224.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb46224</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb46224.html</idno>
 <listBibl>
@@ -7419,7 +7419,7 @@
   <geo>48.2066 16.37341</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46358/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46358</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb46358.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb46358</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -7437,7 +7437,7 @@
   <geo>52.52437 13.41053</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46598/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46598</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb46598.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb46598</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -7550,7 +7550,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1137</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48771/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2464470/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb48771</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb48771.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb48771</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb48771.html</idno>
 <listBibl>
@@ -7570,7 +7570,7 @@
   <geo>48.22387 16.35641</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48804/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb48804</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb48804.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb48804</idno>
 <listBibl>
     <bibl type="collections" n="3">Manuell angelegt</bibl>
@@ -7615,7 +7615,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3649</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49147/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/262752/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49147</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49147.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb49147</idno>
 <listBibl>
     <bibl type="collections" n="1">ASBW</bibl>
@@ -7685,7 +7685,7 @@
   <geo>48.20769 16.37049</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49286/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49286</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49286.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb49286</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb49286.html</idno>
 <listBibl>
@@ -7915,7 +7915,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39080</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49823/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3075654/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49823</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49823.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb49823</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb49823.html</idno>
 <listBibl>
@@ -7962,7 +7962,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2755</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49872/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2661698/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49872</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49872.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb49872</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -8039,7 +8039,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7978</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49990/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2661644/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49990</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49990.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb49990</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb49990.html</idno>
 <listBibl>
@@ -8088,7 +8088,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10698</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50166/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/3058202/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50166</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50166.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50166</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -8110,7 +8110,7 @@
   <geo>48.241167 16.354861</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50471/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50471</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50471.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50471</idno>
   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q14537019</idno>
 <listBibl>
@@ -8145,7 +8145,7 @@
   <geo>48.20769 16.37049</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50493/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50493</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50493.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50493</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50493.html</idno>
 <listBibl>
@@ -8295,7 +8295,7 @@
   <geo>48.2 16.35</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50568/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50568</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50568.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50568</idno>
 <listBibl>
     <bibl type="collections" n="5">legalkraus</bibl>
@@ -8652,7 +8652,7 @@
   <geo>48.19198 16.36714</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50989/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50989</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50989.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50989</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50989.html</idno>
 <listBibl>
@@ -8840,7 +8840,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14669</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51663/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/170654/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51663</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51663.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb51663</idno>
 <listBibl>
     <bibl type="collections" n="2">Erster Import</bibl>
@@ -9230,7 +9230,7 @@
   <geo>48.22387 16.35641</geo>
 </location>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52510/</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52510</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb52510.html</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb52510</idno>
   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52510.html</idno>
 <listBibl>
@@ -13090,7 +13090,7 @@
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/6389</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54853/</idno>
   <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4011446-6</idno>
-  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb974</idno>
+  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb974.html</idno>
   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58810/</idno>
   <idno type="URL" subtype="geonames">https://sws.geonames.org/2747373/</idno>
   <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb58810</idno>
