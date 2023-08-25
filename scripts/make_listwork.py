@@ -538,87 +538,88 @@ for x in tqdm(items, total=len(items)):
                     date_text = date.text
                     if date_text:
                         date_text = normalize_string(date_text)
-                    pub_expr_appellation_e90 = URIRef(
-                        f"{issue_uri}/appellation-date/{i}"
-                    )
-                    g.add(
-                        (
-                            issue_uri_appellation,
-                            CIDOC["P106_is_composed_of"],
-                            pub_expr_appellation_e90,
+                        pub_expr_appellation_e90 = URIRef(
+                            f"{issue_uri}/appellation-date/{i}"
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.type,
-                            CIDOC["E90_Symbolic_Object"],
+                        g.add(
+                            (
+                                issue_uri_appellation,
+                                CIDOC["P106_is_composed_of"],
+                                pub_expr_appellation_e90,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            CIDOC["P2_has_type"],
-                            appellation_type,
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.type,
+                                CIDOC["E90_Symbolic_Object"],
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDFS.label,
-                            Literal(f"Appellation Part: {date_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                CIDOC["P2_has_type"],
+                                appellation_type,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.value,
-                            Literal(f"{date_text}"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDFS.label,
+                                Literal(f"Appellation Part: {date_text}", lang="en"),
+                            )
                         )
-                    )
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.value,
+                                Literal(f"{date_text}"),
+                            )
+                        )
                     try:
                         note = date.xpath("./tei:note", namespaces=nsmap)[0]
                     except IndexError:
                         continue
                     note_text = note.text
-                    appellation_type = ed_issue_type_uri
-                    pub_expr_appellation_e90 = URIRef(f"{issue_uri}/appellation-ed/0")
-                    g.add(
-                        (
-                            issue_uri_appellation,
-                            CIDOC["P106_is_composed_of"],
-                            pub_expr_appellation_e90,
+                    # check if note text is not empty
+                    if note_text is not None:
+                        appellation_type = ed_issue_type_uri
+                        pub_expr_appellation_e90 = URIRef(f"{issue_uri}/appellation-ed/0")
+                        g.add(
+                            (
+                                issue_uri_appellation,
+                                CIDOC["P106_is_composed_of"],
+                                pub_expr_appellation_e90,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.type,
-                            CIDOC["E90_Symbolic_Object"],
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.type,
+                                CIDOC["E90_Symbolic_Object"],
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            CIDOC["P2_has_type"],
-                            appellation_type,
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                CIDOC["P2_has_type"],
+                                appellation_type,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDFS.label,
-                            Literal(f"Appellation Part: {note_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDFS.label,
+                                Literal(f"Appellation Part: {note_text}", lang="en"),
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.value,
-                            Literal(f"{note_text}"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.value,
+                                Literal(f"{note_text}"),
+                            )
                         )
-                    )
-
                 for i, num in enumerate(bibl_sk.xpath(".//tei:num", namespaces=nsmap)):
                     num_type = num.attrib["type"]
                     if num_type == "volume":
