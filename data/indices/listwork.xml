@@ -1175,7 +1175,7 @@
             <title level="m">Die Journalisten</title>
           </bibl>
           <author key="pmb11377" role="hat-geschaffen">Freytag, Gustav</author>
-          <date type="premiere" notBefore-iso="1852-01-01" when-iso="1852-07-01">1852</date>
+          <date type="premiere" when-iso="1852">1852</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31729.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31729</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31729.html</idno>
@@ -1209,7 +1209,7 @@
             <title level="m">Der böse Geist Lumpazivagabundus oder Das liederliche Kleeblatt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
-          <date type="premiere" notBefore-iso="1833-01-01" when-iso="1833-07-02">1833</date>
+          <date type="premiere" when-iso="1833">1833</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32850.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32850</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb32850.html</idno>
@@ -2290,7 +2290,7 @@
 
           <title type="legacy-name-merge">Die Verschwörung des Fiesco zu Genua</title>
           <author key="pmb12654" role="hat-geschaffen">Schiller, Friedrich von</author>
-          <date type="premiere" notBefore-iso="1783-01-01" when-iso="1783-07-02">1783</date>
+          <date type="premiere" when-iso="1783">1783</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31181.html</idno>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32472.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31181</idno>
@@ -2407,7 +2407,7 @@
             <title level="m">Othello</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
-          <date type="premiere" notBefore-iso="1604-01-01" when-iso="1604-07-01">1604</date>
+          <date type="premiere" when-iso="1604">1604</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31671.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31671</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31671.html</idno>
@@ -2435,7 +2435,7 @@
             <title level="m">Minna von Barnhelm oder das Soldatenglück</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
-          <date type="premiere" notBefore-iso="1767-01-01" when-iso="1767-07-02">1767</date>
+          <date type="premiere" when-iso="1767">1767</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31929.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31929</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31929.html</idno>
@@ -2463,7 +2463,7 @@
             <title level="m">Der Querulant</title>
           </bibl>
           <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
-          <date type="premiere" notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
+          <date type="premiere" when-iso="1914">1914</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32043.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32043</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb32043.html</idno>
@@ -4086,7 +4086,7 @@
             <title level="m" type="subtitle">Ein Trauerspiel in fünf Aufzügen</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
-          <date type="premiere" notBefore-iso="1772-01-01" when-iso="1772-07-01">1772</date>
+          <date type="premiere"  when-iso="1772">1772</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61461/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb61461.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61461</idno>
@@ -4137,7 +4137,7 @@
             <title level="m">Die Reise zum Mond</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1875-01-01" when-iso="1875-07-02">1875</date>
+          <date type="premiere" when-iso="1875">1875</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60654/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60654</idno>
           <note type="collections">
@@ -4163,7 +4163,7 @@
 
           <title type="legacy-name-merge">Simone Boccanegra</title>
           <author key="pmb13007" role="hat-geschaffen">Verdi, Giuseppe</author>
-          <date type="premiere" from-iso="1857-01-01" to-iso="1857-12-31">1857</date>
+          <date type="premiere" when-iso="1857">1857</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63885/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76699/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76699.html</idno>
@@ -4456,7 +4456,7 @@
             <title level="m">Das Land ohne Frauen</title>
           </bibl>
           <author key="pmb7334" role="hat-geschaffen">Gallone, Carmine</author>
-          <date type="premiere" notBefore-iso="1929-01-01" when-iso="1929-07-02">1929</date>
+          <date type="premiere" when-iso="1929">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55661/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55661</idno>
           <note type="collections">
@@ -4488,7 +4488,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Die lustige Witwe</title>
           <author key="pmb10117" role="hat-geschaffen">Stroheim, Erich von</author>
-          <date type="premiere" notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
+          <date type="premiere" when-iso="1925">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60417/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60417</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q654439</idno>
@@ -4512,7 +4512,7 @@
           <bibl type="sk" subtype="standalone_text">
             <title level="m">Aetherwellen</title>
           </bibl>
-          <date type="premiere" notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
+          <date type="premiere" when-iso="1928">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87767/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb87767</idno>
           <note type="collections">
@@ -4536,7 +4536,7 @@
           <bibl type="sk" subtype="standalone_text">
             <title level="m">Mad Love</title>
           </bibl>
-          <date type="premiere" notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
+          <date type="premiere" when-iso="1935">1935</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88255/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb88255</idno>
           <note type="collections">
@@ -5787,7 +5787,7 @@
             <title level="m">Die Fledermaus</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" when-iso="1874-01-01">1874</date>
+          <date type="premiere" when-iso="1874">1874</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30421.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30421</idno>
           <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30421.html</idno>
@@ -5828,7 +5828,7 @@
             <title level="m">Der Zigeunerbaron</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" notBefore-iso="1885-01-01" when-iso="1885-07-02">1885</date>
+          <date type="premiere" when-iso="1885">1885</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52902/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52902.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52902</idno>
@@ -5861,7 +5861,7 @@
             <title level="m" type="subtitle">Operette in drei Akten</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" notBefore-iso="1880-01-01" when-iso="1880-07-01">1880</date>
+          <date type="premiere" when-iso="1880">1880</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52904/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52904.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52904</idno>
@@ -6025,7 +6025,7 @@
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <author key="pmb4197" role="hat-geschaffen">Halévy, Ludovic</author>
           <author key="pmb12222" role="hat-geschaffen">Meilhac, Henri</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53658/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53658</idno>
           <note type="collections">
@@ -6798,7 +6798,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Le pont des soupirs</title>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
+          <date type="premiere" when-iso="1861">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56823/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56823</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1743483</idno>
@@ -6869,7 +6869,7 @@
             <title level="m">Fortunios Lied</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
+          <date type="premiere" when-iso="1861">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57726/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57726</idno>
           <note type="collections">
@@ -6894,7 +6894,7 @@
             <title level="m">Die Insel Tulipatan</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>
+          <date type="premiere" when-iso="1868">1868</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57728/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57728</idno>
           <note type="collections">
@@ -6925,7 +6925,7 @@
             <title level="m">Prinzessin von Trapezunt</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60656/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60656</idno>
           <note type="collections">
@@ -7000,7 +7000,7 @@
             <title level="m">Vert-Vert</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62199/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62199</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q3556194</idno>
@@ -8858,7 +8858,7 @@
           <title type="person_namensvariante_nachname-komma-vorname">Wohnbaukantate</title>
           <author key="pmb39325" role="hat-vertont">Pisk, Paul Amadeus</author>
           <author key="pmb65142" role="hat-geschaffen">Stern, Josef Luitpold</author>
-          <date type="premiere" from-iso="1926-01-01" to-iso="1926-12-31">1926</date>
+          <date type="premiere" when-iso="1926">1926</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63838/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63838</idno>
           <note type="collections">
@@ -29702,7 +29702,7 @@
             <title level="m">Der Affe Zarathustras</title>
           </bibl>
           <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
-          <date type="premiere" notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
+          <date type="premiere" when-iso="1925">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51907/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb51907</idno>
           <note type="collections">
@@ -29764,7 +29764,7 @@
               Gewerbeverein von Polizeipräsident Schober</title>
             </bibl>
           <author key="pmb24444" role="hat-geschaffen">Schober, Johannes</author>
-          <date type="premiere" notBefore-iso="1928-02-01" when-iso="1928-02-15">1928-02</date>
+          <date type="premiere" when-iso="1928-02">1928-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55033/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55033</idno>
           <note type="collections">
@@ -29875,7 +29875,7 @@
             <title level="m">Eine Wohnung ist zu vermiethen in der Stadt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
-          <date type="premiere" notBefore-iso="1837-01-01" when-iso="1837-07-02">1837</date>
+          <date type="premiere" when-iso="1837-07">1837</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53926/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53926</idno>
           <note type="collections">
