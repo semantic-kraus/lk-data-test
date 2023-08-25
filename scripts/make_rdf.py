@@ -58,7 +58,7 @@ for x in tqdm(items, total=len(items)):
             subject=subj, predicate=CIDOC["P1_is_identified_by"]
         ):
             if "/appellation/" in appellation_uri:
-                g.add((appellation_uri, CIDOC["P2_has_Type"], URIRef(f"{type_uri}")))
+                g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
     occupations = make_occupations_type_req(subj, x, default_lang="de", special_label="works for: ", type_required="sk")
     print(occupations)
     g += occupations
