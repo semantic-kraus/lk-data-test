@@ -101,14 +101,27 @@ def save_dict(dict, file):
     print(f"saved dict {file}")
 
 
+def create_triples(dict_result, output):
+    for key, value in dict_result.items():
+        # inverse_inverse_of = f"{inverse_of}--{inverse}"
+        print("length values", len(value))
+        pred = inverse
+        for v in value:
+            sbj = list(v.keys())[0]
+            obj = list(v.values())[0]
+            output.append(
+                {"sbj": obj, "pred": pred, "obj": sbj}
+            )
+
+
 rdf_files = sorted(glob.glob("./rdf/*.ttl"))
 lookup_dict = get_inverse_of(parse_xml(SK_MODEL_URL))
 # print(lookup_dict)
 
 for file in rdf_files:
     ttl = parse_rdf_ttl(file)
-    dict_all = []
-    dict_inverse_ok = []
+    missing_inverse_triples = []
+    found_inverse_triples = []
     for x in tqdm(lookup_dict, total=len(lookup_dict)):
         # print(x)
         inverse_of = x[0]
@@ -122,30 +135,14 @@ for file in rdf_files:
                 test = False
             if test is False:
                 print(f"no inverse found for {inverse_of}--{inverse}")
-                for key, value in dict_result.items():
-                    # inverse_inverse_of = f"{inverse_of}--{inverse}"
-                    print("length values", len(value))
-                    pred = inverse
-                    for v in value:
-                        sbj = list(v.keys())[0]
-                        obj = list(v.values())[0]
-                        dict_all.append(
-                            {"sbj": obj, "pred": pred, "obj": sbj}
-                        )
+                create_triples(dict_result, missing_inverse_triples)
             else:
                 print(f"inverse found for {inverse_of}--{inverse}")
-                for key, value in dict_result.items():
-                    # inverse_inverse_of = f"{inverse_of}--{inverse}"
-                    print("length values", len(value))
-                    pred = inverse
-                    for v in value:
-                        sbj = list(v.keys())[0]
-                        obj = list(v.values())[0]
-                        dict_inverse_ok.append(
-                            {"sbj": obj, "pred": pred, "obj": sbj}
-                        )
-    if len(dict_inverse_ok) != 0:
-        save_dict([dict(t) for t in {tuple(d.items()) for d in dict_inverse_ok}], f"{file.replace('.ttl', '')}_inv_ok.json")
+                create_triples(dict_result, found_inverse_triples)
+    if len(found_inverse_triples) != 0:
+        save_dict([dict(t) for t in {tuple(d.items()) for d in found_inverse_triples}],
+                  f"{file.replace('.ttl', '')}_inv_ok.json")
     # save_dict(dict_all, f"{file.replace('.ttl', '')}_duplicates.json")
-    if len(dict_all) != 0:
-        save_dict([dict(t) for t in {tuple(d.items()) for d in dict_all}], f"{file.replace('.ttl', '')}.json")
+    if len(missing_inverse_triples) != 0:
+        save_dict([dict(t) for t in {tuple(d.items()) for d in missing_inverse_triples}],
+                  f"{file.replace('.ttl', '')}.json")
