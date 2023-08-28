@@ -222,6 +222,9 @@ response = requests.get(fa_texts_url)
 fa_texts = ET.fromstring(response.content, parser=p)
 # fa_texts = TeiReader(fa_texts_url)
 
+g.add((URIRef(f"{SK}types/idno/URL/ARCHE"), RDF.type, CIDOC["E55_Type"]))
+g.add((URIRef(f"{SK}types/title/prov"), RDF.type, CIDOC["E55_Type"]))
+
 for x in tqdm(files, total=len(files)):
     doc = TeiReader(x)
     xml_id = (

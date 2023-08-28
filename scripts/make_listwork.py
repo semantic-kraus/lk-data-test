@@ -61,12 +61,22 @@ main_title_type = URIRef(f"{SK}types/title/main")
 sub_title_type = URIRef(f"{SK}types/title/sub")
 translation = URIRef(f"{SK}types/translation")
 event_first = URIRef(f"{SK}types/event/first")
+idno_xml_id = URIRef(f"{SK}types/idno/xml-id")
+idno_url_pmb = URIRef(f"{SK}types/idno/URL/pmb")
 
 
 g.add((event_first, RDF.type, CIDOC["E55_Type"]))
 g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((idno_xml_id, RDF.type, CIDOC["E55_Type"]))
 g.add((translation, RDF.type, CIDOC["E55_Type"]))
+g.add((idno_url_pmb, RDF.type, CIDOC["E55_Type"]))
+g.add((main_title_type, RDF.type, CIDOC["E55_Type"]))
+g.add((sub_title_type, RDF.type, CIDOC["E55_Type"]))
+g.add((ed_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((date_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((num_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((num_volume_type_uri, RDF.type, CIDOC["E55_Type"]))
 for x in tqdm(items, total=len(items)):
     try:
         xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
@@ -91,9 +101,9 @@ for x in tqdm(items, total=len(items)):
             label_value = xml_id
     label_value = normalize_string(label_value)
     if (
-        item_sk_type == "standalone_publication"
-        or item_sk_type == "article"
-        or item_sk_type == "standalone_text"
+        item_sk_type == "standalone_publication" or
+        item_sk_type == "article" or
+        item_sk_type == "standalone_text"
     ):
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)

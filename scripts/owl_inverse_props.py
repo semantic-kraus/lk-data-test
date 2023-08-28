@@ -107,26 +107,32 @@ lookup_dict = get_inverse_of(parse_xml(SK_MODEL_URL))
 for file in rdf_files:
     ttl = parse_rdf_ttl(file)
     dict_all = []
+    dict_inverse_ok = []
+    test1 = []
     for x in tqdm(lookup_dict, total=len(lookup_dict)):
         # print(x)
         inverse_of = x[0]
         inverse = x[1]
         qres = query_for_inverse(ttl, inverse_of)
         dict_result = create_inverse_dict(qres)
-        if dict_result:
+        if dict_result is not None:
+            dict_inverse_ok.append(dict_result)
             try:
                 test = dict_result[inverse]
             except KeyError:
                 test = False
             if test is False:
-                for i in dict_result.values():
+                print(f"no inverse found for {inverse_of}--{inverse}")
+                for key, value in dict_result.items():
                     # inverse_inverse_of = f"{inverse_of}--{inverse}"
-                    print("length values", len(i))
+                    print("length values", len(value))
                     pred = inverse
-                    for ib in i:
-                        sbj = list(ib.keys())
-                        obj = list(ib.values())
+                    for v in value:
+                        sbj = list(v.keys())[0]
+                        obj = list(v.values())[0]
                         dict_all.append(
-                            {"sbj": obj[0], "pred": pred, "obj": sbj[0]}
+                            {"sbj": obj, "pred": pred, "obj": sbj}
                         )
+    # save_dict(dict_inverse_ok, f"{file.replace('.ttl', '')}_all_unfiltered.json")
+    # save_dict(dict_all, f"{file.replace('.ttl', '')}_duplicates.json")
     save_dict([dict(t) for t in {tuple(d.items()) for d in dict_all}], f"{file.replace('.ttl', '')}.json")
