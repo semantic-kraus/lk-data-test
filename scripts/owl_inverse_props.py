@@ -2,6 +2,7 @@
 import glob
 import requests
 import json
+from slugify import slugify
 from tqdm import tqdm
 from lxml.etree import XMLParser
 from lxml import etree as ET
@@ -83,7 +84,7 @@ def create_inverse_dict(query_result):
     props_with_inverse = {}
     for row in tqdm(query_result, total=len(query_result)):
         sbj = row[0]
-        p = row[1]
+        p = slugify(row[1])
         obj = row[2]
         try:
             props_with_inverse[p].append({sbj: obj})
@@ -108,7 +109,6 @@ for file in rdf_files:
     ttl = parse_rdf_ttl(file)
     dict_all = []
     dict_inverse_ok = []
-    test1 = []
     for x in tqdm(lookup_dict, total=len(lookup_dict)):
         # print(x)
         inverse_of = x[0]
@@ -116,9 +116,8 @@ for file in rdf_files:
         qres = query_for_inverse(ttl, inverse_of)
         dict_result = create_inverse_dict(qres)
         if dict_result is not None:
-            dict_inverse_ok.append(dict_result)
             try:
-                test = dict_result[inverse]
+                test = dict_result[slugify(inverse)]
             except KeyError:
                 test = False
             if test is False:
@@ -133,6 +132,20 @@ for file in rdf_files:
                         dict_all.append(
                             {"sbj": obj, "pred": pred, "obj": sbj}
                         )
-    # save_dict(dict_inverse_ok, f"{file.replace('.ttl', '')}_all_unfiltered.json")
+            else:
+                print(f"inverse found for {inverse_of}--{inverse}")
+                for key, value in dict_result.items():
+                    # inverse_inverse_of = f"{inverse_of}--{inverse}"
+                    print("length values", len(value))
+                    pred = inverse
+                    for v in value:
+                        sbj = list(v.keys())[0]
+                        obj = list(v.values())[0]
+                        dict_inverse_ok.append(
+                            {"sbj": obj, "pred": pred, "obj": sbj}
+                        )
+    if len(dict_inverse_ok) != 0:
+        save_dict([dict(t) for t in {tuple(d.items()) for d in dict_inverse_ok}], f"{file.replace('.ttl', '')}_inv_ok.json")
     # save_dict(dict_all, f"{file.replace('.ttl', '')}_duplicates.json")
-    save_dict([dict(t) for t in {tuple(d.items()) for d in dict_all}], f"{file.replace('.ttl', '')}.json")
+    if len(dict_all) != 0:
+        save_dict([dict(t) for t in {tuple(d.items()) for d in dict_all}], f"{file.replace('.ttl', '')}.json")
