@@ -49,6 +49,8 @@ g.add((URIRef(f"{SK}types/place/placename"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/idno/xml-id"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/idno/URL/geonames"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/idno/URL/wikidata"), RDF.type, CIDOC["E55_Type"]))
+g.add((URIRef(f"{SK}types/person/persname/female"), RDF.type, CIDOC["E55_Type"]))
+g.add((URIRef(f"{SK}types/person/persname/male"), RDF.type, CIDOC["E55_Type"]))
 
 print(f"converting {entity_type}s derived from {index_file}")
 for x in tqdm(items, total=len(items)):

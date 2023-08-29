@@ -7,9 +7,9 @@ from tqdm import tqdm
 from lxml.etree import XMLParser
 from lxml import etree as ET
 # from collections import defaultdict
-from rdflib import Graph, ConjunctiveGraph, URIRef, plugin, Namespace, Dataset
-from rdflib.store import Store
-from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
+from rdflib import Graph, URIRef, Namespace, Dataset
+# from rdflib.store import Store
+# from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 
 
 NSMAP_RDF = {
@@ -34,8 +34,8 @@ LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 
 domain = "https://sk.acdh.oeaw.ac.at/"
 project_uri = URIRef(f"{SK}project/legal-kraus")
-store = plugin.get("Memory", Store)()
-project_store = plugin.get("Memory", Store)()
+# store = plugin.get("Memory", Store)()
+# project_store = plugin.get("Memory", Store)()
 
 
 def parse_xml(url):
@@ -59,11 +59,7 @@ def get_inverse_of(model_doc):
 def parse_rdf_trig(file):
     print(f"parsing file: {file}")
     d = Dataset()
-    d.parse(file, format="trig", publicID=project_uri)
-    d.bind("cidoc", CIDOC)
-    d.bind("frbroo", FRBROO)
-    d.bind("sk", SK)
-    d.bind("lk", LK)
+    d.parse(file, format="trig")
     return d
 
 
@@ -164,5 +160,6 @@ for file in rdf_files:
             p = URIRef(triple["pred"])
             o = URIRef(triple["obj"])
             ds.add((s, p, o, g))
+        # g_all = ConjunctiveGraph(store=project_store)
         ds.serialize(trig_path, format="trig")
         save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
