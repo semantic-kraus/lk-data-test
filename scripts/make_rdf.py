@@ -51,6 +51,7 @@ g.add((URIRef(f"{SK}types/idno/URL/geonames"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/idno/URL/wikidata"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/person/persname/female"), RDF.type, CIDOC["E55_Type"]))
 g.add((URIRef(f"{SK}types/person/persname/male"), RDF.type, CIDOC["E55_Type"]))
+# g.add((URIRef(f"{SK}types/person/persname/pref"), RDF.type, CIDOC["E55_Type"]))
 
 print(f"converting {entity_type}s derived from {index_file}")
 for x in tqdm(items, total=len(items)):
@@ -63,12 +64,18 @@ for x in tqdm(items, total=len(items)):
     g += make_e42_identifiers_utils(
         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
     )
-    g += make_appellations(subj, x, type_domain=f"{SK}types", default_lang="und")
+    g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
     try:
         gender = x.xpath(".//tei:sex/@value", namespaces=doc.nsmap)[0]
     except IndexError:
         gender = None
-    if gender is not None:
+    try:
+        gender_attrib = name_node.attrib["sex"]
+    except KeyError:
+        gender_attrib = None
+    if gender_attrib is not None and len(gender_attrib) > 0:
+        type_uri = f"{SK}types/person/persname/{gender_attrib}"
+    elif gender is not None:
         type_uri = f"{SK}types/person/persname/{gender}"
         for appellation_uri in g.objects(
             subject=subj, predicate=CIDOC["P1_is_identified_by"]
