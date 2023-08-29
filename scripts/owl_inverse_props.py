@@ -7,11 +7,10 @@ from tqdm import tqdm
 from lxml.etree import XMLParser
 from lxml import etree as ET
 # from collections import defaultdict
-# from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
-# from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
-from rdflib import Graph
-# from rdflib import Graph, Namespace, URIRef, Literal, XSD, Dataset
-# from rdflib.namespace import RDF, RDFS
+from rdflib import Graph, ConjunctiveGraph, URIRef, plugin, Namespace, Dataset
+from rdflib.store import Store
+from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
+
 
 NSMAP_RDF = {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -28,6 +27,15 @@ NSMAP_RDF = {
     "dcterms": "http://purl.org/dc/terms/"
 }
 SK_MODEL_URL = "https://raw.githubusercontent.com/semantic-kraus/sk_general/main/sk_model.owl"
+
+domain = "https://sk.acdh.oeaw.ac.at/"
+SK = Namespace(domain)
+LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
+
+domain = "https://sk.acdh.oeaw.ac.at/"
+project_uri = URIRef(f"{SK}project/legal-kraus")
+store = plugin.get("Memory", Store)()
+project_store = plugin.get("Memory", Store)()
 
 
 def parse_xml(url):
@@ -48,11 +56,15 @@ def get_inverse_of(model_doc):
     return inverse_of_dict
 
 
-# def parse_rdf_trig(file):
-#     print(f"parsing file: {file}")
-#     d = Dataset()
-#     d.parse(file, format="trig", publicID=d.default_context.identifier)
-#     return d
+def parse_rdf_trig(file):
+    print(f"parsing file: {file}")
+    d = Dataset()
+    d.parse(file, format="trig", publicID=project_uri)
+    d.bind("cidoc", CIDOC)
+    d.bind("frbroo", FRBROO)
+    d.bind("sk", SK)
+    d.bind("lk", LK)
+    return d
 
 
 def parse_rdf_ttl(file):
@@ -140,9 +152,17 @@ for file in rdf_files:
                 print(f"inverse found for {inverse_of}--{inverse}")
                 create_triples(dict_result, found_inverse_triples)
     if len(found_inverse_triples) != 0:
-        save_dict([dict(t) for t in {tuple(d.items()) for d in found_inverse_triples}],
-                  f"{file.replace('.ttl', '')}_inv_ok.json")
-    # save_dict(dict_all, f"{file.replace('.ttl', '')}_duplicates.json")
+        unique_triples = [dict(t) for t in {tuple(d.items()) for d in found_inverse_triples}]
+        save_dict(unique_triples, f"{file.replace('.ttl', '')}_inv_ok.json")
     if len(missing_inverse_triples) != 0:
-        save_dict([dict(t) for t in {tuple(d.items()) for d in missing_inverse_triples}],
-                  f"{file.replace('.ttl', '')}.json")
+        trig_path = file.replace(".ttl", ".trig")
+        ds = parse_rdf_trig(trig_path)
+        g = ds.graph(project_uri)
+        unique_triples = [dict(t) for t in {tuple(d.items()) for d in missing_inverse_triples}]
+        for triple in unique_triples:
+            s = URIRef(triple["sbj"])
+            p = URIRef(triple["pred"])
+            o = URIRef(triple["obj"])
+            ds.add((s, p, o, g))
+        ds.serialize(trig_path, format="trig")
+        save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")

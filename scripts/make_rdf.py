@@ -9,10 +9,16 @@ from utils.utilities import (
     make_occupations_type_req,
     make_e42_identifiers_utils
 )
-from acdh_cidoc_pyutils.namespaces import CIDOC
+from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, Literal
+from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
 from rdflib.namespace import RDF, RDFS
+from rdflib.store import Store
+
+LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
+
+store = plugin.get("Memory", Store)()
+project_store = plugin.get("Memory", Store)()
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
@@ -24,7 +30,13 @@ rdf_dir = "./rdf"
 os.makedirs(rdf_dir, exist_ok=True)
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
-g = Graph()
+
+project_uri = URIRef(f"{SK}project/legal-kraus")
+g = Graph(identifier=project_uri, store=project_store)
+g.bind("cidoc", CIDOC)
+g.bind("frbroo", FRBROO)
+g.bind("sk", SK)
+g.bind("lk", LK)
 entity_type = "person"
 index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
@@ -219,5 +231,6 @@ for x in tqdm(items, total=len(items)):
 #         g.add((pmb_uri, RDF.type, CIDOC["E42_Identifier"]))
 
 print("writing graph to file: data.trig")
-g.serialize(f"{rdf_dir}/data.trig", format="trig")
-g.serialize(f"{rdf_dir}/data.ttl", format="ttl")
+g_all = ConjunctiveGraph(store=project_store)
+g_all.serialize(f"{rdf_dir}/data.trig", format="trig")
+g_all.serialize(f"{rdf_dir}/data.ttl", format="ttl")

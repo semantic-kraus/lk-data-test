@@ -5,12 +5,16 @@ from tqdm import tqdm
 from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, Literal, XSD
+from rdflib import Graph, Namespace, URIRef, Literal, XSD, plugin, ConjunctiveGraph
 from rdflib.namespace import RDF, RDFS
 from slugify import slugify
 from lxml.etree import XMLParser
 from lxml import etree as ET
+from rdflib.store import Store
 
+LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
+store = plugin.get("Memory", Store)()
+project_store = plugin.get("Memory", Store)()
 
 if os.environ.get("NO_LIMIT"):
     LIMIT = False
@@ -19,6 +23,7 @@ else:
     LIMIT = 500
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
+project_uri = URIRef(f"{SK}project/legal-kraus")
 
 
 def create_mention_text_passage(subj, i, mention_wording, item_label):
@@ -169,7 +174,11 @@ os.makedirs(rdf_dir, exist_ok=True)
 
 title_type = URIRef(f"{SK}types/title/prov")
 arche_text_type_uri = URIRef("https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE")
-g = Graph()
+g = Graph(identifier=project_uri, store=project_store)
+g.bind("cidoc", CIDOC)
+g.bind("frbroo", FRBROO)
+g.bind("sk", SK)
+g.bind("lk", LK)
 entity_type = "documents"
 if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/editions/*.xml"))[:LIMIT]
@@ -485,5 +494,6 @@ for x in tqdm(files, total=len(files)):
 
 
 print("writing graph to file: texts.trig")
-g.serialize(f"{rdf_dir}/texts.trig", format="trig")
-g.serialize(f"{rdf_dir}/texts.ttl", format="ttl")
+g_all = ConjunctiveGraph(store=project_store)
+g_all.serialize(f"{rdf_dir}/texts.trig", format="trig")
+g_all.serialize(f"{rdf_dir}/texts.ttl", format="ttl")
