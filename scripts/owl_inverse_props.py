@@ -151,15 +151,15 @@ for file in rdf_files:
         unique_triples = [dict(t) for t in {tuple(d.items()) for d in found_inverse_triples}]
         save_dict(unique_triples, f"{file.replace('.ttl', '')}_inv_ok.json")
     if len(missing_inverse_triples) != 0:
-        trig_path = file.replace(".ttl", ".trig")
-        ds = parse_rdf_trig(trig_path)
-        g = ds.graph(project_uri)
+        # trig_path = file.replace(".ttl", ".trig")
+        # ds = parse_rdf_trig(trig_path)
+        # g = ds.graph(project_uri)
         unique_triples = [dict(t) for t in {tuple(d.items()) for d in missing_inverse_triples}]
-        for triple in unique_triples:
-            s = URIRef(triple["sbj"])
-            p = URIRef(triple["pred"])
-            o = URIRef(triple["obj"])
-            ds.add((s, p, o, g))
-        # g_all = ConjunctiveGraph(store=project_store)
-        ds.serialize(trig_path, format="trig")
+        # for triple in unique_triples:
+        #     s = URIRef(triple["sbj"])
+        #     p = URIRef(triple["pred"])
+        #     o = URIRef(triple["obj"])
+        #     ds.add((s, p, o, g))
+        # # g_all = ConjunctiveGraph(store=project_store)
+        # ds.serialize(trig_path, format="trig")
         save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
