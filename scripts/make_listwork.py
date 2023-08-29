@@ -783,11 +783,15 @@ for x in tqdm(items, total=len(items)):
                    Literal(normalize_string(f"Creation of original: {label_value}"), lang="en")))
             g.add((creation_orig, FRBROO["R17_created"], subj_orig))
         for a in uebersetzt:
+            xpath = 'parent::tei:bibl/tei:author[@role="hat-anonym-veroffentlicht" or @role="hat-geschaffen"]'
+            orig_author = a.xpath(xpath, namespaces=nsmap)[0]
+            orig_author_id = orig_author.attrib["key"]
+            orig_author_uri = URIRef(f"{SK}{orig_author_id}")
             author_id = a.attrib["key"]
             author_uri = URIRef(f"{SK}{author_id}")
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
             if a.get("role") == "hat-ubersetzt":
-                g.add((creation_orig, CIDOC["P14_carried_out_by"], author_uri))
+                g.add((creation_orig, CIDOC["P14_carried_out_by"], orig_author_uri))
     if item_sk_type not in ["journal", "issue", "article", "standalone_text"]:
         try:
             pub_date = x.xpath(
