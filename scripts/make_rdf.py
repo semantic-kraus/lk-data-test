@@ -73,8 +73,13 @@ for x in tqdm(items, total=len(items)):
         gender_attrib = name_node.attrib["sex"]
     except KeyError:
         gender_attrib = None
-    if gender_attrib is not None and len(gender_attrib) > 0:
+    if gender_attrib is not None:
         type_uri = f"{SK}types/person/persname/{gender_attrib}"
+        for appellation_uri in g.objects(
+            subject=subj, predicate=CIDOC["P1_is_identified_by"]
+        ):
+            if "/appellation/" in appellation_uri:
+                g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
     elif gender is not None:
         type_uri = f"{SK}types/person/persname/{gender}"
         for appellation_uri in g.objects(
