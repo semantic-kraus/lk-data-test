@@ -70,8 +70,8 @@ for x in tqdm(items, total=len(items)):
     except IndexError:
         gender = None
     try:
-        gender_attrib = name_node.attrib["sex"]
-    except KeyError:
+        gender_attrib = x.xpath(".//tei:persName/@sex", namespaces=doc.nsmap)[0]
+    except IndexError:
         gender_attrib = None
     if gender_attrib is not None:
         type_uri = f"{SK}types/person/persname/{gender_attrib}"
