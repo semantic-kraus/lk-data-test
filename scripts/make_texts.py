@@ -28,9 +28,9 @@ project_uri = URIRef(f"{SK}project/legal-kraus")
 
 def create_mention_text_passage(subj, i, mention_wording, item_label):
     text_passage = URIRef(f"{subj}/passage/{i}")
-    text_passage_label = Literal(f"Text passage from: {item_label}", lang="en")
+    text_passage_label = normalize_string(f"Text passage from: {item_label}")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-    g.add((text_passage, RDFS.label, Literal(text_passage_label)))
+    g.add((text_passage, RDFS.label, Literal(text_passage_label, lang="en")))
     g.add((text_passage, INT["R44_has_wording"], mention_wording))
     g.add((subj, INT["R10_has_Text_Passage"], text_passage))
     return text_passage
@@ -39,9 +39,9 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
 # remove label add for production
 def create_text_passage_of(subj, i, file, label):
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_passage_label = Literal(f"Text passage from: {label}", lang="en")
+    text_passage_label = normalize_string(f"Text passage from: {label}")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
-    g.add((text_passage, RDFS.label, Literal(text_passage_label)))
+    g.add((text_passage, RDFS.label, Literal(text_passage_label, lang="en")))
     g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
     return text_passage
 
@@ -50,9 +50,9 @@ def create_mention_text_segment(
     subj, i, item_label, text_passage, mention_wording, arche_id_value
 ):
     text_segment = URIRef(f"{subj}/segment/{i}")
-    text_segment_label = Literal(f"Text segment from: {item_label}", lang="en")
+    text_segment_label = normalize_string(f"Text segment from: {item_label}")
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label, lang="en")))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R44_has_wording"], mention_wording))
     try:
@@ -71,10 +71,10 @@ def create_text_segment_of(
 ):
     text_segment = URIRef(f"{subj}/segment/{file}/{i}")
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_segment_label = Literal(f"Text segment from: {label}", lang="en")
+    text_segment_label = normalize_string(f"Text segment from: {label}")
     pagination_label = pagination_url.split(',')[-1]
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label, lang="en")))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R41_has_location"], Literal(f"S. {pagination_label}")))
     g.add((text_segment, INT["R41_has_location"], Literal(pagination_url)))
@@ -88,9 +88,9 @@ def create_text_segment_d(
 ):
     text_segment = URIRef(f"{subj}/segment/{file}/{i}")
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    text_segment_label = Literal(f"Text segment from: {label}", lang="en")
+    text_segment_label = normalize_string(f"Text segment from: {label}")
     g.add((text_segment, RDF.type, INT["INT16_Segment"]))
-    g.add((text_segment, RDFS.label, Literal(text_segment_label)))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label, lang="en")))
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R41_has_location"], Literal(f"{arche_id_value}")))
     g.add((text_segment, CIDOC["P128i_is_carried_by"], URIRef(f"{subj}/carrier")))
@@ -369,7 +369,6 @@ for x in tqdm(files, total=len(files)):
             work_id = mention.get("source").lstrip("#").replace(".xml", "")
             if work_id.isnumeric():
                 work_id = "pmb" + work_id
-                label = doc_listwork.any_xpath(f".//tei:listBibl/tei:bibl[@xml:id={work_id}]/tei:title[1]/text()")
                 try:
                     work_uri = URIRef(bibl_class_lookup_dict[work_id])
                 except KeyError:
