@@ -37,12 +37,9 @@ def create_mention_text_passage(subj, i, mention_wording, item_label):
 
 
 # remove label add for production
-def create_text_passage_of(subj, i, file, label, label_text=False):
+def create_text_passage_of(subj, i, file, label):
     text_passage = URIRef(f"{subj}/passage/{file}/{i}")
-    if label_text is True:
-        text_passage_label = Literal(label, lang="de")
-    else:
-        text_passage_label = Literal(f"Text passage from: {label}", lang="en")
+    text_passage_label = Literal(f"Text passage from: {label}", lang="en")
     g.add((text_passage, RDF.type, INT["INT1_TextPassage"]))
     g.add((text_passage, RDFS.label, Literal(text_passage_label)))
     g.add((text_passage, INT["R10_is_Text_Passage_of"], URIRef(subj)))
@@ -379,13 +376,16 @@ for x in tqdm(files, total=len(files)):
                     print(f"quote: no uri for ref {work_id} found")
                     continue
                 label = doc_listwork.any_xpath(f".//tei:listBibl/tei:bibl[@xml:id='{work_id}']/tei:title[1]/text()")[0]
-                create_text_passage_of(work_uri, i, xml_id, label, label_text=True)
+                create_text_passage_of(work_uri, i, xml_id, label)
+                work_uri = URIRef(f"{work_uri}/passage/{xml_id}/{i}")
+                create_mention_intertex_relation(subj, i, text_passage, work_uri)
             elif work_id.startswith("D"):
                 work_uri = URIRef(f"{SK}{work_id}")
                 arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{work_id}.xml"
                 create_text_passage_of(work_uri, i, xml_id, work_id)
                 create_text_segment_d(work_uri, i, xml_id, work_id, arche_id_value)
-                work_uri = URIRef(f"{SK}{work_id}/passage/{xml_id}/{i}")
+                work_uri = URIRef(f"{work_uri}/passage/{xml_id}/{i}")
+                create_mention_intertex_relation(subj, i, text_passage, work_uri)
             elif work_id.startswith("https://fackel") and not work_id.endswith("0u4"):
                 quote_source_slugify = slugify(work_id)
                 try:
@@ -414,10 +414,10 @@ for x in tqdm(files, total=len(files)):
                             label,
                             pagination_url,
                             URIRef(published_expression))
+                        create_mention_intertex_relation(subj, i, text_passage, work_uri)
                 print("finished adding intertextual relations (incl. duplicates)")
             else:
                 continue
-            create_mention_intertex_relation(subj, i, text_passage, work_uri)
         elif mention.xpath("local-name()='note'"):
             note_source = mention.get("source")
             note_source_slugify = slugify(note_source)

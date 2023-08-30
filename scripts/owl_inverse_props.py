@@ -27,12 +27,10 @@ NSMAP_RDF = {
     "dcterms": "http://purl.org/dc/terms/"
 }
 SK_MODEL_URL = "https://raw.githubusercontent.com/semantic-kraus/sk_general/main/sk_model.owl"
-
-domain = "https://sk.acdh.oeaw.ac.at/"
-SK = Namespace(domain)
+DOMAIN = "https://sk.acdh.oeaw.ac.at/"
+SK = Namespace(DOMAIN)
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 
-domain = "https://sk.acdh.oeaw.ac.at/"
 project_uri = URIRef(f"{SK}project/legal-kraus")
 # store = plugin.get("Memory", Store)()
 # project_store = plugin.get("Memory", Store)()
