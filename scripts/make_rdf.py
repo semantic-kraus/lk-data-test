@@ -58,35 +58,30 @@ for x in tqdm(items, total=len(items)):
     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
-    name_node = x.xpath(".//tei:persName", namespaces=nsmap)[0]
-    item_label = make_entity_label(name_node)[0]
+    name_node = x.xpath(".//tei:persName", namespaces=nsmap)
+    item_label = make_entity_label(name_node[0])[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
     g += make_e42_identifiers_utils(
         subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
     )
     g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
-    try:
-        gender = x.xpath(".//tei:sex/@value", namespaces=doc.nsmap)[0]
-    except IndexError:
-        gender = None
-    try:
-        gender_attrib = x.xpath(".//tei:persName/@sex", namespaces=doc.nsmap)[0]
-    except IndexError:
-        gender_attrib = None
-    if gender_attrib is not None:
-        type_uri = f"{SK}types/person/persname/{gender_attrib}"
-        for appellation_uri in g.objects(
-            subject=subj, predicate=CIDOC["P1_is_identified_by"]
-        ):
-            if "/appellation/" in appellation_uri:
-                g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
-    elif gender is not None:
-        type_uri = f"{SK}types/person/persname/{gender}"
-        for appellation_uri in g.objects(
-            subject=subj, predicate=CIDOC["P1_is_identified_by"]
-        ):
-            if "/appellation/" in appellation_uri:
-                g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
+    for i, n in enumerate(name_node):
+        try:
+            gender = n.xpath("./parent::tei:person/tei:sex/@value", namespaces=doc.nsmap)[0]
+        except IndexError:
+            gender = None
+        try:
+            gender_attrib = n.xpath("./@sex", namespaces=doc.nsmap)[0]
+        except IndexError:
+            gender_attrib = None
+        if gender_attrib is not None:
+            type_uri = f"{SK}types/person/persname/{gender_attrib}"
+            appellation_uri = URIRef(f"{subj}/appellation/{i}")
+            g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
+        elif gender is not None:
+            type_uri = f"{SK}types/person/persname/{gender}"
+            appellation_uri = URIRef(f"{subj}/appellation/{i}")
+            g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
     occupations = make_occupations_type_req(subj, x, default_lang="de", special_label="works for: ", type_required="sk")
     print(occupations)
     g += occupations
