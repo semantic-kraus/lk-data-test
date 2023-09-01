@@ -71,11 +71,6 @@ def parse_rdf_ttl(file):
 def query_for_inverse(ttl_input, prop):
     prop = f"<{prop}>"
     query = f"""
-    PREFIX ns1: <http://www.cidoc-crm.org/cidoc-crm/>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
     SELECT ?sbj ?p ?obj
     WHERE {{
         ?sbj {prop} ?obj .
@@ -126,8 +121,7 @@ lookup_dict = get_inverse_of(parse_xml(SK_MODEL_URL))
 
 for file in rdf_files:
     ttl = parse_rdf_ttl(file)
-    missing_inverse_triples = []
-    found_inverse_triples = []
+    all_inverse_triples = []
     for x in tqdm(lookup_dict, total=len(lookup_dict)):
         # print(x)
         inverse_of = x[0]
@@ -135,29 +129,17 @@ for file in rdf_files:
         qres = query_for_inverse(ttl, inverse_of)
         dict_result = create_inverse_dict(qres)
         if dict_result is not None:
-            try:
-                test = dict_result[slugify(inverse)]
-            except KeyError:
-                test = False
-            if test is False:
-                print(f"no inverse found for {inverse_of}--{inverse}")
-                create_triples(dict_result, missing_inverse_triples)
-            else:
-                print(f"inverse found for {inverse_of}--{inverse}")
-                create_triples(dict_result, found_inverse_triples)
-    if len(found_inverse_triples) != 0:
-        unique_triples = [dict(t) for t in {tuple(d.items()) for d in found_inverse_triples}]
-        save_dict(unique_triples, f"{file.replace('.ttl', '')}_inv_ok.json")
-    if len(missing_inverse_triples) != 0:
-        # trig_path = file.replace(".ttl", ".trig")
-        # ds = parse_rdf_trig(trig_path)
-        # g = ds.graph(project_uri)
-        unique_triples = [dict(t) for t in {tuple(d.items()) for d in missing_inverse_triples}]
-        # for triple in unique_triples:
-        #     s = URIRef(triple["sbj"])
-        #     p = URIRef(triple["pred"])
-        #     o = URIRef(triple["obj"])
-        #     ds.add((s, p, o, g))
-        # # g_all = ConjunctiveGraph(store=project_store)
-        # ds.serialize(trig_path, format="trig")
+            create_triples(dict_result, all_inverse_triples)
+    if len(all_inverse_triples) != 0:
+        trig_path = file.replace(".ttl", ".trig")
+        ds = parse_rdf_trig(trig_path)
+        g = ds.graph(project_uri)
+        unique_triples = [dict(t) for t in {tuple(d.items()) for d in all_inverse_triples}]
+        for triple in unique_triples:
+            s = URIRef(triple["sbj"])
+            p = URIRef(triple["pred"])
+            o = URIRef(triple["obj"])
+            ds.add((s, p, o, g))
+        # g_all = ConjunctiveGraph(store=project_store)
+        ds.serialize(trig_path, format="trig")
         save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
