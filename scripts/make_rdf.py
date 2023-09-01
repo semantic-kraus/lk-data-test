@@ -133,7 +133,7 @@ for x in tqdm(items, total=len(items)):
                     g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
                     g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
                     g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/URL/{idno.attrib['type']}")))
-                    g.add((idno_uri, RDF.value, Literal(idno.text, lang="en")))
+                    g.add((idno_uri, RDF.value, Literal(idno.text)))
                 birth_place_identifier_uri = URIRef(f"{birth_place_uri}/identifier/{birth_place_id}")
                 g.add((birth_place_uri, CIDOC["P1_is_identified_by"], birth_place_identifier_uri))
                 g.add((birth_place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
@@ -181,7 +181,7 @@ for x in tqdm(items, total=len(items)):
                     g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
                     g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
                     g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/URL/{idno.attrib['type']}")))
-                    g.add((idno_uri, RDF.value, Literal(idno.text, lang="en")))
+                    g.add((idno_uri, RDF.value, Literal(idno.text)))
                 death_place_identifier_uri = URIRef(f"{death_place_uri}/identifier/{death_place_id}")
                 g.add((death_place_uri,
                        CIDOC["P1_is_identified_by"],
