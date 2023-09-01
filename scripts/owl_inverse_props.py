@@ -131,15 +131,15 @@ for file in rdf_files:
         if dict_result is not None:
             create_triples(dict_result, all_inverse_triples)
     if len(all_inverse_triples) != 0:
-        trig_path = file.replace(".ttl", ".trig")
-        ds = parse_rdf_trig(trig_path)
-        g = ds.graph(project_uri)
         unique_triples = [dict(t) for t in {tuple(d.items()) for d in all_inverse_triples}]
-        for triple in unique_triples:
-            s = URIRef(triple["sbj"])
-            p = URIRef(triple["pred"])
-            o = URIRef(triple["obj"])
-            ds.add((s, p, o, g))
-        # g_all = ConjunctiveGraph(store=project_store)
-        ds.serialize(trig_path, format="trig")
+        # trig_path = file.replace(".ttl", ".trig")
+        # ds = parse_rdf_trig(trig_path)
+        # g = ds.graph(project_uri)
+        # for triple in unique_triples:
+        #     s = URIRef(triple["sbj"])
+        #     p = URIRef(triple["pred"])
+        #     o = URIRef(triple["obj"])
+        #     ds.add((s, p, o, g))
+        # # g_all = ConjunctiveGraph(store=project_store)
+        # ds.serialize(trig_path, format="trig")
         save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
