@@ -83,7 +83,6 @@ for x in tqdm(items, total=len(items)):
             appellation_uri = URIRef(f"{subj}/appellation/{i}")
             g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
     occupations = make_occupations_type_req(subj, x, default_lang="de", special_label="works for: ", type_required="sk")
-    print(occupations)
     g += occupations
     # g += make_affiliations(
     #     subj,
@@ -94,11 +93,22 @@ for x in tqdm(items, total=len(items)):
     #     org_label_xpath="./tei:orgName[1]//text()",
     # )
     if x.xpath("./tei:birth", namespaces=nsmap):
+        try:
+            date_node = x.xpath("./tei:birth/tei:date[@type]", namespaces=nsmap)[0]
+        except IndexError:
+            date_node = None
+        if date_node is not None:
+            date_type = date_node.attrib["type"]
+            if date_type == "approx":
+                date_type_uri = URIRef(f"{SK}types/date/{date_type}")
+        else:
+            date_type_uri = False
         birth_g, birth_uri, birth_timestamp = make_birth_death_entities(
             subj,
             x,
             domain=SK,
             event_type="birth",
+            type_uri=date_type_uri,
             verbose=False,
             date_node_xpath="/tei:date[1]",
             place_id_xpath="//tei:settlement[1]/@key",
@@ -141,11 +151,22 @@ for x in tqdm(items, total=len(items)):
                 g.add((birth_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((birth_place_identifier_uri, RDF.value, Literal(birth_place_id)))
     if x.xpath("./tei:death", namespaces=nsmap):
+        try:
+            date_node = x.xpath("./tei:death/tei:date[@type]", namespaces=nsmap)[0]
+        except IndexError:
+            date_node = None
+        if date_node is not None:
+            date_type = date_node.attrib["type"]
+            if date_type == "approx":
+                date_type_uri = URIRef(f"{SK}types/date/{date_type}")
+        else:
+            date_type_uri = False
         death_g, death_uri, death_timestamp = make_birth_death_entities(
             subj,
             x,
             domain=SK,
             event_type="death",
+            type_uri=date_type_uri,
             default_prefix="Tod von",
             verbose=False,
             date_node_xpath="/tei:date[1]",
