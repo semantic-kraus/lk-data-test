@@ -41,9 +41,17 @@ def enrich_settlements(node):
 for person in listperson.any_xpath(".//tei:listPerson/tei:person"):
     if person.xpath("./tei:birth[./tei:settlement]", namespaces=nsmap):
         settlement_node = person.xpath("./tei:birth/tei:settlement", namespaces=nsmap)[0]
+        # to avoid duplicates, delete existing idnos
+        delete_idno = settlement_node.xpath("./tei:idno", namespaces=nsmap)
+        for idno in delete_idno:
+            settlement_node.remove(idno)
         enrich_settlements(settlement_node)
     if person.xpath("./tei:death[./tei:settlement]", namespaces=nsmap):
         settlement_node = person.xpath("./tei:death/tei:settlement", namespaces=nsmap)[0]
+        # to avoid duplicates, delete existing idnos
+        delete_idno = settlement_node.xpath("./tei:idno", namespaces=nsmap)
+        for idno in delete_idno:
+            settlement_node.remove(idno)
         enrich_settlements(settlement_node)
 listperson.tree_to_file(file=listperson_path)
 print("finished adding place ids to person/settlement nodes")
