@@ -16,6 +16,7 @@ from rdflib.namespace import RDF, RDFS
 from rdflib.store import Store
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
+GEO = Namespace("http://www.opengis.net/ont/geosparql#")
 
 store = plugin.get("Memory", Store)()
 project_store = plugin.get("Memory", Store)()
@@ -37,6 +38,7 @@ g.bind("cidoc", CIDOC)
 g.bind("frbroo", FRBROO)
 g.bind("sk", SK)
 g.bind("lk", LK)
+g.bind("geo", GEO)
 entity_type = "person"
 index_file = f"./data/indices/list{entity_type}.xml"
 doc = TeiReader(index_file)
@@ -152,6 +154,15 @@ for x in tqdm(items, total=len(items)):
                 g.add((birth_place_identifier_uri, RDFS.label, Literal(f"Identifier: {birth_place_id}", lang="en")))
                 g.add((birth_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((birth_place_identifier_uri, RDF.value, Literal(birth_place_id)))
+                try:
+                    loc = birth_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
+                except IndexError:
+                    loc = None
+                if loc is not None:
+                    long = loc.text.split()[0]
+                    lat = loc.text.split()[1]
+                    g.add((birth_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
+                                                                                       datatype=GEO["wktLiteral"])))
     if x.xpath("./tei:death", namespaces=nsmap):
         try:
             date_node = x.xpath("./tei:death/tei:date[@type]", namespaces=nsmap)[0]
@@ -215,6 +226,15 @@ for x in tqdm(items, total=len(items)):
                 g.add((death_place_identifier_uri, RDFS.label, Literal(f"Identifier: {death_place_id}", lang="en")))
                 g.add((death_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((death_place_identifier_uri, RDF.value, Literal(death_place_id)))
+                try:
+                    loc = birth_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
+                except IndexError:
+                    loc = None
+                if loc is not None:
+                    long = loc.text.split()[0]
+                    lat = loc.text.split()[1]
+                    g.add((birth_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
+                                                                                       datatype=GEO["wktLiteral"])))
 
 # ORGS
 entity_type = "org"
