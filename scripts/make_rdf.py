@@ -62,9 +62,9 @@ for x in tqdm(items, total=len(items)):
     item_label = make_entity_label(name_node[0])[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
     g += make_e42_identifiers_utils(
-        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+        subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
     )
-    g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
+    g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="en")
     for i, n in enumerate(name_node):
         try:
             gender = n.xpath("./parent::tei:person/tei:sex/@value", namespaces=doc.nsmap)[0]
@@ -82,7 +82,7 @@ for x in tqdm(items, total=len(items)):
             type_uri = f"{SK}types/person/persname/{gender}"
             appellation_uri = URIRef(f"{subj}/appellation/{i}")
             g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
-    occupations = make_occupations_type_req(subj, x, default_lang="de", special_label="works for: ", type_required="sk")
+    occupations = make_occupations_type_req(subj, x, default_lang="en", special_label="works for: ", type_required="sk")
     g += occupations
     # g += make_affiliations(
     #     subj,
@@ -110,6 +110,8 @@ for x in tqdm(items, total=len(items)):
             event_type="birth",
             type_uri=date_type_uri,
             verbose=False,
+            default_prefix="Birth of",
+            default_lang="en",
             date_node_xpath="/tei:date[1]",
             place_id_xpath="//tei:settlement[1]/@key",
         )
@@ -147,7 +149,7 @@ for x in tqdm(items, total=len(items)):
                 birth_place_identifier_uri = URIRef(f"{birth_place_uri}/identifier/{birth_place_id}")
                 g.add((birth_place_uri, CIDOC["P1_is_identified_by"], birth_place_identifier_uri))
                 g.add((birth_place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-                g.add((birth_place_identifier_uri, RDFS.label, Literal(f"Identifier: {birth_place_id}", lang="und")))
+                g.add((birth_place_identifier_uri, RDFS.label, Literal(f"Identifier: {birth_place_id}", lang="en")))
                 g.add((birth_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((birth_place_identifier_uri, RDF.value, Literal(birth_place_id)))
     if x.xpath("./tei:death", namespaces=nsmap):
@@ -167,8 +169,9 @@ for x in tqdm(items, total=len(items)):
             domain=SK,
             event_type="death",
             type_uri=date_type_uri,
-            default_prefix="Tod von",
             verbose=False,
+            default_prefix="Death of",
+            default_lang="en",
             date_node_xpath="/tei:date[1]",
             place_id_xpath="//tei:settlement[1]/@key",
         )
@@ -209,7 +212,7 @@ for x in tqdm(items, total=len(items)):
                        death_place_identifier_uri))
                 g.add((death_place_uri, CIDOC["P1_is_identified_by"], death_place_identifier_uri))
                 g.add((death_place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-                g.add((death_place_identifier_uri, RDFS.label, Literal(f"Identifier: {death_place_id}", lang="und")))
+                g.add((death_place_identifier_uri, RDFS.label, Literal(f"Identifier: {death_place_id}", lang="en")))
                 g.add((death_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((death_place_identifier_uri, RDF.value, Literal(death_place_id)))
 
@@ -227,9 +230,9 @@ for x in tqdm(items, total=len(items)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     g.add((subj, RDF.type, CIDOC["E74_Group"]))
-    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
+    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="en")
     g += make_e42_identifiers_utils(
-        subj, x, type_domain=f"{SK}types", default_lang="und", same_as=False
+        subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
     )
 
 # # PLACES
