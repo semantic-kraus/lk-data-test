@@ -78,7 +78,7 @@ for x in tqdm(items, total=len(items)):
             type_uri = f"{SK}types/person/persname/{gender_attrib}"
             appellation_uri = URIRef(f"{subj}/appellation/{i}")
             g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
-        elif gender is not None:
+        elif gender is not None and gender != "not-set":
             type_uri = f"{SK}types/person/persname/{gender}"
             appellation_uri = URIRef(f"{subj}/appellation/{i}")
             g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
