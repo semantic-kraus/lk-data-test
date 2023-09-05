@@ -1,5 +1,7 @@
+import os
 from lxml.etree import Element
 from rdflib import Graph, Literal, URIRef, RDF, RDFS, OWL
+from rdflib.namespace import Namespace
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP
 from acdh_cidoc_pyutils import (
     normalize_string,
@@ -130,4 +132,75 @@ def make_e42_identifiers_utils(
                             ),
                         )
                     )
+    return g
+
+
+def create_triple_from_node(
+    node: Element,
+    subj: URIRef,
+    subj_suffix: str | bool = False,
+    pred: Namespace = CIDOC["P2_has_type"],
+    obj_class: Namespace | bool = False,
+    obj_node_xpath: str | bool = False,
+    obj_node_value_xpath: str | bool = False,
+    obj_node_value_alt_xpath: str | bool = False,
+    obj_prefix: Namespace = Namespace("https://foo-bar/"),
+    obj_process_condition: str | bool = False,
+    skip_value: str | bool = False,
+    default_lang: str | bool = False,
+    value_literal: bool = False,
+    node_attribute: str | bool = False
+) -> Graph:
+    g = Graph()
+    predicate = pred
+    node_name = node.tag.split("}")[-1]
+    if subj_suffix:
+        subject = URIRef(f"{subj}/{subj_suffix}")
+    else:
+        subject = subj
+    if node_attribute:
+        try:
+            node_attrib_value = node.attrib[node_attribute]
+        except KeyError:
+            node_attrib_value = None
+        if node_attrib_value is not None:
+            subject = URIRef(f"{subject}/{node_attrib_value}")
+    if obj_node_xpath:
+        obj_node = node.xpath(obj_node_xpath, namespaces=NSMAP)
+        if type(obj_node) == list:
+            for i, obj in enumerate(obj_node):
+                subject_uri = URIRef(f"{subject}/{i}")
+                if obj_process_condition:
+                    try:
+                        obj.xpath(obj_process_condition, namespaces=NSMAP)[0]
+                    except IndexError:
+                        continue
+                obj_name = obj.tag.split("}")[-1]
+                if default_lang:
+                    try:
+                        lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
+                    except KeyError:
+                        lang = default_lang
+                    if node.text is not None:
+                        object_literal = Literal(normalize_string(node.text), lang=lang)
+                        g.add((subject_uri, RDFS.label, object_literal))
+                if value_literal:
+                    if node.text is not None:
+                        object_literal = Literal(normalize_string(node.text))
+                        g.add((subject_uri, RDF.value, object_literal))
+                try:
+                    obj_node_value = obj.xpath(obj_node_value_xpath, namespaces=NSMAP)[0]
+                except IndexError:
+                    try:
+                        obj_node_value = obj.xpath(obj_node_value_alt_xpath, namespaces=NSMAP)[0]
+                    except IndexError:
+                        continue
+                if obj_node_value == skip_value:
+                    continue
+                object_uri = URIRef(f"{obj_prefix}/{node_name}/{obj_name}/{obj_node_value}")
+                g.add((subject_uri, predicate, object_uri))
+    else:
+        subject_uri = subject
+        object_uri = obj_class
+        g.add((subject_uri, predicate, object_uri))
     return g

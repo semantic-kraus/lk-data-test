@@ -7,7 +7,8 @@ from acdh_cidoc_pyutils import (
 )
 from utils.utilities import (
     make_occupations_type_req,
-    make_e42_identifiers_utils
+    make_e42_identifiers_utils,
+    create_triple_from_node
 )
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
@@ -66,24 +67,28 @@ for x in tqdm(items, total=len(items)):
     g += make_e42_identifiers_utils(
         subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
     )
-    g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="en")
-    for i, n in enumerate(name_node):
-        try:
-            gender = n.xpath("./parent::tei:person/tei:sex/@value", namespaces=doc.nsmap)[0]
-        except IndexError:
-            gender = None
-        try:
-            gender_attrib = n.xpath("./@sex", namespaces=doc.nsmap)[0]
-        except IndexError:
-            gender_attrib = None
-        if gender_attrib is not None:
-            type_uri = f"{SK}types/person/persname/{gender_attrib}"
-            appellation_uri = URIRef(f"{subj}/appellation/{i}")
-            g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
-        elif gender is not None and gender != "not-set":
-            type_uri = f"{SK}types/person/persname/{gender}"
-            appellation_uri = URIRef(f"{subj}/appellation/{i}")
-            g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
+    g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
+    g += create_triple_from_node(node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
+                                 obj_node_xpath="./tei:persName", obj_node_value_xpath="./@sex",
+                                 obj_node_value_alt_xpath="./parent::tei:person/tei:sex/@value",
+                                 obj_prefix=f"{SK}types", skip_value="not-set")
+    # for i, n in enumerate(name_node):
+    #     try:
+    #         gender = n.xpath("./parent::tei:person/tei:sex/@value", namespaces=doc.nsmap)[0]
+    #     except IndexError:
+    #         gender = None
+    #     try:
+    #         gender_attrib = n.xpath("./@sex", namespaces=doc.nsmap)[0]
+    #     except IndexError:
+    #         gender_attrib = None
+    #     if gender_attrib is not None:
+    #         type_uri = f"{SK}types/person/persname/{gender_attrib}"
+    #         appellation_uri = URIRef(f"{subj}/appellation/{i}")
+    #         g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
+    #     elif gender is not None and gender != "not-set":
+    #         type_uri = f"{SK}types/person/persname/{gender}"
+    #         appellation_uri = URIRef(f"{subj}/appellation/{i}")
+    #         g.add((appellation_uri, CIDOC["P2_has_type"], URIRef(f"{type_uri}")))
     occupations = make_occupations_type_req(subj, x, default_lang="en", special_label="works for: ", type_required="sk")
     g += occupations
     # g += make_affiliations(
@@ -250,7 +255,7 @@ for x in tqdm(items, total=len(items)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     g.add((subj, RDF.type, CIDOC["E74_Group"]))
-    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="en")
+    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
     g += make_e42_identifiers_utils(
         subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
     )
