@@ -232,13 +232,13 @@ for x in tqdm(items, total=len(items)):
                 g.add((death_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
                 g.add((death_place_identifier_uri, RDF.value, Literal(death_place_id)))
                 try:
-                    loc = birth_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
+                    loc = death_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
                 except IndexError:
                     loc = None
                 if loc is not None:
                     long = loc.text.split()[0]
                     lat = loc.text.split()[1]
-                    g.add((birth_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
+                    g.add((death_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
                                                                                        datatype=GEO["wktLiteral"])))
 
 # ORGS
