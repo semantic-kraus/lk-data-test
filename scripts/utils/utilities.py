@@ -79,10 +79,6 @@ def make_e42_identifiers_utils(
         lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
     except KeyError:
         lang = default_lang
-    if set_lang:
-        pass
-    else:
-        lang = "und"
     xml_id = node.attrib["{http://www.w3.org/XML/1998/namespace}id"]
     label_value = normalize_string(f"{default_prefix}{xml_id}")
     if not type_domain.endswith("/"):
