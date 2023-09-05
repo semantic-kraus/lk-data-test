@@ -1,4 +1,3 @@
-import os
 from lxml.etree import Element
 from rdflib import Graph, Literal, URIRef, RDF, RDFS, OWL
 from rdflib.namespace import Namespace
@@ -8,6 +7,7 @@ from acdh_cidoc_pyutils import (
     create_e52,
     extract_begin_end
 )
+from acdh_tei_pyutils.utils import make_entity_label
 
 
 def make_occupations_type_req(
@@ -140,16 +140,20 @@ def create_triple_from_node(
     subj: URIRef,
     subj_suffix: str | bool = False,
     pred: Namespace = CIDOC["P2_has_type"],
+    sbj_class: Namespace | bool = False,
     obj_class: Namespace | bool = False,
     obj_node_xpath: str | bool = False,
     obj_node_value_xpath: str | bool = False,
-    obj_node_value_alt_xpath: str | bool = False,
+    obj_node_value_alt_xpath_or_str: str | bool = False,
     obj_prefix: Namespace = Namespace("https://foo-bar/"),
     obj_process_condition: str | bool = False,
     skip_value: str | bool = False,
     default_lang: str | bool = False,
     value_literal: bool = False,
-    node_attribute: str | bool = False
+    label_prefix: str = "",
+    node_attribute: str | bool = False,
+    identifier: Namespace | bool = False,
+    date: bool = False,
 ) -> Graph:
     g = Graph()
     predicate = pred
@@ -170,35 +174,73 @@ def create_triple_from_node(
         if type(obj_node) == list:
             for i, obj in enumerate(obj_node):
                 subject_uri = URIRef(f"{subject}/{i}")
-                if obj_process_condition:
-                    try:
-                        obj.xpath(obj_process_condition, namespaces=NSMAP)[0]
-                    except IndexError:
-                        continue
+                if identifier:
+                    g.add((subj, identifier, subject_uri))
+                if sbj_class:
+                    g.add((subject_uri, RDF.type, sbj_class))
                 obj_name = obj.tag.split("}")[-1]
+                if label_prefix:
+                    try:
+                        xpath = obj_process_condition.split("'")[0].replace("=", "")
+                        xpath_condition = obj_process_condition.split("'")[1]
+                        obj_type = obj.xpath(xpath, namespaces=NSMAP)[0]
+                        if obj_type == xpath_condition:
+                            l_prefix = label_prefix
+                        else:
+                            l_prefix = ""
+                    except IndexError:
+                        l_prefix = ""
+                else:
+                    l_prefix = ""
                 if default_lang:
                     try:
                         lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
                     except KeyError:
                         lang = default_lang
-                    if node.text is not None:
-                        object_literal = Literal(normalize_string(node.text), lang=lang)
+                    if len(obj.xpath("./*")) < 1 and obj.text:
+                        object_literal = Literal(f"{l_prefix}{normalize_string(obj.text)}", lang=lang)
+                        g.add((subject_uri, RDFS.label, object_literal))
+                    elif len(obj.xpath("./*")) > 1:
+                        entity_label_str, cur_lang = make_entity_label(obj, default_lang=lang)
+                        object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}", lang=lang)
                         g.add((subject_uri, RDFS.label, object_literal))
                 if value_literal:
-                    if node.text is not None:
-                        object_literal = Literal(normalize_string(node.text))
+                    if len(obj.xpath("./*")) < 1 and obj.text:
+                        object_literal = Literal(f"{l_prefix}{normalize_string(obj.text)}")
                         g.add((subject_uri, RDF.value, object_literal))
-                try:
-                    obj_node_value = obj.xpath(obj_node_value_xpath, namespaces=NSMAP)[0]
-                except IndexError:
+                    elif len(obj.xpath("./*")) > 1:
+                        entity_label_str, cur_lang = make_entity_label(obj, default_lang=lang)
+                        object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}")
+                        g.add((subject_uri, RDF.value, object_literal))
+                if obj_node_value_xpath:
                     try:
-                        obj_node_value = obj.xpath(obj_node_value_alt_xpath, namespaces=NSMAP)[0]
+                        obj_node_value = obj.xpath(obj_node_value_xpath, namespaces=NSMAP)[0]
                     except IndexError:
+                        try:
+                            obj_node_value = obj.xpath(obj_node_value_alt_xpath_or_str, namespaces=NSMAP)[0]
+                        except IndexError:
+                            if obj_node_value_alt_xpath_or_str == "iterator":
+                                obj_node_value = i
+                            else:
+                                obj_node_value = obj_node_value_alt_xpath_or_str
+                    if obj_node_value == skip_value:
                         continue
-                if obj_node_value == skip_value:
-                    continue
-                object_uri = URIRef(f"{obj_prefix}/{node_name}/{obj_name}/{obj_node_value}")
-                g.add((subject_uri, predicate, object_uri))
+                    object_uri = URIRef(f"{obj_prefix}/{node_name}/{obj_name}/{obj_node_value}")
+                    g.add((subject_uri, predicate, object_uri))
+                    if obj_class:
+                        g.add((object_uri, RDF.type, obj_class))
+                if date:
+                    not_known_value = "undefined"
+                    begin, end = extract_begin_end(obj, fill_missing=False)
+                    if begin or end:
+                        ts_uri = URIRef(f"{object_uri}/time-span")
+                        g.add((object_uri, CIDOC["P4_has_time-span"], ts_uri))
+                        g += create_e52(
+                            ts_uri,
+                            begin_of_begin=begin,
+                            end_of_end=end,
+                            not_known_value=not_known_value,
+                        )
     else:
         subject_uri = subject
         object_uri = obj_class
