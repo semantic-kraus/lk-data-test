@@ -10,6 +10,9 @@ from acdh_cidoc_pyutils import (
 from acdh_tei_pyutils.utils import make_entity_label
 
 
+GEO = Namespace("http://www.opengis.net/ont/geosparql#")
+
+
 def make_occupations_type_req(
     subj: URIRef,
     node: Element,
@@ -135,11 +138,84 @@ def make_e42_identifiers_utils(
     return g
 
 
+def create_object_literal_graph(
+    node: Element,
+    subject_uri: URIRef,
+    l_prefix: str,
+    default_lang: str,
+    predicate: Namespace,
+    enforce_default_lang: bool = False,
+) -> Graph:
+    g = Graph()
+    if enforce_default_lang:
+        lang = default_lang
+    else:
+        try:
+            lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
+        except KeyError:
+            lang = default_lang
+    if len(node.xpath("./*")) < 1 and node.text:
+        if predicate == RDFS.label:
+            object_literal = Literal(f"{l_prefix}{normalize_string(node.text)}",
+                                     lang=lang)
+        else:
+            object_literal = Literal(f"{l_prefix}{normalize_string(node.text)}")
+    elif len(node.xpath("./*")) > 1:
+        entity_label_str, cur_lang = make_entity_label(node, default_lang=lang)
+        if predicate == RDFS.label:
+            object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}",
+                                     lang=lang)
+        else:
+            object_literal = Literal(f"{l_prefix}{normalize_string(node.text)}")
+    else:
+        object_literal = Literal("undefined")
+    g.add((subject_uri, predicate, object_literal))
+    return g
+
+
+def create_obj_value_graph(
+    node: Element,
+    subject_uri: URIRef,
+    parent_node_name: str | bool = False,
+    xpath: str | bool = False,
+    xpath_alt_or_str: str | bool = False,
+    iterator: str | bool = False,
+    namespaces: dict = NSMAP,
+    skip_value: str | bool = False,
+    prefix: str | bool = False,
+    predicate: Namespace | bool = False,
+    obj_class: Namespace | bool = False,
+    custom_obj_uri: str | bool = False,
+) -> tuple[Graph, URIRef]:
+    g = Graph()
+    obj_name = node.tag.split("}")[-1]
+    try:
+        obj_node_value = node.xpath(xpath, namespaces=namespaces)[0]
+    except IndexError:
+        try:
+            obj_node_value = node.xpath(xpath_alt_or_str, namespaces=namespaces)[0]
+        except IndexError:
+            if xpath_alt_or_str == "iterator":
+                obj_node_value = iterator
+            else:
+                obj_node_value = xpath_alt_or_str
+    if obj_node_value == skip_value:
+        return (None, None)
+    if custom_obj_uri:
+        object_uri = URIRef(f"{prefix}/{custom_obj_uri}")
+    else:
+        object_uri = URIRef(f"{prefix}/{parent_node_name}/{obj_name}/{obj_node_value}")
+    if obj_class:
+        g.add((object_uri, RDF.type, obj_class))
+    g.add((subject_uri, predicate, object_uri))
+    return (g, object_uri)
+
+
 def create_triple_from_node(
     node: Element,
     subj: URIRef,
     subj_suffix: str | bool = False,
-    pred: Namespace = CIDOC["P2_has_type"],
+    pred: Namespace | bool = False,
     sbj_class: Namespace | bool = False,
     obj_class: Namespace | bool = False,
     obj_node_xpath: str | bool = False,
@@ -178,7 +254,6 @@ def create_triple_from_node(
                     g.add((subj, identifier, subject_uri))
                 if sbj_class:
                     g.add((subject_uri, RDF.type, sbj_class))
-                obj_name = obj.tag.split("}")[-1]
                 if label_prefix:
                     try:
                         xpath = obj_process_condition.split("'")[0].replace("=", "")
@@ -193,48 +268,35 @@ def create_triple_from_node(
                 else:
                     l_prefix = ""
                 if default_lang:
-                    try:
-                        lang = node.attrib["{http://www.w3.org/XML/1998/namespace}lang"]
-                    except KeyError:
-                        lang = default_lang
-                    if len(obj.xpath("./*")) < 1 and obj.text:
-                        object_literal = Literal(f"{l_prefix}{normalize_string(obj.text)}", lang=lang)
-                        g.add((subject_uri, RDFS.label, object_literal))
-                    elif len(obj.xpath("./*")) > 1:
-                        entity_label_str, cur_lang = make_entity_label(obj, default_lang=lang)
-                        object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}", lang=lang)
-                        g.add((subject_uri, RDFS.label, object_literal))
+                    g += create_object_literal_graph(
+                        node=obj, subject_uri=subject_uri,
+                        l_prefix=l_prefix, default_lang=default_lang,
+                        predicate=RDFS.label
+                    )
                 if value_literal:
-                    if len(obj.xpath("./*")) < 1 and obj.text:
-                        object_literal = Literal(f"{l_prefix}{normalize_string(obj.text)}")
-                        g.add((subject_uri, RDF.value, object_literal))
-                    elif len(obj.xpath("./*")) > 1:
-                        entity_label_str, cur_lang = make_entity_label(obj, default_lang=lang)
-                        object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}")
-                        g.add((subject_uri, RDF.value, object_literal))
+                    g += create_object_literal_graph(
+                        node=obj, subject_uri=subject_uri,
+                        l_prefix=l_prefix, default_lang=default_lang,
+                        predicate=RDF.value
+                    )
                 if obj_node_value_xpath:
-                    try:
-                        obj_node_value = obj.xpath(obj_node_value_xpath, namespaces=NSMAP)[0]
-                    except IndexError:
-                        try:
-                            obj_node_value = obj.xpath(obj_node_value_alt_xpath_or_str, namespaces=NSMAP)[0]
-                        except IndexError:
-                            if obj_node_value_alt_xpath_or_str == "iterator":
-                                obj_node_value = i
-                            else:
-                                obj_node_value = obj_node_value_alt_xpath_or_str
-                    if obj_node_value == skip_value:
-                        continue
-                    object_uri = URIRef(f"{obj_prefix}/{node_name}/{obj_name}/{obj_node_value}")
-                    g.add((subject_uri, predicate, object_uri))
-                    if obj_class:
-                        g.add((object_uri, RDF.type, obj_class))
-                if date:
+                    g1, obj_uri = create_obj_value_graph(
+                        node=obj, subject_uri=subject_uri,
+                        parent_node_name=node_name,
+                        xpath=obj_node_value_xpath,
+                        xpath_alt_or_str=obj_node_value_alt_xpath_or_str,
+                        iterator=i, skip_value=skip_value,
+                        prefix=obj_prefix, predicate=predicate,
+                        obj_class=obj_class
+                    )
+                    if g1:
+                        g += g1
+                if date and obj_uri:
                     not_known_value = "undefined"
                     begin, end = extract_begin_end(obj, fill_missing=False)
                     if begin or end:
-                        ts_uri = URIRef(f"{object_uri}/time-span")
-                        g.add((object_uri, CIDOC["P4_has_time-span"], ts_uri))
+                        ts_uri = URIRef(f"{obj_uri}/time-span")
+                        g.add((obj_uri, CIDOC["P4_has_time-span"], ts_uri))
                         g += create_e52(
                             ts_uri,
                             begin_of_begin=begin,
@@ -245,4 +307,52 @@ def create_triple_from_node(
         subject_uri = subject
         object_uri = obj_class
         g.add((subject_uri, predicate, object_uri))
+    return g
+
+
+def create_birth_death_settlement_graph(
+    node: Element,
+    namespaces: dict = NSMAP,
+    uri_prefix: Namespace = Namespace("https://foo-bar/"),
+    node_attrib: str | bool = False,
+) -> Graph:
+    g = Graph()
+    try:
+        place_id = node.attrib[node_attrib]
+    except KeyError:
+        place_id = None
+    if place_id is not None:
+        place_uri = URIRef(f"{uri_prefix}{place_id}")
+        g.add((place_uri, RDF.type, CIDOC["E53_Place"]))
+        place_label = node.xpath(normalize_string("./tei:placeName/text()"),
+                                 namespaces=namespaces)[0]
+        g.add((place_uri, RDFS.label, Literal(place_label, lang="en")))
+        place_appellations = URIRef(f"{place_uri}/appellations/0")
+        g.add((place_uri, CIDOC["P1_is_identified_by"], place_appellations))
+        g.add((place_appellations, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
+        g.add((place_appellations, RDFS.label, Literal(place_label, lang="en")))
+        g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/place/placename")))
+        g.add((place_appellations, RDF.value, Literal(place_label)))
+        for i, idno in enumerate(node.xpath("./tei:idno", namespaces=namespaces)):
+            idno_uri = URIRef(f"{place_uri}/identifier/idno/{i}")
+            g.add((place_uri, CIDOC["P1_is_identified_by"], idno_uri))
+            g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
+            g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
+            g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/idno/URL/{idno.attrib['type']}")))
+            g.add((idno_uri, RDF.value, Literal(idno.text)))
+        place_identifier_uri = URIRef(f"{place_uri}/identifier/{place_id}")
+        g.add((place_uri, CIDOC["P1_is_identified_by"], place_identifier_uri))
+        g.add((place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
+        g.add((place_identifier_uri, RDFS.label, Literal(f"Identifier: {place_id}", lang="en")))
+        g.add((place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/idno/xml-id")))
+        g.add((place_identifier_uri, RDF.value, Literal(place_id)))
+        try:
+            loc = node.xpath("./tei:location/tei:geo", namespaces=namespaces)[0]
+        except IndexError:
+            loc = None
+        if loc is not None:
+            long = loc.text.split()[0]
+            lat = loc.text.split()[1]
+            g.add((place_uri, CIDOC["P168_place_is_defined_by"],
+                   Literal(f"Point({long} {lat})", datatype=GEO["wktLiteral"])))
     return g

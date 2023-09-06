@@ -7,13 +7,15 @@ from acdh_cidoc_pyutils import (
 )
 from utils.utilities import (
     make_e42_identifiers_utils,
-    create_triple_from_node
+    create_triple_from_node,
+    create_birth_death_settlement_graph
 )
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
 from rdflib.namespace import RDF, RDFS
 from rdflib.store import Store
+
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 GEO = Namespace("http://www.opengis.net/ont/geosparql#")
@@ -68,22 +70,28 @@ for x in tqdm(items, total=len(items)):
     )
     # g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
     # create appellations
-    g += create_triple_from_node(node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
-                                 sbj_class=CIDOC["E33_E41_Linguistic_Appellation"], obj_class=CIDOC["E55_Type"],
-                                 obj_node_xpath="./tei:persName", obj_node_value_xpath="./@type",
-                                 obj_node_value_alt_xpath_or_str="pref", obj_prefix=f"{SK}types",
-                                 default_lang="und", value_literal=True, identifier=CIDOC["P1_is_identified_by"])
+    g += create_triple_from_node(
+        node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
+        sbj_class=CIDOC["E33_E41_Linguistic_Appellation"], obj_class=CIDOC["E55_Type"],
+        obj_node_xpath="./tei:persName", obj_node_value_xpath="./@type",
+        obj_node_value_alt_xpath_or_str="pref", obj_prefix=f"{SK}types",
+        default_lang="und", value_literal=True, identifier=CIDOC["P1_is_identified_by"]
+    )
     # add additional type for appellations
-    g += create_triple_from_node(node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
-                                 obj_class=CIDOC["P2_has_type"], obj_node_xpath="./tei:persName",
-                                 obj_node_value_xpath="./@sex",
-                                 obj_node_value_alt_xpath_or_str="./parent::tei:person/tei:sex/@value",
-                                 obj_prefix=f"{SK}types", skip_value="not-set")
-    g += create_triple_from_node(node=x, subj=subj, subj_suffix="occupation", pred=CIDOC["None"],
-                                 sbj_class=FRBROO["F51_Pursuit"],
-                                 obj_node_xpath="./tei:occupation", obj_process_condition="./@type='sk'",
-                                 default_lang="en", label_prefix="works for: ",
-                                 identifier=CIDOC["P14i_performed"])
+    g += create_triple_from_node(
+        node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
+        obj_class=CIDOC["P2_has_type"], obj_node_xpath="./tei:persName",
+        obj_node_value_xpath="./@sex",
+        obj_node_value_alt_xpath_or_str="./parent::tei:person/tei:sex/@value",
+        obj_prefix=f"{SK}types", skip_value="not-set"
+    )
+    g += create_triple_from_node(
+        node=x, subj=subj, subj_suffix="occupation", pred=CIDOC["None"],
+        sbj_class=FRBROO["F51_Pursuit"],
+        obj_node_xpath="./tei:occupation", obj_process_condition="./@type='sk'",
+        default_lang="en", label_prefix="works for: ",
+        identifier=CIDOC["P14i_performed"]
+    )
     # g += make_affiliations(
     #     subj,
     #     x,
@@ -124,43 +132,12 @@ for x in tqdm(items, total=len(items)):
         except IndexError:
             birth_place_node = None
         if birth_place_node is not None:
-            try:
-                birth_place_id = birth_place_node.attrib["key"]
-            except KeyError:
-                birth_place_id = None
-            if birth_place_id is not None:
-                birth_place_uri = URIRef(f"{SK}{birth_place_id}")
-                g.add((birth_place_uri, RDF.type, CIDOC["E53_Place"]))
-                place_label = birth_place_node.xpath("./tei:placeName/text()", namespaces=nsmap)[0]
-                g.add((birth_place_uri, RDFS.label, Literal(place_label, lang="en")))
-                place_appellations = URIRef(f"{birth_place_uri}/appellations/0")
-                g.add((birth_place_uri, CIDOC["P1_is_identified_by"], place_appellations))
-                g.add((place_appellations, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
-                g.add((place_appellations, RDFS.label, Literal(place_label, lang="en")))
-                g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{SK}types/place/placename")))
-                g.add((place_appellations, RDF.value, Literal(place_label)))
-                for i, idno in enumerate(birth_place_node.xpath("./tei:idno", namespaces=nsmap)):
-                    idno_uri = URIRef(f"{birth_place_uri}/identifier/idno/{i}")
-                    g.add((birth_place_uri, CIDOC["P1_is_identified_by"], idno_uri))
-                    g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
-                    g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
-                    g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/URL/{idno.attrib['type']}")))
-                    g.add((idno_uri, RDF.value, Literal(idno.text)))
-                birth_place_identifier_uri = URIRef(f"{birth_place_uri}/identifier/{birth_place_id}")
-                g.add((birth_place_uri, CIDOC["P1_is_identified_by"], birth_place_identifier_uri))
-                g.add((birth_place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-                g.add((birth_place_identifier_uri, RDFS.label, Literal(f"Identifier: {birth_place_id}", lang="en")))
-                g.add((birth_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
-                g.add((birth_place_identifier_uri, RDF.value, Literal(birth_place_id)))
-                try:
-                    loc = birth_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
-                except IndexError:
-                    loc = None
-                if loc is not None:
-                    long = loc.text.split()[0]
-                    lat = loc.text.split()[1]
-                    g.add((birth_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
-                                                                                       datatype=GEO["wktLiteral"])))
+            g += create_birth_death_settlement_graph(
+                node=birth_place_node,
+                namespaces=nsmap,
+                uri_prefix=SK,
+                node_attrib="key"
+            )
     if x.xpath("./tei:death", namespaces=nsmap):
         try:
             date_node = x.xpath("./tei:death/tei:date[@type]", namespaces=nsmap)[0]
@@ -193,46 +170,12 @@ for x in tqdm(items, total=len(items)):
         except IndexError:
             death_place_node = None
         if death_place_node is not None:
-            try:
-                death_place_id = death_place_node.attrib["key"]
-            except KeyError:
-                death_place_id = None
-            if death_place_id is not None:
-                death_place_uri = URIRef(f"{SK}{death_place_id}")
-                g.add((death_place_uri, RDF.type, CIDOC["E53_Place"]))
-                place_label = death_place_node.xpath("./tei:placeName/text()", namespaces=nsmap)[0]
-                g.add((death_place_uri, RDFS.label, Literal(place_label, lang="en")))
-                place_appellations = URIRef(f"{death_place_uri}/appellations/0")
-                g.add((death_place_uri, CIDOC["P1_is_identified_by"], place_appellations))
-                g.add((place_appellations, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
-                g.add((place_appellations, RDFS.label, Literal(place_label, lang="en")))
-                g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{SK}types/place/placename")))
-                g.add((place_appellations, RDF.value, Literal(place_label)))
-                for i, idno in enumerate(death_place_node.xpath("./tei:idno", namespaces=nsmap)):
-                    idno_uri = URIRef(f"{death_place_uri}/identifier/idno/{i}")
-                    g.add((death_place_uri, CIDOC["P1_is_identified_by"], idno_uri))
-                    g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
-                    g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
-                    g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/URL/{idno.attrib['type']}")))
-                    g.add((idno_uri, RDF.value, Literal(idno.text)))
-                death_place_identifier_uri = URIRef(f"{death_place_uri}/identifier/{death_place_id}")
-                g.add((death_place_uri,
-                       CIDOC["P1_is_identified_by"],
-                       death_place_identifier_uri))
-                g.add((death_place_uri, CIDOC["P1_is_identified_by"], death_place_identifier_uri))
-                g.add((death_place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-                g.add((death_place_identifier_uri, RDFS.label, Literal(f"Identifier: {death_place_id}", lang="en")))
-                g.add((death_place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{SK}types/idno/xml-id")))
-                g.add((death_place_identifier_uri, RDF.value, Literal(death_place_id)))
-                try:
-                    loc = death_place_node.xpath("./tei:location/tei:geo", namespaces=nsmap)[0]
-                except IndexError:
-                    loc = None
-                if loc is not None:
-                    long = loc.text.split()[0]
-                    lat = loc.text.split()[1]
-                    g.add((death_place_uri, CIDOC["P168_place_is_defined_by"], Literal(f"Point({long} {lat})",
-                                                                                       datatype=GEO["wktLiteral"])))
+            g += create_birth_death_settlement_graph(
+                node=death_place_node,
+                namespaces=nsmap,
+                uri_prefix=SK,
+                node_attrib="key"
+            )
 
 # ORGS
 entity_type = "org"
