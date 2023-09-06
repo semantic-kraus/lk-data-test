@@ -171,7 +171,7 @@ def create_triple_from_node(
             subject = URIRef(f"{subject}/{node_attrib_value}")
     if obj_node_xpath:
         obj_node = node.xpath(obj_node_xpath, namespaces=NSMAP)
-        if type(obj_node) == list:
+        if isinstance(obj_node, list):
             for i, obj in enumerate(obj_node):
                 subject_uri = URIRef(f"{subject}/{i}")
                 if identifier:
