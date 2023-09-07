@@ -1,4 +1,5 @@
 from lxml.etree import Element
+from lxml import etree as ET
 from rdflib import Graph, Literal, URIRef, RDF, RDFS, OWL
 from rdflib.namespace import Namespace
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP
@@ -160,15 +161,15 @@ def create_object_literal_graph(
                                      lang=lang)
         else:
             object_literal = Literal(f"{l_prefix}{normalize_string(node.text)}")
-    elif len(node.xpath("./*")) > 1:
+    elif len(node.xpath("./*")) >= 1:
         entity_label_str, cur_lang = make_entity_label(node, default_lang=lang)
         if predicate == RDFS.label:
             object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}",
                                      lang=lang)
         else:
-            object_literal = Literal(f"{l_prefix}{normalize_string(node.text)}")
+            object_literal = Literal(f"{l_prefix}{normalize_string(entity_label_str)}")
     else:
-        object_literal = Literal("undefined")
+        object_literal = Literal("undefined", lang="en")
     g.add((subject_uri, predicate, object_literal))
     return g
 
@@ -246,7 +247,13 @@ def create_triple_from_node(
         if node_attrib_value is not None:
             subject = URIRef(f"{subject}/{node_attrib_value}")
     if obj_node_xpath:
-        obj_node = node.xpath(obj_node_xpath, namespaces=NSMAP)
+        try:
+            obj_node = node.xpath(obj_node_xpath, namespaces=NSMAP)
+        except (ET.XPathSyntaxError, ET.XPathEvalError) as err:
+            print("##################################")
+            print(f"{err} in xpath: {obj_node_xpath}")
+            print("##################################")
+            obj_node = None
         if isinstance(obj_node, list):
             for i, obj in enumerate(obj_node):
                 subject_uri = URIRef(f"{subject}/{i}")
@@ -269,24 +276,31 @@ def create_triple_from_node(
                     l_prefix = ""
                 if default_lang:
                     g += create_object_literal_graph(
-                        node=obj, subject_uri=subject_uri,
-                        l_prefix=l_prefix, default_lang=default_lang,
+                        node=obj,
+                        subject_uri=subject_uri,
+                        l_prefix=l_prefix,
+                        default_lang=default_lang,
                         predicate=RDFS.label
                     )
                 if value_literal:
                     g += create_object_literal_graph(
-                        node=obj, subject_uri=subject_uri,
-                        l_prefix=l_prefix, default_lang=default_lang,
+                        node=obj,
+                        subject_uri=subject_uri,
+                        l_prefix=l_prefix,
+                        default_lang=default_lang,
                         predicate=RDF.value
                     )
                 if obj_node_value_xpath:
                     g1, obj_uri = create_obj_value_graph(
-                        node=obj, subject_uri=subject_uri,
+                        node=obj,
+                        subject_uri=subject_uri,
                         parent_node_name=node_name,
                         xpath=obj_node_value_xpath,
                         xpath_alt_or_str=obj_node_value_alt_xpath_or_str,
-                        iterator=i, skip_value=skip_value,
-                        prefix=obj_prefix, predicate=predicate,
+                        iterator=i,
+                        skip_value=skip_value,
+                        prefix=obj_prefix,
+                        predicate=predicate,
                         obj_class=obj_class
                     )
                     if g1:
@@ -310,6 +324,66 @@ def create_triple_from_node(
     return g
 
 
+def create_e42_identifiers(
+    subj: URIRef,
+    node: Element,
+    subj_suffix: str = "identifier/idno",
+    default_lang: str = "und",
+    uri_prefix: str = "https://foo-bar/",
+    xpath: str | bool = False,
+    attribute: str | bool = False,
+    label: str | bool = False,
+    label_prefix: str | bool = "Identifier: ",
+    value: str | bool = False,
+    type_suffix: str | bool = "types/any",
+    custom_identifier: Namespace | bool = False
+) -> Graph:
+    g = Graph()
+    if xpath:
+        try:
+            identifier = node.xpath(xpath, namespaces=NSMAP)
+        except (ET.XPathSyntaxError, ET.XPathEvalError) as err:
+            print("##################################")
+            print(f"{err} in xpath: {xpath}")
+            print("##################################")
+            identifier = None
+        if isinstance(identifier, list):
+            for i, ident in enumerate(identifier):
+                identifier_uri = URIRef(f"{subj}/{subj_suffix}/{i}")
+                g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
+                g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
+                g.add((identifier_uri, CIDOC["P2_has_type"],
+                       URIRef(f"{uri_prefix}{type_suffix}/{ident.attrib[attribute]}")))
+                g += create_object_literal_graph(
+                    node=ident,
+                    subject_uri=identifier_uri,
+                    l_prefix=label_prefix,
+                    default_lang=default_lang,
+                    predicate=RDFS.label
+                )
+                g += create_object_literal_graph(
+                    node=ident,
+                    subject_uri=identifier_uri,
+                    l_prefix="",
+                    default_lang=default_lang,
+                    predicate=RDF.value
+                )
+        return g
+    else:
+        identifier_uri = URIRef(f"{subj}/{subj_suffix}")
+        g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
+        if custom_identifier:
+            g.add((identifier_uri, RDF.type, custom_identifier))
+        else:
+            g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
+        g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
+        if label:
+            g.add((identifier_uri, RDFS.label, Literal(f"{label_prefix}{label}", lang=default_lang)))
+        if value:
+            g.add((identifier_uri, RDF.value, Literal(label)))
+        return (g, identifier_uri)
+
+
 def create_birth_death_settlement_graph(
     node: Element,
     namespaces: dict = NSMAP,
@@ -324,35 +398,70 @@ def create_birth_death_settlement_graph(
     if place_id is not None:
         place_uri = URIRef(f"{uri_prefix}{place_id}")
         g.add((place_uri, RDF.type, CIDOC["E53_Place"]))
-        place_label = node.xpath(normalize_string("./tei:placeName/text()"),
-                                 namespaces=namespaces)[0]
-        g.add((place_uri, RDFS.label, Literal(place_label, lang="en")))
-        place_appellations = URIRef(f"{place_uri}/appellations/0")
-        g.add((place_uri, CIDOC["P1_is_identified_by"], place_appellations))
-        g.add((place_appellations, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
-        g.add((place_appellations, RDFS.label, Literal(place_label, lang="en")))
-        g.add((place_appellations, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/place/placename")))
-        g.add((place_appellations, RDF.value, Literal(place_label)))
-        for i, idno in enumerate(node.xpath("./tei:idno", namespaces=namespaces)):
-            idno_uri = URIRef(f"{place_uri}/identifier/idno/{i}")
-            g.add((place_uri, CIDOC["P1_is_identified_by"], idno_uri))
-            g.add((idno_uri, RDF.type, CIDOC["E42_Identifier"]))
-            g.add((idno_uri, RDFS.label, Literal(f"Identifier: {idno.text}", lang="en")))
-            g.add((idno_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/idno/URL/{idno.attrib['type']}")))
-            g.add((idno_uri, RDF.value, Literal(idno.text)))
-        place_identifier_uri = URIRef(f"{place_uri}/identifier/{place_id}")
-        g.add((place_uri, CIDOC["P1_is_identified_by"], place_identifier_uri))
-        g.add((place_identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-        g.add((place_identifier_uri, RDFS.label, Literal(f"Identifier: {place_id}", lang="en")))
-        g.add((place_identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}types/idno/xml-id")))
-        g.add((place_identifier_uri, RDF.value, Literal(place_id)))
+        # from string no xpath
+        g1, identifier_uri = create_e42_identifiers(
+            node=node,
+            subj=place_uri,
+            subj_suffix="appellations/0",
+            uri_prefix=uri_prefix,
+            type_suffix="types/place/placename",
+            custom_identifier=CIDOC["E33_E41_Linguistic_Appellation"]
+        )
+        g += g1
+        # literals from node
+        place_node = node.xpath(normalize_string("./tei:placeName"), namespaces=namespaces)[0]
+        g += create_object_literal_graph(
+            node=place_node,
+            subject_uri=place_uri,
+            l_prefix="",
+            default_lang="en",
+            predicate=RDFS.label
+        )
+        g += create_object_literal_graph(
+            node=place_node,
+            subject_uri=identifier_uri,
+            l_prefix="",
+            default_lang="en",
+            predicate=RDFS.label
+        )
+        g += create_object_literal_graph(
+            node=place_node,
+            subject_uri=identifier_uri,
+            l_prefix="",
+            default_lang="en",
+            predicate=RDF.value
+        )
+        # from node via xpath
+        g += create_e42_identifiers(
+            node=node,
+            subj=place_uri,
+            subj_suffix="identifier/idno",
+            default_lang="en",
+            uri_prefix=uri_prefix,
+            xpath="./tei:idno",
+            attribute="type",
+            label_prefix="Identifier: ",
+            type_suffix="types/idno/URL"
+        )
+        # from string no xpath
+        g2, identifier_uri2 = create_e42_identifiers(
+            node=node,
+            subj=place_uri,
+            subj_suffix=f"identifier/{place_id}",
+            default_lang="en",
+            uri_prefix=uri_prefix,
+            label=place_id,
+            type_suffix="types/idno/xml-id",
+            label_prefix="Identifier: "
+        )
+        g += g2
         try:
-            loc = node.xpath("./tei:location/tei:geo", namespaces=namespaces)[0]
+            coordinates = node.xpath("./tei:location/tei:geo", namespaces=namespaces)[0]
         except IndexError:
-            loc = None
-        if loc is not None:
-            long = loc.text.split()[0]
-            lat = loc.text.split()[1]
+            coordinates = None
+        if coordinates is not None:
+            long = coordinates.text.split()[0]
+            lat = coordinates.text.split()[1]
             g.add((place_uri, CIDOC["P168_place_is_defined_by"],
                    Literal(f"Point({long} {lat})", datatype=GEO["wktLiteral"])))
     return g

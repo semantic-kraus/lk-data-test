@@ -12,8 +12,8 @@ from utils.utilities import (
 )
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
-from rdflib.namespace import RDF, RDFS
+from rdflib import Graph, Namespace, URIRef, plugin, ConjunctiveGraph
+from rdflib.namespace import RDF
 from rdflib.store import Store
 
 
@@ -71,25 +71,44 @@ for x in tqdm(items, total=len(items)):
     # g += make_appellations(subj, x, type_domain=f"{SK}types", woke_type="pref", default_lang="und")
     # create appellations
     g += create_triple_from_node(
-        node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
-        sbj_class=CIDOC["E33_E41_Linguistic_Appellation"], obj_class=CIDOC["E55_Type"],
-        obj_node_xpath="./tei:persName", obj_node_value_xpath="./@type",
-        obj_node_value_alt_xpath_or_str="pref", obj_prefix=f"{SK}types",
-        default_lang="und", value_literal=True, identifier=CIDOC["P1_is_identified_by"]
+        node=x,
+        subj=subj,
+        subj_suffix="appellation",
+        pred=CIDOC["P2_has_type"],
+        sbj_class=CIDOC["E33_E41_Linguistic_Appellation"],
+        obj_class=CIDOC["E55_Type"],
+        obj_node_xpath="./tei:persName",
+        obj_node_value_xpath="./@type",
+        obj_node_value_alt_xpath_or_str="pref",
+        obj_prefix=f"{SK}types",
+        default_lang="und",
+        value_literal=True,
+        identifier=CIDOC["P1_is_identified_by"]
     )
     # add additional type for appellations
     g += create_triple_from_node(
-        node=x, subj=subj, subj_suffix="appellation", pred=CIDOC["P2_has_type"],
-        obj_class=CIDOC["P2_has_type"], obj_node_xpath="./tei:persName",
+        node=x,
+        subj=subj,
+        subj_suffix="appellation",
+        pred=CIDOC["P2_has_type"],
+        obj_class=CIDOC["P2_has_type"],
+        obj_node_xpath="./tei:persName",
         obj_node_value_xpath="./@sex",
         obj_node_value_alt_xpath_or_str="./parent::tei:person/tei:sex/@value",
-        obj_prefix=f"{SK}types", skip_value="not-set"
+        obj_prefix=f"{SK}types",
+        skip_value="not-set"
     )
+    # add occupations
     g += create_triple_from_node(
-        node=x, subj=subj, subj_suffix="occupation", pred=CIDOC["None"],
+        node=x,
+        subj=subj,
+        subj_suffix="occupation",
+        pred=CIDOC["None"],
         sbj_class=FRBROO["F51_Pursuit"],
-        obj_node_xpath="./tei:occupation", obj_process_condition="./@type='sk'",
-        default_lang="en", label_prefix="works for: ",
+        obj_node_xpath="./tei:occupation",
+        obj_process_condition="./@type='sk'",
+        default_lang="en",
+        label_prefix="works for: ",
         identifier=CIDOC["P14i_performed"]
     )
     # g += make_affiliations(
