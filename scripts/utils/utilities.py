@@ -335,9 +335,11 @@ def create_e42_identifiers(
     label: str | bool = False,
     label_prefix: str | bool = "Identifier: ",
     value: str | bool = False,
+    value_datatype: Namespace | bool = False,
     type_suffix: str | bool = "types/any",
-    custom_identifier: Namespace | bool = False
-) -> Graph:
+    custom_identifier: Namespace | bool = False,
+    custom_identifier_class: Namespace | bool = False
+) -> Graph | tuple[Graph, URIRef]:
     g = Graph()
     if xpath:
         try:
@@ -350,10 +352,19 @@ def create_e42_identifiers(
         if isinstance(identifier, list):
             for i, ident in enumerate(identifier):
                 identifier_uri = URIRef(f"{subj}/{subj_suffix}/{i}")
-                g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
-                g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-                g.add((identifier_uri, CIDOC["P2_has_type"],
-                       URIRef(f"{uri_prefix}{type_suffix}/{ident.attrib[attribute]}")))
+                if custom_identifier:
+                    g.add((subj, custom_identifier, identifier_uri))
+                else:
+                    g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
+                if custom_identifier_class:
+                    g.add((identifier_uri, RDF.type, custom_identifier_class))
+                else:
+                    g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
+                if attribute:
+                    g.add((identifier_uri, CIDOC["P2_has_type"],
+                           URIRef(f"{uri_prefix}{type_suffix}/{ident.attrib[attribute]}")))
+                else:
+                    g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
                 g += create_object_literal_graph(
                     node=ident,
                     subject_uri=identifier_uri,
@@ -371,16 +382,21 @@ def create_e42_identifiers(
         return g
     else:
         identifier_uri = URIRef(f"{subj}/{subj_suffix}")
-        g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
         if custom_identifier:
-            g.add((identifier_uri, RDF.type, custom_identifier))
+            g.add((subj, custom_identifier, identifier_uri))
+        else:
+            g.add((subj, CIDOC["P1_is_identified_by"], identifier_uri))
+        if custom_identifier_class:
+            g.add((identifier_uri, RDF.type, custom_identifier_class))
         else:
             g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
         g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
         if label:
             g.add((identifier_uri, RDFS.label, Literal(f"{label_prefix}{label}", lang=default_lang)))
-        if value:
+        if value and not value_datatype:
             g.add((identifier_uri, RDF.value, Literal(label)))
+        elif value and value_datatype:
+            g.add((identifier_uri, RDF.value, Literal(label, datatype=value_datatype)))
         return (g, identifier_uri)
 
 
@@ -405,7 +421,7 @@ def create_birth_death_settlement_graph(
             subj_suffix="appellations/0",
             uri_prefix=uri_prefix,
             type_suffix="types/place/placename",
-            custom_identifier=CIDOC["E33_E41_Linguistic_Appellation"]
+            custom_identifier_class=CIDOC["E33_E41_Linguistic_Appellation"]
         )
         g += g1
         # literals from node

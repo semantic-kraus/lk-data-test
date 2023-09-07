@@ -11,6 +11,7 @@ from slugify import slugify
 from lxml.etree import XMLParser
 from lxml import etree as ET
 from rdflib.store import Store
+from utils.utilities import create_e42_identifiers
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 store = plugin.get("Memory", Store)()
@@ -245,23 +246,36 @@ for x in tqdm(files, total=len(files)):
     subj = URIRef(item_id)
     subj_f4 = URIRef(f"{item_id}/carrier")
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
-    g.add((subj, RDF.type, CIDOC["E73_Information_Object"]))
-    # DOC-ARCHE-IDs
-    arche_id = URIRef(f"{SK}{xml_id}/identifier/0")
     arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{xml_id}.xml"
-    g.add((subj, CIDOC["P1_is_identified_by"], arche_id))
-    g.add((arche_id, RDF.type, CIDOC["E42_Identifier"]))
-    g.add((arche_id, RDF.value, Literal(arche_id_value, datatype=XSD.anyURI)))
-    g.add((arche_id, RDFS.label, Literal(f"ARCHE-ID: {arche_id_value}", lang="en")))
-    g.add((arche_id, CIDOC["P2_has_type"], arche_text_type_uri))
-    # appellations
-    title_uri = URIRef(f"{subj}/title/0")
-    g.add((title_uri, RDF.type, CIDOC["E35_Title"]))
-    g.add((title_uri, RDF.value, Literal(item_label, lang="de")))
-    g.add((title_uri, RDFS.label, Literal(item_label, lang="de")))
-    g.add((subj, CIDOC["P102_has_title"], title_uri))
-    g.add((title_uri, CIDOC["P2_has_type"], title_type))
-
+    g.add((subj, RDF.type, CIDOC["E73_Information_Object"]))
+    node = doc.tree.getroot()
+    # DOC-ARCHE-IDs no xpath
+    g1, identifier_uri = create_e42_identifiers(
+        subj=subj,
+        node=node,
+        subj_suffix="identifier/0",
+        default_lang="en",
+        uri_prefix=SK,
+        label=arche_id_value,
+        label_prefix="ARCHE-ID: ",
+        value=arche_id_value,
+        type_suffix="types/idno/URL/ARCHE",
+        value_datatype=XSD.anyURI
+    )
+    g += g1
+    # create custom identifies for title with xpath
+    g += create_e42_identifiers(
+        subj=subj,
+        node=node,
+        subj_suffix="title",
+        default_lang="de",
+        uri_prefix=SK,
+        xpath=".//tei:titleStmt/tei:title[1]",
+        label_prefix="",
+        type_suffix="types/title/prov",
+        custom_identifier=CIDOC["P102_has_title"],
+        custom_identifier_class=CIDOC["E35_Title"]
+    )
     # F4_Manifestation
     g.add((subj_f4, RDF.type, FRBROO["F4_Manifestation_Singleton"]))
     g.add((subj_f4, RDFS.label, Literal(f"Carrier of: {item_label}")))
