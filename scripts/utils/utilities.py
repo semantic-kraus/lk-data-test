@@ -324,7 +324,7 @@ def create_triple_from_node(
     return g
 
 
-def create_e42_identifiers(
+def create_e42_or_custom_class(
     subj: URIRef,
     node: Element,
     subj_suffix: str = "identifier/idno",
@@ -415,7 +415,7 @@ def create_birth_death_settlement_graph(
         place_uri = URIRef(f"{uri_prefix}{place_id}")
         g.add((place_uri, RDF.type, CIDOC["E53_Place"]))
         # from string no xpath
-        g1, identifier_uri = create_e42_identifiers(
+        g1, identifier_uri = create_e42_or_custom_class(
             node=node,
             subj=place_uri,
             subj_suffix="appellations/0",
@@ -448,7 +448,7 @@ def create_birth_death_settlement_graph(
             predicate=RDF.value
         )
         # from node via xpath
-        g += create_e42_identifiers(
+        g += create_e42_or_custom_class(
             node=node,
             subj=place_uri,
             subj_suffix="identifier/idno",
@@ -460,7 +460,7 @@ def create_birth_death_settlement_graph(
             type_suffix="types/idno/URL"
         )
         # from string no xpath
-        g2, identifier_uri2 = create_e42_identifiers(
+        g2, identifier_uri2 = create_e42_or_custom_class(
             node=node,
             subj=place_uri,
             subj_suffix=f"identifier/{place_id}",
