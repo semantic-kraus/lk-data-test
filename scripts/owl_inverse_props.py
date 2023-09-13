@@ -2,7 +2,6 @@
 import glob
 import requests
 import json
-from slugify import slugify
 from tqdm import tqdm
 from lxml.etree import XMLParser
 from lxml import etree as ET
@@ -71,10 +70,9 @@ def parse_rdf_ttl(file):
 def query_for_inverse(ttl_input, prop):
     prop = f"<{prop}>"
     query = f"""
-    SELECT ?sbj ?p ?obj
+    SELECT ?sbj ?obj
     WHERE {{
         ?sbj {prop} ?obj .
-        ?obj ?p ?o .
     }}"""
     qres = ttl_input.query(query)
     print(len(qres))
@@ -83,15 +81,14 @@ def query_for_inverse(ttl_input, prop):
 
 def create_inverse_dict(query_result):
     props_with_inverse = {}
-    for row in tqdm(query_result, total=len(query_result)):
+    for i, row in enumerate(tqdm(query_result, total=len(query_result))):
         sbj = row[0]
-        p = slugify(row[1])
-        obj = row[2]
+        obj = row[1]
         try:
-            props_with_inverse[p].append({sbj: obj})
+            props_with_inverse[i].append({sbj: obj})
         except KeyError:
-            props_with_inverse[p] = []
-            props_with_inverse[p].append({sbj: obj})
+            props_with_inverse[i] = []
+            props_with_inverse[i].append({sbj: obj})
     # print(props_with_inverse)
     return props_with_inverse
 
@@ -102,7 +99,7 @@ def save_dict(dict, file):
     print(f"saved dict {file}")
 
 
-def create_triples(dict_result, output):
+def create_triples(dict_result, output, inverse):
     for key, value in dict_result.items():
         # inverse_inverse_of = f"{inverse_of}--{inverse}"
         print("length values", len(value))
@@ -129,7 +126,7 @@ for file in rdf_files:
         qres = query_for_inverse(ttl, inverse_of)
         dict_result = create_inverse_dict(qres)
         if dict_result is not None:
-            create_triples(dict_result, all_inverse_triples)
+            create_triples(dict_result, all_inverse_triples, inverse)
     if len(all_inverse_triples) != 0:
         unique_triples = [dict(t) for t in {tuple(d.items()) for d in all_inverse_triples}]
         # trig_path = file.replace(".ttl", ".trig")
