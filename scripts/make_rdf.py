@@ -1,7 +1,6 @@
 import os
 from tqdm import tqdm
 from acdh_cidoc_pyutils import (
-    make_appellations,
     make_birth_death_entities,
     make_entity_label,
 )
@@ -196,24 +195,24 @@ for x in tqdm(items, total=len(items)):
                 node_attrib="key"
             )
 
-# ORGS
-entity_type = "org"
-index_file = f"./data/indices/list{entity_type}.xml"
-doc = TeiReader(index_file)
-nsmap = doc.nsmap
-items = doc.any_xpath(f".//tei:{entity_type}")
-if LIMIT:
-    items = items[:LIMIT]
-print(f"converting {entity_type}s derived from {index_file}")
-for x in tqdm(items, total=len(items)):
-    xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
-    item_id = f"{SK}{xml_id}"
-    subj = URIRef(item_id)
-    g.add((subj, RDF.type, CIDOC["E74_Group"]))
-    g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
-    g += make_e42_identifiers_utils(
-        subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
-    )
+# # ORGS
+# entity_type = "org"
+# index_file = f"./data/indices/list{entity_type}.xml"
+# doc = TeiReader(index_file)
+# nsmap = doc.nsmap
+# items = doc.any_xpath(f".//tei:{entity_type}")
+# if LIMIT:
+#     items = items[:LIMIT]
+# print(f"converting {entity_type}s derived from {index_file}")
+# for x in tqdm(items, total=len(items)):
+#     xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+#     item_id = f"{SK}{xml_id}"
+#     subj = URIRef(item_id)
+#     g.add((subj, RDF.type, CIDOC["E74_Group"]))
+#     g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
+#     g += make_e42_identifiers_utils(
+#         subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
+#     )
 
 # # PLACES
 # entity_type = "place"
