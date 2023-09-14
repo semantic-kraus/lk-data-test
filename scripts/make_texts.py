@@ -11,7 +11,7 @@ from slugify import slugify
 from lxml.etree import XMLParser
 from lxml import etree as ET
 from rdflib.store import Store
-from utils.utilities import create_e42_identifiers
+from utils.utilities import create_e42_or_custom_class
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 store = plugin.get("Memory", Store)()
@@ -250,7 +250,7 @@ for x in tqdm(files, total=len(files)):
     g.add((subj, RDF.type, CIDOC["E73_Information_Object"]))
     node = doc.tree.getroot()
     # DOC-ARCHE-IDs no xpath
-    g1, identifier_uri = create_e42_identifiers(
+    g1, identifier_uri = create_e42_or_custom_class(
         subj=subj,
         node=node,
         subj_suffix="identifier/0",
@@ -264,7 +264,7 @@ for x in tqdm(files, total=len(files)):
     )
     g += g1
     # create custom identifies for title with xpath
-    g += create_e42_identifiers(
+    g += create_e42_or_custom_class(
         subj=subj,
         node=node,
         subj_suffix="title",
@@ -302,7 +302,8 @@ for x in tqdm(files, total=len(files)):
 
     # creator Brief:
     try:
-        creator = doc.any_xpath(".//tei:correspAction/tei:persName/@ref")[0]
+        creator = doc.any_xpath(""".//tei:correspAction[@type='sent']/tei:persName/@ref|
+                                .//tei:correspAction[@type='sent']/tei:orgName/@ref""")[0]
         go_on = True
     except IndexError:
         go_on = False
