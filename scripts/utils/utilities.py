@@ -189,7 +189,7 @@ def create_obj_value_graph(
     custom_obj_uri: str | bool = False,
 ) -> tuple[Graph, URIRef]:
     g = Graph()
-    obj_name = node.tag.split("}")[-1]
+    obj_name = node.tag.split("}")[-1].lower()
     try:
         obj_node_value = node.xpath(xpath, namespaces=namespaces)[0]
     except IndexError:
