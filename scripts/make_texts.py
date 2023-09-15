@@ -1,6 +1,7 @@
 import os
 import glob
 import requests
+import re
 from tqdm import tqdm
 from acdh_cidoc_pyutils import extract_begin_end, create_e52, normalize_string
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, NSMAP, SCHEMA, INT
@@ -467,6 +468,7 @@ for x in tqdm(files, total=len(files)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
+    item_label = re.sub(r"Akte [0-9]+\s", "", item_label)
     item_comment = normalize_string(
         doc.any_xpath(".//tei:abstract[1]/tei:p//text()")[0]
     )

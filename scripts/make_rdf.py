@@ -11,8 +11,8 @@ from utils.utilities import (
 )
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO
 from acdh_tei_pyutils.tei import TeiReader
-from rdflib import Graph, Namespace, URIRef, plugin, ConjunctiveGraph
-from rdflib.namespace import RDF
+from rdflib import Graph, Namespace, URIRef, plugin, ConjunctiveGraph, Literal
+from rdflib.namespace import RDF, RDFS
 from rdflib.store import Store
 
 
@@ -64,6 +64,7 @@ for x in tqdm(items, total=len(items)):
     name_node = x.xpath(".//tei:persName", namespaces=nsmap)
     item_label = make_entity_label(name_node[0])[0]
     g.add((subj, RDF.type, CIDOC["E21_Person"]))
+    g.add((subj, RDFS.label, Literal(item_label)))
     g += make_e42_identifiers_utils(
         subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
     )
