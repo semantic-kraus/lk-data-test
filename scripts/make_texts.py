@@ -12,7 +12,9 @@ from slugify import slugify
 from lxml.etree import XMLParser
 from lxml import etree as ET
 from rdflib.store import Store
-from utils.utilities import create_e42_or_custom_class
+from utils.utilities import (
+    create_e42_or_custom_class
+)
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 store = plugin.get("Memory", Store)()
@@ -407,7 +409,7 @@ for x in tqdm(files, total=len(files)):
                     quote_id = int_lookup_quotes[str(quote_source_slugify)]
                 except KeyError:
                     quote_id = False
-                if quote_id:
+                if isinstance(quote_id, list):
                     for q in quote_id:
                         text_uri = URIRef(f"{SK}{q}")
                         work_uri = URIRef(f"{SK}{q}/passage/{xml_id}/{i}")
@@ -453,6 +455,9 @@ for x in tqdm(files, total=len(files)):
 # cases
 print("lets process cases as E5 Events")
 
+LC = URIRef(f"{SK}types/event/legal-case")
+g.add((LC, RDF.type, CIDOC["E55_Type"]))
+
 if LIMIT:
     files = sorted(glob.glob("legalkraus-archiv/data/cases_tei/*.xml"))[:LIMIT]
 else:
@@ -472,13 +477,12 @@ for x in tqdm(files, total=len(files)):
     item_comment = normalize_string(
         doc.any_xpath(".//tei:abstract[1]/tei:p//text()")[0]
     )
-
     g.add((subj, RDF.type, CIDOC["E5_Event"]))
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     g.add((subj, RDFS.comment, Literal(item_comment, lang="de")))
+    g.add((subj, CIDOC["P2_has_type"], LC))
     # appellations
     app_uri = URIRef(f"{subj}/appellation/0")
-    g.add((app_uri, RDF.type, CIDOC["E33_E41_Linguistic_Appellation"]))
     g.add((app_uri, RDF.value, Literal(item_label, lang="de")))
     g.add((app_uri, RDFS.label, Literal(item_label, lang="de")))
     g.add((subj, CIDOC["P1_is_identified_by"], app_uri))
