@@ -24,7 +24,7 @@ if os.environ.get("NO_LIMIT"):
     LIMIT = False
     print("no limit")
 else:
-    LIMIT = 500
+    LIMIT = 2000
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 project_uri = URIRef(f"{SK}project/legal-kraus")
@@ -98,6 +98,19 @@ def create_text_segment_d(
     g.add((text_segment, INT["R16_incorporates"], text_passage))
     g.add((text_segment, INT["R41_has_location"], Literal(f"{arche_id_value}")))
     g.add((text_segment, CIDOC["P128i_is_carried_by"], URIRef(f"{subj}/carrier")))
+    return text_segment
+
+
+def create_text_segment_int(
+    subj, i, file, label, published_expression, text_passage
+):
+    text_segment = URIRef(f"{subj}/segment/{file}/{i}")
+    text_segment_label = normalize_string(f"Text segment from: {label}")
+    published_expression = URIRef(f"{published_expression}/published-expression")
+    g.add((text_segment, RDF.type, INT["INT16_Segment"]))
+    g.add((text_segment, RDFS.label, Literal(text_segment_label, lang="en")))
+    g.add((text_segment, INT["R16_incorporates"], text_passage))
+    g.add((text_segment, INT["R25_is_segment_of"], published_expression))
     return text_segment
 
 
@@ -392,10 +405,20 @@ for x in tqdm(files, total=len(files)):
                 except KeyError:
                     print(f"quote: no uri for ref {work_id} found")
                     continue
-                label = doc_listwork.any_xpath(f".//tei:listBibl/tei:bibl[@xml:id='{work_id}']/tei:title[1]/text()")[0]
+                work = doc_listwork.any_xpath(f".//tei:listBibl/tei:bibl[@xml:id='{work_id}']")[0]
+                label = work.xpath("./tei:title[1]/text()", namespaces=NSMAP)[0]
                 create_text_passage_of(work_uri, i, xml_id, label)
-                work_uri = URIRef(f"{work_uri}/passage/{xml_id}/{i}")
-                create_mention_intertex_relation(subj, i, text_passage, work_uri)
+                work_uri_passage = URIRef(f"{work_uri}/passage/{xml_id}/{i}")
+                create_mention_intertex_relation(subj, i, text_passage, work_uri_passage)
+                work_node = work.xpath("./tei:bibl[@type='sk']", namespaces=NSMAP)[0]
+                work_type = work_node.xpath("./@subtype", namespaces=NSMAP)[0]
+                if work_type != "standalone_text" or "journal":
+                    if work_type == "article":
+                        pub_exp = work_node.xpath("./tei:date/@key", namespaces=NSMAP)[0]
+                        pub_exp = URIRef(f"{SK}{pub_exp[1:]}")
+                    else:
+                        pub_exp = work_uri
+                    create_text_segment_int(work_uri, i, xml_id, label, pub_exp, work_uri_passage)
             elif work_id.startswith("D"):
                 work_uri = URIRef(f"{SK}{work_id}")
                 arche_id_value = f"https://id.acdh.oeaw.ac.at/legalkraus/{work_id}.xml"
