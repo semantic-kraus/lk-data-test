@@ -209,7 +209,7 @@ for x in tqdm(items, total=len(items)):
         g.add((title_e35_uri, CIDOC["P2_has_type"], title_e35_type))
 
     if item_sk_type == "standalone_text":
-        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
         try:
             premiere = x.xpath("./tei:bibl[parent::tei:bibl/tei:date[@type='premiere']]", namespaces=nsmap)[0]
         except IndexError:
@@ -242,7 +242,7 @@ for x in tqdm(items, total=len(items)):
                 g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
                 g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
     if item_sk_type == "article":
-        g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
         article_segment = URIRef(f"{subj}/segment")
         seg_f24_key_raw = x.xpath(".//tei:date[@key]/@key", namespaces=nsmap)[0]
         seg_f24_key = seg_f24_key_raw.strip("# ")
@@ -264,7 +264,7 @@ for x in tqdm(items, total=len(items)):
             )
 
     if item_sk_type == "standalone_publication":
-        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
         g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
         if pub_expr_uri != subj:
@@ -273,7 +273,7 @@ for x in tqdm(items, total=len(items)):
                     pub_expr_uri,
                     RDFS.label,
                     Literal(
-                        normalize_string(f"Published Expression: {label_value}"),
+                        normalize_string(label_value),
                         lang="en",
                     ),
                 )
@@ -400,7 +400,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     periodical_uri,
                     RDFS.label,
-                    Literal(f"Periodical: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
             if item_sk_type in ["journal", "issue", "article"]:
@@ -486,7 +486,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri,
                     RDFS.label,
-                    Literal(f"Issue: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
             for i, title_e35 in enumerate(
@@ -519,7 +519,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri_f24,
                     RDFS.label,
-                    Literal(f"Issue: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
@@ -774,7 +774,7 @@ for x in tqdm(items, total=len(items)):
             g.add((subj_orig, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
             g.add((subj_orig,
                    RDFS.label,
-                   Literal(normalize_string(f"Original Expression of: {label_value}"), lang="en")))
+                   Literal(normalize_string(label_value), lang="en")))
             g.add((subj_orig, CIDOC["P16i_was_used_for"], creation))
             creation_orig = URIRef(f"{subj_orig}/creation")
             g.add((creation_orig, RDF.type, FRBROO["F28_Expression_Creation"]))
