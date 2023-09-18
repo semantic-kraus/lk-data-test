@@ -403,7 +403,7 @@ for x in tqdm(files, total=len(files)):
                 create_text_segment_d(work_uri, i, xml_id, work_id, arche_id_value)
                 work_uri = URIRef(f"{work_uri}/passage/{xml_id}/{i}")
                 create_mention_intertex_relation(subj, i, text_passage, work_uri)
-            elif work_id.startswith("https://fackel") and not work_id.endswith("0u4"):
+            elif work_id.startswith("https://fackel"):
                 quote_source_slugify = slugify(work_id)
                 try:
                     quote_id = int_lookup_quotes[str(quote_source_slugify)]
