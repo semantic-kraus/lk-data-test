@@ -13,7 +13,7 @@
 </text>
 <text>
 <textID>text05226</textID>
-<textRange>https://fackel.oeaw.ac.at/F/198,003  https://fackel.oeaw.ac.at/F/198,004  https://fackel.oeaw.ac.at/F/198,005  https://fackel.oeaw.ac.at/F/198,006  https://fackel.oeaw.ac.at/F/198,007  https://fackel.oeaw.ac.at/F/198,008  https://fackel.oeaw.ac.at/F/198,009</textRange>
+<textRange><!-- https://fackel.oeaw.ac.at/F/198,003 - commented out to avoid double, see above --> https://fackel.oeaw.ac.at/F/198,004  https://fackel.oeaw.ac.at/F/198,005  https://fackel.oeaw.ac.at/F/198,006  https://fackel.oeaw.ac.at/F/198,007  https://fackel.oeaw.ac.at/F/198,008  https://fackel.oeaw.ac.at/F/198,009</textRange>
 </text>
 <text>
 <textID>text06085</textID>
@@ -514,11 +514,11 @@
 <!--<text>
 <textID>text14633</textID>
 <textRange>https://fackel.oeaw.ac.at/F/873,001  https://fackel.oeaw.ac.at/F/873,002  https://fackel.oeaw.ac.at/F/873,003  https://fackel.oeaw.ac.at/F/873,004</textRange>
-</text>-->
+</text>
 <text>
 <textID>text14641</textID>
 <textRange>https://fackel.oeaw.ac.at/F/873,001</textRange>
-</text>
+</text>-->
 <text>
 <textID>text14645</textID>
 <textRange>https://fackel.oeaw.ac.at/F/876,001  https://fackel.oeaw.ac.at/F/876,002  https://fackel.oeaw.ac.at/F/876,003  https://fackel.oeaw.ac.at/F/876,004  https://fackel.oeaw.ac.at/F/876,005  https://fackel.oeaw.ac.at/F/876,006  https://fackel.oeaw.ac.at/F/876,007  https://fackel.oeaw.ac.at/F/876,008  https://fackel.oeaw.ac.at/F/876,009  https://fackel.oeaw.ac.at/F/876,010  https://fackel.oeaw.ac.at/F/876,011  https://fackel.oeaw.ac.at/F/876,012  https://fackel.oeaw.ac.at/F/876,013  https://fackel.oeaw.ac.at/F/876,014  https://fackel.oeaw.ac.at/F/876,015  https://fackel.oeaw.ac.at/F/876,016  https://fackel.oeaw.ac.at/F/876,017  https://fackel.oeaw.ac.at/F/876,018  https://fackel.oeaw.ac.at/F/876,019  https://fackel.oeaw.ac.at/F/876,020  https://fackel.oeaw.ac.at/F/876,021  https://fackel.oeaw.ac.at/F/876,022  https://fackel.oeaw.ac.at/F/876,023  https://fackel.oeaw.ac.at/F/876,024  https://fackel.oeaw.ac.at/F/876,025  https://fackel.oeaw.ac.at/F/876,026  https://fackel.oeaw.ac.at/F/876,027  https://fackel.oeaw.ac.at/F/876,028  https://fackel.oeaw.ac.at/F/876,029  https://fackel.oeaw.ac.at/F/876,030  https://fackel.oeaw.ac.at/F/876,031</textRange>
@@ -566,4 +566,30 @@
 <text>
 <textID>text15015</textID>
 <textRange>https://fackel.oeaw.ac.at/F/912,069  https://fackel.oeaw.ac.at/F/912,070  https://fackel.oeaw.ac.at/F/912,071  https://fackel.oeaw.ac.at/F/912,072</textRange>
-</text></result>
+</text>
+<text>
+<textID>issue691-696</textID>
+<textRange>https://fackel.oeaw.ac.at/F/691,0u1</textRange>
+</text>
+	<text>
+		<textID>issue787-794</textID>
+		<textRange>https://fackel.oeaw.ac.at/F/787,0u1</textRange>
+	</text>
+	<text>
+		<textID>issue757-758</textID>
+		<textRange>https://fackel.oeaw.ac.at/f/757,0u4</textRange>
+	</text>
+	<text>
+		<textID>issue890-905</textID>
+		<textRange>https://fackel.oeaw.ac.at/F/890,0u1</textRange>
+	</text>
+	<text>
+		<textID>issue514-518</textID>
+		<textRange>https://fackel.oeaw.ac.at/F/514,0u1</textRange>
+	</text>
+<text>
+	<textID>issue649-656</textID>
+	<textRange>https://fackel.oeaw.ac.at/F/649,0u1</textRange>
+</text>
+
+</result>
