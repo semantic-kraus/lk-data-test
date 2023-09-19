@@ -24,7 +24,7 @@ if os.environ.get("NO_LIMIT"):
     LIMIT = False
     print("no limit")
 else:
-    LIMIT = 2000
+    LIMIT = 1000
 domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 project_uri = URIRef(f"{SK}project/legal-kraus")
@@ -445,7 +445,7 @@ for x in tqdm(files, total=len(files)):
                         try:
                             issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
                         except IndexError:
-                            issue = "Issue-not-found"
+                            issue = q.replace("issue", "")
                         published_expression = f"{SK}issue{issue}/published-expression"
                         create_text_segment_of(
                             text_uri,
