@@ -412,7 +412,7 @@ for x in tqdm(files, total=len(files)):
                 create_mention_intertex_relation(subj, i, text_passage, work_uri_passage)
                 work_node = work.xpath("./tei:bibl[@type='sk']", namespaces=NSMAP)[0]
                 work_type = work_node.xpath("./@subtype", namespaces=NSMAP)[0]
-                if work_type != "standalone_text" or "journal":
+                if work_type not in ["standalone_text", "journal"]:
                     if work_type == "article":
                         pub_exp = work_node.xpath("./tei:date/@key", namespaces=NSMAP)[0]
                         pub_exp = URIRef(f"{SK}{pub_exp[1:]}")
