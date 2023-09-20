@@ -12239,8 +12239,9 @@
         <bibl xml:id="pmb42987">
 
           <title type="main">Die Moderne</title>
-          <bibl type="sk" subtype="journal">
-            <title level="j" key="#pmb42987">Die Moderne</title>
+          <bibl type="sk" subtype="issue">
+            <title level="j" key="#sk_lk00505">Die Moderne</title> 
+          	<date key="#pmb42987"/>
           </bibl>
           <author key="pmb14049" role="hat-herausgegeben">Berg, Leo</author>
           <author key="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
@@ -33314,10 +33315,11 @@
 
           <title type="werk_bibliografische-angabe">Berliner Tageblatt, Nr. 600, 21.12.1926
             (Morgenausgabe)</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
+            <title level="a">Zur Jessner-Hetze</title>
             <title level="j" key="#pmb41531">Berliner Tageblatt</title>
             <num type="issue">Nr. 600</num>
-            <date when="1926-12-21" key="#pmb53052">21.12.1926<note>Morgenausgabe</note>
+            <date when="1926-12-21" key="#sk_lk00504">21.12.1926<note>Morgenausgabe</note>
             </date>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -38818,7 +38820,7 @@
           <title type="werk_bibliografische-angabe">Der „Fackel-Kraus “ hat ausgefackelt, in: Wiener
             Mittagsblatt Nr. 38, 2.5.1933, S. 2.</title>
           <bibl type="sk" subtype="article">
-            <title level="a">Der „Fackel-Kraus “ hat ausgefackelt</title>
+            <title level="a">Der „Fackel-Kraus“ hat ausgefackelt</title>
             <title level="j" key="#pmb61386">Wiener Mittagsblatt</title>
             <num type="issue">Nr. 38</num>
             <date when="1933-05-02" key="#pmb61385">2.5.1933</date>
@@ -38956,7 +38958,7 @@
           <title type="werk_bibliografische-angabe">EIn Kreislauf, in: Reichspost Nr. 319,
             19.11.1922 (Morgenblatt), S. 3.</title>
           <bibl type="sk" subtype="article">
-            <title level="a">EIn Kreislauf</title>
+            <title level="a">Ein Kreislauf</title>
             <title level="j" key="#pmb42850">Reichspost</title>
             <num type="issue">Nr. 319</num>
             <date when="1922-11-19" key="#pmb62205">19.11.1922<note>Morgenblatt</note>
