@@ -1,21 +1,27 @@
 import glob
 import os
+import requests
+import json
 from acdh_tei_pyutils.tei import TeiReader
 from tqdm import tqdm
 from collections import defaultdict, Counter
 from acdh_cidoc_pyutils import normalize_string
-import json
+from lxml.etree import XMLParser
+from lxml import etree as ET
 
 
 fackel_texts = "https://raw.githubusercontent.com/semantic-kraus/fa-data/main/data/indices/fackelTexts_cascaded.xml"
+p = XMLParser(huge_tree=True)
+response = requests.get(fackel_texts)
+fa_doc = ET.fromstring(response.content, parser=p)
 print(f"parsing {fackel_texts}")
-fa_doc = TeiReader(fackel_texts)
+# fa_doc = TeiReader(fackel_texts)
 
 files = sorted(glob.glob("./legalkraus-archiv/data/editions/*xml"))
 
 page_text_dict = defaultdict(list)
 page_text_list = []
-for x in fa_doc.any_xpath(".//text[@range]"):
+for x in fa_doc.xpath(".//text[@range]", namespaces=fa_doc.nsmap):
     text_id = x.attrib["id"]
     for y in x.attrib["range"].split():
         page_id = y.lower()

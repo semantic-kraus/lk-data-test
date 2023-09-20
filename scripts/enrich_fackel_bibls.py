@@ -20,7 +20,7 @@ def delete_old_matches():
     # # be careful to only delete exact matches
     # # don't delete @resp="manual"
     for idno in listfackel.any_xpath(
-        "//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue') and @resp!='manual']"
+        "//tei:idno[@type='fackel' and (@subtype='text' or @subtype='issue') and not(@resp='manual')]"
     ):
         idno.getparent().remove(idno)
 

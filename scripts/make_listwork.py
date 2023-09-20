@@ -60,18 +60,30 @@ ed_issue_type_uri = URIRef(f"{SK}types/appellation/ed")
 main_title_type = URIRef(f"{SK}types/title/main")
 sub_title_type = URIRef(f"{SK}types/title/sub")
 translation = URIRef(f"{SK}types/translation")
+event_first = URIRef(f"{SK}types/event/first")
+idno_xml_id = URIRef(f"{SK}types/idno/xml-id")
+idno_url_pmb = URIRef(f"{SK}types/idno/URL/pmb")
 
 
+g.add((event_first, RDF.type, CIDOC["E55_Type"]))
 g.add((main_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
 g.add((sub_appellation_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((idno_xml_id, RDF.type, CIDOC["E55_Type"]))
 g.add((translation, RDF.type, CIDOC["E55_Type"]))
+g.add((idno_url_pmb, RDF.type, CIDOC["E55_Type"]))
+g.add((main_title_type, RDF.type, CIDOC["E55_Type"]))
+g.add((sub_title_type, RDF.type, CIDOC["E55_Type"]))
+g.add((ed_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((date_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((num_issue_type_uri, RDF.type, CIDOC["E55_Type"]))
+g.add((num_volume_type_uri, RDF.type, CIDOC["E55_Type"]))
 for x in tqdm(items, total=len(items)):
     try:
         xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
     except Exception as e:
         print(x, e)
         continue
-    item_sk_type = x.xpath("./tei:bibl/@subtype", namespaces=nsmap)[0]
+    item_sk_type = x.xpath("./tei:bibl[@type='sk']/@subtype", namespaces=nsmap)[0]
     for title in x.xpath(
         './tei:bibl[@type="sk"]/tei:title[not(@type)]', namespaces=nsmap
     ):
@@ -89,9 +101,9 @@ for x in tqdm(items, total=len(items)):
             label_value = xml_id
     label_value = normalize_string(label_value)
     if (
-        item_sk_type == "standalone_publication"
-        or item_sk_type == "article"
-        or item_sk_type == "standalone_text"
+        item_sk_type == "standalone_publication" or
+        item_sk_type == "article" or
+        item_sk_type == "standalone_text"
     ):
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
@@ -100,6 +112,7 @@ for x in tqdm(items, total=len(items)):
         item_id = f"{SK}{xml_id}/published-expression"
         subj = URIRef(item_id)
         g.add((subj, RDF.type, FRBROO["F24_Publication_Expression"]))
+        g.add((subj, CIDOC["P1_is_identified_by"], URIRef(f"{SK}{xml_id}/appellation/0")))
     else:
         item_id = f"{SK}{xml_id}"
         subj = URIRef(item_id)
@@ -123,7 +136,7 @@ for x in tqdm(items, total=len(items)):
                 CIDOC["P2_has_type"],
                 URIRef(f"{SK}types/idno/xml-id"),
             ),
-            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], subj),
             (xml_identifier_uri, RDF.value, Literal(xml_id)),
         ]
         bibl_xml_id_counter += 1
@@ -145,7 +158,7 @@ for x in tqdm(items, total=len(items)):
                 CIDOC["P2_has_type"],
                 URIRef(f"{SK}types/idno/URL/pmb"),
             ),
-            (xml_identifier_uri, CIDOC["P1i_identifies"], Literal(item_id)),
+            (xml_identifier_uri, CIDOC["P1i_identifies"], subj),
             (
                 xml_identifier_uri,
                 RDF.value,
@@ -196,9 +209,40 @@ for x in tqdm(items, total=len(items)):
         g.add((title_e35_uri, CIDOC["P2_has_type"], title_e35_type))
 
     if item_sk_type == "standalone_text":
-        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
+        try:
+            premiere = x.xpath("./tei:bibl[parent::tei:bibl/tei:date[@type='premiere']]", namespaces=nsmap)[0]
+        except IndexError:
+            premiere = False
+        if premiere is not False:
+            subj_performance = URIRef(f"{subj}/performance")
+            g.add((subj_performance, RDF.type, FRBROO["F31_Performance"]))
+            g.add((subj_performance, RDFS.label,
+                   Literal(f"Performance / Recital of: {label_value}", lang="en")))
+            g.add((subj_performance, CIDOC["P2_has_type"], event_first))
+            g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
+            try:
+                pub_date = x.xpath(
+                    "./tei:date[@type='premiere' and @when-iso]",
+                    namespaces=nsmap
+                )[0]
+                from_sk = True
+            except IndexError:
+                from_sk = False
+                # try:
+                #     pub_date = x.xpath("./tei:date[@type='premiere']", namespaces=nsmap)[0]
+                # except IndexError:
+                #     pub_date = None
+            if from_sk is not False:
+                time_span_uri = URIRef(f"{subj}/performance/time-span")
+                g.add((subj_performance, CIDOC["P4_has_time-span"], time_span_uri))
+                g.add((time_span_uri, RDF.type, CIDOC["E52_Time-Span"]))
+                start = pub_date.get("when-iso")
+                end = pub_date.get("when-iso")
+                g += create_e52(time_span_uri, begin_of_begin=start, end_of_end=end)
+                g.add((time_span_uri, CIDOC["P4i_is_time-span_of"], subj_performance))
     if item_sk_type == "article":
-        g.add((subj, RDFS.label, Literal(f"Text: {label_value}", lang="en")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
         article_segment = URIRef(f"{subj}/segment")
         seg_f24_key_raw = x.xpath(".//tei:date[@key]/@key", namespaces=nsmap)[0]
         seg_f24_key = seg_f24_key_raw.strip("# ")
@@ -220,7 +264,7 @@ for x in tqdm(items, total=len(items)):
             )
 
     if item_sk_type == "standalone_publication":
-        g.add((subj, RDFS.label, Literal(f"Expression: {label_value}")))
+        g.add((subj, RDFS.label, Literal(label_value, lang="en")))
         pub_expr_uri = URIRef(f"{subj}/published-expression")
         g.add((pub_expr_uri, RDF.type, FRBROO["F24_Publication_Expression"]))
         if pub_expr_uri != subj:
@@ -229,7 +273,7 @@ for x in tqdm(items, total=len(items)):
                     pub_expr_uri,
                     RDFS.label,
                     Literal(
-                        normalize_string(f"Published Expression: {label_value}"),
+                        normalize_string(label_value),
                         lang="en",
                     ),
                 )
@@ -329,7 +373,7 @@ for x in tqdm(items, total=len(items)):
                     (
                         pub_expr_appellation_e90,
                         RDF.value,
-                        Literal(f"{cur_title_text}", lang="en"),
+                        Literal(f"{cur_title_text}"),
                     )
                 )
                 g.add(
@@ -356,10 +400,15 @@ for x in tqdm(items, total=len(items)):
                 (
                     periodical_uri,
                     RDFS.label,
-                    Literal(f"Periodical: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
-            periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
+            if item_sk_type in ["journal", "issue", "article"]:
+                periodical_uri_appellation = URIRef(
+                    f"{periodical_uri.replace('published-expression', '')}appellation/0")
+            else:
+                periodical_uri_appellation = URIRef(f"{periodical_uri}/appellation/0")
+            g.add((periodical_uri, CIDOC["P1_is_identified_by"], periodical_uri_appellation))
             for i, title in enumerate(
                 bibl_sk.xpath('.//tei:title[@level="j"]', namespaces=nsmap)
             ):
@@ -369,11 +418,26 @@ for x in tqdm(items, total=len(items)):
                 except KeyError:
                     appellation_type = main_appellation_type_uri
                 cur_title_text = normalize_string(title.text)
-                pub_expr_appellation_e90 = URIRef(
-                    f"{periodical_uri}/appellation-title/{i}"
+                if item_sk_type in ["journal", "issue", "article"]:
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{periodical_uri.replace('published-expression', '')}appellation-title/{i}"
+                    )
+                else:
+                    pub_expr_appellation_e90 = URIRef(
+                        f"{periodical_uri}/appellation-title/{i}"
+                    )
+                g.add(
+                    (pub_expr_appellation_e90, RDF.type, CIDOC["E90_Symbolic_Object"])
                 )
                 g.add(
                     (pub_expr_appellation_e90, CIDOC["P2_has_type"], appellation_type)
+                )
+                g.add(
+                    (
+                        periodical_uri_appellation,
+                        RDF.type,
+                        CIDOC["E33_E41_Linguistic_Appellation"],
+                    )
                 )
                 g.add(
                     (
@@ -400,13 +464,14 @@ for x in tqdm(items, total=len(items)):
                     (
                         pub_expr_appellation_e90,
                         RDF.value,
-                        Literal(f"{cur_title_text}", lang="en"),
+                        Literal(f"{cur_title_text}"),
                     )
                 )
 
             try:
                 title_date = x.xpath(
-                    "./tei:bibl[@type='sk']/tei:date", namespaces=nsmap
+                    "./tei:bibl[@type='sk']/tei:date",
+                    namespaces=nsmap
                 )[0]
             except IndexError:
                 continue
@@ -421,7 +486,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri,
                     RDFS.label,
-                    Literal(f"Issue: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
             for i, title_e35 in enumerate(
@@ -454,7 +519,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri_f24,
                     RDFS.label,
-                    Literal(f"Issue: {title_j_text}", lang="en"),
+                    Literal(title_j_text, lang="en"),
                 )
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
@@ -483,87 +548,88 @@ for x in tqdm(items, total=len(items)):
                     date_text = date.text
                     if date_text:
                         date_text = normalize_string(date_text)
-                    pub_expr_appellation_e90 = URIRef(
-                        f"{issue_uri}/appellation-date/{i}"
-                    )
-                    g.add(
-                        (
-                            issue_uri_appellation,
-                            CIDOC["P106_is_composed_of"],
-                            pub_expr_appellation_e90,
+                        pub_expr_appellation_e90 = URIRef(
+                            f"{issue_uri}/appellation-date/{i}"
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.type,
-                            CIDOC["E90_Symbolic_Object"],
+                        g.add(
+                            (
+                                issue_uri_appellation,
+                                CIDOC["P106_is_composed_of"],
+                                pub_expr_appellation_e90,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            CIDOC["P2_has_type"],
-                            appellation_type,
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.type,
+                                CIDOC["E90_Symbolic_Object"],
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDFS.label,
-                            Literal(f"Appellation Part: {date_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                CIDOC["P2_has_type"],
+                                appellation_type,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.value,
-                            Literal(f"{date_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDFS.label,
+                                Literal(f"Appellation Part: {date_text}", lang="en"),
+                            )
                         )
-                    )
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.value,
+                                Literal(f"{date_text}"),
+                            )
+                        )
                     try:
                         note = date.xpath("./tei:note", namespaces=nsmap)[0]
                     except IndexError:
                         continue
                     note_text = note.text
-                    appellation_type = ed_issue_type_uri
-                    pub_expr_appellation_e90 = URIRef(f"{issue_uri}/appellation-ed/0")
-                    g.add(
-                        (
-                            issue_uri_appellation,
-                            CIDOC["P106_is_composed_of"],
-                            pub_expr_appellation_e90,
+                    # check if note text is not empty
+                    if note_text is not None:
+                        appellation_type = ed_issue_type_uri
+                        pub_expr_appellation_e90 = URIRef(f"{issue_uri}/appellation-ed/0")
+                        g.add(
+                            (
+                                issue_uri_appellation,
+                                CIDOC["P106_is_composed_of"],
+                                pub_expr_appellation_e90,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.type,
-                            CIDOC["E90_Symbolic_Object"],
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.type,
+                                CIDOC["E90_Symbolic_Object"],
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            CIDOC["P2_has_type"],
-                            appellation_type,
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                CIDOC["P2_has_type"],
+                                appellation_type,
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDFS.label,
-                            Literal(f"Appellation Part: {note_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDFS.label,
+                                Literal(f"Appellation Part: {note_text}", lang="en"),
+                            )
                         )
-                    )
-                    g.add(
-                        (
-                            pub_expr_appellation_e90,
-                            RDF.value,
-                            Literal(f"{note_text}", lang="en"),
+                        g.add(
+                            (
+                                pub_expr_appellation_e90,
+                                RDF.value,
+                                Literal(f"{note_text}"),
+                            )
                         )
-                    )
-
                 for i, num in enumerate(bibl_sk.xpath(".//tei:num", namespaces=nsmap)):
                     num_type = num.attrib["type"]
                     if num_type == "volume":
@@ -606,7 +672,7 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{num_text}", lang="en"),
+                            Literal(f"{num_text}"),
                         )
                     )
                 for i, title in enumerate(
@@ -660,12 +726,14 @@ for x in tqdm(items, total=len(items)):
                         (
                             pub_expr_appellation_e90,
                             RDF.value,
-                            Literal(f"{cur_title_text}", lang="en"),
+                            Literal(f"{cur_title_text}"),
                         )
                     )
             if issue_uri != subj:
                 g.add((issue_uri, CIDOC["P165_incorporates"], subj))
-                g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
+            g.add((periodical_uri, FRBROO["R5_has_component"], issue_uri_f24))
+            title_j_key_pub_exp = URIRef(f"{SK}{title_j_key}/published-expression")
+            g.add((issue_uri_f24, FRBROO["R5i_is_component_of"], title_j_key_pub_exp))
             issue_uri_pub_event_uri = URIRef(f"{issue_uri}/publication")
             g.add((issue_uri_pub_event_uri, RDF.type, FRBROO["F30_Publication_Event"]))
             g.add(
@@ -676,10 +744,11 @@ for x in tqdm(items, total=len(items)):
                 )
             )
             g.add((issue_uri_pub_event_uri, FRBROO["R24_created"], issue_uri_f24))
-            start, end = extract_begin_end(title_date)
-            ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
-            g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
-            g.add((issue_uri_pub_event_uri, CIDOC["P4_has_time-span"], ts_uri))
+            if title_date.text is not None:
+                start, end = extract_begin_end(title_date)
+                ts_uri = URIRef(f"{issue_uri_pub_event_uri}/time-span")
+                g += create_e52(ts_uri, begin_of_begin=start, end_of_end=end)
+                g.add((issue_uri_pub_event_uri, CIDOC["P4_has_time-span"], ts_uri))
 
     # authors
     uebersetzt = x.xpath('./tei:author[@role="hat-ubersetzt"]', namespaces=nsmap)
@@ -705,7 +774,7 @@ for x in tqdm(items, total=len(items)):
             g.add((subj_orig, RDF.type, FRBROO["F22_Self-Contained_Expression"]))
             g.add((subj_orig,
                    RDFS.label,
-                   Literal(normalize_string(f"Original Expression of: {label_value}"), lang="en")))
+                   Literal(normalize_string(label_value), lang="en")))
             g.add((subj_orig, CIDOC["P16i_was_used_for"], creation))
             creation_orig = URIRef(f"{subj_orig}/creation")
             g.add((creation_orig, RDF.type, FRBROO["F28_Expression_Creation"]))
@@ -714,21 +783,25 @@ for x in tqdm(items, total=len(items)):
                    Literal(normalize_string(f"Creation of original: {label_value}"), lang="en")))
             g.add((creation_orig, FRBROO["R17_created"], subj_orig))
         for a in uebersetzt:
+            xpath = 'parent::tei:bibl/tei:author[@role="hat-anonym-veroffentlicht" or @role="hat-geschaffen"]'
+            orig_author = a.xpath(xpath, namespaces=nsmap)[0]
+            orig_author_id = orig_author.attrib["key"]
+            orig_author_uri = URIRef(f"{SK}{orig_author_id}")
             author_id = a.attrib["key"]
             author_uri = URIRef(f"{SK}{author_id}")
             g.add((creation, CIDOC["P14_carried_out_by"], author_uri))
             if a.get("role") == "hat-ubersetzt":
-                g.add((creation_orig, CIDOC["P14_carried_out_by"], author_uri))
-    if item_sk_type not in ["journal", "issue", "article"]:
+                g.add((creation_orig, CIDOC["P14_carried_out_by"], orig_author_uri))
+    if item_sk_type not in ["journal", "issue", "article", "standalone_text"]:
         try:
             pub_date = x.xpath(
-                './tei:bibl[@type="sk"]/tei:date[@when or @notBefore]', namespaces=nsmap
+                './tei:bibl[@type="sk"]/tei:date[@when-iso]', namespaces=nsmap
             )[0]
             from_sk = True
         except IndexError:
             from_sk = False
             try:
-                pub_date = x.xpath("./tei:date", namespaces=nsmap)[0]
+                pub_date = x.xpath("./tei:date[text()]", namespaces=nsmap)[0]
             except IndexError:
                 pub_date = None
         if pub_date is not None:
@@ -756,18 +829,19 @@ for x in tqdm(items, total=len(items)):
             else:
                 g.add((pub_event_uri, FRBROO["R24_created"], subj))
             time_span_uri = URIRef(f"{pub_event_uri}/time-span")
-            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
-            if from_sk:
+            if from_sk is not False:
                 begin, end = extract_begin_end(pub_date)
+                g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
             else:
                 if " – " in pub_date.text:
                     begin, end = pub_date.text.split(" – ")
                 else:
                     begin = pub_date.text
                     end = begin
-            g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
-            g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
-print("writing graph to file")
+                g += create_e52(time_span_uri, begin_of_begin=begin, end_of_end=end)
+                g.add((pub_event_uri, CIDOC["P4_has_time-span"], time_span_uri))
+print("writing graph to file: listworks.trig")
 # g_prov, g = generateVoID(g, dataset=project_uri, res=g_prov)
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize(f"{rdf_dir}/{entity_type}.trig", format="trig")
+g_all.serialize(f"{rdf_dir}/{entity_type}.ttl", format="ttl")

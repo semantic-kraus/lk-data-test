@@ -1175,7 +1175,7 @@
             <title level="m">Die Journalisten</title>
           </bibl>
           <author key="pmb11377" role="hat-geschaffen">Freytag, Gustav</author>
-          <date type="premiere" notBefore-iso="1852-01-01" when-iso="1852-07-01">1852</date>
+          <date type="premiere" when-iso="1852">1852</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31729.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31729</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31729.html</idno>
@@ -1209,7 +1209,7 @@
             <title level="m">Der böse Geist Lumpazivagabundus oder Das liederliche Kleeblatt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
-          <date type="premiere" notBefore-iso="1833-01-01" when-iso="1833-07-02">1833</date>
+          <date type="premiere" when-iso="1833">1833</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32850.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32850</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb32850.html</idno>
@@ -2114,7 +2114,7 @@
           <date notBefore-iso="1892-01-01" when-iso="1892-07-01">1892</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29827.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29827</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29827</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29827.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb29827</idno>
           <note type="collections">
 
@@ -2157,7 +2157,7 @@
           <idno type="URL" subtype="exemplar">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=50</idno>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29829.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29829</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29829</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29829.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29829.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb29829</idno>
           <note type="collections">
@@ -2194,7 +2194,7 @@
           <date notBefore-iso="1600-01-01" when-iso="1600-07-01">1600</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30009.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30009</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30009</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30009.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30009.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb30009</idno>
           <note type="collections">
@@ -2224,7 +2224,7 @@
           <date notBefore-iso="1604-01-01" when-iso="1604-07-01">1604</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30595.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30595</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30595</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30595.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30595.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb30595</idno>
           <note type="collections">
@@ -2261,7 +2261,7 @@
           <date notBefore-iso="1597-01-01" when-iso="1597-07-02">1597</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30867.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30867</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30867</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30867.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30867.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb30867</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q631855</idno>
@@ -2290,7 +2290,7 @@
 
           <title type="legacy-name-merge">Die Verschwörung des Fiesco zu Genua</title>
           <author key="pmb12654" role="hat-geschaffen">Schiller, Friedrich von</author>
-          <date type="premiere" notBefore-iso="1783-01-01" when-iso="1783-07-02">1783</date>
+          <date type="premiere" when-iso="1783">1783</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31181.html</idno>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32472.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31181</idno>
@@ -2345,7 +2345,7 @@
           <date type="premiere" when-iso="1893-11-14">1893-11-14</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31511.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31511</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31511</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb31511.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31511.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb31511</idno>
           <note type="collections">
@@ -2381,7 +2381,7 @@
           <date type="premiere" when-iso="1606-01-01">1606</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31623.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31623</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31623</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb31623.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31623.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb31623</idno>
           <note type="collections">
@@ -2407,7 +2407,7 @@
             <title level="m">Othello</title>
           </bibl>
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
-          <date type="premiere" notBefore-iso="1604-01-01" when-iso="1604-07-01">1604</date>
+          <date type="premiere" when-iso="1604">1604</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31671.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31671</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31671.html</idno>
@@ -2435,7 +2435,7 @@
             <title level="m">Minna von Barnhelm oder das Soldatenglück</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
-          <date type="premiere" notBefore-iso="1767-01-01" when-iso="1767-07-02">1767</date>
+          <date type="premiere" when-iso="1767">1767</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31929.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31929</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31929.html</idno>
@@ -2463,10 +2463,10 @@
             <title level="m">Der Querulant</title>
           </bibl>
           <author key="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
-          <date type="premiere" notBefore-iso="1914-01-01" when-iso="1914-07-02">1914</date>
+          <date type="premiere" when-iso="1914">1914</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32043.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32043</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32043</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb32043.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb32043</idno>
           <note type="collections">
 
@@ -2923,7 +2923,7 @@
           <author key="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
           <date when-iso="1787-01-01">1787</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32951</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32951</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb32951.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb32951.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb32951</idno>
           <note type="collections">
@@ -2953,7 +2953,7 @@
           <author key="pmb11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
           <date from-iso="1896-01-01" to-iso="1896-12-31">1896</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33273</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33273</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33273.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33273.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb33273</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q27992230</idno>
@@ -2983,7 +2983,7 @@
           <author key="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
           <date notBefore-iso="1606-01-01" when-iso="1606-07-02">1606</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33366</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33366</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33366.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33366.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb33366</idno>
           <note type="collections">
@@ -4086,7 +4086,7 @@
             <title level="m" type="subtitle">Ein Trauerspiel in fünf Aufzügen</title>
           </bibl>
           <author key="pmb12053" role="hat-geschaffen">Lessing, Gotthold Ephraim</author>
-          <date type="premiere" notBefore-iso="1772-01-01" when-iso="1772-07-01">1772</date>
+          <date type="premiere"  when-iso="1772">1772</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61461/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb61461.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb61461</idno>
@@ -4137,7 +4137,7 @@
             <title level="m">Die Reise zum Mond</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1875-01-01" when-iso="1875-07-02">1875</date>
+          <date type="premiere" when-iso="1875">1875</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60654/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60654</idno>
           <note type="collections">
@@ -4163,7 +4163,7 @@
 
           <title type="legacy-name-merge">Simone Boccanegra</title>
           <author key="pmb13007" role="hat-geschaffen">Verdi, Giuseppe</author>
-          <date type="premiere" from-iso="1857-01-01" to-iso="1857-12-31">1857</date>
+          <date type="premiere" when-iso="1857">1857</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63885/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76699/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76699.html</idno>
@@ -4192,7 +4192,7 @@
           <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
           <date notBefore-iso="1901-01-01" when-iso="1901-07-02">1901</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33187</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33187</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33187.html</idno>
           <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33187.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33187.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb33187</idno>
@@ -4222,7 +4222,7 @@
           <author key="pmb12176" role="hat-geschaffen">Mann, Thomas</author>
           <date notBefore-iso="1924-01-01" when-iso="1924-07-01">1924</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33247</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33247</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33247.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33247.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb33247</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q212898</idno>
@@ -4456,7 +4456,7 @@
             <title level="m">Das Land ohne Frauen</title>
           </bibl>
           <author key="pmb7334" role="hat-geschaffen">Gallone, Carmine</author>
-          <date type="premiere" notBefore-iso="1929-01-01" when-iso="1929-07-02">1929</date>
+          <date type="premiere" when-iso="1929">1929</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55661/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55661</idno>
           <note type="collections">
@@ -4488,7 +4488,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Die lustige Witwe</title>
           <author key="pmb10117" role="hat-geschaffen">Stroheim, Erich von</author>
-          <date type="premiere" notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
+          <date type="premiere" when-iso="1925">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60417/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60417</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q654439</idno>
@@ -4512,7 +4512,7 @@
           <bibl type="sk" subtype="standalone_text">
             <title level="m">Aetherwellen</title>
           </bibl>
-          <date type="premiere" notBefore-iso="1928-01-01" when-iso="1928-07-01">1928</date>
+          <date type="premiere" when-iso="1928">1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87767/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb87767</idno>
           <note type="collections">
@@ -4536,7 +4536,7 @@
           <bibl type="sk" subtype="standalone_text">
             <title level="m">Mad Love</title>
           </bibl>
-          <date type="premiere" notBefore-iso="1935-01-01" when-iso="1935-07-02">1935</date>
+          <date type="premiere" when-iso="1935">1935</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88255/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb88255</idno>
           <note type="collections">
@@ -5787,10 +5787,10 @@
             <title level="m">Die Fledermaus</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" when-iso="1874-01-01">1874</date>
+          <date type="premiere" when-iso="1874">1874</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30421.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30421</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30421</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30421.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30421.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb30421</idno>
           <note type="collections">
@@ -5828,7 +5828,7 @@
             <title level="m">Der Zigeunerbaron</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" notBefore-iso="1885-01-01" when-iso="1885-07-02">1885</date>
+          <date type="premiere" when-iso="1885">1885</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52902/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52902.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52902</idno>
@@ -5861,7 +5861,7 @@
             <title level="m" type="subtitle">Operette in drei Akten</title>
           </bibl>
           <author key="pmb12867" role="hat-geschaffen">Strauss, Johann</author>
-          <date type="premiere" notBefore-iso="1880-01-01" when-iso="1880-07-01">1880</date>
+          <date type="premiere" when-iso="1880">1880</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52904/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb52904.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb52904</idno>
@@ -6025,7 +6025,7 @@
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
           <author key="pmb4197" role="hat-geschaffen">Halévy, Ludovic</author>
           <author key="pmb12222" role="hat-geschaffen">Meilhac, Henri</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53658/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53658</idno>
           <note type="collections">
@@ -6798,7 +6798,7 @@
 
           <title type="person_namensvariante_nachname-komma-vorname">Le pont des soupirs</title>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
+          <date type="premiere" when-iso="1861">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56823/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb56823</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1743483</idno>
@@ -6869,7 +6869,7 @@
             <title level="m">Fortunios Lied</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1861-01-01" when-iso="1861-07-02">1861</date>
+          <date type="premiere" when-iso="1861">1861</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57726/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57726</idno>
           <note type="collections">
@@ -6894,7 +6894,7 @@
             <title level="m">Die Insel Tulipatan</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1868-01-01" when-iso="1868-07-01">1868</date>
+          <date type="premiere" when-iso="1868">1868</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57728/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb57728</idno>
           <note type="collections">
@@ -6925,7 +6925,7 @@
             <title level="m">Prinzessin von Trapezunt</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60656/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb60656</idno>
           <note type="collections">
@@ -7000,7 +7000,7 @@
             <title level="m">Vert-Vert</title>
           </bibl>
           <author key="pmb9131" role="hat-geschaffen">Offenbach, Jacques</author>
-          <date type="premiere" notBefore-iso="1869-01-01" when-iso="1869-07-02">1869</date>
+          <date type="premiere" when-iso="1869">1869</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62199/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb62199</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q3556194</idno>
@@ -8858,7 +8858,7 @@
           <title type="person_namensvariante_nachname-komma-vorname">Wohnbaukantate</title>
           <author key="pmb39325" role="hat-vertont">Pisk, Paul Amadeus</author>
           <author key="pmb65142" role="hat-geschaffen">Stern, Josef Luitpold</author>
-          <date type="premiere" from-iso="1926-01-01" to-iso="1926-12-31">1926</date>
+          <date type="premiere" when-iso="1926">1926</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63838/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb63838</idno>
           <note type="collections">
@@ -9831,7 +9831,7 @@
           <date from-iso="1895-01-01" to-iso="1895-12-31">1895 – 1915</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36133/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36133</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36133</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36133.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36133</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q881475</idno>
           <note type="collections">
@@ -9882,7 +9882,7 @@
           <date>1894-01-01 – 1903-12-31</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36152/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36152</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36152</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36152.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36152</idno>
           <note type="collections">
 
@@ -9926,7 +9926,7 @@
           <date notBefore-iso="1904-01-01" when-iso="1904-07-01">1904</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36156/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36156</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36156</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36156.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36156</idno>
           <note type="collections">
 
@@ -9999,7 +9999,7 @@
           <date>1892 – 1922</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40042</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40042</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40042.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb40042</idno>
           <note type="collections">
 
@@ -10035,7 +10035,7 @@
           <date from-iso="1899-01-01" to-iso="1899-12-31">1899 – 1936</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41244/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41244</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41244</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41244.html</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41244.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41244</idno>
           <note type="collections">
@@ -12206,7 +12206,7 @@
           <date>1905-09-07 – 1993</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41564/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41564</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41564</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41564.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41564</idno>
           <note type="collections">
 
@@ -12239,8 +12239,9 @@
         <bibl xml:id="pmb42987">
 
           <title type="main">Die Moderne</title>
-          <bibl type="sk" subtype="journal">
-            <title level="j" key="#pmb42987">Die Moderne</title>
+          <bibl type="sk" subtype="issue">
+            <title level="j" key="#sk_lk00505">Die Moderne</title> 
+          	<date key="#pmb42987"/>
           </bibl>
           <author key="pmb14049" role="hat-herausgegeben">Berg, Leo</author>
           <author key="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
@@ -12283,7 +12284,7 @@
           <author key="pmb11527" role="hat-herausgegeben">Großmann, Stefan</author>
           <date>1920-01-01 – 1933-01-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46493/</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46493</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb46493.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb46493</idno>
           <note type="collections">
 
@@ -12317,7 +12318,7 @@
           <title type="werk_link">http://www.simplicissimus.info/index.php?id=5</title>
           <date>1896-04-04 – 1944-09-13</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50245/</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50245</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50245.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb50245</idno>
           <note type="collections">
 
@@ -15516,7 +15517,7 @@
           <date from-iso="1856-01-01" to-iso="1856-12-31">1856 – 1943</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36344/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36344</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36344</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36344.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36344</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q561972</idno>
           <note type="collections">
@@ -15639,7 +15640,7 @@
           <date from-iso="1864-01-01" to-iso="1864-12-31">1864 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36374.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36374</idno>
           <note type="collections">
 
@@ -15759,7 +15760,7 @@
           <date>1893 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36376/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36376</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36376</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36376.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb36376</idno>
           <note type="collections">
 
@@ -15910,7 +15911,7 @@
           <date>1880-03-01 – 1934-02-11</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39950/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39950</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39950.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
           <note type="collections">
 
@@ -15947,7 +15948,7 @@
           <date>1881-07-12 – 1991-10-31</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41202/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41202</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41202</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41202.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41202</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q627083</idno>
           <note type="collections">
@@ -16311,7 +16312,7 @@
           <date from-iso="1868-01-01" to-iso="1868-12-31">1868 – 1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41289/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41289</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41289</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41289.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41289</idno>
           <note type="collections">
 
@@ -16355,7 +16356,7 @@
           <date>1867 – 1945</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41321/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41321</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41321</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41321.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41321</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1654066</idno>
           <note type="collections">
@@ -16416,7 +16417,7 @@
           <date from-iso="1872-01-01" to-iso="1872-12-31">1872 – 1928</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41484/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41484</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41484</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41484.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41484</idno>
           <note type="collections">
 
@@ -16446,7 +16447,7 @@
           <date from-iso="1876-01-01" to-iso="1876-12-31">1876 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41507/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41507</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41507</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41507.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41507</idno>
           <note type="collections">
 
@@ -16571,7 +16572,7 @@
           <date from-iso="1820-01-01" to-iso="1820-12-31">1820 – 1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41517/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41517</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41517</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41517.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41517</idno>
           <note type="collections">
 
@@ -16617,7 +16618,7 @@
           <date>1872 – 1939</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41531/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41531</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41531</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41531.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41531</idno>
           <note type="collections">
 
@@ -16874,7 +16875,7 @@
           <date from-iso="1881-01-01" to-iso="1881-12-31">1881 – 1933</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41550/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41550</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41550</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41550.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41550</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q18028808</idno>
           <note type="collections">
@@ -16903,7 +16904,7 @@
           <date>1900-12-19 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41560/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41560</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41560</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41560.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41560</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q31842725</idno>
           <note type="collections">
@@ -17059,7 +17060,7 @@
           <date>1894-09-01 – 1934</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41572/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41572</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41572</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41572.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb41572</idno>
           <note type="collections">
 
@@ -17101,7 +17102,7 @@
           <date when-iso="1780-01-12">1780-01-12</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42406/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42406</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42406</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42406.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42406</idno>
           <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q658945</idno>
           <note type="collections">
@@ -17147,7 +17148,7 @@
           <date from-iso="1893-01-01" to-iso="1893-12-31">1893 – 1938</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42850/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42850</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42850</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42850.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42850</idno>
           <note type="collections">
 
@@ -17212,7 +17213,7 @@
           <author key="pmb11715" role="hat-herausgegeben">Hitler, Adolf</author>
           <date>1920-12-17 – 1945-04-29</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/47189/</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb47189</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb47189.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb47189</idno>
           <note type="collections">
 
@@ -28352,7 +28353,7 @@
           <date from-iso="1910-01-01" to-iso="1910-12-31">1910 – 1938</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42403/</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42403</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42403</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42403.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb42403</idno>
           <note type="collections">
 
@@ -29702,7 +29703,7 @@
             <title level="m">Der Affe Zarathustras</title>
           </bibl>
           <author key="pmb8363" role="hat-geschaffen">Kuh, Anton</author>
-          <date type="premiere" notBefore-iso="1925-01-01" when-iso="1925-07-02">1925</date>
+          <date type="premiere" when-iso="1925">1925</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51907/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb51907</idno>
           <note type="collections">
@@ -29764,7 +29765,7 @@
               Gewerbeverein von Polizeipräsident Schober</title>
             </bibl>
           <author key="pmb24444" role="hat-geschaffen">Schober, Johannes</author>
-          <date type="premiere" notBefore-iso="1928-02-01" when-iso="1928-02-15">1928-02</date>
+          <date type="premiere" when-iso="1928-02">1928-02</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55033/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb55033</idno>
           <note type="collections">
@@ -29875,7 +29876,7 @@
             <title level="m">Eine Wohnung ist zu vermiethen in der Stadt</title>
           </bibl>
           <author key="pmb12338" role="hat-geschaffen">Nestroy, Johann Nepomuk</author>
-          <date type="premiere" notBefore-iso="1837-01-01" when-iso="1837-07-02">1837</date>
+          <date type="premiere" when-iso="1837-07">1837</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53926/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb53926</idno>
           <note type="collections">
@@ -29994,7 +29995,7 @@
           <date from-iso="1883-01-01" to-iso="1883-12-31">1883 – 1885</date>
           <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30611.html</idno>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30611</idno>
-          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30611</idno>
+          <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30611.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb30611</idno>
           <note type="collections">
 
@@ -33314,10 +33315,11 @@
 
           <title type="werk_bibliografische-angabe">Berliner Tageblatt, Nr. 600, 21.12.1926
             (Morgenausgabe)</title>
-          <bibl type="sk" subtype="issue">
+          <bibl type="sk" subtype="article">
+            <title level="a">Zur Jessner-Hetze</title>
             <title level="j" key="#pmb41531">Berliner Tageblatt</title>
             <num type="issue">Nr. 600</num>
-            <date when="1926-12-21" key="#pmb53052">21.12.1926<note>Morgenausgabe</note>
+            <date when="1926-12-21" key="#sk_lk00504">21.12.1926<note>Morgenausgabe</note>
             </date>
           </bibl>
           <author key="pmb11910" role="hat-geschaffen">Kerr, Alfred</author>
@@ -38818,7 +38820,7 @@
           <title type="werk_bibliografische-angabe">Der „Fackel-Kraus “ hat ausgefackelt, in: Wiener
             Mittagsblatt Nr. 38, 2.5.1933, S. 2.</title>
           <bibl type="sk" subtype="article">
-            <title level="a">Der „Fackel-Kraus “ hat ausgefackelt</title>
+            <title level="a">Der „Fackel-Kraus“ hat ausgefackelt</title>
             <title level="j" key="#pmb61386">Wiener Mittagsblatt</title>
             <num type="issue">Nr. 38</num>
             <date when="1933-05-02" key="#pmb61385">2.5.1933</date>
@@ -38956,7 +38958,7 @@
           <title type="werk_bibliografische-angabe">EIn Kreislauf, in: Reichspost Nr. 319,
             19.11.1922 (Morgenblatt), S. 3.</title>
           <bibl type="sk" subtype="article">
-            <title level="a">EIn Kreislauf</title>
+            <title level="a">Ein Kreislauf</title>
             <title level="j" key="#pmb42850">Reichspost</title>
             <num type="issue">Nr. 319</num>
             <date when="1922-11-19" key="#pmb62205">19.11.1922<note>Morgenblatt</note>
@@ -40181,7 +40183,7 @@
 
           <title type="main">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
           <bibl type="sk" subtype="journal">
-            <title level="j" key="#sk_lk00474">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
+            <title level="j" key="#pmb87762">Literarische Rundschau (Beilage Berliner Tageblatt)</title>
           </bibl>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87762/</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb87762</idno>

@@ -3,3 +3,4 @@ acdh_tei_pyutils
 lxml
 rdflib
 tqdm
+python-slugify
