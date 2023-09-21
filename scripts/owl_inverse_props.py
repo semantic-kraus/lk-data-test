@@ -139,4 +139,5 @@ for file in rdf_files:
         #     ds.add((s, p, o, g))
         # # g_all = ConjunctiveGraph(store=project_store)
         # ds.serialize(trig_path, format="trig")
+        # print("saved file: ", trig_path)
         save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
