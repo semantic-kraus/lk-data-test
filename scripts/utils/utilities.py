@@ -146,7 +146,7 @@ def create_object_literal_graph(
     default_lang: str,
     predicate: Namespace,
     enforce_default_lang: bool = False,
-) -> Graph:
+) -> tuple[Graph, Literal]:
     g = Graph()
     if enforce_default_lang:
         lang = default_lang
@@ -171,7 +171,7 @@ def create_object_literal_graph(
     else:
         object_literal = Literal("undefined", lang="en")
     g.add((subject_uri, predicate, object_literal))
-    return g
+    return (g, object_literal)
 
 
 def create_obj_value_graph(
@@ -187,6 +187,7 @@ def create_obj_value_graph(
     predicate: Namespace | bool = False,
     obj_class: Namespace | bool = False,
     custom_obj_uri: str | bool = False,
+    obj_class_label: str | bool = False,
 ) -> tuple[Graph, URIRef]:
     g = Graph()
     obj_name = node.tag.split("}")[-1].lower()
@@ -203,11 +204,12 @@ def create_obj_value_graph(
     if obj_node_value == skip_value:
         return (None, None)
     if custom_obj_uri:
-        object_uri = URIRef(f"{prefix}/{custom_obj_uri}")
+        object_uri = URIRef(f"{prefix}/{obj_node_value}/{custom_obj_uri}")
     else:
         object_uri = URIRef(f"{prefix}/{parent_node_name}/{obj_name}/{obj_node_value}")
     if obj_class:
         g.add((object_uri, RDF.type, obj_class))
+        g.add((object_uri, RDFS.label, Literal(obj_class_label)))
     g.add((subject_uri, predicate, object_uri))
     return (g, object_uri)
 
@@ -231,6 +233,7 @@ def create_triple_from_node(
     node_attribute: str | bool = False,
     identifier: Namespace | bool = False,
     date: bool = False,
+    custom_obj_uri: bool | str = False,
 ) -> Graph:
     g = Graph()
     predicate = pred
@@ -274,24 +277,27 @@ def create_triple_from_node(
                         l_prefix = ""
                 else:
                     l_prefix = ""
+                label = False
                 if default_lang:
-                    g += create_object_literal_graph(
+                    g1, label = create_object_literal_graph(
                         node=obj,
                         subject_uri=subject_uri,
                         l_prefix=l_prefix,
                         default_lang=default_lang,
                         predicate=RDFS.label
                     )
+                    g += g1
                 if value_literal:
-                    g += create_object_literal_graph(
+                    g2, label = create_object_literal_graph(
                         node=obj,
                         subject_uri=subject_uri,
                         l_prefix=l_prefix,
                         default_lang=default_lang,
                         predicate=RDF.value
                     )
+                    g += g2
                 if obj_node_value_xpath:
-                    g1, obj_uri = create_obj_value_graph(
+                    g3, obj_uri = create_obj_value_graph(
                         node=obj,
                         subject_uri=subject_uri,
                         parent_node_name=node_name,
@@ -301,10 +307,12 @@ def create_triple_from_node(
                         skip_value=skip_value,
                         prefix=obj_prefix,
                         predicate=predicate,
-                        obj_class=obj_class
+                        obj_class=obj_class,
+                        custom_obj_uri=custom_obj_uri,
+                        obj_class_label=label
                     )
-                    if g1:
-                        g += g1
+                    if g3:
+                        g += g3
                 if date and obj_uri:
                     not_known_value = "undefined"
                     begin, end = extract_begin_end(obj, fill_missing=False)
@@ -365,20 +373,22 @@ def create_e42_or_custom_class(
                            URIRef(f"{uri_prefix}{type_suffix}/{ident.attrib[attribute]}")))
                 else:
                     g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
-                g += create_object_literal_graph(
+                g1, label = create_object_literal_graph(
                     node=ident,
                     subject_uri=identifier_uri,
                     l_prefix=label_prefix,
                     default_lang=default_lang,
                     predicate=RDFS.label
                 )
-                g += create_object_literal_graph(
+                g += g1
+                g2, label = create_object_literal_graph(
                     node=ident,
                     subject_uri=identifier_uri,
                     l_prefix="",
                     default_lang=default_lang,
                     predicate=RDF.value
                 )
+                g += g2
         return g
     else:
         identifier_uri = URIRef(f"{subj}/{subj_suffix}")
@@ -426,27 +436,30 @@ def create_birth_death_settlement_graph(
         g += g1
         # literals from node
         place_node = node.xpath(normalize_string("./tei:placeName"), namespaces=namespaces)[0]
-        g += create_object_literal_graph(
+        gl, label = create_object_literal_graph(
             node=place_node,
             subject_uri=place_uri,
             l_prefix="",
             default_lang="en",
             predicate=RDFS.label
         )
-        g += create_object_literal_graph(
+        g += gl
+        gl2, label = create_object_literal_graph(
             node=place_node,
             subject_uri=identifier_uri,
             l_prefix="",
             default_lang="en",
             predicate=RDFS.label
         )
-        g += create_object_literal_graph(
+        g += gl2
+        gl3, label = create_object_literal_graph(
             node=place_node,
             subject_uri=identifier_uri,
             l_prefix="",
             default_lang="en",
             predicate=RDF.value
         )
+        g += gl3
         # from node via xpath
         g += create_e42_or_custom_class(
             node=node,

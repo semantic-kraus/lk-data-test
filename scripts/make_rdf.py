@@ -103,13 +103,17 @@ for x in tqdm(items, total=len(items)):
         node=x,
         subj=subj,
         subj_suffix="occupation",
-        pred=CIDOC["None"],
+        pred=CIDOC["P10_falls_within"],
         sbj_class=FRBROO["F51_Pursuit"],
         obj_node_xpath="./tei:occupation",
+        obj_node_value_xpath="./@key",
         obj_process_condition="./@type='sk'",
+        obj_class=CIDOC["E4_Period"],
         default_lang="en",
-        label_prefix="works for: ",
-        identifier=CIDOC["P14i_performed"]
+        label_prefix="Employment with: ",
+        identifier=CIDOC["P14i_performed"],
+        custom_obj_uri="period",
+        obj_prefix="https://sk.acdh.oeaw.ac.at",
     )
     # g += make_affiliations(
     #     subj,
