@@ -440,8 +440,11 @@ for x in tqdm(files, total=len(files)):
                             label = fa_texts.xpath(f'//text[@id="{q}"]/@titleText', namespaces=NSMAP)[0]
                         except IndexError:
                             label = ""
+                        if work_id.split(',')[-1].startswith("0u"):
+                            label = f"Fackel {work_id.split('/')[-1].split(',')[0]}"
+                            print(label)
                         create_text_passage_of(text_uri, i, xml_id, label)
-                        pagination_url = mention.get("source")
+                        pagination_url = work_id
                         try:
                             issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
                         except IndexError:
@@ -496,7 +499,13 @@ for x in tqdm(files, total=len(files)):
     item_id = f"{SK}{xml_id}"
     subj = URIRef(item_id)
     item_label = normalize_string(doc.any_xpath(".//tei:title[1]/text()")[0])
+    try:
+        item_label_no = int(re.findall(r"[0-9]+", item_label)[0])
+    except IndexError:
+        item_label_no = False
     item_label = re.sub(r"Akte [0-9]+\s", "", item_label)
+    if item_label_no:
+        item_label = f"{item_label_no:0>3} {item_label}"
     item_comment = normalize_string(
         doc.any_xpath(".//tei:abstract[1]/tei:p//text()")[0]
     )
