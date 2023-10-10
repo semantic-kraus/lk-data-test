@@ -400,7 +400,14 @@ def create_e42_or_custom_class(
             g.add((identifier_uri, RDF.type, custom_identifier_class))
         else:
             g.add((identifier_uri, RDF.type, CIDOC["E42_Identifier"]))
-        g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
+        if attribute:
+            try:
+                attr_value = f'/{node.attrib[attribute]}'
+            except AttributeError:
+                attr_value = ""
+            g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}{attr_value}")))
+        else:
+            g.add((identifier_uri, CIDOC["P2_has_type"], URIRef(f"{uri_prefix}{type_suffix}")))
         if label:
             g.add((identifier_uri, RDFS.label, Literal(f"{label_prefix}{label}", lang=default_lang)))
         if value and not value_datatype:
@@ -424,18 +431,19 @@ def create_birth_death_settlement_graph(
     if place_id is not None:
         place_uri = URIRef(f"{uri_prefix}{place_id}")
         g.add((place_uri, RDF.type, CIDOC["E53_Place"]))
+        place_node = node.xpath(normalize_string("./tei:placeName"), namespaces=namespaces)[0]
         # from string no xpath
         g1, identifier_uri = create_e42_or_custom_class(
-            node=node,
+            node=place_node,
             subj=place_uri,
             subj_suffix="appellations/0",
             uri_prefix=uri_prefix,
             type_suffix="types/place/placename",
-            custom_identifier_class=CIDOC["E33_E41_Linguistic_Appellation"]
+            custom_identifier_class=CIDOC["E33_E41_Linguistic_Appellation"],
+            attribute="type",
         )
         g += g1
         # literals from node
-        place_node = node.xpath(normalize_string("./tei:placeName"), namespaces=namespaces)[0]
         gl, label = create_object_literal_graph(
             node=place_node,
             subject_uri=place_uri,
