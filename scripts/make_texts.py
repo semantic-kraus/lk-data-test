@@ -300,7 +300,7 @@ for x in tqdm(files, total=len(files)):
     creation_uri = URIRef(f"{subj}/creation")
     g.add((creation_uri, RDF.type, CIDOC["E65_Creation"]))
     g.add((creation_uri, CIDOC["P94_has_created"], URIRef(item_id)))
-    g.add((creation_uri, RDFS.label, Literal(f"Creation of: {item_label}")))
+    g.add((creation_uri, RDFS.label, Literal(f"Creation of: {item_label}", lang="en")))
     # g.add((creation_uri, FRBROO["R17"], subj))
     # g.add((subj, FRBROO["R17i"], subj))
 
