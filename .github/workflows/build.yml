@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NO_LIMIT: nolimit
+      R_USER: ${{secrets.R_USER}}
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
@@ -19,8 +20,5 @@ jobs:
       run: pip install -r requirements.txt
     - name: build
       run: ./build.sh
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{secrets.GITHUB_TOKEN}}
-        publish_dir: ./html
+    - name: Deploy Graph
+      run: ./update_graph.sh

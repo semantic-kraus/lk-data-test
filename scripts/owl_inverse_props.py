@@ -31,8 +31,6 @@ SK = Namespace(DOMAIN)
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
 
 project_uri = URIRef(f"{SK}project/legal-kraus")
-# store = plugin.get("Memory", Store)()
-# project_store = plugin.get("Memory", Store)()
 
 
 def parse_xml(url):
@@ -89,7 +87,6 @@ def create_inverse_dict(query_result):
         except KeyError:
             props_with_inverse[i] = []
             props_with_inverse[i].append({sbj: obj})
-    # print(props_with_inverse)
     return props_with_inverse
 
 
@@ -101,7 +98,6 @@ def save_dict(dict, file):
 
 def create_triples(dict_result, output, inverse):
     for key, value in dict_result.items():
-        # inverse_inverse_of = f"{inverse_of}--{inverse}"
         print("length values", len(value))
         pred = inverse
         for v in value:
@@ -114,13 +110,11 @@ def create_triples(dict_result, output, inverse):
 
 rdf_files = sorted(glob.glob("./rdf/*.ttl"))
 lookup_dict = get_inverse_of(parse_xml(SK_MODEL_URL))
-# print(lookup_dict)
 
 for file in rdf_files:
     ttl = parse_rdf_ttl(file)
     all_inverse_triples = []
     for x in tqdm(lookup_dict, total=len(lookup_dict)):
-        # print(x)
         inverse_of = x[0]
         inverse = x[1]
         qres = query_for_inverse(ttl, inverse_of)
@@ -129,15 +123,14 @@ for file in rdf_files:
             create_triples(dict_result, all_inverse_triples, inverse)
     if len(all_inverse_triples) != 0:
         unique_triples = [dict(t) for t in {tuple(d.items()) for d in all_inverse_triples}]
-        # trig_path = file.replace(".ttl", ".trig")
-        # ds = parse_rdf_trig(trig_path)
-        # g = ds.graph(project_uri)
-        # for triple in unique_triples:
-        #     s = URIRef(triple["sbj"])
-        #     p = URIRef(triple["pred"])
-        #     o = URIRef(triple["obj"])
-        #     ds.add((s, p, o, g))
-        # # g_all = ConjunctiveGraph(store=project_store)
-        # ds.serialize(trig_path, format="trig")
-        # print("saved file: ", trig_path)
-        save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
+        trig_path = file.replace(".ttl", ".trig")
+        ds = parse_rdf_trig(trig_path)
+        g = ds.graph(project_uri)
+        for triple in unique_triples:
+            s = URIRef(triple["sbj"])
+            p = URIRef(triple["pred"])
+            o = URIRef(triple["obj"])
+            ds.add((s, p, o, g))
+        ds.serialize(trig_path, format="trig")
+        print("saved file: ", trig_path)
+        # save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
