@@ -294,7 +294,7 @@ for x in tqdm(files, total=len(files)):
     )
     # F4_Manifestation
     g.add((subj_f4, RDF.type, FRBROO["F4_Manifestation_Singleton"]))
-    g.add((subj_f4, RDFS.label, Literal(f"Carrier of: {item_label}")))
+    g.add((subj_f4, RDFS.label, Literal(f"Carrier of: {item_label}", lang="en")))
     g.add((subj_f4, CIDOC["P128_carries"], subj))
     g.add((subj, RDFS.label, Literal(item_label, lang="de")))
     creation_uri = URIRef(f"{subj}/creation")

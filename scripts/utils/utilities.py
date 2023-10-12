@@ -192,21 +192,23 @@ def create_obj_value_graph(
     g = Graph()
     obj_name = node.tag.split("}")[-1].lower()
     try:
-        obj_node_value = node.xpath(xpath, namespaces=namespaces)[0]
+        obj_node_value = f"/{node.xpath(xpath, namespaces=namespaces)[0]}"
     except IndexError:
         try:
-            obj_node_value = node.xpath(xpath_alt_or_str, namespaces=namespaces)[0]
+            obj_node_value = f"/{node.xpath(xpath_alt_or_str, namespaces=namespaces)[0]}"
         except IndexError:
             if xpath_alt_or_str == "iterator":
-                obj_node_value = iterator
+                obj_node_value = f"/{iterator}"
+            elif "/" not in xpath_alt_or_str:
+                obj_node_value = f"/{xpath_alt_or_str}"
             else:
-                obj_node_value = xpath_alt_or_str
-    if obj_node_value == skip_value:
+                obj_node_value = ""
+    if obj_node_value[1:] == skip_value:
         return (None, None)
     if custom_obj_uri:
-        object_uri = URIRef(f"{prefix}/{obj_node_value}/{custom_obj_uri}")
+        object_uri = URIRef(f"{prefix}{obj_node_value}/{custom_obj_uri}")
     else:
-        object_uri = URIRef(f"{prefix}/{parent_node_name}/{obj_name}/{obj_node_value}")
+        object_uri = URIRef(f"{prefix}/{parent_node_name}/{obj_name}{obj_node_value}")
     if obj_class:
         g.add((object_uri, RDF.type, obj_class))
         g.add((object_uri, RDFS.label, Literal(obj_class_label)))
