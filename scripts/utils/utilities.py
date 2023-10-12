@@ -266,6 +266,7 @@ def create_triple_from_node(
                     g.add((subj, identifier, subject_uri))
                 if sbj_class:
                     g.add((subject_uri, RDF.type, sbj_class))
+                process_condition = False
                 if label_prefix:
                     try:
                         xpath = obj_process_condition.split("'")[0].replace("=", "")
@@ -273,13 +274,20 @@ def create_triple_from_node(
                         obj_type = obj.xpath(xpath, namespaces=NSMAP)[0]
                         if obj_type == xpath_condition:
                             l_prefix = label_prefix
+                            process_condition = True
                         else:
                             l_prefix = ""
                     except IndexError:
                         l_prefix = ""
                 else:
                     l_prefix = ""
-                label = False
+                if obj_process_condition and not process_condition:
+                    predicate = CIDOC["None"]
+                    obj_node_value_xpath = False
+                    obj_class = False,
+                    custom_obj_uri = False,
+                    obj_prefix = False
+                label = ""
                 if default_lang:
                     g1, label = create_object_literal_graph(
                         node=obj,
@@ -311,7 +319,7 @@ def create_triple_from_node(
                         predicate=predicate,
                         obj_class=obj_class,
                         custom_obj_uri=custom_obj_uri,
-                        obj_class_label=label
+                        obj_class_label=label.replace(l_prefix, "")
                     )
                     if g3:
                         g += g3
