@@ -1,0 +1,2 @@
+texts.trig filter=lfs diff=lfs merge=lfs -text
+texts.ttl filter=lfs diff=lfs merge=lfs -text
