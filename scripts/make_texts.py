@@ -320,7 +320,10 @@ for x in tqdm(files, total=len(files)):
     try:
         creator = doc.any_xpath(""".//tei:correspAction[@type='sent']/tei:persName/@ref|
                                 .//tei:correspAction[@type='sent']/tei:orgName/@ref""")[0]
-        go_on = True
+        if len(creator) != 0:
+            go_on = True
+        else:
+            go_on = False
     except IndexError:
         go_on = False
     if go_on:
