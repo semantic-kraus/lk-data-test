@@ -486,7 +486,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri,
                     RDFS.label,
-                    Literal(title_j_text, lang="und"),
+                    Literal(f"{title_j_text} (Issue)", lang="und"),
                 )
             )
             for i, title_e35 in enumerate(
