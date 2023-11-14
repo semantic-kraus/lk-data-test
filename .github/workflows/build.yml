@@ -1,7 +1,8 @@
 name: Build and publish
 
 on:
-  push:
+  schedule:
+  - cron: "30 00/24 * * *"
   workflow_dispatch:
 
 jobs:
