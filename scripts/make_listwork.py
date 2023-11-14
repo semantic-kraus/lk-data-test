@@ -519,7 +519,7 @@ for x in tqdm(items, total=len(items)):
                 (
                     issue_uri_f24,
                     RDFS.label,
-                    Literal(title_j_text, lang="en"),
+                    Literal(f"{title_j_text} (Published Issue)", lang="en"),
                 )
             )
             g.add((issue_uri_f24, CIDOC["P165_incorporates"], issue_uri))
