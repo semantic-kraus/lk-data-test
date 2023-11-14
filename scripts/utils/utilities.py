@@ -266,7 +266,7 @@ def create_triple_from_node(
                     g.add((subj, identifier, subject_uri))
                 if sbj_class:
                     g.add((subject_uri, RDF.type, sbj_class))
-                process_condition = False
+                process_condition = True
                 if label_prefix:
                     try:
                         xpath = obj_process_condition.split("'")[0].replace("=", "")
@@ -274,19 +274,20 @@ def create_triple_from_node(
                         obj_type = obj.xpath(xpath, namespaces=NSMAP)[0]
                         if obj_type == xpath_condition:
                             l_prefix = label_prefix
-                            process_condition = True
                         else:
                             l_prefix = ""
+                            process_condition = False
                     except IndexError:
                         l_prefix = ""
+                        process_condition = False
                 else:
                     l_prefix = ""
-                if obj_process_condition and not process_condition:
-                    predicate = CIDOC["None"]
-                    obj_node_value_xpath = False
-                    obj_class = False,
-                    custom_obj_uri = False,
-                    obj_prefix = False
+                # if obj_process_condition and not process_condition:
+                #     predicate = False
+                #     obj_node_value_xpath = False
+                #     obj_class = False,
+                #     custom_obj_uri = False,
+                #     obj_prefix = False
                 label = ""
                 if default_lang:
                     g1, label = create_object_literal_graph(
@@ -306,7 +307,7 @@ def create_triple_from_node(
                         predicate=RDF.value
                     )
                     g += g2
-                if obj_node_value_xpath:
+                if obj_node_value_xpath and process_condition:
                     g3, obj_uri = create_obj_value_graph(
                         node=obj,
                         subject_uri=subject_uri,
