@@ -220,7 +220,7 @@ for x in tqdm(items, total=len(items)):
             g.add((subj_performance, RDFS.label,
                    Literal(f"Performance / Recital of: {label_value}", lang="en")))
             g.add((subj_performance, CIDOC["P2_has_type"], event_first))
-            g.add((subj_performance, FRBROO["R66_included_performance_version_of"], subj))
+            g.add((subj_performance, FRBROO["R66_included_performed_version_of"], subj))
             try:
                 pub_date = x.xpath(
                     "./tei:date[@type='premiere' and @when-iso]",
