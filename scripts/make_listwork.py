@@ -273,7 +273,7 @@ for x in tqdm(items, total=len(items)):
                     pub_expr_uri,
                     RDFS.label,
                     Literal(
-                        normalize_string(label_value),
+                        f"{normalize_string(label_value)} (Publication)",
                         lang="en",
                     ),
                 )
