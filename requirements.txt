@@ -4,3 +4,4 @@ lxml
 rdflib
 tqdm
 python-slugify
+acdh-arche-assets>=3.8.0

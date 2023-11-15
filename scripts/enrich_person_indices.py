@@ -1,5 +1,7 @@
 from acdh_tei_pyutils.tei import TeiEnricher
+from AcdhArcheAssets.uri_norm_rules import get_normalized_uri
 import lxml.etree as ET
+
 
 listplace_path = "./data/indices/listplace.xml"
 listplace = TeiEnricher(listplace_path)
@@ -33,7 +35,7 @@ def enrich_settlements(node):
             for key, value in settlement.items():
                 idno = ET.Element("{http://www.tei-c.org/ns/1.0}idno")
                 idno.attrib["type"] = key.split("__")[0]
-                idno.text = value
+                idno.text = get_normalized_uri(value)
                 node.append(idno)
             print(f"added place ids to {settlement_key}")
 

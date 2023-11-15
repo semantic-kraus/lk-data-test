@@ -207,11 +207,11 @@ def create_obj_value_graph(
         return (None, None)
     if custom_obj_uri:
         object_uri = URIRef(f"{prefix}{obj_node_value}/{custom_obj_uri}")
+        g.add((object_uri, RDFS.label, Literal(obj_class_label)))
     else:
         object_uri = URIRef(f"{prefix}/{parent_node_name}/{obj_name}{obj_node_value}")
     if obj_class:
         g.add((object_uri, RDF.type, obj_class))
-        g.add((object_uri, RDFS.label, Literal(obj_class_label)))
     g.add((subject_uri, predicate, object_uri))
     return (g, object_uri)
 
