@@ -13,7 +13,7 @@ from lxml.etree import XMLParser
 from lxml import etree as ET
 from rdflib.store import Store
 from utils.utilities import (
-    create_e42_or_custom_class
+    create_e42_or_custom_class, create_object_literal_graph, make_e42_identifiers_utils
 )
 
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
@@ -145,6 +145,35 @@ def create_intertex_relation_of(subj, i, file, doc_passage):
     g.add((intertext_relation, INT["R13_has_referring_entity"], doc_passage_uri))
     g.add((intertext_relation, INT["R12_has_referred_to_entity"], text_passage_uri))
 
+
+# build uri lookup dict for listorg.xml
+entity_type = "org"
+index_file = f"./data/indices/list{entity_type}.xml"
+doc = TeiReader(index_file)
+nsmap = doc.nsmap
+items = doc.any_xpath(f".//tei:{entity_type}")
+print(f"converting {entity_type}s derived from {index_file}")
+org_lookup_dict = {}
+for x in tqdm(items, total=len(items)):
+    xml_id = x.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+    item_id = f"{SK}{xml_id}"
+    subj = URIRef(item_id)
+    g = Graph()
+    g.add((subj, RDF.type, CIDOC["E74_Group"]))
+    # g += make_appellations(subj, x, type_domain=f"{SK}types/", default_lang="und")
+    obj = x.xpath("./tei:orgName[1]", namespaces=nsmap)[0]
+    g1, label = create_object_literal_graph(
+        node=obj,
+        subject_uri=subj,
+        default_lang="und",
+        predicate=RDFS.label,
+        l_prefix=""
+    )
+    g += g1
+    g += make_e42_identifiers_utils(
+        subj, x, type_domain=f"{SK}types", default_lang="en", same_as=False
+    )
+    org_lookup_dict[xml_id] = g
 
 # build uri lookup dict for listwork.xml
 
@@ -318,17 +347,20 @@ for x in tqdm(files, total=len(files)):
 
     # creator Brief:
     try:
-        creator = doc.any_xpath(""".//tei:correspAction[@type='sent']/tei:persName/@ref|
-                                .//tei:correspAction[@type='sent']/tei:orgName/@ref""")[0]
-        if len(creator) != 0:
+        creator = doc.any_xpath(""".//tei:correspAction[@type='sent']/tei:persName|
+                                .//tei:correspAction[@type='sent']/tei:orgName""")[0]
+        creator_id = creator.xpath("./@ref")[0]
+        if len(creator_id) != 0:
             go_on = True
         else:
             go_on = False
     except IndexError:
         go_on = False
     if go_on:
-        creator_uri = URIRef(f"{SK}{creator[1:]}")
+        creator_uri = URIRef(f"{SK}{creator_id[1:]}")
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
+        if creator.xpath("local-name()='orgName'"):
+            g += org_lookup_dict[creator_id[1:]]
 
     # # fun with mentions (persons, works, quotes)
     rs_xpath = ".//tei:body//tei:rs[@ref]"
