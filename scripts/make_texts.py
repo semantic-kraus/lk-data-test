@@ -360,7 +360,10 @@ for x in tqdm(files, total=len(files)):
         creator_uri = URIRef(f"{SK}{creator_id[1:]}")
         g.add((creation_uri, CIDOC["P14_carried_out_by"], creator_uri))
         if creator.xpath("local-name()='orgName'"):
-            g += org_lookup_dict[creator_id[1:]]
+            try:
+                g += org_lookup_dict[creator_id[1:]]
+            except KeyError:
+                continue
 
     # # fun with mentions (persons, works, quotes)
     rs_xpath = ".//tei:body//tei:rs[@ref]"
