@@ -133,8 +133,9 @@ for file in rdf_files:
             p = URIRef(triple["pred"])
             o = URIRef(triple["obj"])
             ds.add((s, p, o, g))
-        g.parse(SK_MODEL_TRIG, format="trig")
-        g.parse(SK_GENERAL_TRIG, format="trig")
+        if "data.trig" in trig_path:
+            g.parse(SK_MODEL_TRIG, format="trig")
+            g.parse(SK_GENERAL_TRIG, format="trig")
         ds.serialize(trig_path, format="trig")
         print("saved file: ", trig_path)
         # save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")
