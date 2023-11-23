@@ -3,7 +3,8 @@
 @prefix sk: <https://sk.acdh.oeaw.ac.at/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-lk: dct:title "Legal Kraus"@de ;
+lk: a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    dct:title "Legal Kraus"@de ;
     rdfs:label "Legal Kraus Project" ;
     dct:bibliographicCitation """Karl Kraus: Rechtsakten der Kanzlei Oskar Samek.
 Wissenschaftliche Edition, hg. v. Johannes Knüchel und Isabel Langkabel, auf Grundlage der Vorarbeiten Katharina Pragers, unter Mitarbeit von Laura Untner, Andrea Ortner, Ingo Börner und Vanessa Hannesschläger (Wien 2022)"""  .
