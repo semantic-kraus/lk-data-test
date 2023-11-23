@@ -26,8 +26,6 @@ NSMAP_RDF = {
     "dcterms": "http://purl.org/dc/terms/"
 }
 SK_MODEL_URL = "https://raw.githubusercontent.com/semantic-kraus/sk_general/main/sk_model.owl"
-SK_MODEL_TRIG = "https://raw.githubusercontent.com/semantic-kraus/sk_general/main/sk_model.trig"
-SK_GENERAL_TRIG = "https://raw.githubusercontent.com/semantic-kraus/sk_general/main/general.trig"
 DOMAIN = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(DOMAIN)
 LK = Namespace("https://sk.acdh.oeaw.ac.at/project/legal-kraus")
@@ -133,9 +131,6 @@ for file in rdf_files:
             p = URIRef(triple["pred"])
             o = URIRef(triple["obj"])
             ds.add((s, p, o, g))
-        if "data.trig" in trig_path:
-            g.parse(SK_MODEL_TRIG, format="trig")
-            g.parse(SK_GENERAL_TRIG, format="trig")
         ds.serialize(trig_path, format="trig")
         print("saved file: ", trig_path)
         # save_dict(unique_triples, f"{file.replace('.ttl', '')}.json")

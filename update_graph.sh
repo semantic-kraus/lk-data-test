@@ -2,7 +2,7 @@
 
 echo "delete namedgraphs"
 curl -D- -X DELETE \
-    "${R_ENDPOINT_V}?c=<https://sk.acdh.oeaw.ac.at/project/legal-kraus>&c=<https://sk.acdh.oeaw.ac.at/provenance>&c=<https://sk.acdh.oeaw.ac.at/model>&c=<https://sk.acdh.oeaw.ac.at/general>"
+    "${R_ENDPOINT_V}?c=<https://sk.acdh.oeaw.ac.at/project/legal-kraus>"
 sleep 300
 
 echo "add namedgraph data.trig"
