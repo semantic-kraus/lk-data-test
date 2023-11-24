@@ -5,7 +5,7 @@ from acdh_cidoc_pyutils import normalize_string, extract_begin_end, create_e52
 from acdh_cidoc_pyutils.namespaces import CIDOC, FRBROO, INT, SCHEMA
 from acdh_tei_pyutils.tei import TeiReader
 from rdflib import Graph, Namespace, URIRef, Literal, plugin, ConjunctiveGraph
-from rdflib.namespace import RDF, RDFS
+from rdflib.namespace import RDF, RDFS, DCTERMS, VOID
 
 # from rdflib.void import generateVoID
 from rdflib.store import Store
@@ -27,14 +27,14 @@ domain = "https://sk.acdh.oeaw.ac.at/"
 SK = Namespace(domain)
 
 project_uri = URIRef(f"{SK}project/legal-kraus")
-# g_prov = Graph(store=project_store, identifier=URIRef(f"{SK}provenance"))
-# g_prov.bind("dct", DCTERMS)
-# g_prov.bind("void", VOID)
-# g_prov.bind("sk", SK)
-# g_prov.bind("lk", LK)
-# g_prov.bind("cidoc", CIDOC)
-# g_prov.bind("frbroo", FRBROO)
-# g_prov.parse("./data/about.ttl")
+g_prov = Graph(store=project_store, identifier=URIRef(f"{SK}provenance"))
+g_prov.bind("dct", DCTERMS)
+g_prov.bind("void", VOID)
+g_prov.bind("sk", SK)
+g_prov.bind("lk", LK)
+g_prov.bind("cidoc", CIDOC)
+g_prov.bind("frbroo", FRBROO)
+g_prov.parse("./data/about.ttl")
 
 
 g = Graph(identifier=project_uri, store=project_store)
