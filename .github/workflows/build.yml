@@ -12,7 +12,7 @@ jobs:
     env:
       NO_LIMIT: nolimit
       R_USER: ${{secrets.R_USER}}
-      R_ENDPOINT: ${{secrets.R_ENDPOINT}}
+      R_ENDPOINT_V: ${{secrets.R_ENDPOINT_V}}
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
