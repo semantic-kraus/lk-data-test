@@ -6,4 +6,4 @@
 lk: a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
     dct:title "Legal Kraus"@de ;
     rdfs:label "Legal Kraus Project"@en ;
-    dct:bibliographicCitation "Rechtsakten Karl Kraus. Rechtsakten der Kanzlei Oskar Samek. Wissenschaftliche Edition. Hg. v. Johannes Knüchel und Isabel Langkabel auf Grundlage der Vorarbeiten Katharina Pragers, unter Mitarbeit von Laura Untner, Andrea Ortner, Ingo Börner und Vanessa Hannesschläger. 2022." .
+    dct:bibliographicCitation "Rechtsakten Karl Kraus. Rechtsakten der Kanzlei Oskar Samek. Scolarly Edition. Ed. by Johannes Knüchel and Isabel Langkabel on the basis of the preliminary work by Katharina Pragers, in collaboration with Laura Untner, Andrea Ortner, Ingo Börner, and Vanessa Hannesschläger. 2022." .
