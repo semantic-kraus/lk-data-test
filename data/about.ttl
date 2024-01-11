@@ -2,8 +2,10 @@
 @prefix lk: <https://sk.acdh.oeaw.ac.at/project/legal-kraus> .
 @prefix sk: <https://sk.acdh.oeaw.ac.at/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 
 lk: a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    sd:name "Karl Kraus Rechtsakten" ;
     dct:title "Karl Kraus Rechtsakten"@de ;
     rdfs:label "Legal Kraus Project"@en ;
     dct:bibliographicCitation "Rechtsakten Karl Kraus. Rechtsakten der Kanzlei Oskar Samek. Scholarly Edition. Ed. by Johannes Knüchel and Isabel Langkabel on the basis of the preliminary work by Katharina Prager, in collaboration with Laura Untner, Andrea Ortner, Ingo Börner, and Vanessa Hannesschläger. 2022." ;
