@@ -387,30 +387,31 @@ for x in tqdm(files, total=len(files)):
         #     pb_end = pb_start
         if mention.get("type") == "person":
             person_id = mention.attrib["ref"][1:]
-            person_uri = URIRef(f"{SK}{person_id}")
-            mention_string = normalize_string(" ".join(mention.xpath(".//text()")))
-            text_actualization = URIRef(f"{subj}/actualization/{i}")
-            g.add((text_actualization, RDF.type, INT["INT2_ActualizationOfFeature"]))
-            g.add(
-                (
-                    text_actualization,
-                    RDFS.label,
-                    Literal(f"Actualization on: {item_label}", lang="en"),
+            if isinstance(person_id, str) and len(person_id) > 0:
+                person_uri = URIRef(f"{SK}{person_id}")
+                mention_string = normalize_string(" ".join(mention.xpath(".//text()")))
+                text_actualization = URIRef(f"{subj}/actualization/{i}")
+                g.add((text_actualization, RDF.type, INT["INT2_ActualizationOfFeature"]))
+                g.add(
+                    (
+                        text_actualization,
+                        RDFS.label,
+                        Literal(f"Actualization on: {item_label}", lang="en"),
+                    )
                 )
-            )
-            g.add((text_passage, INT["R18_shows_actualization"], text_actualization))
+                g.add((text_passage, INT["R18_shows_actualization"], text_actualization))
 
-            text_reference = URIRef(f"{subj}/reference/{i}")
-            g.add((text_reference, RDF.type, INT["INT18_Reference"]))
-            g.add(
-                (
-                    text_reference,
-                    RDFS.label,
-                    Literal(f"Reference on: {item_label}", lang="en"),
+                text_reference = URIRef(f"{subj}/reference/{i}")
+                g.add((text_reference, RDF.type, INT["INT18_Reference"]))
+                g.add(
+                    (
+                        text_reference,
+                        RDFS.label,
+                        Literal(f"Reference on: {item_label}", lang="en"),
+                    )
                 )
-            )
-            g.add((text_actualization, INT["R17_actualizes_feature"], text_reference))
-            g.add((text_reference, CIDOC["P67_refers_to"], person_uri))
+                g.add((text_actualization, INT["R17_actualizes_feature"], text_reference))
+                g.add((text_reference, CIDOC["P67_refers_to"], person_uri))
         elif mention.get("type") == "work":
             if mention.get("subtype") == "pmb":
                 work_id = mention.attrib["ref"][1:]
