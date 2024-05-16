@@ -485,10 +485,10 @@ for x in tqdm(files, total=len(files)):
                         create_text_passage_of(text_uri, i, xml_id, label)
                         pagination_url = work_id
                         try:
-                            issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@issue', namespaces=NSMAP)[0]
+                            issue = fa_texts.xpath(f'//issue[.//text[@id="{q}"]]/@id', namespaces=NSMAP)[0]
                         except IndexError:
-                            issue = q.replace("issue", "")
-                        published_expression = f"{SK}issue{issue}/published-expression"
+                            issue = q
+                        published_expression = f"{SK}{issue}/published-expression"
                         create_text_segment_of(
                             text_uri,
                             i,
