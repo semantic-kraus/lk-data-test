@@ -2252,7 +2252,7 @@
         <bibl xml:id="pmb30867">
 
           <title type="main">Henry IV, Part 1</title>
-          <bibl type="sk" subtype="standalone_publication">
+          <bibl type="sk" subtype="standalone_text">
             <title level="m">Henry IV, Part 1</title>
           </bibl>
 
@@ -4309,7 +4309,7 @@
             <title level="m">Geschenke des Lebens</title>
           </bibl>
           <author key="pmb12126" role="hat-geschaffen">Ludwig, Emil</author>
-          <date notBefore-iso="1931-01-01" when-iso="1931-01-16">01-1931</date>
+          <date notBefore-iso="1931-01-01" when-iso="1931-01-16">1931-01-01</date>
           <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/54829/</idno>
           <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb54829.html</idno>
           <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/werke/pmb54829</idno>
