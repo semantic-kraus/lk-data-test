@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NO_LIMIT: nolimit
-      R_USER: ${{secrets.R_USER}}
-      R_ENDPOINT_V: ${{secrets.R_ENDPOINT_V}}
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
@@ -20,8 +18,6 @@ jobs:
       run: pip install -r requirements.txt
     - name: build
       run: ./build.sh
-    - name: Deploy Graph
-      run: ./update_graph.sh
     - name: Create Pages
       run: ./create_pages.sh
     - name: Deploy Pages
