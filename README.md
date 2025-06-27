@@ -1,4 +1,5 @@
-# lk-data
+# lk-data-test
+fork of lk-data for testing
 Legal-Kraus XML/TEI data to RDF
 
 Basically the same as in [dw_data](https://github.com/semantic-kraus/dw_data) but with a different data set
