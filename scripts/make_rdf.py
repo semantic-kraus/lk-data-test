@@ -99,25 +99,25 @@ for x in tqdm(items, total=len(items)):
         skip_value="not-set"
     )
     #  add occupations
-    # g += create_triple_from_node(
-    #    node=x,
-    #    subj=subj,
-    #    subj_suffix="occupation",
-    #    pred=CIDOC["P10_falls_within"],
+    g += create_triple_from_node(
+        node=x,
+        subj=subj,
+        subj_suffix="occupation",
+        pred=CIDOC["P10_falls_within"],
     #    pred=None,
-    #    sbj_class=FRBROO["F51_Pursuit"],
-    #    obj_node_xpath="./tei:occupation",
-    #    obj_node_value_xpath="./@key",
-    #    obj_process_condition="./@type='sk'",
-    #    obj_class=CIDOC["E4_Period"],
+        sbj_class=FRBROO["F51_Pursuit"],
+        obj_node_xpath="./tei:occupation",
+        obj_node_value_xpath="./@key",
+        obj_process_condition="./@type='sk'",
+        obj_class=CIDOC["E4_Period"],
     #    obj_class=None,
-    #    default_lang="en",
-    #    label_prefix="Employment with: ",
-    #    identifier=CIDOC["P14i_performed"],
-    #    custom_obj_uri="period",
+        default_lang="en",
+        label_prefix="Employment with: ",
+        identifier=CIDOC["P14i_performed"],
+        custom_obj_uri="period",
     #    custom_obj_uri=None,
-    #    obj_prefix="https://sk.acdh.oeaw.ac.at",
-    #)
+        obj_prefix="https://sk.acdh.oeaw.ac.at",
+    )
     # g += make_affiliations(
     #     subj,
     #     x,
